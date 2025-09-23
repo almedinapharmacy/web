@@ -1,527 +1,359 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al-Medina Pharmacy - Your Community Health Partner</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom styles for the reviews carousel on mobile */
-        .carousel-container {
-            overflow: hidden;
-            width: 100%;
-        }
-        .carousel-track {
-            display: flex;
-            transition: transform 0.5s cubic-bezier(0.6, 0, 0.4, 1);
-        }
-        .review-card {
-            min-width: 100%;
-            padding: 2rem;
-            flex-shrink: 0;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .fade-in-on-load {
-            animation: fadeIn 1s ease-out forwards;
-        }
-        /* Media query to make the carousel a grid on medium screens and up */
-        @media (min-width: 768px) {
-            .review-card {
-                min-width: unset; /* Override min-width for grid layout */
-                flex-shrink: 1;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Al-Medina Pharmacy • Brooklyn, NY</title>
+  <meta name="description" content="Al-Medina Pharmacy in Brooklyn, NY. Your trusted community pharmacy for prescriptions, vaccines, wellness products, and free delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#2563eb; /* primary blue */
+      --teal:#14b8a6; /* accent teal */
+      --ink:#1f2937;    /* gray-800 */
+      --muted:#64748b;  /* slate-500 */
+      --bg:#ffffff;
+      --soft:#f8fafc;   /* slate-50 */
+      --yellow: #fde047;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+    a{color:var(--blue);text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e5e7eb}
+    .topbar{display:flex;justify-content:space-between;align-items:center;padding:8px 0;font-size:14px;color:var(--muted)}
+    .topbar a{color:var(--muted)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;}
+    .logo img {width:32px;height:32px;border-radius:8px;background:#fff;}
+    .brand-name{font-weight:800;font-size:20px;letter-spacing:0.5px;color:var(--blue);}
+    .navlinks a{margin-left:18px;font-weight:600;color:var(--ink)}
+    .navlinks a.active, .navlinks a:hover{color:var(--blue)}
+    .cta{padding:10px 16px;border-radius:12px;background:linear-gradient(90deg,var(--blue),var(--teal));color:#fff;font-weight:700;box-shadow:0 1px 6px #e0e7ef24}
+    .cta:hover{background:linear-gradient(90deg,#1d4ed8,#0e9488)}
+    .mobile-nav-btn{display:none;}
+    @media (max-width: 980px){
+      .navlinks{display:none}
+      .mobile-nav-btn{display:block;font-size:28px;color:var(--blue);border:none;background:transparent;cursor:pointer;padding:6px 12px;}
+    }
+    /* Mobile menu */
+    #mobileMenu{display:none;position:absolute;top:100%;left:0;width:100%;background:#fff;border-bottom:1px solid #e5e7eb;z-index:99;}
+    #mobileMenu a{display:block;padding:16px 20px;border-top:1px solid #f1f5f9;font-weight:600;color:var(--ink);}
+    #mobileMenu a:hover{background:var(--soft);color:var(--blue);}
+    /* Hero */
+    .hero{position:relative;background:linear-gradient(100deg,#dbeafe, #ccfbf1);}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:56px 0}
+    .h1{font-size:44px;line-height:1.1;margin:0 0 10px;font-weight:800;}
+    .lead{color:var(--muted);font-size:19px;max-width:560px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .badge{padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #e5e7eb;color:var(--muted);font-size:14px;font-weight:600}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 10px 20px rgba(2,6,23,.07)}
+    .card.pad{padding:24px}
+    /* Section */
+    section{padding:56px 0}
+    h2{font-size:28px;margin:0 0 10px;font-weight:800;}
+    .sub{color:var(--muted);margin:0 0 18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .tile{padding:20px}
+    .tile h3{margin:0 0 6px;font-weight:700;}
+    .tile p{margin:0;color:var(--muted);font-size:16px}
+    /* Icons */
+    .icon{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:#e0f2fe;border:1px solid #bae6fd;margin-bottom:10px;font-size:22px;}
+    /* Footer */
+    footer{background:var(--soft);border-top:1px solid #e5e7eb;padding:30px 0;color:var(--muted)}
+    .footer-flex{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;}
+    /* Chat Assistant */
+    #qna-assistant{background:var(--soft);}
+    .chat-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:28px;max-width:420px;margin:0 auto;}
+    .chat-messages{max-height:210px;overflow-y:auto;margin-bottom:16px;font-size:15px;}
+    .chat-bubble{margin-bottom:7px;padding:10px 14px;border-radius:22px;display:inline-block;max-width:85%}
+    .chat-bubble.assistant{background:var(--soft);color:var(--blue);border-bottom-left-radius:5px;}
+    .chat-bubble.user{background:var(--blue);color:#fff;border-bottom-right-radius:5px;margin-left:auto}
+    .chat-row{display:flex;flex-direction:row;}
+    .chat-row.user{justify-content:flex-end;}
+    .chat-row.assistant{justify-content:flex-start;}
+    .chat-input-row{display:flex;gap:8px;}
+    .chat-input{flex:1;padding:10px 14px;border-radius:20px;border:1px solid #e5e7eb;font-size:15px}
+    .chat-send-btn{background:var(--teal);color:#fff;font-weight:700;border:none;border-radius:20px;padding:0 24px;font-size:16px;cursor:pointer}
+    .chat-send-btn:hover{background:var(--blue)}
+    /* Reviews */
+    #reviews{background:var(--soft);}
+    .reviews-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;max-width:900px;margin:0 auto;}
+    .review-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:26px;text-align:center;box-shadow:0 1px 10px #dbeafe21;}
+    .reviewer{font-weight:700;color:var(--blue);margin-bottom:4px;}
+    .stars{color:var(--yellow);font-size:17px;}
+    /* Map */
+    .map-card{overflow:hidden;border-radius:16px;}
+    /* Responsive */
+    @media (max-width: 1100px){
+      .hero-inner{grid-template-columns:1fr}
+      .grid-3,.grid-4{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .reviews-grid{grid-template-columns:1fr}
+    }
+    @media (max-width: 680px){
+      .card.pad,.tile,.chat-card{padding:14px;}
+      .hero-inner{padding:26px 0;}
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Header & Navigation -->
-    <header class="bg-white/95 backdrop-blur shadow-lg sticky top-0 z-50 border-b border-gray-100">
-        <nav class="container mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="flex items-center space-x-3">
-                <img src="images/Logo.png" alt="Al-Medina Pharmacy Logo" class="h-14 drop-shadow-lg rounded-lg">
-            </a>
-            <!-- Desktop Nav Links -->
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#home" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Home</a>
-                <a href="#services" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Services</a>
-                <a href="#products" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Products</a>
-                <a href="#reviews" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Reviews</a>
-                <a href="#contact" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Contact</a>
-            </div>
-            <!-- Call to Action Button -->
-            <a href="tel:7189412669" class="hidden md:block bg-gradient-to-r from-blue-600 to-teal-500 text-white font-bold px-6 py-3 rounded-full shadow hover:from-blue-700 hover:to-teal-600 transition duration-200 transform hover:scale-105">
-                <i class="fas fa-phone-alt mr-2"></i>Call Now
-            </a>
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-blue-700 focus:outline-none">
-                <i class="fas fa-bars text-3xl"></i>
-            </button>
-        </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur shadow-inner pb-4 border-b border-gray-100">
-            <a href="#home" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200 border-b border-gray-200">Home</a>
-            <a href="#services" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200 border-b border-gray-200">Services</a>
-            <a href="#products" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200 border-b border-gray-200">Products</a>
-            <a href="#reviews" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200 border-b border-gray-200">Reviews</a>
-            <a href="#contact" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200">Contact</a>
-            <a href="tel:7189412669" class="block mt-4 mx-6 bg-gradient-to-r from-blue-600 to-teal-500 text-white text-center font-bold px-6 py-3 rounded-full hover:from-blue-700 hover:to-teal-600 transition duration-200 shadow-lg">Call Now</a>
+<body>
+  <header>
+    <div class="container topbar">
+      <div>📍 1242 Flatbush Ave, Brooklyn, NY 11226</div>
+      <div>☎️ <a href="tel:+17189412669">718‑941‑2669</a> • ✉️ <a href="mailto:info@almedinapharmacy.com">info@almedinapharmacy.com</a></div>
+    </div>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo"><img src="images/Logo.png" alt="Al-Medina Pharmacy Logo"></div>
+          <span class="brand-name">Al‑Medina Pharmacy</span>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="relative bg-gradient-to-br from-blue-600 to-teal-500 text-white py-28 md:py-40 overflow-hidden">
-            <!-- Background Image with an onerror fallback -->
-            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba9996a?q=80&w=2070&auto=format&fit=crop');" onerror="this.style.backgroundImage='url(https://placehold.co/2070x1200/4B5563/E5E7EB?text=Background)';"></div>
-            <div class="container mx-auto px-4 sm:px-8 text-center relative z-10">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 fade-in-on-load drop-shadow-lg">Your Trusted <span class="text-yellow-300">Health Partner</span> in Brooklyn</h1>
-                <p class="text-lg md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 fade-in-on-load">Providing personalized care, trusted advice, and quality products to our community with a smile. We proudly offer <span class="font-bold text-yellow-200">Free Home Delivery</span> on all prescriptions.</p>
-                <a href="#contact" class="inline-block bg-white text-blue-700 font-bold py-4 px-10 rounded-full text-xl shadow-xl hover:bg-blue-50 transition duration-200 transform hover:scale-105 fade-in-on-load border-2 border-white">Get in Touch</a>
-            </div>
-            <div class="absolute bottom-0 left-0 right-0 w-full h-36 bg-gradient-to-t from-white/70 to-transparent pointer-events-none"></div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50">
-            <div class="container mx-auto px-4 sm:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-5 tracking-tight">Our Services</h2>
-                <p class="text-center text-gray-600 mb-14 max-w-2xl mx-auto">More than just a pharmacy, we are a full-service health hub dedicated to your well-being.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Service Card 1: Free Home Delivery -->
-                    <div class="bg-white rounded-2xl shadow-lg p-8 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100 flex flex-col items-center text-center">
-                        <i class="fas fa-shipping-fast text-5xl text-blue-600 mb-4"></i>
-                        <h3 class="font-bold text-xl mb-2 text-blue-700">Free Home Delivery</h3>
-                        <p class="text-gray-600 text-sm">Can't make it to the pharmacy? We offer free, fast, and reliable delivery for all your prescription needs right to your doorstep.</p>
-                    </div>
-                    <!-- Service Card 2: Medication Synchronization -->
-                    <div class="bg-white rounded-2xl shadow-lg p-8 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100 flex flex-col items-center text-center">
-                        <i class="fas fa-sync-alt text-5xl text-blue-600 mb-4"></i>
-                        <h3 class="font-bold text-xl mb-2 text-blue-700">Medication Synchronization</h3>
-                        <p class="text-gray-600 text-sm">Simplify your life by getting all your prescriptions filled on the same day each month. We'll handle the refills and coordination for you.</p>
-                    </div>
-                    <!-- Service Card 3: Immunizations -->
-                    <div class="bg-white rounded-2xl shadow-lg p-8 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100 flex flex-col items-center text-center">
-                        <i class="fas fa-syringe text-5xl text-blue-600 mb-4"></i>
-                        <h3 class="font-bold text-xl mb-2 text-blue-700">Immunizations</h3>
-                        <p class="text-gray-600 text-sm">Stay protected with our walk-in immunization services. We offer flu shots, shingles, pneumonia, and more, administered by certified pharmacists.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Products Section -->
-        <section id="products" class="py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50">
-            <div class="container mx-auto px-4 sm:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-5 tracking-tight">Our Products</h2>
-                <p class="text-center text-gray-600 mb-14 max-w-2xl mx-auto">We offer a curated selection of health and wellness products to meet your every need.</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                    <!-- Product Card 1 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
-                        <img src="https://images.unsplash.com/photo-1607619056574-7d8d3ee536b2?q=80&w=1910&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=Vitamins+&amp;+Supplements';" alt="Vitamins & Supplements" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-blue-700">Vitamins & Supplements</h3>
-                            <p class="text-gray-600 text-sm">Boost your health with our wide selection of dietary supplements.</p>
-                        </div>
-                    </div>
-                    <!-- Product Card 2 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
-                        <img src="https://images.unsplash.com/photo-1584515933487-779824d279f9?q=80&w=2070&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=Prescription+Services';" alt="Prescription Medication" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-blue-700">Prescription Services</h3>
-                            <p class="text-gray-600 text-sm">Fast, reliable, and friendly prescription filling services from our expert pharmacists.</p>
-                        </div>
-                    </div>
-                    <!-- Product Card 3 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
-                        <img src="https://images.unsplash.com/photo-1583947581926-2c2a8856bf6d?q=80&w=2070&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=Personal+Care';" alt="Personal Care Products" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-blue-700">Personal Care</h3>
-                            <p class="text-gray-600 text-sm">Find everything you need for your daily personal care and hygiene routine.</p>
-                        </div>
-                    </div>
-                    <!-- Product Card 4 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
-                        <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?q=80&w=2070&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0f2fe/0c4a6e?text=First+Aid';" alt="First Aid Supplies" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-blue-700">First Aid & Medical Supplies</h3>
-                            <p class="text-gray-600 text-sm">Stock up on essential first aid supplies and home medical equipment.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Medication Q&A Assistant Section -->
-        <section id="qna-assistant" class="py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50">
-            <div class="container mx-auto px-4 sm:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-5">Medication Q&A Assistant</h2>
-                <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Ask a question about a medication or general health topic. Please note that this assistant cannot provide medical advice or a diagnosis.</p>
-                <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-2xl border border-blue-100 flex flex-col h-[500px]">
-                    <div id="chat-messages" class="flex-grow overflow-y-auto space-y-4 mb-4">
-                        <!-- Initial bot message -->
-                        <div class="flex justify-start">
-                            <div class="bg-blue-100 text-blue-800 p-4 rounded-3xl rounded-bl-none max-w-[80%] shadow">
-                                <span class="font-bold">Assistant:</span> Hello! I can help answer your questions about health and medications. How can I help you today?
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <input type="text" id="chat-input" placeholder="Type your question here..." class="flex-grow p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <button id="chat-send-btn" class="bg-gradient-to-r from-blue-600 to-teal-500 text-white font-bold w-12 h-12 rounded-full shadow hover:from-blue-700 hover:to-teal-600 transition duration-200 transform hover:scale-105">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews Section with Carousel -->
-        <section id="reviews" class="py-24 bg-gray-100">
-            <div class="container mx-auto px-4 sm:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-5">What Our Customers Say</h2>
-                <p class="text-center text-gray-600 mb-14 max-w-2xl mx-auto">We are proud of the feedback we receive from our community.</p>
-                <div class="relative max-w-3xl mx-auto overflow-hidden md:overflow-visible">
-                    <div id="review-carousel" class="carousel-container rounded-2xl shadow-2xl border border-blue-100 bg-white">
-                        <!-- Use a flexbox on mobile and switch to a grid on medium screens and up -->
-                        <div class="carousel-track flex md:grid md:grid-cols-3 md:gap-8" id="carousel-track">
-                            <!-- Review Card 1 -->
-                            <div class="review-card bg-white rounded-2xl flex flex-col items-center text-center">
-                                <i class="fas fa-user-circle text-5xl text-blue-200 mb-4"></i>
-                                <div>
-                                    <h4 class="font-bold text-lg text-blue-700 mb-1">John D.</h4>
-                                    <div class="text-yellow-400 mb-2">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="text-gray-600 text-base">"The pharmacists here are incredibly helpful and knowledgeable. They always take the time to answer my questions. Highly recommended!"</p>
-                                </div>
-                            </div>
-                            <!-- Review Card 2 -->
-                            <div class="review-card bg-white rounded-2xl flex flex-col items-center text-center">
-                                <i class="fas fa-user-circle text-5xl text-blue-200 mb-4"></i>
-                                <div>
-                                    <h4 class="font-bold text-lg text-blue-700 mb-1">Maria S.</h4>
-                                    <div class="text-yellow-400 mb-2">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <p class="text-gray-600 text-base">"Excellent service and a great selection of products. It's so convenient having a reliable pharmacy right in the neighborhood."</p>
-                                </div>
-                            </div>
-                            <!-- Review Card 3 -->
-                            <div class="review-card bg-white rounded-2xl flex flex-col items-center text-center">
-                                <i class="fas fa-user-circle text-5xl text-blue-200 mb-4"></i>
-                                <div>
-                                    <h4 class="font-bold text-lg text-blue-700 mb-1">David L.</h4>
-                                    <div class="text-yellow-400 mb-2">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="text-gray-600 text-base">"Fast prescription fills and the staff is always friendly and professional. I wouldn't go anywhere else."</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Navigation - Hidden on larger screens -->
-                    <button id="prev-btn" class="md:hidden absolute top-1/2 -left-8 md:-left-10 transform -translate-y-1/2 bg-white text-blue-600 border border-blue-200 p-3 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 focus:outline-none" aria-label="Previous Review">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button id="next-btn" class="md:hidden absolute top-1/2 -right-8 md:-right-10 transform -translate-y-1/2 bg-white text-blue-600 border border-blue-200 p-3 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 focus:outline-none" aria-label="Next Review">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contact & Map Section -->
-        <section id="contact" class="py-24 bg-white">
-            <div class="container mx-auto px-4 sm:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-14">Find Us</h2>
-                <div class="flex flex-col lg:flex-row gap-12">
-                    <!-- Map -->
-                    <div class="lg:w-2/3 w-full rounded-2xl overflow-hidden shadow-2xl border border-blue-100">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.188701967262!2d-73.9493922847324!3d40.62584587934148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258547d93f4f1%3A0x3a5b4e5e0a7d0f0d!2s1242%20Flatbush%20Ave%2C%20Brooklyn%2C%20NY%2011226!5e0!3m2!1sen!2sus!4v1689300708716!5m2!1sen!2sus"
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    <!-- Contact Info -->
-                    <div class="lg:w-1/3 w-full bg-gradient-to-br from-blue-600 to-teal-500 text-white p-10 rounded-2xl shadow-2xl flex flex-col justify-center border border-blue-100">
-                        <h3 class="text-2xl font-bold mb-8">Contact Information</h3>
-                        <div class="space-y-7">
-                            <div class="flex items-start">
-                                <i class="fas fa-map-marker-alt text-3xl mt-1 text-blue-200"></i>
-                                <div class="ml-5">
-                                    <h4 class="font-semibold text-lg">Address</h4>
-                                    <p id="address-text" class="text-blue-50">1242 Flatbush Avenue<br>Brooklyn, NY 11226</p>
-                                    <button onclick="copyAddress()" class="mt-2 text-sm text-yellow-300 font-medium hover:underline focus:outline-none">
-                                        <i class="fas fa-copy mr-1"></i>Copy Address
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-phone-alt text-3xl mt-1 text-blue-200"></i>
-                                <div class="ml-5">
-                                    <h4 class="font-semibold text-lg">Phone</h4>
-                                    <p class="text-blue-50"><a href="tel:7189412669" class="hover:underline">718-941-2669</a></p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-clock text-3xl mt-1 text-blue-200"></i>
-                                <div class="ml-5">
-                                    <h4 class="font-semibold text-lg">Hours</h4>
-                                    <p class="text-blue-50">Mon - Fri: 10:00 AM - 7:00 PM</p>
-                                    <p class="text-blue-50">Saturday: 10:00 AM - 6:00 PM</p>
-                                    <p class="text-blue-50">Sunday: Closed</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-envelope text-3xl mt-1 text-blue-200"></i>
-                                <div class="ml-5">
-                                    <h4 class="font-semibold text-lg">Email</h4>
-                                    <p class="text-blue-50"><a href="mailto:info@almedinapharmacy.com" class="hover:underline">info@almedinapharmacy.com</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-10 mt-10">
-        <div class="container mx-auto px-4 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-            <div>
-                <p class="text-gray-300">&copy; 2025 Al-Medina Pharmacy, Inc. All Rights Reserved.</p>
-                <p class="text-sm text-blue-200 mt-1">Website designed with care.</p>
-            </div>
-            <div class="flex gap-4">
-                <a href="https://maps.app.goo.gl/YTcgbzZyRankVuQ78" target="_blank" aria-label="Google Maps"><i class="fas fa-map-marker-alt text-2xl hover:text-yellow-300"></i></a>
-                <a href="tel:7189412669" aria-label="Phone"><i class="fas fa-phone-alt text-2xl hover:text-yellow-300"></i></a>
-                <a href="mailto:info@almedinapharmacy.com" aria-label="Email"><i class="fas fa-envelope text-2xl hover:text-yellow-300"></i></a>
-            </div>
+        <div class="navlinks">
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#qna-assistant">Q&A</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
         </div>
-    </footer>
+        <a class="cta" href="tel:+17189412669">Call Now</a>
+        <button class="mobile-nav-btn" id="mobileNavBtn">&#9776;</button>
+      </nav>
+      <div id="mobileMenu">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#qna-assistant">Q&A</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+17189412669" style="color:var(--blue)">Call Now</a>
+      </div>
+    </div>
+  </header>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div>
+        <h1 class="h1">Your Community <span style="color:var(--teal)">Health Partner</span></h1>
+        <p class="lead">Personalized care, trusted advice, and quality products for Brooklyn’s families. We fill prescriptions fast, offer free local delivery, and provide wellness solutions with a smile.</p>
+        <div class="badges">
+          <span class="badge">Free Home Delivery</span>
+          <span class="badge">Immunizations</span>
+          <span class="badge">Medication Sync</span>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="cta" href="#qna-assistant">Ask a Question</a>
+          <a class="cta" style="background:var(--teal)" href="mailto:info@almedinapharmacy.com?subject=Transfer%20Prescription">Transfer Rx</a>
+        </div>
+      </div>
+      <div class="card pad" style="min-width:250px">
+        <h3 style="margin-top:0">Today's Hours</h3>
+        <div>
+          <strong>Mon–Fri:</strong> 10:00 AM – 7:00 PM<br>
+          <strong>Saturday:</strong> 10:00 AM – 6:00 PM<br>
+          <strong>Sunday:</strong> Closed
+          <p style="margin-top:10px"><a href="https://maps.google.com/?q=1242+Flatbush+Ave+Brooklyn+NY+11226" target="_blank" rel="noopener">Open in Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p class="sub">More than just a pharmacy — your full-service health hub.</p>
+      <div class="grid-3">
+        <div class="card pad">
+          <div class="icon">🚚</div>
+          <h3>Free Home Delivery</h3>
+          <p>Reliable prescription delivery to your door, at no extra charge.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">🔄</div>
+          <h3>Medication Sync</h3>
+          <p>Refill all your medications on the same day—no more juggling pickup dates.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">💉</div>
+          <h3>Immunizations</h3>
+          <p>Flu, shingles, pneumonia, and more. Walk-ins welcome, administered by certified pharmacists.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">💊</div>
+          <h3>Prescription Filling</h3>
+          <p>Fast, accurate, and friendly prescription service from expert pharmacists.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">👶</div>
+          <h3>Personal & Family Care</h3>
+          <p>Vitamins, pediatric care, personal and home medical supplies.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">🧾</div>
+          <h3>Insurance Help</h3>
+          <p>We work with most major plans and help resolve prior authorization issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            // Close mobile menu when a link is clicked
-            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
+  <section id="products" style="background:var(--soft)">
+    <div class="container">
+      <h2>Our Products</h2>
+      <p class="sub">A curated selection of wellness essentials for every need.</p>
+      <div class="grid-4">
+        <div class="card pad">
+          <div class="icon">🧴</div>
+          <h3>Vitamins & Supplements</h3>
+          <p>Boost your health with trusted brands for all ages.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">🩺</div>
+          <h3>First Aid & Medical</h3>
+          <p>Bandages, wound care, home safety, and durable equipment.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">🛁</div>
+          <h3>Personal Care</h3>
+          <p>Hygiene, skincare, and wellness products for daily comfort.</p>
+        </div>
+        <div class="card pad">
+          <div class="icon">📦</div>
+          <h3>Prescription Services</h3>
+          <p>Fast, reliable, and confidential prescription fills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            // Reviews Carousel
-            const carouselTrack = document.getElementById('carousel-track');
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-            const cards = document.querySelectorAll('.review-card');
+  <section id="qna-assistant">
+    <div class="container">
+      <h2>Medication Q&amp;A Assistant</h2>
+      <p class="sub">Ask a question about a medication or general health topic. (For medical advice, consult your doctor or pharmacist.)</p>
+      <div class="chat-card">
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-row assistant">
+            <div class="chat-bubble assistant"><strong>Assistant:</strong> Hello! How can I help you with your health or medication questions?</div>
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" class="chat-input" id="chatInput" placeholder="Type your question here..." autocomplete="off"/>
+          <button class="chat-send-btn" id="chatSendBtn">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            let currentIndex = 0;
+  <section id="reviews">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <p class="sub">Proud to serve Brooklyn’s community with care and trust.</p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="reviewer">John D.</div>
+          <div class="stars">★★★★★</div>
+          <p>"The pharmacists here are incredibly helpful and always answer my questions. Highly recommended!"</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer">Maria S.</div>
+          <div class="stars">★★★★½</div>
+          <p>"Excellent service and a great selection of products. It's so convenient having a reliable pharmacy right in the neighborhood."</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer">David L.</div>
+          <div class="stars">★★★★★</div>
+          <p>"Fast prescription fills and the staff is always friendly and professional. I wouldn't go anywhere else."</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            function updateCarousel() {
-                // Only update carousel transform on mobile screens
-                if (window.innerWidth < 768) {
-                    carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
-                } else {
-                    carouselTrack.style.transform = `translateX(0)`;
-                }
-            }
+  <section id="contact" style="background:var(--soft)">
+    <div class="container">
+      <h2>Contact &amp; Location</h2>
+      <div class="grid-2">
+        <div class="card pad">
+          <p><strong>Al-Medina Pharmacy</strong><br>1242 Flatbush Ave, Brooklyn, NY 11226</p>
+          <p>Phone: <a href="tel:+17189412669">718‑941‑2669</a><br>Email: <a href="mailto:info@almedinapharmacy.com">info@almedinapharmacy.com</a></p>
+          <p class="sub">For emergencies call 911. For prescription questions, call us directly. <button onclick="copyAddress()" style="background:none;border:none;color:var(--teal);font-weight:600;cursor:pointer;padding:0 5px;">Copy Address</button></p>
+        </div>
+        <div class="card map-card">
+          <iframe title="Map to Al-Medina Pharmacy" width="100%" height="300" style="border:0;border-radius:16px" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=1242%20Flatbush%20Ave%2C%20Brooklyn%2C%20NY%2011226&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            // Call updateCarousel initially and on window resize
-            window.addEventListener('resize', updateCarousel);
-            updateCarousel(); // Initial call
+  <footer>
+    <div class="container footer-flex">
+      <div>© <span id="year"></span> Al‑Medina Pharmacy</div>
+      <div>HIPAA: Your privacy is protected. Health info is never shared without consent.</div>
+      <div style="font-size:18px;">
+        <a href="https://maps.app.goo.gl/YTcgbzZyRankVuQ78" target="_blank" aria-label="Google Maps" style="margin-right:10px;color:var(--teal)">📍</a>
+        <a href="tel:7189412669" aria-label="Phone" style="margin-right:10px;color:var(--blue)">📞</a>
+        <a href="mailto:info@almedinapharmacy.com" aria-label="Email" style="color:var(--blue)">✉️</a>
+      </div>
+    </div>
+  </footer>
 
-            nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % cards.length;
-                updateCarousel();
-            });
+  <script>
+    // Mobile nav
+    const mobileBtn = document.getElementById('mobileNavBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.onclick = function() {
+      mobileMenu.style.display = (mobileMenu.style.display === "block" ? "none" : "block");
+    };
+    // Hide mobile menu on click outside
+    document.addEventListener('click', function(e){
+      if (!mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+        mobileMenu.style.display = "none";
+      }
+    });
+    // Copy address to clipboard
+    function copyAddress() {
+      const address = "1242 Flatbush Ave, Brooklyn, NY 11226";
+      navigator.clipboard.writeText(address);
+      alert("Address copied!");
+    }
+    // Year in footer
+    document.getElementById('year').textContent=new Date().getFullYear();
 
-            prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-                updateCarousel();
-            });
-
-            // Optionally auto-slide every 6s, only on mobile
-            let autoSlideInterval = null;
-            function startAutoSlide() {
-                if (window.innerWidth < 768 && !autoSlideInterval) {
-                    autoSlideInterval = setInterval(() => {
-                        currentIndex = (currentIndex + 1) % cards.length;
-                        updateCarousel();
-                    }, 6000);
-                }
-            }
-            function stopAutoSlide() {
-                if (autoSlideInterval) {
-                    clearInterval(autoSlideInterval);
-                    autoSlideInterval = null;
-                }
-            }
-            window.addEventListener('resize', () => {
-                stopAutoSlide();
-                startAutoSlide();
-            });
-            startAutoSlide(); // Initial start
-
-
-            // Function to copy address to clipboard
-            function copyAddress() {
-                const address = document.getElementById('address-text').innerText.replace(/\n/g, ' ').trim();
-                const tempInput = document.createElement('textarea');
-                tempInput.value = address;
-                document.body.appendChild(tempInput);
-                tempInput.select();
-                document.execCommand('copy');
-                document.body.removeChild(tempInput);
-                // Provide feedback to the user, for example, a temporary message
-                const copyBtn = document.querySelector('#contact .space-y-7 button');
-                const originalText = copyBtn.innerHTML;
-                copyBtn.innerHTML = '<i class="fas fa-check mr-1"></i>Copied!';
-                setTimeout(() => {
-                    copyBtn.innerHTML = originalText;
-                }, 2000);
-            }
-
-            // Attach the function to the button's onclick event
-            document.querySelector('#contact .space-y-7 button').onclick = copyAddress;
-            
-            // Medication Q&A Assistant Logic
-            const chatInput = document.getElementById('chat-input');
-            const chatSendBtn = document.getElementById('chat-send-btn');
-            const chatMessages = document.getElementById('chat-messages');
-
-            chatSendBtn.addEventListener('click', sendMessage);
-            chatInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    sendMessage();
-                }
-            });
-
-            async function sendMessage() {
-                const userMessage = chatInput.value.trim();
-                if (userMessage === '') return;
-
-                // Add user message to chat
-                const userMessageHtml = `
-                    <div class="flex justify-end">
-                        <div class="bg-blue-600 text-white p-4 rounded-3xl rounded-br-none max-w-[80%] shadow">
-                            ${userMessage}
-                        </div>
-                    </div>
-                `;
-                chatMessages.innerHTML += userMessageHtml;
-                chatInput.value = '';
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-
-                // Show loading indicator for bot response
-                const loadingHtml = `
-                    <div id="bot-loading" class="flex justify-start">
-                        <div class="bg-blue-100 text-blue-800 p-4 rounded-3xl rounded-bl-none max-w-[80%] shadow">
-                            <div class="animate-pulse">...</div>
-                        </div>
-                    </div>
-                `;
-                chatMessages.innerHTML += loadingHtml;
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-
-                let retryCount = 0;
-                const maxRetries = 3;
-                const baseDelay = 1000;
-
-                const getBotResponse = async () => {
-                    const systemPrompt = `You are a helpful and friendly pharmacy assistant. You provide general health and wellness information based on public knowledge.
-                    You are explicitly NOT a doctor and cannot provide medical advice, diagnosis, or prescribe treatment. If asked for a diagnosis or treatment,
-                    you must politely state that you cannot give medical advice and recommend consulting a healthcare professional. Always maintain a helpful, encouraging, and informative tone.
-                    If the user asks for a recommendation about a medication, tell them to consult their doctor or pharmacist.`;
-                    
-                    const payload = {
-                        contents: [{ parts: [{ text: userMessage }] }],
-                        systemInstruction: { parts: [{ text: systemPrompt }] },
-                    };
-                    const apiKey = "AIzaSyB0UNOY4-MbMWQZu8IQCZAjXiRdYWbiaxY"; // Leave as empty string
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-                    try {
-                        const response = await fetch(apiUrl, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-
-                        if (!response.ok) {
-                            if (response.status === 429 && retryCount < maxRetries) {
-                                retryCount++;
-                                const delay = baseDelay * Math.pow(2, retryCount);
-                                await new Promise(resolve => setTimeout(resolve, delay));
-                                return getBotResponse();
-                            } else {
-                                throw new Error(`API error: ${response.statusText}`);
-                            }
-                        }
-
-                        const result = await response.json();
-                        const botResponseText = result.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, I couldn't process that request. Please try again.";
-                        
-                        const botMessageHtml = `
-                            <div class="flex justify-start">
-                                <div class="bg-blue-100 text-blue-800 p-4 rounded-3xl rounded-bl-none max-w-[80%] shadow">
-                                    <span class="font-bold">Assistant:</span> ${botResponseText}
-                                </div>
-                            </div>
-                        `;
-                        
-                        // Remove loading indicator and add bot's response
-                        document.getElementById('bot-loading').remove();
-                        chatMessages.innerHTML += botMessageHtml;
-                        chatMessages.scrollTop = chatMessages.scrollHeight;
-
-                    } catch (error) {
-                        document.getElementById('bot-loading')?.remove();
-                        const errorHtml = `
-                            <div class="flex justify-start">
-                                <div class="bg-red-100 text-red-800 p-4 rounded-3xl rounded-bl-none max-w-[80%] shadow">
-                                    <span class="font-bold">Assistant:</span> There was an error: ${error.message}
-                                </div>
-                            </div>
-                        `;
-                        chatMessages.innerHTML += errorHtml;
-                        chatMessages.scrollTop = chatMessages.scrollHeight;
-                    }
-                };
-                getBotResponse();
-            }
-        });
-    </script>
+    // Medication Q&A Assistant Logic (simple demo, replace with real API for production)
+    const chatInput = document.getElementById('chatInput');
+    const chatSendBtn = document.getElementById('chatSendBtn');
+    const chatMessages = document.getElementById('chatMessages');
+    function addChatBubble(msg, who='assistant') {
+      const row = document.createElement('div');
+      row.className = `chat-row ${who}`;
+      const bubble = document.createElement('div');
+      bubble.className = `chat-bubble ${who}`;
+      bubble.innerHTML = (who==='assistant' ? '<strong>Assistant:</strong> ' : '') + msg;
+      row.appendChild(bubble);
+      chatMessages.appendChild(row);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    async function sendMessage() {
+      const userMsg = chatInput.value.trim();
+      if (!userMsg) return;
+      addChatBubble(userMsg, 'user');
+      chatInput.value = '';
+      addChatBubble('<span style="opacity:.6;">...</span>', 'assistant');
+      // Replace below with a real API call
+      setTimeout(() => {
+        chatMessages.lastChild.remove();
+        addChatBubble("I'm here to help with general questions! For anything medical, please consult your doctor or pharmacist.", 'assistant');
+      }, 800);
+    }
+    chatSendBtn.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', e => { if(e.key==='Enter') sendMessage(); });
+  </script>
 </body>
 </html>
