@@ -31,17 +31,15 @@
     .brand{
       display:flex;
       align-items:center;
-      /* Height fits the logo */
       height:110px;
-      min-width: 410px;
-      /* Center vertically in nav */
-      justify-content:center;
+      min-width:410px;
+      justify-content:flex-start;
     }
-    /* LOGO: Vertical, large, no border, drop shadow */
+    /* LOGO: Horizontal, large, no border, drop shadow */
     .logo {
       width:400px;
       height:100px;
-      border-radius:28px;
+      border-radius:24px;
       background:linear-gradient(135deg,var(--blue) 60%,var(--teal));
       display:flex;
       align-items:center;
@@ -51,22 +49,20 @@
       margin:0 16px 0 0;
       border:none;
       transition: box-shadow 0.2s;
-      /* Remove extra padding/gap */
     }
     .logo:hover {
       box-shadow:0 8px 36px 0 rgba(20,184,166,0.18);
     }
     .logo img {
-      max-width:80px;
-      max-height:380px;
+      max-width:380px;
+      max-height:80px;
       width:auto;
       height:auto;
-      border-radius:18px;
+      border-radius:16px;
       background:transparent;
       border:none;
       display:block;
       object-fit:contain;
-      /* Centered by flex parent */
     }
     .navlinks a{margin-left:18px;font-weight:600;color:var(--ink)}
     .navlinks a.active, .navlinks a:hover{color:var(--blue)}
@@ -82,14 +78,14 @@
         justify-content:flex-start;
       }
       .logo {
-        width:60px;
-        height:120px;
-        border-radius:16px;
+        width:200px;
+        height:50px;
+        border-radius:12px;
         margin:0 8px 0 0;
       }
       .logo img {
-        max-width:48px;
-        max-height:100px;
+        max-width:180px;
+        max-height:40px;
       }
     }
     @media (max-width: 680px){
@@ -97,15 +93,15 @@
       .hero-inner{padding:26px 0;}
       .brand{height:auto;}
       .logo{
-        width:40px;
-        height:70px;
-        border-radius:8px;
+        width:120px;
+        height:32px;
+        border-radius:6px;
         margin:0 6px 0 0;
       }
       .logo img{
-        max-width:32px;
-        max-height:56px;
-        border-radius:6px;
+        max-width:108px;
+        max-height:24px;
+        border-radius:4px;
       }
     }
     /* Hide brand-name if present */
