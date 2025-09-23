@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Medina Pharmacy, Inc. - Your Community Health Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700">
+                <i class="fas fa-pills mr-2"></i>Al-Medina Pharmacy
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 transition duration-300">Home</a>
+                <a href="#products" class="text-gray-600 hover:text-blue-700 transition duration-300">Products</a>
+                <a href="#reviews" class="text-gray-600 hover:text-blue-700 transition duration-300">Reviews</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 transition duration-300">Contact</a>
+            </div>
+            <a href="tel:7189412669" class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+                <i class="fas fa-phone-alt mr-2"></i>Call Now
+            </a>
+             <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#home" class="block text-gray-600 hover:text-blue-700 py-2">Home</a>
+            <a href="#products" class="block text-gray-600 hover:text-blue-700 py-2">Products</a>
+            <a href="#reviews" class="block text-gray-600 hover:text-blue-700 py-2">Reviews</a>
+            <a href="#contact" class="block text-gray-600 hover:text-blue-700 py-2">Contact</a>
+            <a href="tel:7189412669" class="block mt-4 bg-blue-600 text-white text-center px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Call Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-blue-600 text-white py-20 md:py-32">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+             <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1600x800/3B82F6/FFFFFF?text=Pharmacy+Interior&font=inter');"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Your Trusted Health Partner in Brooklyn</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Providing personalized care and quality products to our community with a smile.</p>
+                <a href="#contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition duration-300">Visit Us Today</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Our Products</h2>
+                <p class="text-center text-gray-600 mb-12">We offer a wide range of health and wellness products.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/E0E7FF/374151?text=Vitamins" alt="Vitamins & Supplements" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Vitamins & Supplements</h3>
+                            <p class="text-gray-600 text-base">Boost your health with our wide selection of vitamins and dietary supplements.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/DBEAFE/1F2937?text=Prescriptions" alt="Prescription Medication" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Prescription Services</h3>
+                            <p class="text-gray-600 text-base">Fast, reliable, and friendly prescription filling services from our expert pharmacists.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/C7D2FE/4B5563?text=Personal+Care" alt="Personal Care Products" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Personal Care</h3>
+                            <p class="text-gray-600 text-base">Find everything you need for your daily personal care and hygiene routine.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/BFDBFE/374151?text=First+Aid" alt="First Aid Supplies" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">First Aid & Medical Supplies</h3>
+                            <p class="text-gray-600 text-base">Stock up on essential first aid supplies and home medical equipment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Reviews Section -->
+        <section id="reviews" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">What Our Customers Say</h2>
+                <p class="text-center text-gray-600 mb-12">We are proud of the feedback we receive from our community.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Review Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-user-circle text-4xl text-blue-200 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">John D.</h4>
+                                <div class="text-yellow-400">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The pharmacists here are incredibly helpful and knowledgeable. They always take the time to answer my questions. Highly recommended!"</p>
+                    </div>
+                    <!-- Review Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-user-circle text-4xl text-blue-200 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Maria S.</h4>
+                                <div class="text-yellow-400">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Excellent service and a great selection of products. It's so convenient having a reliable pharmacy right in the neighborhood."</p>
+                    </div>
+                    <!-- Review Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-user-circle text-4xl text-blue-200 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">David L.</h4>
+                                <div class="text-yellow-400">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Fast prescription fills and the staff is always friendly and professional. I wouldn't go anywhere else."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact & Map Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Find Us</h2>
+                <div class="flex flex-col lg:flex-row gap-10">
+                    <!-- Map -->
+                    <div class="lg:w-2/3 w-full">
+                         <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.188701967262!2d-73.9493922847324!3d40.62584587934148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b3063f27a6d%3A0x6b24d7870a27de0c!2s1242%20Flatbush%20Ave%2C%20Brooklyn%2C%20NY%2011226%2C%20USA!5e0!3m2!1sen!2s!4v1678886543210!5m2!1sen!2s" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="lg:w-1/3 w-full bg-blue-600 text-white p-8 rounded-lg shadow-lg flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-2xl mt-1 text-blue-200"></i>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p>1242 Flatbush Avenue<br>Brooklyn, NY 11226</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-2xl mt-1 text-blue-200"></i>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p><a href="tel:7189412669" class="hover:underline">718-941-2669</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-2xl mt-1 text-blue-200"></i>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Hours</h4>
+                                    <p>Mon - Fri: 10:00 AM - 7:00 PM</p>
+                                    <p>Saturday: 10:00 AM - 6:00 PM</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Al-Medina Pharmacy, Inc. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Website designed with care.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+    </script>
+</body>
+</html>
+
