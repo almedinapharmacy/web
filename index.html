@@ -29,9 +29,22 @@
     .topbar a{color:var(--muted)}
     nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{display:flex;align-items:center;gap:10px}
-    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;}
-    .logo img {width:32px;height:32px;border-radius:8px;background:#fff;}
-    .brand-name{font-weight:800;font-size:20px;letter-spacing:0.5px;color:var(--blue);}
+    /* Make logo bigger */
+    .logo{
+      width:70px;
+      height:70px;
+      border-radius:16px;
+      background:linear-gradient(135deg,var(--blue),var(--teal));
+      display:grid;
+      place-items:center;
+    }
+    .logo img {
+      width:54px;
+      height:54px;
+      border-radius:12px;
+      background:#fff;
+    }
+    /* .brand-name{font-weight:800;font-size:20px;letter-spacing:0.5px;color:var(--blue);} */
     .navlinks a{margin-left:18px;font-weight:600;color:var(--ink)}
     .navlinks a.active, .navlinks a:hover{color:var(--blue)}
     .cta{padding:10px 16px;border-radius:12px;background:linear-gradient(90deg,var(--blue),var(--teal));color:#fff;font-weight:700;box-shadow:0 1px 6px #e0e7ef24}
@@ -101,6 +114,14 @@
     @media (max-width: 680px){
       .card.pad,.tile,.chat-card{padding:14px;}
       .hero-inner{padding:26px 0;}
+      .logo{
+        width:48px;
+        height:48px;
+      }
+      .logo img{
+        width:36px;
+        height:36px;
+      }
     }
   </style>
 </head>
@@ -114,7 +135,7 @@
       <nav>
         <div class="brand">
           <div class="logo"><img src="images/Logo.png" alt="Al-Medina Pharmacy Logo"></div>
-          <span class="brand-name">Al‑Medina Pharmacy</span>
+          <!-- Removed brand-name -->
         </div>
         <div class="navlinks">
           <a href="#services">Services</a>
@@ -141,7 +162,7 @@
     <div class="container hero-inner">
       <div>
         <h1 class="h1">Your Community <span style="color:var(--teal)">Health Partner</span></h1>
-        <p class="lead">Personalized care, trusted advice, and quality products for Brooklyn’s families. We fill prescriptions fast, offer free local delivery, and provide wellness solutions with a smile.</p>
+        <p class="lead">Personalized care, trusted advice, and quality products for Brooklyn’s families. We fill prescriptions fast, offer free local delivery, and provide wellness solutions with a [...]
         <div class="badges">
           <span class="badge">Free Home Delivery</span>
           <span class="badge">Immunizations</span>
@@ -281,7 +302,7 @@
         <div class="card pad">
           <p><strong>Al-Medina Pharmacy</strong><br>1242 Flatbush Ave, Brooklyn, NY 11226</p>
           <p>Phone: <a href="tel:+17189412669">718‑941‑2669</a><br>Email: <a href="mailto:info@almedinapharmacy.com">info@almedinapharmacy.com</a></p>
-          <p class="sub">For emergencies call 911. For prescription questions, call us directly. <button onclick="copyAddress()" style="background:none;border:none;color:var(--teal);font-weight:600;cursor:pointer;padding:0 5px;">Copy Address</button></p>
+          <p class="sub">For emergencies call 911. For prescription questions, call us directly. <button onclick="copyAddress()" style="background:none;border:none;color:var(--teal);font-weight:600;cu[...]
         </div>
         <div class="card map-card">
           <iframe title="Map to Al-Medina Pharmacy" width="100%" height="300" style="border:0;border-radius:16px" loading="lazy" allowfullscreen
