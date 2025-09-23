@@ -31,40 +31,42 @@
     .brand{
       display:flex;
       align-items:center;
-      gap:0;
-      /* Add vertical centering and spacing for logo */
-      height:80px;
+      /* Height fits the logo */
+      height:410px;
+      min-width: 110px;
+      /* Center vertically in nav */
+      justify-content:center;
     }
-    /* LOGO: No border, improved placement, larger, subtle drop-shadow */
+    /* LOGO: Vertical, large, no border, drop shadow */
     .logo {
-      width:70px;
-      height:70px;
-      border-radius:20px;
+      width:100px;
+      height:400px;
+      border-radius:28px;
       background:linear-gradient(135deg,var(--blue) 60%,var(--teal));
       display:flex;
       align-items:center;
       justify-content:center;
-      box-shadow:0 2px 12px 0 rgba(37,99,235,0.07);
+      box-shadow:0 4px 24px 0 rgba(37,99,235,0.10);
       position:relative;
-      margin-left:0;
-      margin-right:8px;
-      /* Remove border */
+      margin:0 16px 0 0;
       border:none;
-      /* Give it a slight elevation */
       transition: box-shadow 0.2s;
+      /* Remove extra padding/gap */
     }
     .logo:hover {
-      box-shadow:0 4px 24px 0 rgba(20,184,166,0.14);
+      box-shadow:0 8px 36px 0 rgba(20,184,166,0.18);
     }
     .logo img {
-      width:54px;
-      height:54px;
-      border-radius:16px;
+      max-width:80px;
+      max-height:380px;
+      width:auto;
+      height:auto;
+      border-radius:18px;
       background:transparent;
-      /* Remove border */
       border:none;
       display:block;
-      object-fit:cover;
+      object-fit:contain;
+      /* Centered by flex parent */
     }
     .navlinks a{margin-left:18px;font-weight:600;color:var(--ink)}
     .navlinks a.active, .navlinks a:hover{color:var(--blue)}
@@ -74,12 +76,41 @@
     @media (max-width: 980px){
       .navlinks{display:none}
       .mobile-nav-btn{display:block;font-size:28px;color:var(--blue);border:none;background:transparent;cursor:pointer;padding:6px 12px;}
+      .brand{
+        height:auto;
+        min-width:unset;
+        justify-content:flex-start;
+      }
+      .logo {
+        width:60px;
+        height:120px;
+        border-radius:16px;
+        margin:0 8px 0 0;
+      }
+      .logo img {
+        max-width:48px;
+        max-height:100px;
+      }
     }
-    /* Mobile menu */
-    #mobileMenu{display:none;position:absolute;top:100%;left:0;width:100%;background:#fff;border-bottom:1px solid #e5e7eb;z-index:99;}
-    #mobileMenu a{display:block;padding:16px 20px;border-top:1px solid #f1f5f9;font-weight:600;color:var(--ink);}
-    #mobileMenu a:hover{background:var(--soft);color:var(--blue);}
-    /* Hero */
+    @media (max-width: 680px){
+      .card.pad,.tile,.chat-card{padding:14px;}
+      .hero-inner{padding:26px 0;}
+      .brand{height:auto;}
+      .logo{
+        width:40px;
+        height:70px;
+        border-radius:8px;
+        margin:0 6px 0 0;
+      }
+      .logo img{
+        max-width:32px;
+        max-height:56px;
+        border-radius:6px;
+      }
+    }
+    /* Hide brand-name if present */
+    .brand-name { display:none !important; }
+    /* ...rest of your styles unchanged... */
     .hero{position:relative;background:linear-gradient(100deg,#dbeafe, #ccfbf1);}
     .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:56px 0}
     .h1{font-size:44px;line-height:1.1;margin:0 0 10px;font-weight:800;}
@@ -88,7 +119,6 @@
     .badge{padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #e5e7eb;color:var(--muted);font-size:14px;font-weight:600}
     .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 10px 20px rgba(2,6,23,.07)}
     .card.pad{padding:24px}
-    /* Section */
     section{padding:56px 0}
     h2{font-size:28px;margin:0 0 10px;font-weight:800;}
     .sub{color:var(--muted);margin:0 0 18px}
@@ -98,12 +128,9 @@
     .tile{padding:20px}
     .tile h3{margin:0 0 6px;font-weight:700;}
     .tile p{margin:0;color:var(--muted);font-size:16px}
-    /* Icons */
     .icon{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:#e0f2fe;border:1px solid #bae6fd;margin-bottom:10px;font-size:22px;}
-    /* Footer */
     footer{background:var(--soft);border-top:1px solid #e5e7eb;padding:30px 0;color:var(--muted)}
     .footer-flex{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;}
-    /* Chat Assistant */
     #qna-assistant{background:var(--soft);}
     .chat-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:28px;max-width:420px;margin:0 auto;}
     .chat-messages{max-height:210px;overflow-y:auto;margin-bottom:16px;font-size:15px;}
@@ -117,36 +144,17 @@
     .chat-input{flex:1;padding:10px 14px;border-radius:20px;border:1px solid #e5e7eb;font-size:15px}
     .chat-send-btn{background:var(--teal);color:#fff;font-weight:700;border:none;border-radius:20px;padding:0 24px;font-size:16px;cursor:pointer}
     .chat-send-btn:hover{background:var(--blue)}
-    /* Reviews */
     #reviews{background:var(--soft);}
     .reviews-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;max-width:900px;margin:0 auto;}
     .review-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:26px;text-align:center;box-shadow:0 1px 10px #dbeafe21;}
     .reviewer{font-weight:700;color:var(--blue);margin-bottom:4px;}
     .stars{color:var(--yellow);font-size:17px;}
-    /* Map */
     .map-card{overflow:hidden;border-radius:16px;}
-    /* Responsive */
     @media (max-width: 1100px){
       .hero-inner{grid-template-columns:1fr}
       .grid-3,.grid-4{grid-template-columns:1fr}
       .grid-2{grid-template-columns:1fr}
       .reviews-grid{grid-template-columns:1fr}
-    }
-    @media (max-width: 680px){
-      .card.pad,.tile,.chat-card{padding:14px;}
-      .hero-inner{padding:26px 0;}
-      .brand{height:56px;}
-      .logo{
-        width:44px;
-        height:44px;
-        border-radius:12px;
-        margin-right:0;
-      }
-      .logo img{
-        width:32px;
-        height:32px;
-        border-radius:8px;
-      }
     }
   </style>
 </head>
@@ -159,8 +167,9 @@
     <div class="container">
       <nav>
         <div class="brand">
-          <div class="logo"><img src="images/Logo.png" alt="Al-Medina Pharmacy Logo"></div>
-          <!-- Removed brand-name -->
+          <div class="logo">
+            <img src="images/Logo.png" alt="Al-Medina Pharmacy Logo">
+          </div>
         </div>
         <div class="navlinks">
           <a href="#services">Services</a>
