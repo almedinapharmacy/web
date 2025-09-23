@@ -21,14 +21,13 @@
         }
         .carousel-track {
             display: flex;
-            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s cubic-bezier(0.6, 0, 0.4, 1);
         }
         .review-card {
             min-width: 100%;
-            padding: 1.5rem;
+            padding: 2rem;
             flex-shrink: 0;
         }
-        /* Style for smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
@@ -44,85 +43,85 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header & Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <header class="bg-white/95 backdrop-blur shadow-lg sticky top-0 z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
             <!-- Logo -->
             <a href="#" class="flex items-center space-x-3">
-                <img src="images/Logo.png" alt="Al-Medina Pharmacy Logo" class="h-12">
-             </a>
+                <img src="images/Logo.png" alt="Al-Medina Pharmacy Logo" class="h-14 drop-shadow-lg">
+            </a>
             <!-- Desktop Nav Links -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#home" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Home</a>
-                <a href="#products" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Products</a>
-                <a href="#reviews" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Reviews</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Contact</a>
+                <a href="#home" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Home</a>
+                <a href="#products" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Products</a>
+                <a href="#reviews" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Reviews</a>
+                <a href="#contact" class="text-gray-500 hover:text-blue-600 font-semibold transition duration-200 px-2 py-1 rounded hover:bg-blue-50">Contact</a>
             </div>
             <!-- Call to Action Button -->
-            <a href="tel:7189412669" class="hidden md:block bg-blue-600 text-white font-bold px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+            <a href="tel:7189412669" class="hidden md:block bg-gradient-to-r from-blue-600 to-teal-500 text-white font-bold px-6 py-3 rounded-full shadow hover:from-blue-700 hover:to-teal-600 transition duration-200 transform hover:scale-105">
                 <i class="fas fa-phone-alt mr-2"></i>Call Now
             </a>
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-blue-700 focus:outline-none">
                 <i class="fas fa-bars text-3xl"></i>
             </button>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-4">
-            <a href="#home" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-300 border-b border-gray-200">Home</a>
-            <a href="#products" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-300 border-b border-gray-200">Products</a>
-            <a href="#reviews" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-300 border-b border-gray-200">Reviews</a>
-            <a href="#contact" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
-            <a href="tel:7189412669" class="block mt-4 mx-6 bg-blue-600 text-white text-center font-bold px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">Call Now</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur shadow-inner pb-4 border-b border-gray-100">
+            <a href="#home" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200 border-b border-gray-200">Home</a>
+            <a href="#products" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200 border-b border-gray-200">Products</a>
+            <a href="#reviews" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200 border-b border-gray-200">Reviews</a>
+            <a href="#contact" class="block px-6 py-3 text-gray-600 hover:text-blue-600 transition duration-200">Contact</a>
+            <a href="tel:7189412669" class="block mt-4 mx-6 bg-gradient-to-r from-blue-600 to-teal-500 text-white text-center font-bold px-6 py-3 rounded-full hover:from-blue-700 hover:to-teal-600 transition duration-200 shadow-lg">Call Now</a>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="relative bg-blue-600 text-white py-24 md:py-32 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 opacity-90"></div>
+        <section id="home" class="relative bg-gradient-to-br from-blue-600 to-teal-500 text-white py-28 md:py-40 overflow-hidden">
             <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba9996a?q=80&w=2070&auto=format&fit=crop');"></div>
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 fade-in-on-load">Your Trusted Health Partner in Brooklyn</h1>
-                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90 fade-in-on-load">Providing personalized care and quality products to our community with a smile.</p>
-                <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:bg-gray-200 transition duration-300 transform hover:scale-105 fade-in-on-load">Visit Us Today</a>
+            <div class="container mx-auto px-4 sm:px-8 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 fade-in-on-load drop-shadow-lg">Your Trusted <span class="text-yellow-300">Health Partner</span> in Brooklyn</h1>
+                <p class="text-lg md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 fade-in-on-load">Providing personalized care, trusted advice, and quality products to our community with a smile.</p>
+                <a href="#contact" class="inline-block bg-white text-blue-700 font-bold py-4 px-10 rounded-full text-xl shadow-xl hover:bg-blue-50 transition duration-200 transform hover:scale-105 fade-in-on-load border-2 border-white">Get in Touch</a>
             </div>
+            <div class="absolute bottom-0 left-0 right-0 w-full h-36 bg-gradient-to-t from-white/70 to-transparent pointer-events-none"></div>
         </section>
 
         <!-- Products Section -->
-        <section id="products" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-4">Our Products</h2>
-                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">We offer a curated selection of health and wellness products to meet your every need.</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <section id="products" class="py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50">
+            <div class="container mx-auto px-4 sm:px-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-5 tracking-tight">Our Products</h2>
+                <p class="text-center text-gray-600 mb-14 max-w-2xl mx-auto">We offer a curated selection of health and wellness products to meet your every need.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                     <!-- Product Card 1 -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
                         <img src="https://images.unsplash.com/photo-1607619056574-7d8d3ee536b2?q=80&w=1910&auto=format&fit=crop" alt="Vitamins & Supplements" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">Vitamins & Supplements</h3>
+                            <h3 class="font-bold text-xl mb-2 text-blue-700">Vitamins & Supplements</h3>
                             <p class="text-gray-600 text-sm">Boost your health with our wide selection of dietary supplements.</p>
                         </div>
                     </div>
                     <!-- Product Card 2 -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
                         <img src="https://images.unsplash.com/photo-1584515933487-779824d279f9?q=80&w=2070&auto=format&fit=crop" alt="Prescription Medication" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">Prescription Services</h3>
+                            <h3 class="font-bold text-xl mb-2 text-blue-700">Prescription Services</h3>
                             <p class="text-gray-600 text-sm">Fast, reliable, and friendly prescription filling services from our expert pharmacists.</p>
                         </div>
                     </div>
                     <!-- Product Card 3 -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
                         <img src="https://images.unsplash.com/photo-1583947581926-2c2a8856bf6d?q=80&w=2070&auto=format&fit=crop" alt="Personal Care Products" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">Personal Care</h3>
+                            <h3 class="font-bold text-xl mb-2 text-blue-700">Personal Care</h3>
                             <p class="text-gray-600 text-sm">Find everything you need for your daily personal care and hygiene routine.</p>
                         </div>
                     </div>
                     <!-- Product Card 4 -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 border border-blue-100">
                         <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?q=80&w=2070&auto=format&fit=crop" alt="First Aid Supplies" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">First Aid & Medical Supplies</h3>
+                            <h3 class="font-bold text-xl mb-2 text-blue-700">First Aid & Medical Supplies</h3>
                             <p class="text-gray-600 text-sm">Stock up on essential first aid supplies and home medical equipment.</p>
                         </div>
                     </div>
@@ -131,59 +130,59 @@
         </section>
 
         <!-- Reviews Section with Carousel -->
-        <section id="reviews" class="py-20 bg-gray-100">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-4">What Our Customers Say</h2>
-                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">We are proud of the feedback we receive from our community.</p>
+        <section id="reviews" class="py-24 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-5">What Our Customers Say</h2>
+                <p class="text-center text-gray-600 mb-14 max-w-2xl mx-auto">We are proud of the feedback we receive from our community.</p>
                 <div class="relative max-w-3xl mx-auto">
-                    <div id="review-carousel" class="carousel-container rounded-xl shadow-xl">
+                    <div id="review-carousel" class="carousel-container rounded-2xl shadow-2xl border border-blue-100 bg-white">
                         <div class="carousel-track" id="carousel-track">
                             <!-- Review Card 1 -->
-                            <div class="review-card bg-white rounded-xl">
-                                <div class="flex items-center mb-4">
-                                    <i class="fas fa-user-circle text-5xl text-blue-200 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-bold text-lg text-gray-900">John D.</h4>
-                                        <div class="text-yellow-400">
-                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                        </div>
-                                    </div>
+                            <div class="review-card bg-white rounded-2xl flex flex-col md:flex-row gap-6 items-start md:items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-user-circle text-6xl text-blue-200 mr-4"></i>
                                 </div>
-                                <p class="text-gray-600 text-base">"The pharmacists here are incredibly helpful and knowledgeable. They always take the time to answer my questions. Highly recommended!"</p>
+                                <div>
+                                    <h4 class="font-bold text-lg text-blue-700 mb-1">John D.</h4>
+                                    <div class="text-yellow-400 mb-2">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="text-gray-600 text-base">"The pharmacists here are incredibly helpful and knowledgeable. They always take the time to answer my questions. Highly recommended!"</p>
+                                </div>
                             </div>
                             <!-- Review Card 2 -->
-                            <div class="review-card bg-white rounded-xl">
-                                <div class="flex items-center mb-4">
-                                    <i class="fas fa-user-circle text-5xl text-blue-200 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-bold text-lg text-gray-900">Maria S.</h4>
-                                        <div class="text-yellow-400">
-                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                                        </div>
-                                    </div>
+                            <div class="review-card bg-white rounded-2xl flex flex-col md:flex-row gap-6 items-start md:items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-user-circle text-6xl text-blue-200 mr-4"></i>
                                 </div>
-                                <p class="text-gray-600 text-base">"Excellent service and a great selection of products. It's so convenient having a reliable pharmacy right in the neighborhood."</p>
+                                <div>
+                                    <h4 class="font-bold text-lg text-blue-700 mb-1">Maria S.</h4>
+                                    <div class="text-yellow-400 mb-2">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="text-gray-600 text-base">"Excellent service and a great selection of products. It's so convenient having a reliable pharmacy right in the neighborhood."</p>
+                                </div>
                             </div>
                             <!-- Review Card 3 -->
-                            <div class="review-card bg-white rounded-xl">
-                                <div class="flex items-center mb-4">
-                                    <i class="fas fa-user-circle text-5xl text-blue-200 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-bold text-lg text-gray-900">David L.</h4>
-                                        <div class="text-yellow-400">
-                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                        </div>
-                                    </div>
+                            <div class="review-card bg-white rounded-2xl flex flex-col md:flex-row gap-6 items-start md:items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-user-circle text-6xl text-blue-200 mr-4"></i>
                                 </div>
-                                <p class="text-gray-600 text-base">"Fast prescription fills and the staff is always friendly and professional. I wouldn't go anywhere else."</p>
+                                <div>
+                                    <h4 class="font-bold text-lg text-blue-700 mb-1">David L.</h4>
+                                    <div class="text-yellow-400 mb-2">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="text-gray-600 text-base">"Fast prescription fills and the staff is always friendly and professional. I wouldn't go anywhere else."</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Carousel Navigation -->
-                    <button id="prev-btn" class="absolute top-1/2 -left-10 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 focus:outline-none">
+                    <button id="prev-btn" class="absolute top-1/2 -left-8 md:-left-10 transform -translate-y-1/2 bg-white text-blue-600 border border-blue-200 p-3 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 focus:outline-none" aria-label="Previous Review">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button id="next-btn" class="absolute top-1/2 -right-10 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 focus:outline-none">
+                    <button id="next-btn" class="absolute top-1/2 -right-8 md:-right-10 transform -translate-y-1/2 bg-white text-blue-600 border border-blue-200 p-3 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 focus:outline-none" aria-label="Next Review">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
@@ -191,14 +190,14 @@
         </section>
         
         <!-- Contact & Map Section -->
-        <section id="contact" class="py-20 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-12">Find Us</h2>
-                <div class="flex flex-col lg:flex-row gap-10">
+        <section id="contact" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-14">Find Us</h2>
+                <div class="flex flex-col lg:flex-row gap-12">
                     <!-- Map -->
-                    <div class="lg:w-2/3 w-full rounded-xl overflow-hidden shadow-xl">
+                    <div class="lg:w-2/3 w-full rounded-2xl overflow-hidden shadow-2xl border border-blue-100">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.188701967262!2d-73.9493922847324!3d40.62584587934148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b3063f27a6d%3A0x6b24d7870a27de0c!2s1242%20Flatbush%20Ave%2C%20Brooklyn%2C%20NY%2011226%2C%20USA!5e0!3m2!1sen!2s!4v1678886543210!5m2!1sen!2s" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.188701967262!2d-73.9493922847324!3d40.62584587934148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258547d93f4f1%3A0x3a5b4e5e0a7d0f0d!2s1242%20Flatbush%20Ave%2C%20Brooklyn%2C%20NY%2011226!5e0!3m2!1sen!2sus!4v1689300708716!5m2!1sen!2sus"
                             width="100%" 
                             height="450" 
                             style="border:0;" 
@@ -208,30 +207,30 @@
                         </iframe>
                     </div>
                     <!-- Contact Info -->
-                    <div class="lg:w-1/3 w-full bg-blue-600 text-white p-8 rounded-xl shadow-xl flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                        <div class="space-y-6">
+                    <div class="lg:w-1/3 w-full bg-gradient-to-br from-blue-600 to-teal-500 text-white p-10 rounded-2xl shadow-2xl flex flex-col justify-center border border-blue-100">
+                        <h3 class="text-2xl font-bold mb-8">Contact Information</h3>
+                        <div class="space-y-7">
                             <div class="flex items-start">
                                 <i class="fas fa-map-marker-alt text-3xl mt-1 text-blue-200"></i>
-                                <div class="ml-4">
+                                <div class="ml-5">
                                     <h4 class="font-semibold text-lg">Address</h4>
-                                    <p class="text-gray-200">1242 Flatbush Avenue<br>Brooklyn, NY 11226</p>
+                                    <p class="text-blue-50">1242 Flatbush Avenue<br>Brooklyn, NY 11226</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-phone-alt text-3xl mt-1 text-blue-200"></i>
-                                <div class="ml-4">
+                                <div class="ml-5">
                                     <h4 class="font-semibold text-lg">Phone</h4>
-                                    <p class="text-gray-200"><a href="tel:7189412669" class="hover:underline">718-941-2669</a></p>
+                                    <p class="text-blue-50"><a href="tel:7189412669" class="hover:underline">718-941-2669</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-clock text-3xl mt-1 text-blue-200"></i>
-                                <div class="ml-4">
+                                <div class="ml-5">
                                     <h4 class="font-semibold text-lg">Hours</h4>
-                                    <p class="text-gray-200">Mon - Fri: 10:00 AM - 7:00 PM</p>
-                                    <p class="text-gray-200">Saturday: 10:00 AM - 6:00 PM</p>
-                                    <p class="text-gray-200">Sunday: Closed</p>
+                                    <p class="text-blue-50">Mon - Fri: 10:00 AM - 7:00 PM</p>
+                                    <p class="text-blue-50">Saturday: 10:00 AM - 6:00 PM</p>
+                                    <p class="text-blue-50">Sunday: Closed</p>
                                 </div>
                             </div>
                         </div>
@@ -243,10 +242,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-400">&copy; 2024 Al-Medina Pharmacy, Inc. All Rights Reserved.</p>
-            <p class="text-sm text-gray-500 mt-2">Website designed with care.</p>
+    <footer class="bg-blue-900 text-white py-10 mt-10">
+        <div class="container mx-auto px-4 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+            <div>
+                <p class="text-gray-300">&copy; 2024 Al-Medina Pharmacy, Inc. All Rights Reserved.</p>
+                <p class="text-sm text-blue-200 mt-1">Website designed with care.</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://maps.app.goo.gl/9z4qCrhsQqvU1C1k8" target="_blank" aria-label="Google Maps"><i class="fas fa-map-marker-alt text-2xl hover:text-yellow-300"></i></a>
+                <a href="tel:7189412669" aria-label="Phone"><i class="fas fa-phone-alt text-2xl hover:text-yellow-300"></i></a>
+            </div>
         </div>
     </footer>
 
@@ -289,6 +294,11 @@
             updateCarousel();
         });
 
+        // Optionally auto-slide every 6s
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateCarousel();
+        }, 6000);
     </script>
 </body>
 </html>
