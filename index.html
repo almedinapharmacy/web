@@ -1,230 +1,459 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Al-Medina Pharmacy • Brooklyn, NY</title>
-  <meta name="description" content="Al-Medina Pharmacy in Brooklyn, NY. Your trusted community pharmacy for prescriptions, vaccines, wellness products, and free delivery." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    #mobileMenu.open { display: flex; }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Medina Pharmacy • Your Community Health Partner in Brooklyn, NY</title>
+    <meta name="description" content="Al-Medina Pharmacy is your trusted, independent community pharmacy in Brooklyn, NY. We offer fast prescription filling, free delivery, immunizations, and a wide range of wellness products." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .header-scrolled {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .icon-circle {
+            background: linear-gradient(135deg, theme('colors.blue.500'), theme('colors.teal.400'));
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-gray-800">
+<body class="bg-gray-50 text-gray-700">
 
-  <!-- Status Message Overlay -->
-  <div id="statusMessage" class="fixed inset-x-0 top-0 hidden z-50 p-4">
-    <div class="max-w-xs mx-auto text-center py-2 px-4 rounded-full bg-blue-600 text-white font-medium shadow-lg">
-      Address copied to clipboard!
-    </div>
-  </div>
-
-  <header id="siteHeader" class="sticky top-0 z-20 shadow-sm relative overflow-hidden bg-transparent transition-colors duration-300">
-    <!-- SVG Pills Background -->
-    <div class="absolute inset-0 w-full h-full z-0 pointer-events-none select-none">
-      <svg viewBox="0 0 1440 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-        <ellipse cx="190" cy="60" rx="120" ry="30" fill="#b8e3ff" fill-opacity="0.3"/>
-        <rect x="410" y="40" width="180" height="40" rx="20" transform="rotate(-17 410 40)" fill="#34d399" fill-opacity="0.18"/>
-        <rect x="1170" y="60" width="180" height="38" rx="19" transform="rotate(8 1170 60)" fill="#60a5fa" fill-opacity="0.15"/>
-        <ellipse cx="820" cy="70" rx="95" ry="22" fill="#fde68a" fill-opacity="0.2"/>
-        <rect x="640" y="20" width="60" height="60" rx="30" transform="rotate(35 640 20)" fill="#fbbf24" fill-opacity="0.19"/>
-        <rect x="930" y="15" width="90" height="38" rx="19" transform="rotate(-8 930 15)" fill="#f87171" fill-opacity="0.14"/>
-        <ellipse cx="1320" cy="30" rx="70" ry="22" fill="#a7f3d0" fill-opacity="0.22"/>
-      </svg>
-    </div>
-    <div class="relative z-10">
-      <!-- Contact Row -->
-      <div class="container mx-auto px-4 sm:px-6">
-        <div class="flex justify-end items-center py-1 text-xs text-slate-500">
-          <div class="flex items-center space-x-2">
-            <a href="tel:+17189412669" class="hover:text-blue-600">
-              <span class="mr-1">☎️</span>718‑941‑2669
-            </a>
-            <a href="mailto:info@almedinapharmacy.com" class="hover:text-blue-600 hidden md:block">
-              <span class="mr-1">✉️</span>info@almedinapharmacy.com
-            </a>
-          </div>
+    <!-- Status Message Overlay for "Copy Address" -->
+    <div id="statusMessage" class="fixed inset-x-0 top-5 z-50 transition-transform transform -translate-y-20 duration-300">
+        <div class="max-w-xs mx-auto text-center py-2 px-5 rounded-full bg-gray-800 text-white font-medium shadow-lg">
+            Address copied to clipboard!
         </div>
-      </div>
-      <!-- Logo, Address, and Menu -->
-      <div>
-        <div class="container mx-auto px-4 sm:px-6">
-          <div class="flex flex-col-reverse items-center sm:flex-row sm:items-center sm:justify-between py-2 sm:py-2 gap-1 sm:gap-0">
-            <!-- Logo + Address -->
-            <div class="flex flex-col items-center sm:items-start w-full sm:w-auto">
-              <a href="/" class="block">
-                <img class="h-14 rounded-lg" src="images/Logo.png" alt="Al-Medina Pharmacy Logo">
-              </a>
-              <div class="mt-1 text-slate-500 text-[11px] sm:text-xs text-center sm:text-left font-medium">
-                1242 Flatbush Ave, Brooklyn, NY 11226
-              </div>
+    </div>
+
+    <!-- Header -->
+    <header id="siteHeader" class="sticky top-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2">
+                    <img class="h-12 w-auto" src="images/Logo.png" alt="Al-Medina Pharmacy Logo">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Services</a>
+                    <a href="#products" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Products</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Reviews</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </nav>
+
+                <!-- Action Buttons & Mobile Menu Toggle -->
+                <div class="flex items-center gap-2">
+                    <a href="tel:+17189412669" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-semibold hover:bg-blue-100 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>718-941-2669</span>
+                    </a>
+                    <button id="mobileNavBtn" class="lg:hidden p-2 text-gray-700 hover:bg-gray-200 rounded-md">
+                        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
             </div>
-            <!-- Desktop Menu -->
-            <nav class="hidden lg:flex items-center space-x-2 w-full sm:w-auto justify-center sm:justify-end">
-              <a href="#services" class="text-slate-700 hover:text-blue-600 font-semibold transition-colors duration-200 text-xs">Services</a>
-              <a href="#products" class="text-slate-700 hover:text-blue-600 font-semibold transition-colors duration-200 text-xs">Products</a>
-              <a href="#reviews" class="text-slate-700 hover:text-blue-600 font-semibold transition-colors duration-200 text-xs">Reviews</a>
-              <a href="#contact" class="text-slate-700 hover:text-blue-600 font-semibold transition-colors duration-200 text-xs">Contact</a>
-            </nav>
-            <!-- Mobile: Call Now & Hamburger -->
-            <div class="flex items-center lg:hidden w-full sm:w-auto justify-end sm:justify-end">
-              <a class="px-2.5 py-1 rounded-xl bg-teal-500 text-white font-bold shadow-md hover:bg-teal-600 transition-colors duration-200 mr-2 text-xs" href="tel:+17189412669">
-                Call Now
-              </a>
-              <button id="mobileNavBtn" class="text-xl text-blue-800 hover:text-gray-600 transition-colors duration-200 ml-2 p-2">
-                &#9776;
-              </button>
-            </div>
-          </div>
         </div>
         <!-- Mobile Menu -->
-        <div class="bg-gradient-to-r from-blue-800 to-red-700">
-          <div id="mobileMenu" class="hidden flex-col items-center bg-gradient-to-r from-blue-800 to-red-700 border-b border-gray-200 py-2 transition-all duration-300 ease-in-out">
-            <a href="#services" class="block w-full text-center py-1 text-white hover:bg-white/10 text-xs">Services</a>
-            <a href="#products" class="block w-full text-center py-1 text-white hover:bg-white/10 text-xs">Products</a>
-            <a href="#reviews" class="block w-full text-center py-1 text-white hover:bg-white/10 text-xs">Reviews</a>
-            <a href="#contact" class="block w-full text-center py-1 text-white hover:bg-white/10 text-xs">Contact</a>
-            <a href="tel:+17189412669" class="block w-full text-center py-1.5 mt-2 px-2.5 rounded-lg bg-teal-500 text-white font-bold hover:bg-teal-600 text-xs">Call Now</a>
-          </div>
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-200">
+            <div class="flex flex-col items-center space-y-1 p-4">
+                <a href="#services" class="mobile-nav-link block w-full text-center py-2 text-gray-700 hover:bg-gray-100 rounded-md">Services</a>
+                <a href="#products" class="mobile-nav-link block w-full text-center py-2 text-gray-700 hover:bg-gray-100 rounded-md">Products</a>
+                <a href="#reviews" class="mobile-nav-link block w-full text-center py-2 text-gray-700 hover:bg-gray-100 rounded-md">Reviews</a>
+                <a href="#contact" class="mobile-nav-link block w-full text-center py-2 text-gray-700 hover:bg-gray-100 rounded-md">Contact</a>
+                <a href="tel:+17189412669" class="mobile-nav-link block w-full text-center py-3 mt-2 rounded-lg bg-blue-600 text-white font-bold hover:bg-blue-700 transition-colors">Call Now</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-blue-100 to-teal-100 py-12 md:py-24">
-      <div class="container mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h2 class="text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900">
-            Your Community <span class="text-teal-600">Health Partner</span>
-          </h2>
-          <p class="mt-4 text-lg text-slate-600 max-w-xl">
-            Personalized care, trusted advice, and quality products for Brooklyn’s families. We fill prescriptions fast, offer free local delivery, and provide wellness solutions with a smile.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="px-3 py-1 rounded-full text-sm font-semibold text-slate-500 bg-white border border-slate-200">Free Home Delivery</span>
-            <span class="px-3 py-1 rounded-full text-sm font-semibold text-slate-500 bg-white border border-slate-200">Immunizations</span>
-            <span class="px-3 py-1 rounded-full text-sm font-semibold text-slate-500 bg-white border border-slate-200">Medication Sync</span>
-          </div>
-          <div class="flex flex-wrap gap-4 mt-6">
-            <a class="px-6 py-3 rounded-xl bg-teal-500 text-white font-bold shadow-md hover:bg-teal-600 transition-colors duration-200" href="mailto:info@almedinapharmacy.com?subject=Transfer%20Prescr[...]
-              Transfer Prescription
-            </a>
-            <a class="px-6 py-3 rounded-xl bg-blue-600 text-white font-bold shadow-md hover:bg-blue-700 transition-colors duration-200" href="#contact">
-              Contact Us
-            </a>
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl p-6 shadow-xl border border-gray-100 transition-all duration-300 hover:scale-105">
-          <h3 class="text-lg sm:text-xl font-bold text-gray-900">Today's Hours</h3>
-          <ul class="text-slate-600 mt-2 space-y-2">
-            <li><strong>Mon–Fri:</strong> 10:00 AM – 7:00 PM</li>
-            <li><strong>Saturday:</strong> 10:00 AM – 6:00 PM</li>
-            <li><strong>Sunday:</strong> Closed</li>
-          </ul>
-          <button onclick="copyAddress()" class="mt-4 text-blue-600 hover:underline font-medium">
-            Copy Address
-          </button>
-        </div>
-      </div>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-blue-50 via-white to-teal-50 py-16 md:py-24 overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight text-gray-900">
+                            Your Community <span class="text-blue-600">Health Partner</span> in Brooklyn
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
+                            Personalized care, trusted advice, and quality products for our community. We fill prescriptions fast, offer free local delivery, and provide wellness solutions with a smile.
+                        </p>
+                        <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+                            <a class="px-8 py-3 rounded-lg bg-blue-600 text-white font-bold shadow-lg hover:bg-blue-700 transition-transform hover:-translate-y-1" href="mailto:info@almedinapharmacy.com?subject=Transfer%20Prescription%20Request">
+                                Transfer Prescription
+                            </a>
+                            <a class="px-8 py-3 rounded-lg bg-gray-200 text-gray-800 font-bold hover:bg-gray-300 transition-transform hover:-translate-y-1" href="#contact">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-gray-200 transition-all duration-300 hover:shadow-2xl">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                           Pharmacy Hours
+                        </h3>
+                        <div id="liveStatusContainer" class="mb-4">
+                            <!-- Live status and progress bar will be injected here -->
+                        </div>
+                        <ul class="text-gray-600 space-y-1 text-base">
+                            <li id="hours-weekday" class="flex justify-between transition-all duration-300 p-2 -mx-2"><strong>Mon–Fri:</strong> <span>10:00 AM – 7:00 PM</span></li>
+                            <li id="hours-saturday" class="flex justify-between transition-all duration-300 p-2 -mx-2"><strong>Saturday:</strong> <span>10:00 AM – 6:00 PM</span></li>
+                            <li id="hours-sunday" class="flex justify-between transition-all duration-300 p-2 -mx-2"><strong>Sunday:</strong> <span class="font-semibold text-red-600">Closed</span></li>
+                        </ul>
+                         <button onclick="copyAddress()" class="mt-6 text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                            <span class="group-hover:underline">Copy Address</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-12 md:py-24 scroll-mt-40">
-      <div class="container mx-auto px-4 sm:px-6 text-center">
-        <h2 class="text-3xl font-extrabold text-gray-900">Our Services</h2>
-        <p class="mt-2 text-lg text-slate-600">Caring for you and your family, one service at a time.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-          <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl">
-            <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-blue-100 text-blue-600 mx-auto text-2xl mb-4">
-              +
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Comprehensive Pharmacy Services</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Caring for you and your family, one service at a time.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <!-- Service Card -->
+                    <div class="bg-gray-50 rounded-xl p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                        <div class="flex items-center justify-center w-16 h-16 rounded-full icon-circle text-white mx-auto mb-5">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Prescription Filling</h3>
+                        <p class="text-gray-600">Fast, accurate, and friendly prescription services. We handle refills and transfers with ease.</p>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="bg-gray-50 rounded-xl p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                        <div class="flex items-center justify-center w-16 h-16 rounded-full icon-circle text-white mx-auto mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><path d="M21 12c0-4.97-4.03-9-9-9s-9 4.03-9 9c0 2.05.68 3.93 1.83 5.4L3 22l5.4-1.83c1.47 1.15 3.35 1.83 5.4 1.83z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Immunizations</h3>
+                        <p class="text-gray-600">Get your flu shots, COVID-19 vaccines, and other immunizations conveniently at our pharmacy.</p>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="bg-gray-50 rounded-xl p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                        <div class="flex items-center justify-center w-16 h-16 rounded-full icon-circle text-white mx-auto mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h7c.6 0 1 .4 1 1v10c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1v-1"/><path d="M10 6h4"/><path d="M7 6V5c0-.6.4-1 1-1h2c.6 0 1 .4 1 1v1"/><circle cx="17.5" cy="15.5" r="2.5"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Free Local Delivery</h3>
+                        <p class="text-gray-600">Can't make it to us? We offer free local delivery to bring your medications right to your door.</p>
+                    </div>
+                </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">Prescription Filling</h3>
-            <p class="text-slate-500 text-sm">Fast, accurate, and friendly prescription services. We handle refills and transfers with ease.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl">
-            <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-teal-100 text-teal-600 mx-auto text-2xl mb-4">
-              💉
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">Immunizations</h3>
-            <p class="text-slate-500 text-sm">Get your flu shots and other immunizations conveniently at our pharmacy.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl">
-            <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-yellow-100 text-yellow-600 mx-auto text-2xl mb-4">
-              🚚
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">Free Delivery</h3>
-            <p class="text-slate-500 text-sm">Can't make it to the pharmacy? We offer free local delivery to bring your medications right to your door.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl">
-            <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-purple-100 text-purple-600 mx-auto text-2xl mb-4">
-              📝
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">Medication Sync</h3>
-            <p class="text-slate-500 text-sm">Synchronize all your monthly medications to a single, convenient pickup or delivery date.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl">
-            <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-green-100 text-green-600 mx-auto text-2xl mb-4">
-              🩺
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">Health Screenings</h3>
-            <p class="text-slate-500 text-sm">We offer various health screenings, including blood pressure and glucose checks, to help you monitor your health.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl">
-            <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-rose-100 text-rose-600 mx-auto text-2xl mb-4">
-              ❤️
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">Wellness Products</h3>
-            <p class="text-xs text-slate-500">Browse our wide selection of over-the-counter products, vitamins, and health supplies.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-12 md:py-24 bg-white scroll-mt-40">
-      <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-3xl font-extrabold text-gray-900 text-center">Featured Products</h2>
-        <p class="mt-2 text-lg text-slate-600 text-center">Find the health and wellness products you need, from top brands you trust.</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-          <div class="bg-slate-50 rounded-xl p-4 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:scale-105">
-            <img class="w-full h-32 object-contain rounded-lg mb-2" src="https://placehold.co/400x320/f9fafb/34d399?text=💊" alt="Daily Vitamins">
-            <h3 class="text-base font-semibold text-gray-900">Daily Vitamins</h3>
-            <p class="text-xs text-slate-500">Essential multivitamins for adults and kids.</p>
-          </div>
-          <div class="bg-slate-50 rounded-xl p-4 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:scale-105">
-            <img class="w-full h-32 object-contain rounded-lg mb-2" src="https://placehold.co/400x320/f9fafb/ef4444?text=🩹" alt="Pain Relief">
-            <h3 class="text-base font-semibold text-gray-900">Pain Relief</h3>
-            <p class="text-xs text-slate-500">Aspirin, ibuprofen, and acetaminophen products.</p>
-          </div>
-          <div class="bg-slate-50 rounded-xl p-4 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:scale-105">
-            <img class="w-full h-32 object-contain rounded-lg mb-2" src="https://placehold.co/400x320/f9fafb/3b82f6?text=⚕️" alt="First Aid Kits">
-            <h3 class="text-base font-semibold text-gray-900">First Aid Kits</h3>
-            <p class="text-xs text-slate-500">Everything you need for minor cuts and scrapes.</p>
-          </div>
-          <div class="bg-slate-50 rounded-xl p-4 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:scale-105">
-            <img class="w-full h-32 object-contain rounded-lg mb-2" src="https://placehold.co/400x320/f9fafb/ec4899?text=🧴" alt="Skincare Essentials">
-            <h3 class="text-base font-semibold text-gray-900">Skincare Essentials</h3>
-            <p class="text-xs text-slate-500">Lotions, cleansers, and moisturizing creams.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Products Section -->
+        <section id="products" class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">Featured Health Products</h2>
+                <p class="mt-4 text-lg text-gray-600 text-center max-w-2xl mx-auto">Find the health and wellness products you need, from top brands you trust.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    <div class="group">
+                        <div class="bg-white rounded-lg overflow-hidden border border-gray-200 group-hover:shadow-md transition-shadow">
+                            <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=800&auto=format&fit=crop" alt="Daily Vitamins">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 mt-3">Daily Vitamins</h3>
+                        <p class="text-sm text-gray-500">Essential multivitamins for adults and kids.</p>
+                    </div>
+                     <div class="group">
+                        <div class="bg-white rounded-lg overflow-hidden border border-gray-200 group-hover:shadow-md transition-shadow">
+                            <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1614036128889-113333365697?q=80&w=800&auto=format&fit=crop" alt="Pain Relief">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 mt-3">Pain Relief</h3>
+                        <p class="text-sm text-gray-500">Aspirin, ibuprofen, and acetaminophen products.</p>
+                    </div>
+                    <div class="group">
+                        <div class="bg-white rounded-lg overflow-hidden border border-gray-200 group-hover:shadow-md transition-shadow">
+                           <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1581594549591-ff2450841b35?q=80&w=800&auto=format&fit=crop" alt="First Aid Kits">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 mt-3">First Aid Kits</h3>
+                        <p class="text-sm text-gray-500">Everything you need for minor cuts and scrapes.</p>
+                    </div>
+                    <div class="group">
+                        <div class="bg-white rounded-lg overflow-hidden border border-gray-200 group-hover:shadow-md transition-shadow">
+                            <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1629198688000-71f21d315383?q=80&w=800&auto=format&fit=crop" alt="Skincare Essentials">
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-800 mt-3">Skincare Essentials</h3>
+                        <p class="text-sm text-gray-500">Lotions, cleansers, and moisturizing creams.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-16 md:py-24 bg-blue-50/50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">What Our Patients Say</h2>
+                <p class="mt-4 text-lg text-gray-600">Read what our community has to say about our dedicated service.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
+                    <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100 text-left">
+                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                        <p class="italic text-gray-700">"The staff is so kind and helpful. They always go the extra mile to make sure my prescriptions are ready on time. A real gem in the neighborhood!"</p>
+                        <p class="font-semibold text-blue-600 mt-5">- Jane D.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100 text-left">
+                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                        <p class="italic text-gray-700">"Free delivery has been a lifesaver for my elderly parents. The pharmacists are knowledgeable and always take the time to answer questions. Highly recommend!"</p>
+                        <p class="font-semibold text-blue-600 mt-5">- Michael R.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100 text-left">
+                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                        <p class="italic text-gray-700">"A truly professional and welcoming pharmacy. They treat you like family here. So glad I switched over from one of the big chain stores."</p>
+                        <p class="font-semibold text-blue-600 mt-5">- Sarah L.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="py-12 md:py-24 scroll-mt-40">
-      <div class="container mx-auto px-4 sm:px-6 text-center">
-        <h2 class="text-3xl font-extrabold text-gray-900">What Our Patients Say</h2>
-        <p class="mt-2 text-lg text-slate-600">Read what our community has to say about our dedicated service.</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
-          <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
-            <div class="text-yellow-400 text-xl mb-2">★★★★★</div>
-            <p class="italic text-gray-700">"The staff is so kind and helpful. They always go the extra mile to make sure my prescriptions are ready on time. A real gem in the neighborhood!"</p>
-            <p class="font-semibold text-blue-600 mt-4">- Jane D.</p>
-          </div>
-          <div class="bg-white rounded-2xl p-
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 text-center">Get In Touch</h2>
+                <p class="mt-4 text-lg text-gray-600 text-center max-w-2xl mx-auto">We're here to help. Visit us, give us a call, or send an email.</p>
+                <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
+                         <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.679549925695!2d-73.94975568459728!3d40.6366059793403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b3a4a9ab7cb%3A0x6b40342939b4b09!2s1242%20Flatbush%20Ave%2C%20Brooklyn%2C%20NY%2011226!5e0!3m2!1sen!2sus!4v1678886453123!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Details</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                               <div class="w-8 flex-shrink-0 text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Address</h4>
+                                    <p class="text-gray-600">1242 Flatbush Ave, Brooklyn, NY 11226</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 flex-shrink-0 text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Phone</h4>
+                                    <a href="tel:+17189412669" class="text-blue-600 hover:underline">718-941-2669</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 flex-shrink-0 text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Email</h4>
+                                    <a href="mailto:info@almedinapharmacy.com" class="text-blue-600 hover:underline">info@almedinapharmacy.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2024 Al-Medina Pharmacy. All Rights Reserved.</p>
+            <p class="mt-1">Serving the Brooklyn community with care and dedication.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const siteHeader = document.getElementById('siteHeader');
+            const mobileNavBtn = document.getElementById('mobileNavBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    siteHeader.classList.add('header-scrolled');
+                } else {
+                    siteHeader.classList.remove('header-scrolled');
+                }
+            });
+
+            // Mobile menu toggle
+            mobileNavBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+
+            // --- START: Live Status Update ---
+            function updateLiveStatus() {
+                const liveStatusContainer = document.getElementById('liveStatusContainer');
+                if (!liveStatusContainer) return;
+
+                const hours = {
+                    0: { open: null, close: null, name: "Sunday" },      // Sun: Closed
+                    1: { open: 10, close: 19, name: "Monday" },      // Mon: 10am - 7pm
+                    2: { open: 10, close: 19, name: "Tuesday" },     // Tue
+                    3: { open: 10, close: 19, name: "Wednesday" },   // Wed
+                    4: { open: 10, close: 19, name: "Thursday" },    // Thu
+                    5: { open: 10, close: 19, name: "Friday" },      // Fri
+                    6: { open: 10, close: 18, name: "Saturday" }     // Sat: 10am - 6pm
+                };
+
+                const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+                const day = now.getDay();
+                const hour = now.getHours();
+                const minute = now.getMinutes();
+                const currentTimeInMinutes = hour * 60 + minute;
+
+                const todaysHours = hours[day];
+                let statusHTML = '';
+
+                // Clear previous day's highlight
+                document.querySelectorAll('li.current-day').forEach(el => {
+                    el.classList.remove('current-day', 'bg-blue-100', 'font-bold');
+                });
+                
+                // Highlight the current day
+                let currentDayId = '';
+                if (day >= 1 && day <= 5) currentDayId = 'hours-weekday';
+                else if (day === 6) currentDayId = 'hours-saturday';
+                else currentDayId = 'hours-sunday';
+                const currentDayEl = document.getElementById(currentDayId);
+                if (currentDayEl) currentDayEl.classList.add('current-day', 'bg-blue-100', 'font-bold');
+
+
+                if (todaysHours.open !== null) { // If open at all today
+                    const openTimeInMinutes = todaysHours.open * 60;
+                    const closeTimeInMinutes = todaysHours.close * 60;
+                    
+                    if (currentTimeInMinutes >= openTimeInMinutes && currentTimeInMinutes < closeTimeInMinutes) {
+                        // We are OPEN
+                        const totalMinutesOpen = closeTimeInMinutes - openTimeInMinutes;
+                        const minutesElapsed = currentTimeInMinutes - openTimeInMinutes;
+                        const progressPercent = Math.max(0, Math.min(100, (minutesElapsed / totalMinutesOpen) * 100));
+                        const isClosingSoon = (closeTimeInMinutes - currentTimeInMinutes) <= 60;
+
+                        const statusText = isClosingSoon ? 'Closing Soon' : 'Open Now';
+                        const textColor = isClosingSoon ? 'text-yellow-700' : 'text-green-700';
+                        const bgColor = isClosingSoon ? 'bg-yellow-500' : 'bg-green-500';
+
+                        statusHTML = `
+                            <div class="flex items-center gap-2 font-bold ${textColor}">
+                                <span class="flex h-3 w-3 relative">
+                                    ${isClosingSoon ? '' : '<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>'}
+                                    <span class="relative inline-flex rounded-full h-3 w-3 ${bgColor}"></span>
+                                </span>
+                                <span>${statusText}</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                                <div class="${bgColor} h-2.5 rounded-full" style="width: ${progressPercent}%"></div>
+                            </div>
+                        `;
+                    } else if (currentTimeInMinutes < openTimeInMinutes) {
+                        // CLOSED, but opening later today
+                        statusHTML = `
+                             <div class="flex items-center gap-2 font-bold text-red-700">
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                                <span>Closed Now. Opens at ${todaysHours.open}:00 AM</span>
+                            </div>
+                        `;
+                    } else {
+                        // CLOSED for the day
+                        const nextDay = hours[(day + 1) % 7];
+                        const opensText = day === 5 ? `Opens ${nextDay.name} at ${nextDay.open}:00 AM` : `Opens tomorrow at ${hours[(day + 1) % 7].open}:00 AM`;
+                        statusHTML = `
+                            <div class="flex items-center gap-2 font-bold text-red-700">
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                                <span>Closed. ${opensText}</span>
+                            </div>
+                        `;
+                    }
+                } else {
+                    // CLOSED all day (Sunday)
+                    statusHTML = `
+                        <div class="flex items-center gap-2 font-bold text-red-700">
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                            <span>Closed today. Opens Monday at 10:00 AM</span>
+                        </div>
+                    `;
+                }
+                liveStatusContainer.innerHTML = statusHTML;
+            }
+
+            updateLiveStatus();
+            setInterval(updateLiveStatus, 60000); // Update every 60 seconds
+            // --- END: Live Status Update ---
+
+        });
+
+        // Function to copy address and show status message
+        function copyAddress() {
+            const address = "1242 Flatbush Ave, Brooklyn, NY 11226";
+            
+            // Use the Clipboard API
+            navigator.clipboard.writeText(address).then(() => {
+                const statusMessage = document.getElementById('statusMessage');
+                statusMessage.classList.remove('-translate-y-20');
+                
+                setTimeout(() => {
+                    statusMessage.classList.add('-translate-y-20');
+                }, 2000);
+            }).catch(err => {
+                // Fallback for older browsers
+                try {
+                    const textArea = document.createElement("textarea");
+                    textArea.value = address;
+                    textArea.style.position = "fixed";
+                    document.body.appendChild(textArea);
+                    textArea.focus();
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+
+                    const statusMessage = document.getElementById('statusMessage');
+                    statusMessage.classList.remove('-translate-y-20');
+                    
+                    setTimeout(() => {
+                        statusMessage.classList.add('-translate-y-20');
+                    }, 2000);
+                } catch (e) {
+                    console.error("Failed to copy address: ", e);
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
