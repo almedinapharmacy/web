@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <header class="sticky top-0 z-20 shadow-sm relative overflow-hidden bg-transparent">
+  <header id="siteHeader" class="sticky top-0 z-20 shadow-sm relative overflow-hidden bg-transparent transition-colors duration-300">
     <!-- SVG Pills Background -->
     <div class="absolute inset-0 w-full h-full z-0 pointer-events-none select-none">
       <svg viewBox="0 0 1440 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
@@ -112,7 +112,7 @@
             <span class="px-3 py-1 rounded-full text-sm font-semibold text-slate-500 bg-white border border-slate-200">Medication Sync</span>
           </div>
           <div class="flex flex-wrap gap-4 mt-6">
-            <a class="px-6 py-3 rounded-xl bg-teal-500 text-white font-bold shadow-md hover:bg-teal-600 transition-colors duration-200" href="mailto:info@almedinapharmacy.com?subject=Transfer%20Prescription">
+            <a class="px-6 py-3 rounded-xl bg-teal-500 text-white font-bold shadow-md hover:bg-teal-600 transition-colors duration-200" href="mailto:info@almedinapharmacy.com?subject=Transfer%20Prescr[...]
               Transfer Prescription
             </a>
             <a class="px-6 py-3 rounded-xl bg-blue-600 text-white font-bold shadow-md hover:bg-blue-700 transition-colors duration-200" href="#contact">
@@ -257,7 +257,7 @@
           </div>
         </div>
         <div class="rounded-xl overflow-hidden shadow-xl border border-gray-200">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.640964722513!2d-73.95764832448375!3d40.63842477139198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b399120!2s1242+Flatbush+Ave%2C+Brooklyn%2C+NY+11226!5e0!3m2!1sen!2sus!4v1670000000000" width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.640964722513!2d-73.95764832448375!3d40.63842477139198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b399120[...]
         </div>
       </div>
     </section>
@@ -302,7 +302,18 @@
         statusMessage.classList.add('hidden');
       }, 2000);
     }
-  </script>
 
+    // --- Header Solid Background on Scroll ---
+    const siteHeader = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        siteHeader.classList.remove('bg-transparent');
+        siteHeader.classList.add('bg-white');
+      } else {
+        siteHeader.classList.add('bg-transparent');
+        siteHeader.classList.remove('bg-white');
+      }
+    });
+  </script>
 </body>
 </html>
