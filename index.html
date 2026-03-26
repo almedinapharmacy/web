@@ -211,15 +211,15 @@
         </section>
 
         <!-- Products Section -->
-        <section id="products" class="py-24 md:py-32 bg-gray-50 overflow-hidden">
+        <section id="products" class="py-16 md:py-24 bg-gray-50 overflow-hidden">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="reveal">
                     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-center">Featured Health Products</h2>
-                    <p class="mt-6 text-xl text-gray-600 text-center max-w-2xl mx-auto">Find the health and wellness products you need, from top brands you trust.</p>
+                    <p class="mt-4 text-xl text-gray-600 text-center max-w-2xl mx-auto">Find the health and wellness products you need, from top brands you trust.</p>
                 </div>
 
                 <!-- Product Filters -->
-                <div class="mt-12 flex flex-wrap justify-center gap-3 reveal">
+                <div class="mt-8 flex flex-wrap justify-center gap-3 reveal">
                     <button class="product-filter-btn px-6 py-2 rounded-full border border-medical-100 bg-white text-gray-600 font-semibold hover:border-medical-600 hover:text-medical-600 transition-all active-filter" data-filter="all">All Products</button>
                     <button class="product-filter-btn px-6 py-2 rounded-full border border-medical-100 bg-white text-gray-600 font-semibold hover:border-medical-600 hover:text-medical-600 transition-all" data-filter="wellness">Wellness</button>
                     <button class="product-filter-btn px-6 py-2 rounded-full border border-medical-100 bg-white text-gray-600 font-semibold hover:border-medical-600 hover:text-medical-600 transition-all" data-filter="otc">OTC Medicine</button>
@@ -227,36 +227,99 @@
                     <button class="product-filter-btn px-6 py-2 rounded-full border border-medical-100 bg-white text-gray-600 font-semibold hover:border-medical-600 hover:text-medical-600 transition-all" data-filter="firstaid">First Aid</button>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mt-12 items-start">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-10 items-start">
                     <!-- Product Grid -->
-                    <div id="productGrid" class="lg:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div id="productGrid" class="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Wellness -->
                         <div class="product-card group cursor-pointer reveal" data-category="wellness">
                             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
-                                <img class="w-full h-56 object-cover" src="images/vitamins.png" alt="Daily Vitamins">
+                                <img class="w-full h-52 object-cover" src="images/vitamins.png" alt="Daily Vitamins">
                             </div>
                             <h3 class="text-base font-semibold text-gray-900 mt-3">Daily Vitamins</h3>
                             <p class="text-sm text-gray-500">Essential multivitamins for adults and kids.</p>
                         </div>
+                        <div class="product-card group cursor-pointer reveal" data-category="wellness">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/supplements.png" alt="Supplements">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Supplements</h3>
+                            <p class="text-sm text-gray-500">Herbal and dietary support for all ages.</p>
+                        </div>
+                        <div class="product-card group cursor-pointer reveal" data-category="wellness">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/immunity.png" alt="Immunity Boosters">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Immunity Boosters</h3>
+                            <p class="text-sm text-gray-500">Zinc, Vitamin C, and herbal infusions.</p>
+                        </div>
+
+                        <!-- OTC -->
                         <div class="product-card group cursor-pointer reveal" data-category="otc">
                             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
-                                <img class="w-full h-56 object-cover" src="images/painrelief.png" alt="Pain Relief">
+                                <img class="w-full h-52 object-cover" src="images/painrelief.png" alt="Pain Relief">
                             </div>
                             <h3 class="text-base font-semibold text-gray-900 mt-3">Pain Relief</h3>
-                            <p class="text-sm text-gray-500">Aspirin, ibuprofen, and acetaminophen products.</p>
+                            <p class="text-sm text-gray-500">Aspirin, ibuprofen, and acetaminophen.</p>
                         </div>
-                        <div class="product-card group cursor-pointer reveal" data-category="firstaid">
+                        <div class="product-card group cursor-pointer reveal" data-category="otc">
                             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
-                                <img class="w-full h-56 object-cover" src="images/firstaidkid.png" alt="First Aid Kits">
+                                <img class="w-full h-52 object-cover" src="images/coughcold.png" alt="Cough & Cold">
                             </div>
-                            <h3 class="text-base font-semibold text-gray-900 mt-3">First Aid Kits</h3>
-                            <p class="text-sm text-gray-500">Everything you need for minor cuts and scrapes.</p>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Cough & Cold</h3>
+                            <p class="text-sm text-gray-500">Syrups, lozenges, and nighttime relief.</p>
+                        </div>
+                        <div class="product-card group cursor-pointer reveal" data-category="otc">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/digestive.png" alt="Digestive Health">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Digestive Health</h3>
+                            <p class="text-sm text-gray-500">Antacids, probiotics, and fiber support.</p>
+                        </div>
+
+                        <!-- Skincare -->
+                        <div class="product-card group cursor-pointer reveal" data-category="skincare">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/skincareessentials.png" alt="Skincare Essentials">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Moisturizers</h3>
+                            <p class="text-sm text-gray-500">Hydrating lotions for sensitive skin types.</p>
                         </div>
                         <div class="product-card group cursor-pointer reveal" data-category="skincare">
                             <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
-                                <img class="w-full h-56 object-cover" src="images/skincareessentials.png" alt="Skincare Essentials">
+                                <img class="w-full h-52 object-cover" src="images/cleansers.png" alt="Cleansers">
                             </div>
-                            <h3 class="text-base font-semibold text-gray-900 mt-3">Skincare Essentials</h3>
-                            <p class="text-sm text-gray-500">Lotions, cleansers, and moisturizing creams.</p>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Gentle Cleansers</h3>
+                            <p class="text-sm text-gray-500">Facial washes and body bars for daily care.</p>
+                        </div>
+                        <div class="product-card group cursor-pointer reveal" data-category="skincare">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/suncare.png" alt="Sun Protection">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Sun Protection</h3>
+                            <p class="text-sm text-gray-500">Broad-spectrum SPF 30 and 50+ options.</p>
+                        </div>
+
+                        <!-- First Aid -->
+                        <div class="product-card group cursor-pointer reveal" data-category="firstaid">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/firstaidkid.png" alt="First Aid Kits">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">First Aid Kits</h3>
+                            <p class="text-sm text-gray-500">Complete kits for home and travel safety.</p>
+                        </div>
+                        <div class="product-card group cursor-pointer reveal" data-category="firstaid">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/bandages.png" alt="Bandages & Tapes">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Bandages & Tapes</h3>
+                            <p class="text-sm text-gray-500">Sterile dressings for minor cuts and scrapes.</p>
+                        </div>
+                        <div class="product-card group cursor-pointer reveal" data-category="firstaid">
+                            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
+                                <img class="w-full h-52 object-cover" src="images/antiseptic.png" alt="Antiseptics">
+                            </div>
+                            <h3 class="text-base font-semibold text-gray-900 mt-3">Antiseptic Solutions</h3>
+                            <p class="text-gray-500 text-sm">Cleaning sprays and antibiotic ointments.</p>
                         </div>
                     </div>
 
