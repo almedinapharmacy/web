@@ -843,26 +843,42 @@
             const wellnessGuidance = document.getElementById('wellnessGuidance');
 
             const healthTips = {
-                wellness: [
-                    "Consistency is key—take vitamins at the same time daily for better habit formation.",
-                    "Pair your supplements with a balanced diet to maximize nutrient absorption.",
-                    "Stay hydrated! Many vitamins are water-soluble and require adequate fluids."
-                ],
-                otc: [
-                    "Always read the label for dosage instructions and active ingredients.",
-                    "Avoid taking multiple products with the same active ingredient to prevent overdose.",
-                    "Consult our pharmacists if you're taking prescription meds to check for interactions."
-                ],
-                skincare: [
-                    "Apply moisturizers to damp skin to lock in hydration effectively.",
-                    "Don't forget SPF! Sun protection is the most important step for skin health.",
-                    "Patch test new products on a small area to ensure your skin doesn't react."
-                ],
-                firstaid: [
-                    "Keep your first aid kit in a cool, dry place and check expiration dates regularly.",
-                    "Clean minor wounds with mild soap and water before applying dressings.",
-                    "Change bandages daily or whenever they become wet or dirty to prevent infection."
-                ]
+                wellness: {
+                    title: "Wellness & Prevention",
+                    advice: [
+                        "Establish a consistent sleep schedule to support immune function.",
+                        "Incorporate 30 minutes of daily physical activity.",
+                        "Practice mindful eating by focusing on whole, unprocessed foods."
+                    ],
+                    products: "To stay healthy, combine multivitamins with **probiotics** for gut health and **Omega-3s** for heart support."
+                },
+                otc: {
+                    title: "Symptom Management",
+                    advice: [
+                        "Monitor your symptoms and keep a log if they persist.",
+                        "Rest and hydration are as important as medication.",
+                        "Avoid triggers like smoke or allergens during recovery."
+                    ],
+                    products: "Complement pain relief with **immune-boosting Zinc** or **Vitamin C** to speed up recovery."
+                },
+                skincare: {
+                    title: "Skin Health & Protection",
+                    advice: [
+                        "Hydrate from within by drinking at least 8 glasses of water.",
+                        "Use lukewarm water instead of hot to prevent drying out skin.",
+                        "Change your pillowcases frequently to reduce bacteria buildup."
+                    ],
+                    products: "Pair your cleansers with **antioxidant serums** and **gentle sunscreens** for a complete protective barrier."
+                },
+                firstaid: {
+                    title: "Recovery & Safety",
+                    advice: [
+                        "Check your first aid kit every 6 months for expired items.",
+                        "Know the signs of infection: redness, swelling, or heat.",
+                        "Keep emergency numbers easily accessible near your kit."
+                    ],
+                    products: "Stock up on **antiseptic sprays** and **scar-reducing gels** to ensure optimal healing for minor injuries."
+                }
             };
 
             function updateWellnessTips(category) {
@@ -871,17 +887,26 @@
                 wellnessGuidance.style.opacity = '0';
 
                 setTimeout(() => {
-                    const tips = healthTips[category];
-                    let html = '<ul class="space-y-3">';
-                    tips.forEach(tip => {
-                        html += `
-                            <li class="flex items-start gap-2 text-sm text-gray-600">
-                                <span class="text-medical-600 mt-1">•</span>
-                                <span>${tip}</span>
-                            </li>
-                        `;
-                    });
-                    html += '</ul>';
+                    const data = healthTips[category];
+                    const html = `
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-[10px] font-bold text-gray-400 mb-3 uppercase tracking-[0.2em]">How to stay healthy</h4>
+                                <ul class="space-y-3">
+                                    ${data.advice.map(tip => `
+                                        <li class="flex items-start gap-3 text-sm text-gray-600">
+                                            <span class="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-medical-600 mt-1.5"></span>
+                                            <span>${tip}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                            <div class="bg-medical-50 p-5 rounded-2xl border border-medical-100">
+                                <h4 class="text-[10px] font-bold text-medical-700 mb-3 uppercase tracking-[0.2em]">Related Product Guide</h4>
+                                <p class="text-sm text-gray-700 leading-relaxed">${data.products.replace(/\*\*(.*?)\*\*/g, '<strong class="text-medical-800 font-bold">$1</strong>')}</p>
+                            </div>
+                        </div>
+                    `;
                     wellnessGuidance.innerHTML = html;
                     wellnessGuidance.style.opacity = '1';
                 }, 300);
@@ -915,6 +940,8 @@
                     // Update tips based on filter
                     if (filter !== 'all') {
                         updateWellnessTips(filter);
+                    } else {
+                        wellnessGuidance.innerHTML = '<p class="text-gray-500 italic">Select a product category to view specific healthy living tips and related product guidance.</p>';
                     }
                 });
             });
