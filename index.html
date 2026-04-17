@@ -1089,7 +1089,27 @@
 
             transferForm.addEventListener('submit', (e) => {
                 e.preventDefault();
-                // Simulate submission
+
+                // Collect form data
+                const patientName = document.getElementById('patientName').value;
+                const phoneNumber = document.getElementById('phoneNumber').value;
+                const currentPharmacy = document.getElementById('currentPharmacy').value;
+                const rxDetails = document.getElementById('rxDetails').value;
+
+                // Format the mailto link
+                const subject = encodeURIComponent(`Prescription Transfer Request: ${patientName}`);
+                const body = encodeURIComponent(
+                    `Patient Name: ${patientName}\n` +
+                    `Phone Number: ${phoneNumber}\n` +
+                    `Current Pharmacy: ${currentPharmacy}\n` +
+                    `Medication Details/RX#: ${rxDetails}\n\n` +
+                    `Please initiate the transfer to Al-Medina Pharmacy.`
+                );
+
+                // Open mailto link
+                window.location.href = `mailto:info@almedinapharmacy.com?subject=${subject}&body=${body}`;
+
+                // Show success state
                 modalFormState.classList.add('hidden');
                 modalSuccessState.classList.remove('hidden');
             });
@@ -1163,20 +1183,20 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Patient Name</label>
-                            <input type="text" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all">
+                            <input id="patientName" type="text" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all">
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
-                            <input type="tel" required placeholder="718-000-0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all">
+                            <input id="phoneNumber" type="tel" required placeholder="718-000-0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all">
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-2">Current Pharmacy Name</label>
-                        <input type="text" required placeholder="Where is your RX now?" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all">
+                        <input id="currentPharmacy" type="text" required placeholder="Where is your RX now?" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all">
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-2">Medication Details / Prescription #</label>
-                        <textarea rows="3" placeholder="List medications or prescription numbers..." class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all resize-none"></textarea>
+                        <textarea id="rxDetails" rows="3" placeholder="List medications or prescription numbers..." class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:ring-2 focus:ring-medical-500 outline-none transition-all resize-none"></textarea>
                     </div>
                     <button type="submit" class="w-full py-4 rounded-xl bg-medical-600 text-white font-bold text-lg hover:bg-medical-700 shadow-xl transition-all hover:-translate-y-1">
                         Submit Transfer Request
