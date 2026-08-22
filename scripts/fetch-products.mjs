@@ -13,7 +13,7 @@ function normalizePem(raw) {
     '\n-----END ' + type + 'PRIVATE KEY-----\n';
 }
 
-const MID = process.env.MERCHANT_ID || '';
+const MID = (process.env.MERCHANT_ID || '').replace(/[^0-9]/g, '');
 const EMAIL = process.env.GOOGLE_SA_EMAIL || '';
 const KEY = normalizePem(process.env.GOOGLE_SA_KEY);
 const INCLUDE = (process.env.PRODUCTS_INCLUDE || '')
@@ -26,7 +26,10 @@ function fail(msg) {
   process.exit(1);
 }
 
-if (!MID || !EMAIL || !KEY.includes('PRIVATE KEY')) {
+if (!MID || !/^\d{6,20}$/.test(MID)) {
+  fail('MERCHANT_ID must be the numeric Merchant Center account ID (digits only). Check the secret value.');
+}
+if (!EMAIL || !KEY.includes('PRIVATE KEY')) {
   fail('Missing secrets: set MERCHANT_ID, GOOGLE_SA_EMAIL and GOOGLE_SA_KEY (repo Settings > Secrets > Actions).');
 }
 
@@ -59,19 +62,30 @@ async function getToken() {
 }
 
 async function fetchAllProducts(token) {
-  let all = [], pageToken = '', pages = 0;
-  while (pages < 20) {
-    const url = 'https://merchantapi.googleapis.com/products/v1/accounts/' + MID +
-      '/products?pageSize=250' + (pageToken ? '&pageToken=' + encodeURIComponent(pageToken) : '');
-    const res = await fetch(url, {headers: {authorization: 'Bearer ' + token}});
-    if (!res.ok) fail('Merchant API failed (' + res.status + '): ' + (await res.text()).slice(0, 300));
-    const data = await res.json();
-    all = all.concat(data.products || []);
-    if (!data.nextPageToken) break;
-    pageToken = data.nextPageToken;
-    pages++;
+  const versions = ['v1', 'v1beta'];
+  let lastErr = 'no attempt';
+  for (const ver of versions) {
+    let all = [], pageToken = '', pages = 0, routeMiss = false;
+    while (pages < 20) {
+      const url = 'https://merchantapi.googleapis.com/products/' + ver +
+        '/accounts/' + MID + '/products?pageSize=250' +
+        (pageToken ? '&pageToken=' + encodeURIComponent(pageToken) : '');
+      const res = await fetch(url, {headers: {authorization: 'Bearer ' + token}});
+      if (!res.ok) {
+        const body = await res.text();
+        lastErr = ver + ' (' + res.status + ') at /products/' + ver + '/accounts/...: ' + body.slice(0, 200);
+        if (/^\s*<(!DOCTYPE|html)/i.test(body)) { routeMiss = true; break; }
+        fail('Merchant API failed (' + res.status + ') via ' + ver + ': ' + body.slice(0, 300));
+      }
+      const data = await res.json();
+      all = all.concat(data.products || []);
+      if (!data.nextPageToken) return all;
+      pageToken = data.nextPageToken;
+      pages++;
+    }
+    if (!routeMiss && all.length) return all;
   }
-  return all;
+  fail('All Merchant API routes failed. Last error: ' + lastErr);
 }
 
 function money(price) {
