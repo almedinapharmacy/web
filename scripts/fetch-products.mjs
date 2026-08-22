@@ -211,52 +211,37 @@ for (let attempt = 1; attempt <= 6; attempt++) {
 if (!raw) fail('GCP registration did not propagate after retries. Run the workflow again in ~5 minutes.');
 console.log('Fetched ' + raw.length + ' products from Merchant Center.');
 
-if (raw[0]) {
-  const s = raw[0];
-  const probe = ['title', 'description', 'link', 'imageLink', 'price', 'availability',
-    'brand', 'offerId', 'productTypes', 'googleProductCategory', 'customAttributes', 'itemIssues'];
-  console.log('RAWPROBE ' + probe.map(k => k + '=' + (s[k] !== undefined ? 'Y' : 'N')).join(' '));
-  console.log('RAWKEYS ' + Object.keys(s).join(',').slice(0, 400));
-}
-const titledCount = raw.filter(p => p.title && String(p.title).trim()).length;
-console.log('titled=' + titledCount + '/' + raw.length);
-
 const ds = {};
 raw.forEach(p => {
   const d = String(p.dataSource || '?').replace(/accounts\/\d+\/dataSources\//g, '#');
   ds[d] = (ds[d] || 0) + 1;
 });
-console.log('DATASOURCES ' + JSON.stringify(ds));
-
-if (raw[0].productAttributes) {
-  const pa = raw[0].productAttributes;
-  console.log('PA_KEYS ' + Object.keys(pa).slice(0, 40).join(','));
-}
-try {
-  const dec = Buffer.from(raw[0].base64EncodedName || '', 'base64').toString('utf8');
-  console.log('B64NAME ' + dec.replace(/[0-9]{5,}/g, '#NUM').slice(0, 70));
-} catch (e) {}
+console.log('Data sources: ' + JSON.stringify(ds));
 
 const match = p => {
   if (!INCLUDE.length) return true;
-  const hay = ((p.productTypes || []).join(' ') + ' ' + (p.title || '') + ' ' +
+  const a = p.productAttributes || {};
+  const hay = ((p.productTypes || []).join(' ') + ' ' + (a.title || '') + ' ' +
     (p.googleProductCategory || '')).toLowerCase();
   return INCLUDE.some(k => hay.includes(k));
 };
 
-const items = raw.filter(match).slice(0, MAX_ITEMS).map(p => ({
-  sku: p.offerId || p.id || '',
-  title: (p.title || '').trim(),
-  price: money(p.price),
-  salePrice: money(p.salePrice),
-  availability: AVAILABILITY[String(p.availability || '').toUpperCase()] ||
-    String(p.availability || 'unknown').toLowerCase(),
-  link: p.link || null,
-  image: p.imageLink || null,
-  brand: p.brand || null,
-  type: (p.productTypes && p.productTypes[0]) || null,
-  category: p.googleProductCategory || null
-})).filter(p => p.title);
+const items = raw.filter(match).map(p => {
+  const a = p.productAttributes || {};
+  return {
+    sku: p.offerId || '',
+    title: String(a.title || '').trim(),
+    price: money(a.price),
+    salePrice: money(a.salePrice),
+    availability: AVAILABILITY[String(a.availability || '').toUpperCase()] ||
+      (a.availability ? String(a.availability).toLowerCase() : 'in stock'),
+    link: a.link || null,
+    image: a.imageLink || null,
+    brand: a.brand || null,
+    type: (a.productTypes && a.productTypes[0]) || null,
+    category: a.googleProductCategory || null
+  };
+}).filter(p => p.title).slice(0, MAX_ITEMS);
 
 items.sort((a, b) => a.title.localeCompare(b.title));
 
