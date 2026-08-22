@@ -221,6 +221,22 @@ if (raw[0]) {
 const titledCount = raw.filter(p => p.title && String(p.title).trim()).length;
 console.log('titled=' + titledCount + '/' + raw.length);
 
+const ds = {};
+raw.forEach(p => {
+  const d = String(p.dataSource || '?').replace(/accounts\/\d+\/dataSources\//g, '#');
+  ds[d] = (ds[d] || 0) + 1;
+});
+console.log('DATASOURCES ' + JSON.stringify(ds));
+
+if (raw[0].productAttributes) {
+  const pa = raw[0].productAttributes;
+  console.log('PA_KEYS ' + Object.keys(pa).slice(0, 40).join(','));
+}
+try {
+  const dec = Buffer.from(raw[0].base64EncodedName || '', 'base64').toString('utf8');
+  console.log('B64NAME ' + dec.replace(/[0-9]{5,}/g, '#NUM').slice(0, 70));
+} catch (e) {}
+
 const match = p => {
   if (!INCLUDE.length) return true;
   const hay = ((p.productTypes || []).join(' ') + ' ' + (p.title || '') + ' ' +
