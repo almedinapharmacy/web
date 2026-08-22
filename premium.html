@@ -540,7 +540,7 @@ footer{border-top:1px solid var(--line);background:#04081a;padding:64px 0 0}
       <span class="eyebrow">Switching is easy</span>
       <h2>Transfer your prescription</h2>
       <p class="lead">Let us handle the paperwork. Fill out the details and our team will coordinate with your current pharmacy — most transfers are completed the same day.</p>
-      <p class="form-note" style="margin-top:1.4rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 11v5"/></svg>We'll contact you within 1 business day to confirm the transfer.</p>
+      <p class="form-note" style="margin-top:1.4rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 11v5"/></svg>Submitting opens WhatsApp with your request pre-filled — it goes straight to our pharmacists.</p>
     </div>
     <div class="glass-card reveal">
       <form id="rxForm" class="rx-form">
@@ -548,12 +548,12 @@ footer{border-top:1px solid var(--line);background:#04081a;padding:64px 0 0}
         <div class="fld"><label for="rPhone">Phone number</label><input id="rPhone" type="tel" required placeholder="(718) ___-____"></div>
         <div class="fld"><label for="rPharm">Current pharmacy</label><input id="rPharm" placeholder="Pharmacy name & location"></div>
         <div class="fld"><label for="rMeds">Medication details / Rx #</label><textarea id="rMeds" rows="3" placeholder="List medications or prescription numbers"></textarea></div>
-        <button class="btn btn-primary" type="submit">Submit Transfer Request</button>
+        <button class="btn btn-primary" type="submit">Send via WhatsApp</button>
       </form>
       <div id="rxDone" hidden>
         <div class="done-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5L19.5 7"/></svg></div>
         <h3>Request sent!</h3>
-        <p style="color:var(--mut);margin-top:.4rem">Thank you. Our pharmacists will review your request and call you shortly.</p>
+        <p style="color:var(--mut);margin-top:.4rem">WhatsApp opened with your request pre-filled — press <b>Send</b> there and our pharmacists will call you to confirm.</p>
       </div>
     </div>
   </div>
@@ -720,8 +720,24 @@ $$('.faq-item').forEach(function(item){
 });
 var form=$('#rxForm');
 if(form)form.addEventListener('submit',function(e){
-  e.preventDefault();form.hidden=true;$('#rxDone').hidden=false;
-  window.toastMsg('Transfer request received — we will call you to confirm.');
+  e.preventDefault();
+  var v=function(id){var el=document.getElementById(id);return el?el.value.trim():''};
+  var name=v('rName'),phone=v('rPhone'),pharm=v('rPharm'),meds=v('rMeds');
+  var msg='*Prescription Transfer Request*\n'+
+    'Patient: '+name+'\n'+
+    'Phone: '+phone+'\n'+
+    (pharm?'Current pharmacy: '+pharm+'\n':'')+
+    'Medications / Rx #: '+(meds||'(will provide)')+'\n'+
+    'Sent from almedinapharmacy.com';
+  try{
+    window.open('https://wa.me/17189412669?text='+encodeURIComponent(msg),'_blank','noopener');
+  }catch(err){
+    location.href='https://wa.me/17189412669?text='+encodeURIComponent(msg);
+    return;
+  }
+  form.hidden=true;
+  $('#rxDone').hidden=false;
+  window.toastMsg('Opening WhatsApp \u2014 press Send to complete your request.');
 });
 $$('[data-copy]').forEach(function(b){
   b.addEventListener('click',function(){
