@@ -44,6 +44,20 @@ Optional repo **variable** (not secret): `PRODUCTS_INCLUDE` — comma-separated 
 
 `premium.html` fetches `products.json` on every page load (`LIVE_PRODUCTS_URL = "products.json"` near the top of the script) and renders up to 48 cards with prices, sale prices and out-of-stock dimming, plus auto-generated category chips from your product types. Until the first successful run, or if the fetch ever fails, the static product cards remain as fallback.
 
+## Adding product photos & buy links (optional)
+
+Your current feed sends only title/price/condition/gtin. To show photos and per-product buttons on the site, include these attributes in the feed file you upload to partnerupload.google.com:
+
+| Attribute | Example value | Site effect |
+|---|---|---|
+| `image_link` | `https://almedinapharmacy.com/images/myproduct.jpg` | Product photo (direct image URL, public, jpg/png/webp, 250px+) |
+| `link` | `https://almedinapharmacy.com/products/myproduct.html` | "Buy" button on the card |
+| `brand` | `21st Century` | Shown under the title |
+
+Tip: you can host the images for free by committing them to this repo's `/images/` folder and using `https://almedinapharmacy.com/images/<file>.jpg` as the `image_link`.
+
+After Google ingests the updated feed, run the sync workflow (or wait for the daily run) — photos and buttons appear automatically, no code changes required.
+
 ## Security notes
 
 - Secrets are AES-256 encrypted at rest, never printed in logs (auto-masked), and cannot be read back after saving — only overwritten.
