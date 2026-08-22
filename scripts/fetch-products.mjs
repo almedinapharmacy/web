@@ -154,8 +154,7 @@ const AVAILABILITY = {
 async function ensureRegistered(token, gcpId) {
   console.log('Registering GCP project ' + gcpId + ' with merchant account ' + MID + '...');
   const tries = [
-    ['v1', '{}'],
-    ['v1beta', '{}']
+    ['v1', '{}']
   ];
   let firstErr = '';
   for (const [ver, bodyStr] of tries) {
@@ -184,6 +183,12 @@ async function ensureRegistered(token, gcpId) {
       return true;
     }
     if (res.status === 404 || /^\s*<(!DOCTYPE|html)/i.test(body)) continue;
+    if (/does not have the necessary permission/i.test(String(msg)) && /\/users/.test(String(msg))) {
+      fail('PERMISSION FIX NEEDED: your service account has Standard access, but GCP registration ' +
+        'requires Admin. In Merchant Center: gear icon > Account settings > People > click the ' +
+        'service-account row > change access to Admin > Save. Then rerun this workflow. ' +
+        'GOOGLE SAID: ' + redact(String(msg)));
+    }
     firstErr += (firstErr ? '; ' : '') + '[' + ver + '] ' + cls;
   }
   if (firstErr) fail('Auto-registration failed. Attempts: ' + firstErr);
