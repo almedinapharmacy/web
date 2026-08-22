@@ -211,6 +211,16 @@ for (let attempt = 1; attempt <= 6; attempt++) {
 if (!raw) fail('GCP registration did not propagate after retries. Run the workflow again in ~5 minutes.');
 console.log('Fetched ' + raw.length + ' products from Merchant Center.');
 
+if (raw[0]) {
+  const s = raw[0];
+  const probe = ['title', 'description', 'link', 'imageLink', 'price', 'availability',
+    'brand', 'offerId', 'productTypes', 'googleProductCategory', 'customAttributes', 'itemIssues'];
+  console.log('RAWPROBE ' + probe.map(k => k + '=' + (s[k] !== undefined ? 'Y' : 'N')).join(' '));
+  console.log('RAWKEYS ' + Object.keys(s).join(',').slice(0, 400));
+}
+const titledCount = raw.filter(p => p.title && String(p.title).trim()).length;
+console.log('titled=' + titledCount + '/' + raw.length);
+
 const match = p => {
   if (!INCLUDE.length) return true;
   const hay = ((p.productTypes || []).join(' ') + ' ' + (p.title || '') + ' ' +
