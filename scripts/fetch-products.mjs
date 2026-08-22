@@ -160,7 +160,7 @@ async function ensureRegistered(token, gcpId) {
   ];
   let firstErr = '';
   for (const [ver, bodyStr] of tries) {
-    const res = await fetch('https://merchantapi.googleapis.com/' + ver +
+    const res = await fetch('https://merchantapi.googleapis.com/accounts/' + ver +
       '/accounts/' + MID + '/developerRegistration:registerGcp', {
       method: 'POST',
       headers: {authorization: 'Bearer ' + token, 'content-type': 'application/json'},
