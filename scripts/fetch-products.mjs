@@ -2,9 +2,20 @@ import {createSign} from 'node:crypto';
 import {writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 
+function normalizePem(raw) {
+  let k = (raw || '').replace(/\\r/gi, '').replace(/\\n/g, '\n');
+  const m = k.match(/-----BEGIN ([A-Z ]*?)PRIVATE KEY-----([\s\S]*?)-----END [A-Z ]*?PRIVATE KEY-----/);
+  const body = (m ? m[2] : k).replace(/[^A-Za-z0-9+/=]/g, '');
+  if (!body.length) return '';
+  const type = m && m[1].trim() ? m[1].trim() + ' ' : '';
+  const wrapped = body.replace(/(.{64})/g, '$1\n');
+  return '-----BEGIN ' + type + 'PRIVATE KEY-----\n' + wrapped +
+    '\n-----END ' + type + 'PRIVATE KEY-----\n';
+}
+
 const MID = process.env.MERCHANT_ID || '';
 const EMAIL = process.env.GOOGLE_SA_EMAIL || '';
-const KEY = (process.env.GOOGLE_SA_KEY || '').replace(/\\n/g, '\n').trim();
+const KEY = normalizePem(process.env.GOOGLE_SA_KEY);
 const INCLUDE = (process.env.PRODUCTS_INCLUDE || '')
   .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
 const MAX_ITEMS = Number(process.env.MAX_ITEMS || 200);
