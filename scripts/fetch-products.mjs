@@ -211,6 +211,9 @@ for (let attempt = 1; attempt <= 6; attempt++) {
 if (!raw) fail('GCP registration did not propagate after retries. Run the workflow again in ~5 minutes.');
 console.log('Fetched ' + raw.length + ' products from Merchant Center.');
 
+const imgCount = raw.filter(p => p.imageLink || (p.productAttributes && p.productAttributes.imageLink)).length;
+console.log('Products with imageLink: ' + imgCount + '/' + raw.length);
+
 const ds = {};
 raw.forEach(p => {
   const d = String(p.dataSource || '?').replace(/accounts\/\d+\/dataSources\//g, '#');
