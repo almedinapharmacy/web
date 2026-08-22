@@ -6,6 +6,7 @@
 <title>Al-Medina Pharmacy — Your Community Health Partner in Brooklyn, NY</title>
 <meta name="description" content="Al-Medina Pharmacy on Flatbush Ave, Brooklyn — fast prescription filling, immunizations, free local delivery and SureMed-style weekly multi-med blister packs. Call (718) 941-2669.">
 <meta name="theme-color" content="#060c1c">
+<link rel="icon" type="image/png" href="./images/Logo.png">
 <meta property="og:title" content="Al-Medina Pharmacy — Your Community Health Partner in Brooklyn">
 <meta property="og:description" content="Prescriptions filled in minutes, immunizations, free local delivery and pharmacist-guided care with a smile.">
 <script type="application/ld+json">
@@ -56,8 +57,8 @@ header{position:fixed;inset:0 0 auto;z-index:90;transition:.3s}
 header .bar{display:flex;align-items:center;gap:1.4rem;padding:.9rem 0}
 header.scrolled{backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);background:rgba(6,12,28,.74);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:.7rem;margin-right:auto}
-.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(120deg,#2563eb,#dc2626);display:grid;place-items:center;box-shadow:0 6px 22px rgba(37,99,235,.5);flex:none}
-.logo svg{width:23px;height:23px}
+.logo{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;flex:none;overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:contain;display:block}
 .brand-name{font-weight:800;font-size:1.06rem;letter-spacing:-.01em}
 .brand-sub{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:-2px}
 .nav-links{display:flex;gap:1.5rem}
@@ -301,7 +302,7 @@ footer{border-top:1px solid var(--line);background:#04081a;padding:64px 0 0}
 <header id="hdr">
   <div class="container bar">
     <a class="brand" href="#home" aria-label="Al-Medina Pharmacy home">
-      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span class="logo"><img src="./images/Logo.png" alt="Al-Medina Pharmacy logo"></span>
       <span><span class="brand-name">Al-Medina Pharmacy</span><br><span class="brand-sub">Flatbush · Brooklyn</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
@@ -626,7 +627,7 @@ footer{border-top:1px solid var(--line);background:#04081a;padding:64px 0 0}
 <footer>
   <div class="container foot-grid">
     <div class="foot-brand">
-      <a class="brand" href="#home"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span><span class="brand-name">Al-Medina Pharmacy</span><br><span class="brand-sub">Flatbush Ave · Brooklyn</span></span></a>
+      <a class="brand" href="#home"><span class="logo"><img src="./images/Logo.png" alt="Al-Medina Pharmacy logo"></span><span><span class="brand-name">Al-Medina Pharmacy</span><br><span class="brand-sub">Flatbush Ave · Brooklyn</span></span></a>
       <p>An independent community pharmacy dedicated to personalized care for the Flatbush neighborhood — fast fills, honest advice and delivery to your door.</p>
       <div class="foot-badges"><span class="badge">NY Lic #022483</span><span class="badge">NPI 1750460077</span><span class="badge">Medicare DME Supplier</span></div>
     </div>
@@ -1032,7 +1033,17 @@ async function boot(){
   const ringGeo=new THREE.RingGeometry(R*.45,R*.99,48);
   const torn=tornTex();
   const pillGeo=new THREE.CapsuleGeometry(.06,.13,5,12);
-  const pillCols=[0xef4444,0xf59e0b,0xf1f5f9,0x14b8a6,0xa78bfa];
+  const PILL_SLOTS=[
+    {x:-.16,y:-.10,tilt:.15},
+    {x:.17,y:.06,tilt:-.22},
+    {x:-.02,y:.16,tilt:.02}
+  ];
+  const ROW_MEDS=[
+    [0xef4444,0xef4444,0xf8fafc],
+    [0x14b8a6,0xf59e0b],
+    [0x8b5cf6,0x8b5cf6,0x3b82f6],
+    [0xf8fafc,0xf59e0b]
+  ];
   const weak=(navigator.hardwareConcurrency||8)<5||matchMedia('(max-width: 820px)').matches;
 
   function makeDomeMat(){
@@ -1065,16 +1076,13 @@ async function boot(){
     pack.add(ring);
 
     const pills=new THREE.Group();
-    const nPills=2+((rnd()*2)|0);
-    for(let k=0;k<nPills;k++){
-      const p=new THREE.Mesh(pillGeo,new THREE.MeshStandardMaterial({
-        color:pillCols[(rnd()*pillCols.length)|0],metalness:.05,roughness:.35
-      }));
-      const ang=rnd()*Math.PI*2,rad=rnd()*.2;
-      p.position.set(cx+Math.cos(ang)*rad,cy+Math.sin(ang)*rad,ZF+.035+k*.02);
-      p.rotation.set((rnd()-.5)*.5,0,Math.PI/2+rnd()*Math.PI);
+    ROW_MEDS[row].forEach(function(col,k){
+      const sl=PILL_SLOTS[k%PILL_SLOTS.length];
+      const p=new THREE.Mesh(pillGeo,new THREE.MeshStandardMaterial({color:col,metalness:.05,roughness:.35}));
+      p.position.set(cx+sl.x,cy+sl.y,ZF+.04+(k%2)*.015);
+      p.rotation.set(sl.tilt,0,Math.PI/2+k*1.1);
       pills.add(p);
-    }
+    });
     pack.add(pills);
 
     const hinge=new THREE.Group();
@@ -1322,443 +1330,6 @@ if(window.__mpFail)window.__mpFail();
 }
 })();
 </script>
-  try{if(document.fonts&&document.fonts.ready)await document.fonts.ready;}catch(e){}
-  try{await document.fonts.load('900 100px Sora');}catch(e){}
-  try{await document.fonts.load('700 46px Sora');}catch(e){}
-  try{await document.fonts.load('600 24px Inter');}catch(e){}
 
-  const scene=new THREE.Scene();
-  const camera=new THREE.PerspectiveCamera(40,1,.1,100);
-  camera.position.set(0,5.6,12.4);
-
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
-  renderer.toneMapping=THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.05;
-  renderer.shadowMap.enabled=true;
-  renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-  stage.appendChild(renderer.domElement);
-
-  const pmrem=new THREE.PMREMGenerator(renderer);
-  scene.environment=pmrem.fromScene(new RoomEnvironment(),.04).texture;
-
-  scene.add(new THREE.HemisphereLight(0xe3ecff,0x0a1030,.8));
-  const key=new THREE.DirectionalLight(0xffffff,2.4);
-  key.position.set(5,9,7);
-  key.castShadow=true;
-  key.shadow.mapSize.set(2048,2048);
-  key.shadow.camera.left=-9;key.shadow.camera.right=9;
-  key.shadow.camera.top=9;key.shadow.camera.bottom=-9;
-  key.shadow.camera.near=1;key.shadow.camera.far=30;
-  key.shadow.bias=-.0003;key.shadow.radius=5;
-  scene.add(key);
-  const rim=new THREE.PointLight(0xff5a5f,55,60);
-  rim.position.set(-8,5,-7);scene.add(rim);
-  const fill=new THREE.DirectionalLight(0xbcd4ff,.55);
-  fill.position.set(-5,3,8);scene.add(fill);
-
-  const ground=new THREE.Mesh(new THREE.CircleGeometry(16,48),new THREE.ShadowMaterial({opacity:.3}));
-  ground.rotation.x=-Math.PI/2;ground.position.y=-3.15;ground.receiveShadow=true;
-  scene.add(ground);
-
-  function faceTexture(){
-    const S=232,W=Math.round(CARD_W*S),H=Math.round(CARD_H*S);
-    const cv=document.createElement('canvas');cv.width=W;cv.height=H;
-    const g=cv.getContext('2d');
-    const bg=g.createLinearGradient(0,0,0,H);
-    bg.addColorStop(0,'#ffffff');bg.addColorStop(1,'#edf1fb');
-    g.fillStyle=bg;g.fillRect(0,0,W,H);
-    const u=x=>(x+CARD_W/2)*S,v=y=>(CARD_H/2-y)*S;
-    const rr=(x,y,w,h,r)=>{g.beginPath();if(g.roundRect)g.roundRect(x,y,w,h,r);else g.rect(x,y,w,h)};
-    g.strokeStyle='#c9d3ea';g.lineWidth=3;
-    for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++){
-      const cx=u(START_X+c*CELL_W),cy=v(START_Y-r*CELL_H);
-      rr(cx-CELL_W*S/2+8,cy-CELL_H*S/2+8,CELL_W*S-16,CELL_H*S-16,26);g.stroke();
-      g.save();g.strokeStyle='#d5def0';g.lineWidth=2.5;g.setLineDash([10,12]);
-      g.beginPath();g.arc(cx,cy,R*S*.98,0,Math.PI*2);g.stroke();g.restore();
-      g.fillStyle='#9fadcc';g.font='600 22px Inter,Arial,sans-serif';
-      g.textAlign='left';g.textBaseline='top';
-      g.fillText(String(r*COLS+c+1).padStart(2,'0'),cx-CELL_W*S/2+20,cy-CELL_H*S/2+16);
-    }
-    try{g.letterSpacing='3px'}catch(e){}
-    DAYS.forEach((d,i)=>{
-      const x=u(START_X+i*CELL_W),y=v(DAY_Y);
-      g.textAlign='center';g.textBaseline='middle';
-      g.font='900 92px Sora,Arial,sans-serif';
-      g.shadowColor='rgba(255,255,255,.95)';g.shadowBlur=14;g.shadowOffsetY=-3;
-      g.fillStyle='#101c40';g.fillText(d,x,y);
-      g.shadowBlur=0;g.shadowOffsetY=0;
-      const grad=g.createLinearGradient(x-50,0,x+50,0);
-      grad.addColorStop(0,'#2563eb');grad.addColorStop(1,'#dc2626');
-      g.fillStyle=grad;rr(x-50,y+62,100,10,5);g.fill();
-    });
-    TIMES.forEach((tm,r)=>{
-      const x=u(TIME_X),y=v(START_Y-r*CELL_H);
-      g.save();g.translate(x,y);g.rotate(-Math.PI/2);
-      g.textAlign='center';g.textBaseline='middle';
-      g.font='700 46px Sora,Arial,sans-serif';g.fillStyle='#1e3a8a';
-      g.fillText(tm,0,0);g.restore();
-    });
-    try{g.letterSpacing='1px'}catch(e){}
-    g.fillStyle='#8090b4';g.font='500 26px Inter,Arial,sans-serif';
-    g.textAlign='left';g.textBaseline='middle';
-    g.fillText('AL-MEDINA PHARMACY · BROOKLYN, NY · (718) 941-2669',u(-CARD_W/2+.34),v(-CARD_H/2+.3));
-    g.textAlign='right';
-    g.fillText('7-DAY · 4-PASS MULTI-MED BLISTER CARD',u(CARD_W/2-.34),v(-CARD_H/2+.3));
-    const tex=new THREE.CanvasTexture(cv);
-    tex.colorSpace=THREE.SRGBColorSpace;
-    tex.anisotropy=renderer.capabilities.getMaxAnisotropy();
-    return tex;
-  }
-
-  function backTexture(){
-    const cv=document.createElement('canvas');cv.width=800;cv.height=529;
-    const g=cv.getContext('2d');
-    g.fillStyle='#eaeefa';g.fillRect(0,0,800,529);
-    g.strokeStyle='#d2daee';g.lineWidth=6;g.strokeRect(24,24,752,481);
-    g.fillStyle='#8b98bd';g.font='600 30px Inter,Arial,sans-serif';
-    g.textAlign='center';g.textBaseline='middle';
-    g.fillText('Tear foil · push out dose · take as directed',400,250);
-    g.font='500 22px Inter,Arial,sans-serif';
-    g.fillText('Pharmacy-grade multi-dose blister card',400,300);
-    const tex=new THREE.CanvasTexture(cv);
-    tex.colorSpace=THREE.SRGBColorSpace;
-    return tex;
-  }
-
-  function tornTex(){
-    const c=document.createElement('canvas');c.width=c.height=256;
-    const g=c.getContext('2d');
-    g.fillStyle='#000';g.fillRect(0,0,256,256);
-    g.translate(128,128);g.fillStyle='#fff';g.beginPath();
-    for(let i=0;i<=64;i++){
-      const a=i/64*Math.PI*2;
-      const rad=108+Math.sin(a*9)*7+Math.random()*6;
-      const px=Math.cos(a)*rad,py=Math.sin(a)*rad;
-      if(i)g.lineTo(px,py);else g.moveTo(px,py);
-    }
-    g.closePath();g.fill();
-    g.globalCompositeOperation='destination-out';
-    g.beginPath();g.arc(0,0,60,0,Math.PI*2);g.fill();
-    const t=new THREE.CanvasTexture(c);
-    t.colorSpace=THREE.SRGBColorSpace;
-    return t;
-  }
-
-  const sideMat=new THREE.MeshStandardMaterial({color:0xf1f5f3,roughness:.5});
-  const frontMat=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.42});
-  const backMat=new THREE.MeshStandardMaterial({color:0xeef2f0,roughness:.65,map:backTexture()});
-  const card=new THREE.Mesh(
-    new RoundedBoxGeometry(CARD_W,CARD_H,TH,5,.12),
-    [sideMat,sideMat,sideMat,sideMat,frontMat,backMat]
-  );
-  card.castShadow=true;
-
-  const print=new THREE.Mesh(
-    new THREE.PlaneGeometry(CARD_W-.02,CARD_H-.02),
-    new THREE.MeshBasicMaterial({map:faceTexture(),toneMapped:false})
-  );
-  print.position.z=TH/2+.002;
-
-  const pack=new THREE.Group();
-  pack.rotation.x=-.62;
-  pack.add(card);
-  pack.add(print);
-  scene.add(pack);
-
-  const domeGeo=new THREE.SphereGeometry(R,40,22,0,Math.PI*2,0,Math.PI/2);
-  domeGeo.scale(1,.78,1);
-  const foilGeo=new THREE.CircleGeometry(R*1.02,48);
-  const ringGeo=new THREE.RingGeometry(R*.45,R*.99,48);
-  const torn=tornTex();
-  const pillGeo=new THREE.CapsuleGeometry(.06,.13,5,12);
-  const pillCols=[0xef4444,0xf59e0b,0xf1f5f9,0x14b8a6,0xa78bfa];
-  const weak=(navigator.hardwareConcurrency||8)<5||matchMedia('(max-width: 820px)').matches;
-
-  function makeDomeMat(){
-    return weak
-      ?new THREE.MeshPhysicalMaterial({color:0xdce6ff,metalness:0,roughness:.06,transparent:true,opacity:.34,clearcoat:1,clearcoatRoughness:.15,side:THREE.DoubleSide})
-      :new THREE.MeshPhysicalMaterial({color:0xffffff,metalness:0,roughness:.07,transmission:.92,thickness:.5,ior:1.44,clearcoat:1,clearcoatRoughness:.08,transparent:true,side:THREE.DoubleSide});
-  }
-
-  let seed=7;
-  const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
-
-  const cells=[],hitList=[];
-  for(let i=0;i<COLS*ROWS;i++){
-    const col=i%COLS,row=(i/COLS)|0;
-    const cx=START_X+col*CELL_W,cy=START_Y-row*CELL_H;
-
-    const foil=new THREE.Mesh(foilGeo,new THREE.MeshStandardMaterial({color:0xdde3e8,metalness:.85,roughness:.32}));
-    foil.position.set(cx,cy,ZF);
-    foil.userData.idx=i;
-    pack.add(foil);hitList.push(foil);
-
-    const ring=new THREE.Mesh(ringGeo,new THREE.MeshStandardMaterial({
-      color:0xb9c4cc,metalness:.75,roughness:.45,
-      transparent:true,opacity:0,alphaMap:torn,
-      side:THREE.DoubleSide,depthWrite:false
-    }));
-    ring.position.set(cx,cy,ZF+.004);
-    ring.scale.set(.55,.55,1);
-    ring.renderOrder=1;
-    pack.add(ring);
-
-    const pills=new THREE.Group();
-    const nPills=2+((rnd()*2)|0);
-    for(let k=0;k<nPills;k++){
-      const p=new THREE.Mesh(pillGeo,new THREE.MeshStandardMaterial({
-        color:pillCols[(rnd()*pillCols.length)|0],metalness:.05,roughness:.35
-      }));
-      const ang=rnd()*Math.PI*2,rad=rnd()*.2;
-      p.position.set(cx+Math.cos(ang)*rad,cy+Math.sin(ang)*rad,ZF+.035+k*.02);
-      p.rotation.set((rnd()-.5)*.5,0,Math.PI/2+rnd()*Math.PI);
-      pills.add(p);
-    }
-    pack.add(pills);
-
-    const hinge=new THREE.Group();
-    hinge.position.set(cx,cy+R*.95,ZF+.002);
-    const dome=new THREE.Mesh(domeGeo,makeDomeMat());
-    dome.position.set(0,-R*.95,0);
-    hinge.add(dome);
-    hinge.userData.idx=i;
-    pack.add(hinge);hitList.push(dome);
-
-    cells.push({
-      i,dome,foil,ring,hinge,
-      open:false,a:0,v:0,target:0,rs:0,hs:1
-    });
-  }
-
-  const controls=new OrbitControls(camera,renderer.domElement);
-  controls.target.set(0,.2,0);
-  controls.enableDamping=true;
-  controls.dampingFactor=.06;
-  controls.enablePan=false;
-  controls.minDistance=6.5;
-  controls.maxDistance=20;
-  controls.maxPolarAngle=1.45;
-  controls.autoRotate=!reduced;
-  controls.autoRotateSpeed=.9;
-  controls.update();
-
-  const raycaster=new THREE.Raycaster();
-  const ndc=new THREE.Vector2();
-  let hoverIdx=-1;
-
-  function pick(e){
-    const rect=renderer.domElement.getBoundingClientRect();
-    ndc.x=((e.clientX-rect.left)/rect.width)*2-1;
-    ndc.y=-((e.clientY-rect.top)/rect.height)*2+1;
-    raycaster.setFromCamera(ndc,camera);
-    const hits=raycaster.intersectObjects(hitList,false);
-    return hits.length?hits[0].object.userData.idx:-1;
-  }
-
-  let pd=null;
-  const dom=renderer.domElement;
-  dom.addEventListener('pointerdown',e=>{
-    pd={x:e.clientX,y:e.clientY,t:performance.now()};
-    if(controls.autoRotate&&!reduced)stopSpin(false);
-  });
-  dom.addEventListener('pointerup',e=>{
-    if(!pd)return;
-    const moved=Math.hypot(e.clientX-pd.x,e.clientY-pd.y);
-    const dt=performance.now()-pd.t;
-    pd=null;
-    if(moved<8&&dt<450){
-      const idx=pick(e);
-      if(idx>=0)setCell(cells[idx],!cells[idx].open,true);
-    }
-  });
-  dom.addEventListener('pointermove',e=>{
-    hoverIdx=pick(e);
-    stage.style.cursor=hoverIdx>=0?'pointer':'grab';
-  });
-  dom.addEventListener('pointerleave',()=>{hoverIdx=-1});
-
-  let actx=null,soundOn=true;
-  try{soundOn=localStorage.getItem('mpSound')!=='off'}catch(e){}
-  function blip(open){
-    if(!soundOn)return;
-    try{
-      actx=actx||new (window.AudioContext||window.webkitAudioContext)();
-      const t=actx.currentTime,o=actx.createOscillator(),g=actx.createGain();
-      o.type='triangle';
-      o.frequency.setValueAtTime(open?420:180,t);
-      o.frequency.exponentialRampToValueAtTime(open?140:520,t+.12);
-      g.gain.setValueAtTime(.0001,t);
-      g.gain.exponentialRampToValueAtTime(.25,t+.02);
-      g.gain.exponentialRampToValueAtTime(.0001,t+.16);
-      o.connect(g).connect(actx.destination);
-      o.start(t);o.stop(t+.18);
-    }catch(e){}
-  }
-
-  const bursts=[];
-  const tmpV=new THREE.Vector3();
-  function burst(cell){
-    if(reduced)return;
-    cell.hinge.getWorldPosition(tmpV);
-    const n=18,pos=new Float32Array(n*3),vel=[];
-    for(let k=0;k<n;k++){
-      pos[k*3]=tmpV.x;pos[k*3+1]=tmpV.y;pos[k*3+2]=tmpV.z;
-      vel.push(new THREE.Vector3((Math.random()-.5)*2.4,(Math.random()*.9+.4)*2.6,(Math.random()-.5)*2.4));
-    }
-    const geo=new THREE.BufferGeometry();
-    geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
-    const mat=new THREE.PointsMaterial({color:0xbfdbfe,size:.09,transparent:true,opacity:.95,depthWrite:false});
-    const pts=new THREE.Points(geo,mat);
-    scene.add(pts);
-    bursts.push({pts,vel,life:0,pos});
-  }
-
-  const cntEl=document.getElementById('mpCount');
-  const barEl=document.getElementById('mpBar');
-  const hintEl=document.getElementById('mpHint');
-  let allToasted=false;
-
-  function updateHUD(){
-    const n=cells.reduce((a,c)=>a+(c.open?1:0),0);
-    if(cntEl)cntEl.textContent=n;
-    if(barEl)barEl.style.width=(n/28*100)+'%';
-    if(n===28&&!allToasted){
-      allToasted=true;
-      if(window.toastMsg)window.toastMsg('Full week complete — all 28 doses taken!');
-    }
-  }
-
-  function setCell(c,o,snd){
-    if(c.open===o)return;
-    c.open=o;
-    c.target=o?OPEN_ANGLE:0;
-    if(o){burst(c);if(hintEl)hintEl.classList.add('off')}
-    if(snd!==false)blip(o);
-    updateHUD();
-  }
-
-  let busy=false;
-  const btnPopAll=document.getElementById('btnPopAll');
-  const btnReset=document.getElementById('btnReset');
-  const btnSpin=document.getElementById('btnSpin');
-  const btnSound=document.getElementById('btnSound');
-
-  if(btnPopAll)btnPopAll.addEventListener('click',()=>{
-    if(busy)return;busy=true;
-    cells.forEach((c,i)=>setTimeout(()=>setCell(c,true,true),i*45));
-    setTimeout(()=>{busy=false},cells.length*45+200);
-    stopSpin(true);
-  });
-  if(btnReset)btnReset.addEventListener('click',()=>{
-    if(busy)return;busy=true;
-    cells.forEach((c,i)=>setTimeout(()=>setCell(c,false,false),i*16));
-    setTimeout(()=>{busy=false;allToasted=false},cells.length*16+200);
-    if(window.toastMsg)window.toastMsg('Fresh card loaded — 28 doses ready.');
-  });
-
-  function stopSpin(fromUser){
-    controls.autoRotate=false;
-    setSpinUI(false);
-  }
-  function setSpinUI(on){
-    if(btnSpin){
-      btnSpin.classList.toggle('on',on);
-      btnSpin.setAttribute('aria-pressed',on?'true':'false');
-    }
-  }
-  if(btnSpin)btnSpin.addEventListener('click',()=>{
-    controls.autoRotate=!controls.autoRotate;
-    setSpinUI(controls.autoRotate);
-  });
-  function setSoundUI(on){
-    if(btnSound){
-      btnSound.classList.toggle('on',on);
-      btnSound.setAttribute('aria-pressed',on?'true':'false');
-    }
-  }
-  setSoundUI(soundOn);
-  if(btnSound)btnSound.addEventListener('click',()=>{
-    soundOn=!soundOn;
-    try{localStorage.setItem('mpSound',soundOn?'on':'off')}catch(e){}
-    setSoundUI(soundOn);
-    if(window.toastMsg)window.toastMsg(soundOn?'Sound on':'Sound off');
-  });
-  setSpinUI(controls.autoRotate);
-
-  function resize(){
-    const w=stage.clientWidth,h=stage.clientHeight;
-    if(w<2||h<2)return;
-    camera.aspect=w/h;
-    camera.updateProjectionMatrix();
-    renderer.setSize(w,h,false);
-  }
-  new ResizeObserver(resize).observe(stage);
-  resize();
-
-  let running=true;
-  new IntersectionObserver(es=>{running=es[0].isIntersecting},{threshold:.02}).observe(stage);
-
-  const clock=new THREE.Clock();
-  let elapsed=0,shownLoader=false;
-  const baseFoil=new THREE.Color(0xdde3e8),darkFoil=new THREE.Color(0x7c8891);
-
-  renderer.setAnimationLoop(()=>{
-    const dt=Math.min(clock.getDelta(),.033);
-    if(!running)return;
-    elapsed+=dt;
-    cells.forEach(c=>{
-      c.v+=((c.target-c.a)*130-c.v*11)*dt;
-      c.a+=c.v*dt;
-      c.hinge.rotation.x=c.a;
-      const rt=c.open?1:0;
-      c.rs+=(rt-c.rs)*Math.min(1,dt*10);
-      c.ring.material.opacity=c.rs*.95;
-      const s=.55+.45*c.rs;
-      c.ring.scale.set(s,s,1);
-      const hs_t=(hoverIdx===c.i&&!c.open)?1.07:1;
-      c.hs+=(hs_t-c.hs)*Math.min(1,dt*10);
-      c.dome.scale.setScalar(c.hs);
-      c.foil.material.color.lerpColors(baseFoil,darkFoil,c.rs);
-    });
-    for(let bi=bursts.length-1;bi>=0;bi--){
-      const b=bursts[bi];
-      b.life+=dt;
-      const arr=b.pos;
-      for(let k=0;k<b.vel.length;k++){
-        arr[k*3]+=b.vel[k].x*dt;
-        arr[k*3+1]+=b.vel[k].y*dt;
-        arr[k*3+2]+=b.vel[k].z*dt;
-        b.vel[k].y-=5*dt;
-      }
-      b.pts.geometry.attributes.position.needsUpdate=true;
-      b.pts.material.opacity=Math.max(0,.95*(1-b.life/.7));
-      if(b.life>.7){
-        scene.remove(b.pts);
-        b.pts.geometry.dispose();
-        b.pts.material.dispose();
-        bursts.splice(bi,1);
-      }
-    }
-    if(!reduced)pack.position.y=Math.sin(elapsed*.8)*.05;
-    controls.update();
-    renderer.render(scene,camera);
-    if(!shownLoader){
-      shownLoader=true;
-      window.__mpReady=true;
-      if(loadEl){
-        loadEl.classList.add('off');
-        setTimeout(()=>{if(loadEl.parentNode)loadEl.style.display='none'},700);
-      }
-    }
-  });
-
-  window.addEventListener('resize',resize);
-}
-}catch(err){
-  window.__mpErr=err&&err.message||String(err);
-  window.__mpShowFail();
-}
-})();
-</script>
 </body>
 </html>
