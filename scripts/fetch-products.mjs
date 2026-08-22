@@ -70,6 +70,13 @@ async function diagnoseToken(token) {
       'email_present=' + (d.email ? 'yes' : 'no'),
       'email_matches_secret=' + (d.email && EMAIL ? String(d.email.toLowerCase() === EMAIL.toLowerCase()) : '?'),
       'issued_to_matches_project_email_domain=' + (d.email_verified === 'true' ? 'verified' : d.email_verified || '?')];
+    try {
+      const probe = await fetch('https://merchantapi.googleapis.com/accounts/v1/accounts/' + MID,
+        {headers: {authorization: 'Bearer ' + token}});
+      parts.push('account_access=' + probe.status);
+    } catch (e) {
+      parts.push('account_access=?');
+    }
     return parts.join(' | ');
   } catch (e) {
     return 'tokeninfo unreachable';
