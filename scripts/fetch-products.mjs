@@ -153,18 +153,32 @@ const AVAILABILITY = {
 
 async function ensureRegistered(token, gcpId) {
   console.log('Registering GCP project ' + gcpId + ' with merchant account ' + MID + '...');
-  const res = await fetch('https://merchantapi.googleapis.com/accounts/v1/accounts/' + MID +
-    '/developerRegistration:registerGcp', {
-    method: 'POST',
-    headers: {authorization: 'Bearer ' + token, 'content-type': 'application/json'},
-    body: JSON.stringify({gcpId})
-  });
-  const body = await res.text();
-  if (res.ok || res.status === 409) {
-    console.log('Registration accepted (' + res.status + ').');
-    return true;
+  const tries = [
+    ['v1', JSON.stringify({gcpId})],
+    ['v1beta', JSON.stringify({gcpId})],
+    ['v1', JSON.stringify({gcpId: Number(gcpId)})]
+  ];
+  let firstErr = '';
+  for (const [ver, bodyStr] of tries) {
+    const res = await fetch('https://merchantapi.googleapis.com/' + ver +
+      '/accounts/' + MID + '/developerRegistration:registerGcp', {
+      method: 'POST',
+      headers: {authorization: 'Bearer ' + token, 'content-type': 'application/json'},
+      body: bodyStr
+    });
+    const body = await res.text();
+    let msg = body;
+    try { msg = JSON.parse(body).error.message; } catch (e) {}
+    if (res.ok || res.status === 409 || /already registered/i.test(String(msg))) {
+      console.log('Registration OK (' + res.status + ').');
+      return true;
+    }
+    if (res.status === 404 || /^\s*<(!DOCTYPE|html)/i.test(body)) continue;
+    firstErr = res.status + ' :: ' + redact(String(msg))
+      .replace(/[0-9]{5,}/g, '#NUM')
+      .slice(0, 260);
   }
-  fail('Auto-registration failed (' + res.status + '): ' + redact(body.slice(0, 300)));
+  fail('Auto-registration failed. ' + firstErr);
 }
 
 const token = await getToken();
