@@ -934,49 +934,37 @@ async function boot(){
   scene.add(ground);
 
   function faceTexture(){
-    const S=160,W=Math.round(CARD_W*S),H=Math.round(CARD_H*S);
+    const S=232,W=Math.round(CARD_W*S),H=Math.round(CARD_H*S);
     const cv=document.createElement('canvas');cv.width=W;cv.height=H;
     const g=cv.getContext('2d');
     const bg=g.createLinearGradient(0,0,0,H);
-    bg.addColorStop(0,'#ffffff');bg.addColorStop(1,'#edf1fb');
+    bg.addColorStop(0,'#ffffff');bg.addColorStop(1,'#f2f6f9');
     g.fillStyle=bg;g.fillRect(0,0,W,H);
     const u=x=>(x+CARD_W/2)*S,v=y=>(CARD_H/2-y)*S;
     const rr=(x,y,w,h,r)=>{g.beginPath();if(g.roundRect)g.roundRect(x,y,w,h,r);else g.rect(x,y,w,h)};
-    g.strokeStyle='#c9d3ea';g.lineWidth=3;
+    g.strokeStyle='#dfe6ed';g.lineWidth=Math.max(2,S*.014);
     for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++){
       const cx=u(START_X+c*CELL_W),cy=v(START_Y-r*CELL_H);
-      rr(cx-CELL_W*S/2+8,cy-CELL_H*S/2+8,CELL_W*S-16,CELL_H*S-16,26);g.stroke();
-      g.save();g.strokeStyle='#d5def0';g.lineWidth=2.5;g.setLineDash([10,12]);
-      g.beginPath();g.arc(cx,cy,R*S*.98,0,Math.PI*2);g.stroke();g.restore();
-      g.fillStyle='#9fadcc';g.font='600 22px Inter,Arial,sans-serif';
-      g.textAlign='left';g.textBaseline='top';
-      g.fillText(String(r*COLS+c+1).padStart(2,'0'),cx-CELL_W*S/2+20,cy-CELL_H*S/2+16);
+      rr(cx-CELL_W*S/2+6,cy-CELL_H*S/2+6,CELL_W*S-12,CELL_H*S-12,26);g.stroke();
     }
-    try{g.letterSpacing='3px'}catch(e){}
+    try{g.letterSpacing='2px'}catch(e){}
     DAYS.forEach((d,i)=>{
       const x=u(START_X+i*CELL_W),y=v(DAY_Y);
       g.textAlign='center';g.textBaseline='middle';
-      g.font='900 92px Sora,Arial,sans-serif';
-      g.shadowColor='rgba(255,255,255,.95)';g.shadowBlur=14;g.shadowOffsetY=-3;
-      g.fillStyle='#101c40';g.fillText(d,x,y);
-      g.shadowBlur=0;g.shadowOffsetY=0;
-      const grad=g.createLinearGradient(x-50,0,x+50,0);
-      grad.addColorStop(0,'#2563eb');grad.addColorStop(1,'#dc2626');
-      g.fillStyle=grad;rr(x-50,y+62,100,10,5);g.fill();
+      g.font='900 '+Math.round(S*.58)+'px Sora,Arial,sans-serif';
+      g.fillStyle='#14171c';
+      g.fillText(d,x,y);
     });
     TIMES.forEach((tm,r)=>{
       const x=u(TIME_X),y=v(START_Y-r*CELL_H);
-      g.save();g.translate(x,y);g.rotate(-Math.PI/2);
       g.textAlign='center';g.textBaseline='middle';
-      g.font='700 46px Sora,Arial,sans-serif';g.fillStyle='#1e3a8a';
-      g.fillText(tm,0,0);g.restore();
+      g.font='800 '+Math.round(S*.19)+'px Sora,Arial,sans-serif';
+      g.fillStyle='#3a444f';
+      g.fillText(tm,x,y);
     });
-    try{g.letterSpacing='1px'}catch(e){}
-    g.fillStyle='#8090b4';g.font='500 26px Inter,Arial,sans-serif';
-    g.textAlign='left';g.textBaseline='middle';
-    g.fillText('AL-MEDINA PHARMACY · BROOKLYN, NY · (718) 941-2669',u(-CARD_W/2+.34),v(-CARD_H/2+.3));
-    g.textAlign='right';
-    g.fillText('7-DAY · 4-PASS MULTI-MED BLISTER CARD',u(CARD_W/2-.34),v(-CARD_H/2+.3));
+    g.fillStyle='#96a2b0';g.font='600 '+Math.round(S*.11)+'px Inter,Arial,sans-serif';
+    g.textAlign='center';g.textBaseline='middle';
+    g.fillText('AL-MEDINA PHARMACY  \u00b7  (718) 941-2669',u(0),v(-CARD_H/2+.27));
     const tex=new THREE.CanvasTexture(cv);
     tex.colorSpace=THREE.SRGBColorSpace;
     tex.anisotropy=renderer.capabilities.getMaxAnisotropy();
@@ -1018,7 +1006,7 @@ async function boot(){
   }
 
   const sideMat=new THREE.MeshStandardMaterial({color:0xf1f5f3,roughness:.5});
-  const frontMat=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.38,map:faceTexture()});
+  const frontMat=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.42});
   const backMat=new THREE.MeshStandardMaterial({color:0xeef2f0,roughness:.65,map:backTexture()});
   const card=new THREE.Mesh(
     new RoundedBoxGeometry(CARD_W,CARD_H,TH,5,.12),
@@ -1026,9 +1014,16 @@ async function boot(){
   );
   card.castShadow=true;
 
+  const print=new THREE.Mesh(
+    new THREE.PlaneGeometry(CARD_W-.02,CARD_H-.02),
+    new THREE.MeshBasicMaterial({map:faceTexture(),toneMapped:false})
+  );
+  print.position.z=TH/2+.002;
+
   const pack=new THREE.Group();
   pack.rotation.x=-.62;
   pack.add(card);
+  pack.add(print);
   scene.add(pack);
 
   const domeGeo=new THREE.SphereGeometry(R,40,22,0,Math.PI*2,0,Math.PI/2);
@@ -1366,7 +1361,7 @@ if(window.__mpFail)window.__mpFail();
   scene.add(ground);
 
   function faceTexture(){
-    const S=160,W=Math.round(CARD_W*S),H=Math.round(CARD_H*S);
+    const S=232,W=Math.round(CARD_W*S),H=Math.round(CARD_H*S);
     const cv=document.createElement('canvas');cv.width=W;cv.height=H;
     const g=cv.getContext('2d');
     const bg=g.createLinearGradient(0,0,0,H);
@@ -1450,7 +1445,7 @@ if(window.__mpFail)window.__mpFail();
   }
 
   const sideMat=new THREE.MeshStandardMaterial({color:0xf1f5f3,roughness:.5});
-  const frontMat=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.38,map:faceTexture()});
+  const frontMat=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.42});
   const backMat=new THREE.MeshStandardMaterial({color:0xeef2f0,roughness:.65,map:backTexture()});
   const card=new THREE.Mesh(
     new RoundedBoxGeometry(CARD_W,CARD_H,TH,5,.12),
@@ -1458,9 +1453,16 @@ if(window.__mpFail)window.__mpFail();
   );
   card.castShadow=true;
 
+  const print=new THREE.Mesh(
+    new THREE.PlaneGeometry(CARD_W-.02,CARD_H-.02),
+    new THREE.MeshBasicMaterial({map:faceTexture(),toneMapped:false})
+  );
+  print.position.z=TH/2+.002;
+
   const pack=new THREE.Group();
   pack.rotation.x=-.62;
   pack.add(card);
+  pack.add(print);
   scene.add(pack);
 
   const domeGeo=new THREE.SphereGeometry(R,40,22,0,Math.PI*2,0,Math.PI/2);
