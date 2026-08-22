@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Products — Al-Medina Pharmacy, Brooklyn NY</title>
+<meta name="description" content="Shop wellness, OTC medicine, skincare, first aid and exercise & fitness products at Al-Medina Pharmacy — live prices synced daily from our Merchant Center catalog.">
+<meta name="theme-color" content="#060c1c">
+<link rel="icon" type="image/png" href="./images/Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#060c1c;--bg2:#0a1329;--panel:rgba(255,255,255,.045);--panel2:rgba(255,255,255,.07);
+  --line:rgba(139,163,255,.14);--line2:rgba(139,163,255,.3);
+  --txt:#f1f5ff;--mut:#9aa8cc;--em:#2563eb;--em2:#7aa7ff;--teal:#8ab4ff;--red:#ef4444;
+  --grad:linear-gradient(135deg,#5b8cff,#2563eb 55%,#1e40af);
+  --shadow:0 20px 60px rgba(0,0,0,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input,textarea{font:inherit;color:var(--txt)}
+::selection{background:rgba(37,99,235,.45)}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.15;font-weight:700;letter-spacing:-.02em}
+.container{width:min(1180px,92%);margin-inline:auto}
+section{scroll-margin-top:90px;position:relative}
+.sec{padding:96px 0}
+.alt{background:radial-gradient(1200px 500px at 80% -10%,rgba(37,99,235,.09),transparent 60%),var(--bg2)}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--em2);margin-bottom:14px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--grad)}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}
+.lead{color:var(--mut);font-size:1.04rem;margin-top:14px}
+.gtx{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.7rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid transparent;transition:.25s cubic-bezier(.2,.7,.2,1);white-space:nowrap}
+.btn svg{width:17px;height:17px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 34px rgba(37,99,235,.4)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(37,99,235,.55)}
+.btn-ghost{border-color:var(--line2);color:var(--txt);background:var(--panel)}
+.btn-ghost:hover{border-color:var(--em);color:var(--em2);transform:translateY(-2px)}
+.btn.sm{padding:.6rem 1.15rem;font-size:.85rem}
+
+header{position:fixed;inset:0 0 auto;z-index:90;transition:.3s}
+header .bar{display:flex;align-items:center;gap:1.4rem;padding:.9rem 0}
+header.scrolled{backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);background:rgba(6,12,28,.74);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.7rem;margin-right:auto}
+.logo{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;flex:none;overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:contain;display:block}
+.brand-name{font-weight:800;font-size:1.06rem;letter-spacing:-.01em}
+.brand-sub{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:-2px}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--mut);transition:.2s;position:relative}
+.nav-links a:hover{color:var(--txt)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;border-radius:2px;background:var(--grad);transition:.25s}
+.nav-links a:hover::after{width:100%}
+.hdr-call{display:inline-flex}
+#menuBtn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line2);place-items:center}
+#menuBtn svg{width:21px;height:21px}
+#mobileMenu{position:fixed;top:70px;left:4%;right:4%;z-index:89;background:rgba(6,24,16,.97);border:1px solid var(--line2);border-radius:20px;padding:1rem;box-shadow:var(--shadow);display:none;flex-direction:column;gap:.2rem}
+body.nav-open #mobileMenu{display:flex}
+#mobileMenu a{padding:.85rem 1rem;border-radius:12px;font-weight:500}
+#mobileMenu a:hover{background:var(--panel)}
+
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 80px;overflow:hidden}
+.aurora{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift 22s ease-in-out infinite alternate}
+.b1{width:520px;height:520px;background:#1d4ed8;top:-160px;left:-120px}
+.b2{width:460px;height:460px;background:#7f1d1d;top:10%;right:-140px;animation-delay:-7s}
+.b3{width:380px;height:380px;background:#172554;bottom:-140px;left:30%;animation-delay:-13s}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(60px,40px) scale(1.15)}}
+.grain{position:absolute;inset:0;z-index:-1;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+.pill-f{position:absolute;z-index:-1;width:46px;height:20px;border-radius:999px;opacity:.5;animation:floaty 9s ease-in-out infinite}
+.pill-f::before,.pill-f::after{content:"";position:absolute;top:0;bottom:0;width:50%}
+.pill-f::before{left:0;background:#2563eb;border-radius:999px 0 0 999px}
+.pill-f::after{right:0;background:#ffffff;border-radius:0 999px 999px 0}
+.pf1{top:22%;left:8%;transform:rotate(-25deg)}
+.pf2{top:64%;left:16%;transform:rotate(30deg);animation-delay:-3s;width:36px;height:16px}
+.pf3{top:30%;right:10%;transform:rotate(15deg);animation-delay:-5s;width:56px;height:24px;opacity:.35}
+.pf4{bottom:12%;right:24%;transform:rotate(-40deg);animation-delay:-7s;width:38px;height:17px;opacity:.4}
+@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -22px}}
+.pf3::before{background:#dc2626}
+.pf4::before{background:#1d4ed8}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;padding:.5rem 1.05rem;border-radius:999px;border:1px solid var(--line2);background:var(--panel);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#bfdbfe;margin-bottom:1.4rem}
+.dot-live{width:8px;height:8px;border-radius:50%;background:var(--em2);box-shadow:0 0 0 4px rgba(96,165,250,.22);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(96,165,250,.08)}}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem);font-weight:800}
+.hero p.sub{color:var(--mut);font-size:1.12rem;max-width:33rem;margin-top:1.3rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.1rem}
+.mini-stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2.4rem}
+.mini-stats div{display:flex;align-items:center;gap:.55rem;font-size:.88rem;color:var(--mut)}
+.mini-stats svg{width:17px;height:17px;color:var(--em2);flex:none}
+.glass-card{background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid var(--line2);border-radius:24px;padding:1.8rem;backdrop-filter:blur(14px);box-shadow:var(--shadow)}
+.hours-card h3{display:flex;align-items:center;gap:.6rem;font-size:1.05rem;margin-bottom:1.1rem}
+.hours-card h3 svg{width:19px;height:19px;color:var(--teal)}
+.hours-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px dashed var(--line);font-size:.93rem}
+.hours-row span:first-child{color:var(--mut)}
+.hours-row b{font-weight:600}
+.addr-row{display:flex;align-items:center;justify-content:space-between;gap:.8rem;padding-top:1.1rem;font-size:.9rem}
+.addr-row a{color:var(--em2);font-weight:600}
+.copy-btn{width:34px;height:34px;border-radius:10px;border:1px solid var(--line2);display:grid;place-items:center;transition:.2s;flex:none}
+.copy-btn:hover{border-color:var(--em);color:var(--em2)}
+.copy-btn svg{width:15px;height:15px}
+
+.stats-strip{border-block:1px solid var(--line);background:rgba(255,255,255,.02)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.4rem 0}
+.stat{text-align:center;padding:.4rem}
+.stat .num-wrap{font-family:'Sora';font-weight:800;font-size:clamp(1.7rem,3vw,2.4rem);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{font-size:.82rem;color:var(--mut);letter-spacing:.04em}
+
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.svc-card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:1.9rem;transition:.3s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden}
+.svc-card::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 20% -20%,rgba(37,99,235,.18),transparent 60%);opacity:0;transition:.3s}
+.svc-card:hover{transform:translateY(-6px);border-color:var(--line2)}
+.svc-card:hover::before{opacity:1}
+.svc-icon{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(239,68,68,.12));border:1px solid var(--line2);color:var(--em2);margin-bottom:1.2rem}
+.svc-icon svg{width:26px;height:26px}
+.svc-card h3{font-size:1.12rem;margin-bottom:.55rem}
+.svc-card p{color:var(--mut);font-size:.93rem}
+.svc-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--em2);font-weight:600;font-size:.9rem;margin-top:.9rem}
+.svc-link svg{width:15px;height:15px;transition:.2s}
+.svc-card:hover .svc-link svg{translate:4px 0}
+
+.medpack{background:radial-gradient(1000px 480px at 50% -10%,rgba(59,130,246,.14),transparent 60%),linear-gradient(#081027,#060c1c);border-block:1px solid var(--line);padding:96px 0 84px}
+.viewer{position:relative;border-radius:26px;border:1px solid var(--line2);background:radial-gradient(900px 420px at 50% 115%,rgba(37,99,235,.16),transparent 60%),linear-gradient(180deg,#0a1329,#060c1c);height:min(72vh,640px);min-height:420px;overflow:hidden;box-shadow:var(--shadow)}
+#stage{position:absolute;inset:0}
+#stage canvas{display:block;width:100%;height:100%;touch-action:none}
+.hud-tl{position:absolute;top:16px;left:16px;z-index:5;background:rgba(6,12,28,.72);backdrop-filter:blur(10px);border:1px solid var(--line2);border-radius:16px;padding:.75rem 1rem;min-width:190px}
+.hud-tl .hud-lbl{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.hud-tl .hud-num{font-family:'Sora';font-weight:800;font-size:1.5rem;line-height:1.15}
+.hud-tl .hud-num small{font-size:.8rem;color:var(--mut);font-weight:600}
+.mp-bar{height:6px;border-radius:99px;background:rgba(255,255,255,.1);margin-top:.45rem;overflow:hidden}
+.mp-bar i{display:block;height:100%;width:0%;border-radius:99px;background:var(--grad);transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.hud-tr{position:absolute;top:16px;right:16px;z-index:5;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:flex-end}
+.hbtn{background:rgba(6,12,28,.72);backdrop-filter:blur(10px);border:1px solid var(--line2);border-radius:12px;padding:.58rem 1rem;font-size:.83rem;font-weight:600;display:inline-flex;align-items:center;gap:.45rem;transition:.2s}
+.hbtn svg{width:15px;height:15px}
+.hbtn:hover{border-color:var(--em);color:var(--em2)}
+.hbtn.on{border-color:rgba(122,167,255,.6);color:var(--em2);background:rgba(37,99,235,.16)}
+.hint-pill{position:absolute;bottom:18px;left:50%;translate:-50% 0;z-index:5;background:rgba(6,12,28,.72);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:999px;padding:.55rem 1.2rem;font-size:.82rem;color:var(--mut);display:flex;align-items:center;gap:.6rem;transition:.6s;pointer-events:none;white-space:nowrap}
+.hint-pill svg{width:15px;height:15px;color:var(--em2)}
+.hint-pill.off{opacity:0;translate:-50% 14px}
+#mpLoad{position:absolute;inset:0;z-index:8;display:grid;place-items:center;background:#060c1c;transition:opacity .6s}
+#mpLoad.off{opacity:0;pointer-events:none}
+.load-box{text-align:center;color:var(--mut);font-size:.9rem}
+.spinner{width:46px;height:46px;margin:0 auto 1rem;border-radius:50%;border:3px solid rgba(122,167,255,.25);border-top-color:var(--em2);animation:spin 1s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+#glFallback{position:absolute;inset:0;z-index:9;display:grid;place-items:center;background:#060c1c;text-align:center;padding:2rem;color:var(--mut)}
+#glFallback[hidden]{display:none!important}
+.mp-feats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.4rem}
+.feat-chip{display:flex;align-items:flex-start;gap:.7rem;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;font-size:.87rem;color:var(--mut)}
+.feat-chip svg{width:19px;height:19px;color:var(--em2);flex:none;margin-top:2px}
+.feat-chip b{color:var(--txt);display:block;font-size:.92rem}
+
+.prod-filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.2rem}
+.chipx{padding:.55rem 1.25rem;border-radius:999px;border:1px solid var(--line2);background:var(--panel);font-size:.86rem;font-weight:600;color:var(--mut);transition:.2s}
+.chipx:hover{color:var(--txt);border-color:var(--em)}
+.chipx.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 6px 20px rgba(37,99,235,.35)}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.2rem}
+.pcard{background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.3s cubic-bezier(.2,.7,.2,1)}
+.pcard:not(.hide):hover{transform:translateY(-6px);border-color:var(--line2)}
+.pcard.hide{display:none}
+.pmedia{height:150px;display:grid;place-items:center;position:relative;overflow:hidden}
+.pmedia svg{width:52px;height:52px;color:rgba(255,255,255,.9);filter:drop-shadow(0 6px 18px rgba(0,0,0,.35));transition:.3s}
+.pcard:hover .pmedia svg{scale:1.12}
+.pm1{background:linear-gradient(135deg,#1e40af,#3b82f6)}.pm2{background:linear-gradient(135deg,#1e3a8a,#0ea5e9)}.pm3{background:linear-gradient(135deg,#991b1b,#ef4444)}.pm4{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.pm5{background:linear-gradient(135deg,#312e81,#4f46e5)}.pm6{background:linear-gradient(135deg,#9f1239,#f43f5e)}
+.pbody{padding:1.2rem 1.3rem 1.4rem}
+.ptag{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.pbody h3{font-size:1.02rem;margin:.4rem 0 .3rem}
+.pbody p{color:var(--mut);font-size:.87rem}
+.shop-live{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem;background:linear-gradient(120deg,rgba(37,99,235,.22),rgba(239,68,68,.1));border:1px solid var(--line2);border-radius:20px;padding:1.5rem 1.7rem;transition:.3s}
+.shop-live:hover{border-color:var(--em);transform:translateY(-3px)}
+.shop-live h3{font-size:1.25rem;margin:.35rem 0 .3rem}
+.shop-live p{color:var(--mut);font-size:.92rem;max-width:36rem}
+.shop-live .ptag{color:#f87171}
+.price-note{display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;font-weight:600;color:var(--em2)}
+.price-note svg{width:13px;height:13px}
+.sync-note{display:block;font-size:.72rem;color:var(--mut);margin-top:.4rem}
+.prow{display:flex;align-items:center;justify-content:space-between;gap:.7rem;margin-top:.75rem}
+.pprice{font-family:'Sora';font-weight:700;font-size:.98rem;color:#fff}
+.plink{display:inline-flex;align-items:center;gap:.3rem;font-size:.76rem;font-weight:600;color:var(--em2)}
+.plink:hover{text-decoration:underline}
+.pmedia img{width:100%;height:100%;object-fit:cover;font-size:1.9rem;font-weight:800;color:rgba(255,255,255,.92)}
+.pcard.oos{opacity:.55}
+
+.health-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.hcard{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:1.6rem;transition:.3s}
+.hcard:hover{border-color:var(--line2);transform:translateY(-4px)}
+.hcard h3{font-size:1.02rem;display:flex;align-items:center;gap:.55rem;margin-bottom:.5rem}
+.hcard h3 svg{width:18px;height:18px;color:var(--em2)}
+.hcard p{color:var(--mut);font-size:.88rem;margin-bottom:.8rem}
+.hcard ul{list-style:none}
+.hcard li{font-size:.87rem;padding:.3rem 0 .3rem 1.35rem;position:relative;color:#c9ded4}
+.hcard li::before{content:"";position:absolute;left:0;top:.72rem;width:9px;height:9px;border-radius:3px;background:var(--grad)}
+.cta-banner{margin-top:2.4rem;border-radius:24px;border:1px solid var(--line2);background:linear-gradient(120deg,rgba(37,99,235,.18),rgba(239,68,68,.09) 60%);padding:2.2rem 2.4rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.4rem}
+.cta-banner h3{font-size:1.4rem}
+.cta-banner p{color:var(--mut);font-size:.95rem;margin-top:.3rem}
+
+.rev-view{overflow:hidden}
+.rev-track{display:flex;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.rslide{min-width:100%;padding:.4rem}
+.rcard{max-width:760px;margin-inline:auto;text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:26px;padding:3rem clamp(1.4rem,5vw,3.4rem)}
+.rstars{color:var(--red);letter-spacing:.35em;font-size:1.05rem;margin-bottom:1.3rem}
+.rquote{font-size:clamp(1.05rem,2.2vw,1.35rem);font-family:'Sora';font-weight:600;line-height:1.5}
+.rperson{display:flex;align-items:center;justify-content:center;gap:.85rem;margin-top:1.7rem}
+.avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.9rem;background:linear-gradient(120deg,#2563eb,#dc2626);border:1px solid var(--line2)}
+.rname{font-weight:700;text-align:left;font-size:.95rem}
+.rrole{font-size:.8rem;color:var(--mut);text-align:left}
+.rev-dots{display:flex;justify-content:center;gap:.55rem;margin-top:1.6rem}
+.dotsv{width:9px;height:9px;border-radius:99px;background:rgba(255,255,255,.18);transition:.3s;padding:0}
+.dotsv.on{width:26px;background:var(--grad)}
+
+.faq-wrap{max-width:800px;margin-inline:auto;display:grid;gap:.8rem}
+.faq-item{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.25s}
+.faq-item.open{border-color:var(--line2);background:var(--panel2)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;text-align:left;padding:1.25rem 1.5rem;font-weight:600;font-size:.98rem}
+.faq-q svg{width:19px;height:19px;flex:none;color:var(--em2);transition:.3s}
+.faq-item.open .faq-q svg{rotate:45deg}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1)}
+.faq-a p{padding:0 1.5rem 1.35rem;color:var(--mut);font-size:.93rem}
+
+.transfer-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:start}
+.rx-form{display:grid;gap:1rem}
+.fld label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:.45rem}
+.fld input,.fld textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line2);border-radius:14px;padding:.9rem 1.1rem;outline:none;transition:.2s;resize:vertical}
+.fld input:focus,.fld textarea:focus{border-color:var(--em);box-shadow:0 0 0 4px rgba(37,99,235,.16)}
+.form-note{display:flex;gap:.6rem;font-size:.85rem;color:var(--mut)}
+.form-note svg{width:17px;height:17px;color:var(--teal);flex:none;margin-top:2px}
+#rxDone{text-align:center;padding:2.5rem 1.5rem;border:1px dashed var(--line2);border-radius:22px}
+.done-ic{width:64px;height:64px;margin:0 auto 1.2rem;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:#fff}
+.done-ic svg{width:30px;height:30px}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:1.2rem;align-items:stretch}
+.c-details{display:grid;gap:.9rem;align-content:start}
+.c-row{display:flex;gap:1rem;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.2rem 1.3rem}
+.c-ic{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(239,68,68,.1));border:1px solid var(--line2);display:grid;place-items:center;color:var(--em2);flex:none}
+.c-ic svg{width:20px;height:20px}
+.c-row h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:.2rem}
+.c-row p,.c-row a.val{font-size:.95rem;font-weight:500}
+.c-row a.val:hover{color:var(--em2)}
+.map-frame{border-radius:22px;overflow:hidden;border:1px solid var(--line2);min-height:380px}
+.map-frame iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.3) contrast(1.05)}
+
+footer{border-top:1px solid var(--line);background:#04081a;padding:64px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.4rem;padding-bottom:2.6rem}
+.foot-brand p{color:var(--mut);font-size:.9rem;margin-top:1rem;max-width:26rem}
+.foot-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.badge{font-size:.7rem;font-weight:600;letter-spacing:.05em;border:1px solid var(--line2);color:var(--mut);border-radius:999px;padding:.35rem .8rem}
+.foot-grid h4{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:1.1rem}
+.foot-grid ul{list-style:none;display:grid;gap:.55rem}
+.foot-grid ul a{font-size:.92rem;color:#bcd3c8;transition:.2s}
+.foot-grid ul a:hover{color:var(--em2)}
+.foot-bottom{border-top:1px solid var(--line);padding:1.4rem 0;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;font-size:.82rem;color:var(--mut)}
+
+#toast{position:fixed;bottom:26px;left:50%;translate:-50% 20px;z-index:200;background:#101c3f;border:1px solid rgba(122,167,255,.5);color:#dbeafe;padding:.8rem 1.5rem;border-radius:999px;font-size:.9rem;font-weight:500;box-shadow:0 14px 40px rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:.35s cubic-bezier(.2,.7,.2,1)}
+#toast.show{opacity:1;translate:-50% 0}
+#toTop{position:fixed;bottom:24px;right:24px;z-index:80;width:48px;height:48px;border-radius:14px;background:var(--grad);color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,99,235,.45);opacity:0;pointer-events:none;translate:0 12px;transition:.3s}
+#toTop.show{opacity:1;pointer-events:auto;translate:0 0}
+#toTop svg{width:20px;height:20px}
+
+.reveal{opacity:0;transform:translateY(28px)}
+.reveal.in{opacity:1;transform:none;transition:all .85s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  html{scroll-behavior:auto}
+}
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:2.4rem}
+  .svc-grid,.health-grid{grid-template-columns:repeat(2,1fr)}
+  .mp-feats{grid-template-columns:repeat(2,1fr)}
+  .transfer-grid,.contact-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links,.hdr-call{display:none}
+  #menuBtn{display:grid}
+}
+@media (max-width:640px){
+  .sec{padding:70px 0}
+  .svc-grid,.health-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr);row-gap:1.6rem}
+  .viewer{min-height:340px;height:62vh}
+  .hud-tl{min-width:150px;padding:.6rem .8rem}
+  .hint-pill{font-size:.72rem;padding:.5rem .9rem}
+  .cta-banner{padding:1.7rem}
+  .foot-grid{grid-template-columns:1fr}
+}
+</style>
+<style>
+.nav-links a.active{color:var(--em2)}
+.nav-links a.active::after{width:100%}
+.page-hero{padding:130px 0 30px;background:radial-gradient(900px 420px at 50% -20%,rgba(59,130,246,.14),transparent 60%),linear-gradient(#071026,#060c1c)}
+.page-hero h1{font-size:clamp(2rem,4vw,3rem)}
+.page-hero p.lead{max-width:46rem}
+@media (max-width:1020px){.hdr-call{display:none}}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="container bar">
+    <a class="brand" href="#home" aria-label="Al-Medina Pharmacy home">
+      <span class="logo"><img src="./images/Logo.png" alt="Al-Medina Pharmacy logo"></span>
+      <span><span class="brand-name">Al-Medina Pharmacy</span><br><span class="brand-sub">Flatbush · Brooklyn</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="mlink" href="#services">Services</a>
+      <a class="mlink" href="#medpack">Med Pack</a>
+      <a class="mlink" href="#products">Products</a>
+      <a class="mlink" href="#health-info">Health Info</a>
+      <a class="mlink" href="#reviews">Reviews</a>
+      <a class="mlink" href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary sm hdr-call" href="tel:+17189412669"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>(718) 941-2669</a>
+    <button id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<div id="mobileMenu">
+  <a class="mlink" href="./#services">Services</a>
+  <a class="mlink" href="./#medpack">Med Pack 3D</a>
+  <a class="mlink" href="products.html">Products</a>
+  <a class="mlink" href="./#health-info">Health Info</a>
+  <a class="mlink" href="./#reviews">Reviews</a>
+  <a class="mlink" href="./#transfer">Transfer Rx</a>
+  <a class="mlink" href="./#contact">Contact</a>
+</div>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Shop wellness</span>
+    <h1>Health <span class="gtx">products</span> &amp; fitness gear</h1>
+    <p class="lead">Everyday wellness, over-the-counter staples, skincare, first aid and our Exercise &amp; Fitness range — with live prices synced daily.</p>
+  </div>
+</section>
+
+<section class="sec" id="products" style="padding-top:40px">
+<section class="sec" id="products">
+  <div class="container">
+    <div class="prod-filters reveal">
+      <button class="chipx on" data-f="all">All Products</button>
+      <button class="chipx" data-f="wellness">Wellness</button>
+      <button class="chipx" data-f="otc">OTC Medicine</button>
+      <button class="chipx" data-f="skincare">Skincare</button>
+      <button class="chipx" data-f="firstaid">First Aid</button>
+      <button class="chipx" data-f="fitness">Exercise &amp; Fitness</button>
+    </div>
+    <div class="prod-grid">
+      <a class="shop-live reveal" href="https://www.google.com/search?q=Exercise+%26+Fitness&amp;udm=28&amp;shoprs=CAESCToHCgX4uv_nARIVsgESCWO_aUQye_Z6EcGDCVsGAAAIEgZaBAiyrSAYHyoSRXhlcmNpc2UgJiBGaXRuZXNzMjsIAhISQWwtTWVkaW5hIFBoYXJtYWN5Igk6BwoF-Lr_5wEqFgoSQWwtTWVkaW5hIFBoYXJtYWN5GAFIATJJCB8SEkFsIE1lZGluYSBQaGFybWFjeSIVsgESCWO_aUQye_Z6EcGDCVsGAAAIKhgKEkFsIE1lZGluYSBQaGFybWFjeRABGAFIATImCAkiBloECLKtICoYChJFeGVyY2lzZSAmIEZpdG5lc3MQARgBSABYsq0g" target="_blank" rel="noopener">
+        <div><span class="ptag">Live catalog · Al-Medina on Google</span>
+        <h3>Exercise &amp; Fitness equipment</h3>
+        <p>Browse our full fitness range — auto-synced daily from our Google Merchant Center catalog.<span class="sync-note" id="liveStamp"></span></p></div>
+        <span class="btn btn-primary sm">View live prices<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M21 3l-9 9M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </a>
+      <article class="pcard reveal" data-c="wellness"><div class="pmedia pm1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="14" r="5"/><circle cx="16" cy="9" r="4"/><path d="M12.5 11.5 14 10.5"/></svg></div><div class="pbody"><span class="ptag">Wellness</span><h3>Daily Vitamins</h3><p>Essential multivitamins for adults and kids.</p></div></article>
+      <article class="pcard reveal" data-c="wellness"><div class="pmedia pm2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5a5 5 0 0 1-7-7l7-7a5 5 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/></svg></div><div class="pbody"><span class="ptag">Wellness</span><h3>Supplements</h3><p>Herbal and dietary support for all ages.</p></div></article>
+      <article class="pcard reveal" data-c="wellness"><div class="pmedia pm3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><div class="pbody"><span class="ptag">Wellness</span><h3>Immunity Boosters</h3><p>Zinc, vitamin C, and herbal infusions.</p></div></article>
+      <article class="pcard reveal" data-c="otc"><div class="pmedia pm4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5c-2.5 1.5-2.5 5.5 0 7 2.5-1.5 2.5-5.5 0-7z" fill="currentColor" stroke="none" opacity=".5"/><path d="M8.5 12h2m3 0h2"/></svg></div><div class="pbody"><span class="ptag">OTC Medicine</span><h3>Pain Relief</h3><p>Aspirin, ibuprofen, and acetaminophen.</p></div></article>
+      <article class="pcard reveal" data-c="otc"><div class="pmedia pm5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 1 1 16 0c0 4-3 5.5-4 7H8c-1-1.5-4-3-4-7z"/><path d="M9.5 17.5h5"/></svg></div><div class="pbody"><span class="ptag">OTC Medicine</span><h3>Cough &amp; Cold</h3><p>Syrups, lozenges, and nighttime relief.</p></div></article>
+      <article class="pcard reveal" data-c="otc"><div class="pmedia pm6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 3v6a5 5 0 0 0 10 0V3"/><path d="M12 14v7M8.5 21h7"/></svg></div><div class="pbody"><span class="ptag">OTC Medicine</span><h3>Digestive Health</h3><p>Antacids, probiotics, and fiber support.</p></div></article>
+      <article class="pcard reveal" data-c="skincare"><div class="pmedia pm1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="10" height="12" rx="2"/><path d="M10 9V5a2 2 0 0 1 4 0v4M10 14h4"/></svg></div><div class="pbody"><span class="ptag">Skincare</span><h3>Moisturizers</h3><p>Hydrating lotions for sensitive skin types.</p></div></article>
+      <article class="pcard reveal" data-c="skincare"><div class="pmedia pm2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l-.7 4.5a4 4 0 0 1-4.6 0z"/><path d="M9.5 8.5 8 21h8l-1.5-12.5"/></svg></div><div class="pbody"><span class="ptag">Skincare</span><h3>Gentle Cleansers</h3><p>Facial washes and body bars for daily care.</p></div></article>
+      <article class="pcard reveal" data-c="skincare"><div class="pmedia pm3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/></svg></div><div class="pbody"><span class="ptag">Skincare</span><h3>Sun Protection</h3><p>Broad-spectrum SPF 30 and 50+ options.</p></div></article>
+      <article class="pcard reveal" data-c="firstaid"><div class="pmedia pm4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2.5"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M12 11v6M9 14h6"/></svg></div><div class="pbody"><span class="ptag">First Aid</span><h3>First Aid Kits</h3><p>Complete kits for home and travel safety.</p></div></article>
+      <article class="pcard reveal" data-c="firstaid"><div class="pmedia pm5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12h16" /><path d="M7 9.5h10a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2z"/><circle cx="9" cy="12" r=".8" fill="currentColor"/><circle cx="12" cy="12" r=".8" fill="currentColor"/><circle cx="15" cy="12" r=".8" fill="currentColor"/></svg></div><div class="pbody"><span class="ptag">First Aid</span><h3>Bandages &amp; Tapes</h3><p>Sterile dressings for minor cuts and scrapes.</p></div></article>
+      <article class="pcard reveal" data-c="firstaid"><div class="pmedia pm6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 10a3 3 0 0 1-2.8 4H7.8A3 3 0 0 1 5 17l4-10z"/><path d="M6.6 15h10.8"/></svg></div><div class="pbody"><span class="ptag">First Aid</span><h3>Antiseptic Solutions</h3><p>Cleaning sprays and antibiotic ointments.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 7v10M17 7v10M4 9v6M20 9v6M7 12h10"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Dumbbells &amp; Hand Weights</h3><p>Adjustable sets and pairs for home strength training.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-7 3-11 7-13 4 2 7 6 7 13"/><path d="M8 16c1-4 2.5-6 4-6s3 2 4 6"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Resistance Bands</h3><p>Loop and tube sets for strength, mobility and rehab.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="14" width="16" height="6" rx="3"/><path d="M7 17h10M8 10a3 3 0 1 1 6 0c0 2-3 2-3 4"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Yoga &amp; Exercise Mats</h3><p>Non-slip cushioned mats for yoga, pilates and floor work.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="8" height="8" rx="2.2"/><path d="M10 8V5h4v3M10 16v3h4v-3"/><path d="M12 10.6V12l1.2.9"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Fitness Trackers</h3><p>Smart watches and activity bands to keep you on pace.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.2" y="3" width="3.2" height="5.5" rx="1.4"/><rect x="16.6" y="3" width="3.2" height="5.5" rx="1.4"/><path d="M5.8 8.5c0 6 2.6 11.5 6.2 11.5s6.2-5.5 6.2-11.5"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Jump Ropes</h3><p>Speed ropes for quick cardio, anywhere.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h4M10.5 3v3L8 9.5V19a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V9.5L13.5 6V3"/><path d="M8 13h8"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Hydration &amp; Shakers</h3><p>Sport bottles and shaker cups to power every workout.</p></div></article>
+    </div>
+  </div>
+</section>
+</section>
+</main>
+
+<footer>
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="#home"><span class="logo"><img src="./images/Logo.png" alt="Al-Medina Pharmacy logo"></span><span><span class="brand-name">Al-Medina Pharmacy</span><br><span class="brand-sub">Flatbush Ave · Brooklyn</span></span></a>
+      <p>An independent community pharmacy dedicated to personalized care for the Flatbush neighborhood — fast fills, honest advice and delivery to your door.</p>
+      <div class="foot-badges"><span class="badge">NY Lic #022483</span><span class="badge">NPI 1750460077</span><span class="badge">Medicare DME Supplier</span></div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#services">Services</a></li><li><a href="#medpack">Med Pack 3D</a></li><li><a href="#products">Products</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#transfer">Transfer Rx</a></li></ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul><li><a href="#services">Prescription Filling</a></li><li><a href="#services">Immunizations</a></li><li><a href="#services">Free Delivery</a></li><li><a href="#medpack">Blister Packaging</a></li><li><a href="#services">DME Supplies</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li><a href="tel:+17189412669">(718) 941-2669</a></li><li><a href="mailto:info@almedinapharmacy.com">info@almedinapharmacy.com</a></li><li><a href="#contact">1242 Flatbush Ave,<br>Brooklyn, NY 11226</a></li></ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© <span id="year">2026</span> Al-Medina Pharmacy, Inc. All rights reserved.</span>
+    <span>Serving the Brooklyn community with care and dedication.</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+<script>
+(function(){
+"use strict";
+function $(s,c){return (c||document).querySelector(s)}
+function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+var hdr=$('#hdr'),toTop=$('#toTop');
+function onScroll(){
+  hdr.classList.toggle('scrolled',scrollY>24);
+  toTop.classList.toggle('show',scrollY>650);
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+toTop.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
+var mBtn=$('#menuBtn');
+if(mBtn)mBtn.addEventListener('click',function(){
+  var open=document.body.classList.toggle('nav-open');
+  mBtn.setAttribute('aria-expanded',open?'true':'false');
+});
+$$('.mlink').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('nav-open')})});
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+},{threshold:.08,rootMargin:'0px 0px -4% 0px'});
+$$('.reveal').forEach(function(el){io.observe(el)});
+function tileArt(title){
+  var t=String(title||"?"),h=0;
+  for(var i=0;i<t.length;i++)h=(h*31+t.charCodeAt(i))>>>0;
+  var pals=[["#1e3a8a","#3b82f6"],["#7f1d1d","#ef4444"],["#064e3b","#10b981"],["#4c1d95","#8b5cf6"],["#7c2d12","#f59e0b"],["#0c4a6e","#0ea5e9"]];
+  var pal=pals[h%pals.length];
+  var letter=t.charAt(0).toUpperCase().replace(/[&<>]/g,"?");
+  var svg="<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260'>"+
+    "<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>"+
+    "<stop offset='0' stop-color='"+pal[0]+"'/><stop offset='1' stop-color='"+pal[1]+"'/>"+
+    "</linearGradient></defs>"+
+    "<rect width='400' height='260' fill='url(#g)'/>"+
+    "<circle cx='330' cy='40' r='90' fill='rgba(255,255,255,.08)'/>"+
+    "<circle cx='50' cy='230' r='70' fill='rgba(255,255,255,.07)'/>"+
+    "<text x='200' y='165' font-family='Sora,Arial,sans-serif' font-size='112' font-weight='800'"+
+    " fill='rgba(255,255,255,.94)' text-anchor='middle'>"+letter+"</text></svg>";
+  return "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(svg);
+}
+var prodFilters=$('.prod-filters');
+if(prodFilters)prodFilters.addEventListener('click',function(e){
+  var ch=e.target.closest('.chipx');
+  if(!ch||!prodFilters.contains(ch))return;
+  $$('.chipx').forEach(function(c){c.classList.remove('on')});
+  ch.classList.add('on');
+  var f=ch.getAttribute('data-f');
+  $$('.pcard').forEach(function(card){
+    card.classList.toggle('hide',!(f==='all'||card.getAttribute('data-c')===f));
+  });
+});
+fetch('products.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(d){
+  if(!d||!Array.isArray(d.items)||!d.items.length)return;
+  var grid=$('.prod-grid');if(!grid)return;
+  var banner=$('.shop-live',grid);
+  var slug=function(t){return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')||'other'};
+  var cats=[];
+  d.items.forEach(function(p){
+    p._cat=((p.type||'Other').split('>').pop()||'Other').trim()||'Other';
+    p._f=slug(p._cat);
+    if(cats.indexOf(p._cat)<0)cats.push(p._cat);
+  });
+  cats.forEach(function(c){
+    if($('.chipx[data-f="'+slug(c)+'"]',prodFilters))return;
+    var b=document.createElement('button');
+    b.type='button';b.className='chipx';b.setAttribute('data-f',slug(c));b.textContent=c;
+    prodFilters.appendChild(b);
+  });
+  var pmCls=['pm1','pm2','pm3','pm4','pm5','pm6'];
+  d.items.forEach(function(p,idx){
+    var oos=/^out/i.test(String(p.availability||''));
+    var el=document.createElement('article');
+    el.className='pcard reveal in';
+    el.setAttribute('data-c',p._f);
+    if(oos)el.classList.add('oos');
+    var media=document.createElement('div');media.className='pmedia '+pmCls[idx%6];
+    if(p.image){
+      var im=document.createElement('img');im.loading='lazy';im.alt=p.title;im.src=p.image;
+      im.onerror=function(){media.textContent=p.title.charAt(0).toUpperCase()};
+      media.appendChild(im);
+    }else{
+      var art=document.createElement('img');art.loading='lazy';art.alt=p.title;
+      art.src=tileArt(p.title);
+      media.appendChild(art);
+    }
+    var body=document.createElement('div');body.className='pbody';
+    var tag=document.createElement('span');tag.className='ptag';tag.textContent=p._cat;
+    var h3=document.createElement('h3');h3.textContent=p.title;
+    var row=document.createElement('div');row.className='prow';
+    var pr=document.createElement('span');pr.className='pprice';
+    pr.textContent=oos?'Out of stock':(p.salePrice?p.salePrice+' (was '+(p.price||'-')+')':(p.price||'Call for price'));
+    row.appendChild(pr);
+    if(p.link){
+      var a=document.createElement('a');a.className='plink';a.href=p.link;a.target='_blank';a.rel='noopener';
+      a.textContent=oos?'Details':'Buy';
+      row.appendChild(a);
+    }
+    body.appendChild(tag);body.appendChild(h3);body.appendChild(row);
+    el.appendChild(media);el.appendChild(body);
+    grid.insertBefore(el,banner?banner.nextSibling:null);
+  });
+}).catch(function(){});
+var yr=document.getElementById('year');if(yr)yr.textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
