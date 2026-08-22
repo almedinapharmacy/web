@@ -13,6 +13,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="modulepreload" href="./vendor/mp.bundle.mjs">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -435,7 +436,7 @@ footer{border-top:1px solid var(--line);background:#04081a;padding:64px 0 0}
         <button class="hbtn on" id="btnSound" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 6a9 9 0 0 1 0 12"/></svg>Sound</button>
       </div>
       <div class="hint-pill" id="mpHint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3.5V9L4.6 16.4A2 2 0 0 0 6.3 19.5h11.4a2 2 0 0 0 1.7-3.1L15 9V3.5"/><path d="M7.5 3.5h9"/></svg>Drag to orbit · Scroll to zoom · Click a bubble to pop it</div>
-      <div id="mpLoad"><div class="load-box"><div class="spinner"></div>Preparing your med pack…</div></div>
+      <div id="mpLoad"><div class="load-box"><div class="spinner"></div>Preparing your med pack<span id="loadVer"></span>…</div></div>
       <div id="glFallback" hidden><div><h3>3D viewer unavailable</h3><p style="max-width:34ch;margin-top:.6rem">Your browser or connection blocked WebGL. The rest of the site works perfectly — or call us at (718) 941-2669 for your med pack.</p></div></div>
     </div>
     <div class="mp-feats reveal">
@@ -672,6 +673,21 @@ window.__mpFail=function(reason){
   if(l)l.classList.add("off");
   f.hidden=false;
 };
+var MP_BUILD="b7";
+try{
+  var lv=document.getElementById("loadVer");
+  if(lv)lv.textContent=" "+MP_BUILD;
+  var fh=document.querySelector("#glFallback h3");
+  if(fh)fh.setAttribute("data-build",MP_BUILD);
+  console.log("[MedPack] build "+MP_BUILD);
+}catch(err){}
+window.__mpShowFail=function(){
+  var f=document.getElementById("glFallback");
+  if(!f)return;
+  var h=f.querySelector("h3");
+  if(h)h.textContent="3D viewer unavailable ["+MP_BUILD+"]";
+  window.__mpFail(window.__mpErr||"startup interrupted");
+};
 function $(s,c){return (c||document).querySelector(s)}
 function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
 window.toastMsg=function(msg){
@@ -831,7 +847,7 @@ if(LIVE_PRODUCTS_URL){
 }
 setTimeout(function(){
   if(!window.__mpReady){
-    window.__mpFail('stalled at "'+(window.__mpStage||'?')+'" \u00b7 slow network or an extension may be blocking cdn.jsdelivr.net');
+    window.__mpFail('stalled at "'+(window.__mpStage||'?')+'" \u00b7 slow network or security software may have interrupted loading');
   }
 },15000);
 })();
@@ -870,7 +886,7 @@ let renderer=null;
 try{
   renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:'high-performance'});
 }catch(e){renderer=null;}
-if(renderer){boot().catch(function(e){window.__mpErr=e&&e.message||String(e);fail();});}else fail();
+if(renderer){boot().catch(function(e){window.__mpErr=e&&e.message||String(e);window.__mpShowFail();});}else window.__mpShowFail();
 
 function fail(){
   if(loadEl)loadEl.classList.add('off');
@@ -1737,7 +1753,7 @@ if(window.__mpFail)window.__mpFail();
 }
 }catch(err){
   window.__mpErr=err&&err.message||String(err);
-  if(window.__mpFail)window.__mpFail();
+  window.__mpShowFail();
 }
 })();
 </script>
