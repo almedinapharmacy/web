@@ -167,18 +167,27 @@ async function ensureRegistered(token, gcpId) {
       body: bodyStr
     });
     const body = await res.text();
+    let parsed = false;
     let msg = body;
-    try { msg = JSON.parse(body).error.message; } catch (e) {}
-    if (res.ok || res.status === 409 || /already registered/i.test(String(msg))) {
+    try { msg = JSON.parse(body).error.message; parsed = true; } catch (e) {}
+    const cls = /already/i.test(msg) ? 'already'
+      : /permission|denied|authorized/i.test(msg) ? 'denied'
+      : /invalid/i.test(msg) ? 'invalid'
+      : /not found/i.test(msg) ? 'notfound'
+      : res.status === 404 ? 'route404'
+      : /^</i.test(body) ? 'html'
+      : parsed ? 'jsonmsg' : 'nonjson';
+    console.log('REGTRY ver=' + ver + ' status=' + res.status +
+      ' parsed=' + parsed + ' class=' + cls + ' bytes=' + body.length);
+    if (res.ok || res.status === 409 || /already/i.test(String(msg))) {
       console.log('Registration OK (' + res.status + ').');
       return true;
     }
     if (res.status === 404 || /^\s*<(!DOCTYPE|html)/i.test(body)) continue;
-    firstErr = res.status + ' :: ' + redact(String(msg))
-      .replace(/[0-9]{5,}/g, '#NUM')
-      .slice(0, 260);
+    firstErr += (firstErr ? '; ' : '') + '[' + ver + '] ' + cls;
   }
-  fail('Auto-registration failed. ' + firstErr);
+  if (firstErr) fail('Auto-registration failed. Attempts: ' + firstErr);
+  fail('Auto-registration failed for unknown reasons.');
 }
 
 const token = await getToken();
