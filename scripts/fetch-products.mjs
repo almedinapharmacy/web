@@ -14,7 +14,8 @@ function normalizePem(raw) {
 }
 
 const MID = (process.env.MERCHANT_ID || '').replace(/[^0-9]/g, '');
-const EMAIL = process.env.GOOGLE_SA_EMAIL || '';
+const EMAIL = (process.env.GOOGLE_SA_EMAIL || '')
+  .trim().replace(/^["']+|["']+$/g, '').replace(/\\n/g, '').toLowerCase();
 const KEY = normalizePem(process.env.GOOGLE_SA_KEY);
 const INCLUDE = (process.env.PRODUCTS_INCLUDE || '')
   .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
@@ -75,6 +76,12 @@ async function fetchAllProducts(token) {
         const body = await res.text();
         lastErr = ver + ' (' + res.status + ') at /products/' + ver + '/accounts/...: ' + body.slice(0, 200);
         if (/^\s*<(!DOCTYPE|html)/i.test(body)) { routeMiss = true; break; }
+        if (res.status === 401) {
+          fail('Google rejected the service-account credential (401). Verify that: ' +
+            'GOOGLE_SA_EMAIL exactly matches "client_email" inside the downloaded JSON key, ' +
+            'GOOGLE_SA_KEY came from the SAME file, and the service account still exists/enabled. ' +
+            'API said: ' + body.slice(0, 250));
+        }
         fail('Merchant API failed (' + res.status + ') via ' + ver + ': ' + body.slice(0, 300));
       }
       const data = await res.json();
