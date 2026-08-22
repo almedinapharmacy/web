@@ -154,9 +154,8 @@ const AVAILABILITY = {
 async function ensureRegistered(token, gcpId) {
   console.log('Registering GCP project ' + gcpId + ' with merchant account ' + MID + '...');
   const tries = [
-    ['v1', JSON.stringify({gcpId})],
-    ['v1beta', JSON.stringify({gcpId})],
-    ['v1', JSON.stringify({gcpId: Number(gcpId)})]
+    ['v1', '{}'],
+    ['v1beta', '{}']
   ];
   let firstErr = '';
   for (const [ver, bodyStr] of tries) {
