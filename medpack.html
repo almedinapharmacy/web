@@ -157,6 +157,7 @@ body.nav-open #mobileMenu{display:flex}
 .spinner{width:46px;height:46px;margin:0 auto 1rem;border-radius:50%;border:3px solid rgba(122,167,255,.25);border-top-color:var(--em2);animation:spin 1s linear infinite}
 @keyframes spin{to{rotate:360deg}}
 #glFallback{position:absolute;inset:0;z-index:9;display:grid;place-items:center;background:#060c1c;text-align:center;padding:2rem;color:var(--mut)}
+#glFallback[hidden]{display:none!important}
 .mp-feats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.4rem}
 .feat-chip{display:flex;align-items:flex-start;gap:.7rem;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;font-size:.87rem;color:var(--mut)}
 .feat-chip svg{width:19px;height:19px;color:var(--em2);flex:none;margin-top:2px}
