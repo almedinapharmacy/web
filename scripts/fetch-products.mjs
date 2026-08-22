@@ -62,6 +62,20 @@ async function getToken() {
   return (await res.json()).access_token;
 }
 
+async function diagnoseToken(token) {
+  try {
+    const r = await fetch('https://oauth2.googleapis.com/tokeninfo?access_token=' + encodeURIComponent(token));
+    const d = await r.json();
+    const parts = ['scope=' + (d.scope || '?'),
+      'email_present=' + (d.email ? 'yes' : 'no'),
+      'email_matches_secret=' + (d.email && EMAIL ? String(d.email.toLowerCase() === EMAIL.toLowerCase()) : '?'),
+      'issued_to_matches_project_email_domain=' + (d.email_verified === 'true' ? 'verified' : d.email_verified || '?')];
+    return parts.join(' | ');
+  } catch (e) {
+    return 'tokeninfo unreachable';
+  }
+}
+
 async function fetchAllProducts(token) {
   const versions = ['v1', 'v1beta'];
   let lastErr = 'no attempt';
@@ -77,9 +91,10 @@ async function fetchAllProducts(token) {
         lastErr = ver + ' (' + res.status + ') at /products/' + ver + '/accounts/...: ' + body.slice(0, 200);
         if (/^\s*<(!DOCTYPE|html)/i.test(body)) { routeMiss = true; break; }
         if (res.status === 401) {
-          fail('Google rejected the service-account credential (401). Verify that: ' +
-            'GOOGLE_SA_EMAIL exactly matches "client_email" inside the downloaded JSON key, ' +
-            'GOOGLE_SA_KEY came from the SAME file, and the service account still exists/enabled. ' +
+          fail('Google rejected the service-account credential (401). ' +
+            'DIAGNOSTICS[' + await diagnoseToken(token) + '] ' +
+            'Fix: GOOGLE_SA_EMAIL must exactly equal "client_email" from the SAME downloaded JSON key as GOOGLE_SA_KEY, ' +
+            'and that service account must be added (invite accepted) under Merchant Center > Account settings > People. ' +
             'API said: ' + body.slice(0, 250));
         }
         fail('Merchant API failed (' + res.status + ') via ' + ver + ': ' + body.slice(0, 300));
