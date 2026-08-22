@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Al-Medina Pharmacy — Your Community Health Partner in Brooklyn, NY</title>
+<meta name="description" content="Al-Medina Pharmacy on Flatbush Ave, Brooklyn — fast prescription filling, immunizations, free local delivery and SureMed-style weekly multi-med blister packs. Call (718) 941-2669.">
+<meta name="theme-color" content="#060c1c">
+<meta property="og:title" content="Al-Medina Pharmacy — Your Community Health Partner in Brooklyn">
+<meta property="og:description" content="Prescriptions filled in minutes, immunizations, free local delivery and pharmacist-guided care with a smile.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Pharmacy","name":"Al-Medina Pharmacy, Inc","telephone":"+1-718-941-2669","faxNumber":"+1-718-941-0935","email":"info@almedinapharmacy.com","address":{"@type":"PostalAddress","streetAddress":"1242 Flatbush Ave","addressLocality":"Brooklyn","addressRegion":"NY","postalCode":"11226","addressCountry":"US"},"openingHours":["Mo-Fr 10:00-19:00","Sa 10:00-18:00"],"medicalSpecialty":"Pharmacy"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#060c1c;--bg2:#0a1329;--panel:rgba(255,255,255,.045);--panel2:rgba(255,255,255,.07);
+  --line:rgba(139,163,255,.14);--line2:rgba(139,163,255,.3);
+  --txt:#f1f5ff;--mut:#9aa8cc;--em:#2563eb;--em2:#7aa7ff;--teal:#8ab4ff;--red:#ef4444;
+  --grad:linear-gradient(135deg,#5b8cff,#2563eb 55%,#1e40af);
+  --shadow:0 20px 60px rgba(0,0,0,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input,textarea{font:inherit;color:var(--txt)}
+::selection{background:rgba(37,99,235,.45)}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.15;font-weight:700;letter-spacing:-.02em}
+.container{width:min(1180px,92%);margin-inline:auto}
+section{scroll-margin-top:90px;position:relative}
+.sec{padding:96px 0}
+.alt{background:radial-gradient(1200px 500px at 80% -10%,rgba(37,99,235,.09),transparent 60%),var(--bg2)}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--em2);margin-bottom:14px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--grad)}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}
+.lead{color:var(--mut);font-size:1.04rem;margin-top:14px}
+.gtx{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.7rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid transparent;transition:.25s cubic-bezier(.2,.7,.2,1);white-space:nowrap}
+.btn svg{width:17px;height:17px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 34px rgba(37,99,235,.4)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(37,99,235,.55)}
+.btn-ghost{border-color:var(--line2);color:var(--txt);background:var(--panel)}
+.btn-ghost:hover{border-color:var(--em);color:var(--em2);transform:translateY(-2px)}
+.btn.sm{padding:.6rem 1.15rem;font-size:.85rem}
+
+header{position:fixed;inset:0 0 auto;z-index:90;transition:.3s}
+header .bar{display:flex;align-items:center;gap:1.4rem;padding:.9rem 0}
+header.scrolled{backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);background:rgba(6,12,28,.74);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.7rem;margin-right:auto}
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(120deg,#2563eb,#dc2626);display:grid;place-items:center;box-shadow:0 6px 22px rgba(37,99,235,.5);flex:none}
+.logo svg{width:23px;height:23px}
+.brand-name{font-weight:800;font-size:1.06rem;letter-spacing:-.01em}
+.brand-sub{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:-2px}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--mut);transition:.2s;position:relative}
+.nav-links a:hover{color:var(--txt)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;border-radius:2px;background:var(--grad);transition:.25s}
+.nav-links a:hover::after{width:100%}
+.hdr-call{display:inline-flex}
+#menuBtn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line2);place-items:center}
+#menuBtn svg{width:21px;height:21px}
+#mobileMenu{position:fixed;top:70px;left:4%;right:4%;z-index:89;background:rgba(6,24,16,.97);border:1px solid var(--line2);border-radius:20px;padding:1rem;box-shadow:var(--shadow);display:none;flex-direction:column;gap:.2rem}
+body.nav-open #mobileMenu{display:flex}
+#mobileMenu a{padding:.85rem 1rem;border-radius:12px;font-weight:500}
+#mobileMenu a:hover{background:var(--panel)}
+
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 80px;overflow:hidden}
+.aurora{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift 22s ease-in-out infinite alternate}
+.b1{width:520px;height:520px;background:#1d4ed8;top:-160px;left:-120px}
+.b2{width:460px;height:460px;background:#7f1d1d;top:10%;right:-140px;animation-delay:-7s}
+.b3{width:380px;height:380px;background:#172554;bottom:-140px;left:30%;animation-delay:-13s}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(60px,40px) scale(1.15)}}
+.grain{position:absolute;inset:0;z-index:-1;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+.pill-f{position:absolute;z-index:-1;width:46px;height:20px;border-radius:999px;opacity:.5;animation:floaty 9s ease-in-out infinite}
+.pill-f::before,.pill-f::after{content:"";position:absolute;top:0;bottom:0;width:50%}
+.pill-f::before{left:0;background:#2563eb;border-radius:999px 0 0 999px}
+.pill-f::after{right:0;background:#ffffff;border-radius:0 999px 999px 0}
+.pf1{top:22%;left:8%;transform:rotate(-25deg)}
+.pf2{top:64%;left:16%;transform:rotate(30deg);animation-delay:-3s;width:36px;height:16px}
+.pf3{top:30%;right:10%;transform:rotate(15deg);animation-delay:-5s;width:56px;height:24px;opacity:.35}
+.pf4{bottom:12%;right:24%;transform:rotate(-40deg);animation-delay:-7s;width:38px;height:17px;opacity:.4}
+@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -22px}}
+.pf3::before{background:#dc2626}
+.pf4::before{background:#1d4ed8}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;padding:.5rem 1.05rem;border-radius:999px;border:1px solid var(--line2);background:var(--panel);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#bfdbfe;margin-bottom:1.4rem}
+.dot-live{width:8px;height:8px;border-radius:50%;background:var(--em2);box-shadow:0 0 0 4px rgba(96,165,250,.22);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(96,165,250,.08)}}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem);font-weight:800}
+.hero p.sub{color:var(--mut);font-size:1.12rem;max-width:33rem;margin-top:1.3rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.1rem}
+.mini-stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2.4rem}
+.mini-stats div{display:flex;align-items:center;gap:.55rem;font-size:.88rem;color:var(--mut)}
+.mini-stats svg{width:17px;height:17px;color:var(--em2);flex:none}
+.glass-card{background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid var(--line2);border-radius:24px;padding:1.8rem;backdrop-filter:blur(14px);box-shadow:var(--shadow)}
+.hours-card h3{display:flex;align-items:center;gap:.6rem;font-size:1.05rem;margin-bottom:1.1rem}
+.hours-card h3 svg{width:19px;height:19px;color:var(--teal)}
+.hours-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px dashed var(--line);font-size:.93rem}
+.hours-row span:first-child{color:var(--mut)}
+.hours-row b{font-weight:600}
+.addr-row{display:flex;align-items:center;justify-content:space-between;gap:.8rem;padding-top:1.1rem;font-size:.9rem}
+.addr-row a{color:var(--em2);font-weight:600}
+.copy-btn{width:34px;height:34px;border-radius:10px;border:1px solid var(--line2);display:grid;place-items:center;transition:.2s;flex:none}
+.copy-btn:hover{border-color:var(--em);color:var(--em2)}
+.copy-btn svg{width:15px;height:15px}
+
+.stats-strip{border-block:1px solid var(--line);background:rgba(255,255,255,.02)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.4rem 0}
+.stat{text-align:center;padding:.4rem}
+.stat .num-wrap{font-family:'Sora';font-weight:800;font-size:clamp(1.7rem,3vw,2.4rem);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{font-size:.82rem;color:var(--mut);letter-spacing:.04em}
+
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.svc-card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:1.9rem;transition:.3s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden}
+.svc-card::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 20% -20%,rgba(37,99,235,.18),transparent 60%);opacity:0;transition:.3s}
+.svc-card:hover{transform:translateY(-6px);border-color:var(--line2)}
+.svc-card:hover::before{opacity:1}
+.svc-icon{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(239,68,68,.12));border:1px solid var(--line2);color:var(--em2);margin-bottom:1.2rem}
+.svc-icon svg{width:26px;height:26px}
+.svc-card h3{font-size:1.12rem;margin-bottom:.55rem}
+.svc-card p{color:var(--mut);font-size:.93rem}
+.svc-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--em2);font-weight:600;font-size:.9rem;margin-top:.9rem}
+.svc-link svg{width:15px;height:15px;transition:.2s}
+.svc-card:hover .svc-link svg{translate:4px 0}
+
+.medpack{background:radial-gradient(1000px 480px at 50% -10%,rgba(59,130,246,.14),transparent 60%),linear-gradient(#081027,#060c1c);border-block:1px solid var(--line);padding:96px 0 84px}
+.viewer{position:relative;border-radius:26px;border:1px solid var(--line2);background:radial-gradient(900px 420px at 50% 115%,rgba(37,99,235,.16),transparent 60%),linear-gradient(180deg,#0a1329,#060c1c);height:min(72vh,640px);min-height:420px;overflow:hidden;box-shadow:var(--shadow)}
+#stage{position:absolute;inset:0}
+#stage canvas{display:block;width:100%;height:100%;touch-action:none}
+.hud-tl{position:absolute;top:16px;left:16px;z-index:5;background:rgba(6,12,28,.72);backdrop-filter:blur(10px);border:1px solid var(--line2);border-radius:16px;padding:.75rem 1rem;min-width:190px}
+.hud-tl .hud-lbl{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.hud-tl .hud-num{font-family:'Sora';font-weight:800;font-size:1.5rem;line-height:1.15}
+.hud-tl .hud-num small{font-size:.8rem;color:var(--mut);font-weight:600}
+.mp-bar{height:6px;border-radius:99px;background:rgba(255,255,255,.1);margin-top:.45rem;overflow:hidden}
+.mp-bar i{display:block;height:100%;width:0%;border-radius:99px;background:var(--grad);transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.hud-tr{position:absolute;top:16px;right:16px;z-index:5;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:flex-end}
+.hbtn{background:rgba(6,12,28,.72);backdrop-filter:blur(10px);border:1px solid var(--line2);border-radius:12px;padding:.58rem 1rem;font-size:.83rem;font-weight:600;display:inline-flex;align-items:center;gap:.45rem;transition:.2s}
+.hbtn svg{width:15px;height:15px}
+.hbtn:hover{border-color:var(--em);color:var(--em2)}
+.hbtn.on{border-color:rgba(122,167,255,.6);color:var(--em2);background:rgba(37,99,235,.16)}
+.hint-pill{position:absolute;bottom:18px;left:50%;translate:-50% 0;z-index:5;background:rgba(6,12,28,.72);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:999px;padding:.55rem 1.2rem;font-size:.82rem;color:var(--mut);display:flex;align-items:center;gap:.6rem;transition:.6s;pointer-events:none;white-space:nowrap}
+.hint-pill svg{width:15px;height:15px;color:var(--em2)}
+.hint-pill.off{opacity:0;translate:-50% 14px}
+#mpLoad{position:absolute;inset:0;z-index:8;display:grid;place-items:center;background:#060c1c;transition:opacity .6s}
+#mpLoad.off{opacity:0;pointer-events:none}
+.load-box{text-align:center;color:var(--mut);font-size:.9rem}
+.spinner{width:46px;height:46px;margin:0 auto 1rem;border-radius:50%;border:3px solid rgba(122,167,255,.25);border-top-color:var(--em2);animation:spin 1s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+#glFallback{position:absolute;inset:0;z-index:9;display:grid;place-items:center;background:#060c1c;text-align:center;padding:2rem;color:var(--mut)}
+.mp-feats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.4rem}
+.feat-chip{display:flex;align-items:flex-start;gap:.7rem;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;font-size:.87rem;color:var(--mut)}
+.feat-chip svg{width:19px;height:19px;color:var(--em2);flex:none;margin-top:2px}
+.feat-chip b{color:var(--txt);display:block;font-size:.92rem}
+
+.prod-filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.2rem}
+.chipx{padding:.55rem 1.25rem;border-radius:999px;border:1px solid var(--line2);background:var(--panel);font-size:.86rem;font-weight:600;color:var(--mut);transition:.2s}
+.chipx:hover{color:var(--txt);border-color:var(--em)}
+.chipx.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 6px 20px rgba(37,99,235,.35)}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.2rem}
+.pcard{background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.3s cubic-bezier(.2,.7,.2,1)}
+.pcard:not(.hide):hover{transform:translateY(-6px);border-color:var(--line2)}
+.pcard.hide{display:none}
+.pmedia{height:150px;display:grid;place-items:center;position:relative;overflow:hidden}
+.pmedia svg{width:52px;height:52px;color:rgba(255,255,255,.9);filter:drop-shadow(0 6px 18px rgba(0,0,0,.35));transition:.3s}
+.pcard:hover .pmedia svg{scale:1.12}
+.pm1{background:linear-gradient(135deg,#1e40af,#3b82f6)}.pm2{background:linear-gradient(135deg,#1e3a8a,#0ea5e9)}.pm3{background:linear-gradient(135deg,#991b1b,#ef4444)}.pm4{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.pm5{background:linear-gradient(135deg,#312e81,#4f46e5)}.pm6{background:linear-gradient(135deg,#9f1239,#f43f5e)}
+.pbody{padding:1.2rem 1.3rem 1.4rem}
+.ptag{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.pbody h3{font-size:1.02rem;margin:.4rem 0 .3rem}
+.pbody p{color:var(--mut);font-size:.87rem}
+.shop-live{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem;background:linear-gradient(120deg,rgba(37,99,235,.22),rgba(239,68,68,.1));border:1px solid var(--line2);border-radius:20px;padding:1.5rem 1.7rem;transition:.3s}
+.shop-live:hover{border-color:var(--em);transform:translateY(-3px)}
+.shop-live h3{font-size:1.25rem;margin:.35rem 0 .3rem}
+.shop-live p{color:var(--mut);font-size:.92rem;max-width:36rem}
+.shop-live .ptag{color:#f87171}
+.price-note{display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;font-weight:600;color:var(--em2)}
+.price-note svg{width:13px;height:13px}
+.sync-note{display:block;font-size:.72rem;color:var(--mut);margin-top:.4rem}
+.prow{display:flex;align-items:center;justify-content:space-between;gap:.7rem;margin-top:.75rem}
+.pprice{font-family:'Sora';font-weight:700;font-size:.98rem;color:#fff}
+.plink{display:inline-flex;align-items:center;gap:.3rem;font-size:.76rem;font-weight:600;color:var(--em2)}
+.plink:hover{text-decoration:underline}
+.pmedia img{width:100%;height:100%;object-fit:cover;font-size:1.9rem;font-weight:800;color:rgba(255,255,255,.92)}
+.pcard.oos{opacity:.55}
+
+.health-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.hcard{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:1.6rem;transition:.3s}
+.hcard:hover{border-color:var(--line2);transform:translateY(-4px)}
+.hcard h3{font-size:1.02rem;display:flex;align-items:center;gap:.55rem;margin-bottom:.5rem}
+.hcard h3 svg{width:18px;height:18px;color:var(--em2)}
+.hcard p{color:var(--mut);font-size:.88rem;margin-bottom:.8rem}
+.hcard ul{list-style:none}
+.hcard li{font-size:.87rem;padding:.3rem 0 .3rem 1.35rem;position:relative;color:#c9ded4}
+.hcard li::before{content:"";position:absolute;left:0;top:.72rem;width:9px;height:9px;border-radius:3px;background:var(--grad)}
+.cta-banner{margin-top:2.4rem;border-radius:24px;border:1px solid var(--line2);background:linear-gradient(120deg,rgba(37,99,235,.18),rgba(239,68,68,.09) 60%);padding:2.2rem 2.4rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.4rem}
+.cta-banner h3{font-size:1.4rem}
+.cta-banner p{color:var(--mut);font-size:.95rem;margin-top:.3rem}
+
+.rev-view{overflow:hidden}
+.rev-track{display:flex;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.rslide{min-width:100%;padding:.4rem}
+.rcard{max-width:760px;margin-inline:auto;text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:26px;padding:3rem clamp(1.4rem,5vw,3.4rem)}
+.rstars{color:var(--red);letter-spacing:.35em;font-size:1.05rem;margin-bottom:1.3rem}
+.rquote{font-size:clamp(1.05rem,2.2vw,1.35rem);font-family:'Sora';font-weight:600;line-height:1.5}
+.rperson{display:flex;align-items:center;justify-content:center;gap:.85rem;margin-top:1.7rem}
+.avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.9rem;background:linear-gradient(120deg,#2563eb,#dc2626);border:1px solid var(--line2)}
+.rname{font-weight:700;text-align:left;font-size:.95rem}
+.rrole{font-size:.8rem;color:var(--mut);text-align:left}
+.rev-dots{display:flex;justify-content:center;gap:.55rem;margin-top:1.6rem}
+.dotsv{width:9px;height:9px;border-radius:99px;background:rgba(255,255,255,.18);transition:.3s;padding:0}
+.dotsv.on{width:26px;background:var(--grad)}
+
+.faq-wrap{max-width:800px;margin-inline:auto;display:grid;gap:.8rem}
+.faq-item{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.25s}
+.faq-item.open{border-color:var(--line2);background:var(--panel2)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;text-align:left;padding:1.25rem 1.5rem;font-weight:600;font-size:.98rem}
+.faq-q svg{width:19px;height:19px;flex:none;color:var(--em2);transition:.3s}
+.faq-item.open .faq-q svg{rotate:45deg}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1)}
+.faq-a p{padding:0 1.5rem 1.35rem;color:var(--mut);font-size:.93rem}
+
+.transfer-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:start}
+.rx-form{display:grid;gap:1rem}
+.fld label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:.45rem}
+.fld input,.fld textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line2);border-radius:14px;padding:.9rem 1.1rem;outline:none;transition:.2s;resize:vertical}
+.fld input:focus,.fld textarea:focus{border-color:var(--em);box-shadow:0 0 0 4px rgba(37,99,235,.16)}
+.form-note{display:flex;gap:.6rem;font-size:.85rem;color:var(--mut)}
+.form-note svg{width:17px;height:17px;color:var(--teal);flex:none;margin-top:2px}
+#rxDone{text-align:center;padding:2.5rem 1.5rem;border:1px dashed var(--line2);border-radius:22px}
+.done-ic{width:64px;height:64px;margin:0 auto 1.2rem;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:#fff}
+.done-ic svg{width:30px;height:30px}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:1.2rem;align-items:stretch}
+.c-details{display:grid;gap:.9rem;align-content:start}
+.c-row{display:flex;gap:1rem;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.2rem 1.3rem}
+.c-ic{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(239,68,68,.1));border:1px solid var(--line2);display:grid;place-items:center;color:var(--em2);flex:none}
+.c-ic svg{width:20px;height:20px}
+.c-row h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:.2rem}
+.c-row p,.c-row a.val{font-size:.95rem;font-weight:500}
+.c-row a.val:hover{color:var(--em2)}
+.map-frame{border-radius:22px;overflow:hidden;border:1px solid var(--line2);min-height:380px}
+.map-frame iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.3) contrast(1.05)}
+
+footer{border-top:1px solid var(--line);background:#04081a;padding:64px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.4rem;padding-bottom:2.6rem}
+.foot-brand p{color:var(--mut);font-size:.9rem;margin-top:1rem;max-width:26rem}
+.foot-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.badge{font-size:.7rem;font-weight:600;letter-spacing:.05em;border:1px solid var(--line2);color:var(--mut);border-radius:999px;padding:.35rem .8rem}
+.foot-grid h4{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:1.1rem}
+.foot-grid ul{list-style:none;display:grid;gap:.55rem}
+.foot-grid ul a{font-size:.92rem;color:#bcd3c8;transition:.2s}
+.foot-grid ul a:hover{color:var(--em2)}
+.foot-bottom{border-top:1px solid var(--line);padding:1.4rem 0;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;font-size:.82rem;color:var(--mut)}
+
+#toast{position:fixed;bottom:26px;left:50%;translate:-50% 20px;z-index:200;background:#101c3f;border:1px solid rgba(122,167,255,.5);color:#dbeafe;padding:.8rem 1.5rem;border-radius:999px;font-size:.9rem;font-weight:500;box-shadow:0 14px 40px rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:.35s cubic-bezier(.2,.7,.2,1)}
+#toast.show{opacity:1;translate:-50% 0}
+#toTop{position:fixed;bottom:24px;right:24px;z-index:80;width:48px;height:48px;border-radius:14px;background:var(--grad);color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,99,235,.45);opacity:0;pointer-events:none;translate:0 12px;transition:.3s}
+#toTop.show{opacity:1;pointer-events:auto;translate:0 0}
+#toTop svg{width:20px;height:20px}
+
+.reveal{opacity:0;transform:translateY(28px)}
+.reveal.in{opacity:1;transform:none;transition:all .85s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  html{scroll-behavior:auto}
+}
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:2.4rem}
+  .svc-grid,.health-grid{grid-template-columns:repeat(2,1fr)}
+  .mp-feats{grid-template-columns:repeat(2,1fr)}
+  .transfer-grid,.contact-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links,.hdr-call{display:none}
+  #menuBtn{display:grid}
+}
+@media (max-width:640px){
+  .sec{padding:70px 0}
+  .svc-grid,.health-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr);row-gap:1.6rem}
+  .viewer{min-height:340px;height:62vh}
+  .hud-tl{min-width:150px;padding:.6rem .8rem}
+  .hint-pill{font-size:.72rem;padding:.5rem .9rem}
+  .cta-banner{padding:1.7rem}
+  .foot-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="container bar">
+    <a class="brand" href="#home" aria-label="Al-Medina Pharmacy home">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span><span class="brand-name">Al-Medina Pharmacy</span><br><span class="brand-sub">Flatbush · Brooklyn</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="mlink" href="#services">Services</a>
+      <a class="mlink" href="#medpack">Med Pack</a>
+      <a class="mlink" href="#products">Products</a>
+      <a class="mlink" href="#health-info">Health Info</a>
+      <a class="mlink" href="#reviews">Reviews</a>
+      <a class="mlink" href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary sm hdr-call" href="tel:+17189412669"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>(718) 941-2669</a>
+    <button id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<div id="mobileMenu">
+  <a class="mlink" href="#services">Services</a>
+  <a class="mlink" href="#medpack">Med Pack 3D</a>
+  <a class="mlink" href="#products">Products</a>
+  <a class="mlink" href="#health-info">Health Info</a>
+  <a class="mlink" href="#reviews">Reviews</a>
+  <a class="mlink" href="#transfer">Transfer Rx</a>
+  <a class="mlink" href="#contact">Contact</a>
+</div>
+
+<main>
+<section class="hero" id="home">
+  <div class="aurora"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+  <div class="grain"></div>
+  <div class="pill-f pf1"></div><div class="pill-f pf2"></div><div class="pill-f pf3"></div><div class="pill-f pf4"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge"><i class="dot-live"></i>Independent Community Pharmacy · Brooklyn, NY</span>
+      <h1>Your community health partner in <span class="gtx">Brooklyn.</span></h1>
+      <p class="sub">Personalized care, trusted advice, and quality products for our neighbors on Flatbush Ave. Prescriptions filled in minutes, free local delivery, and wellness solutions with a smile.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#transfer">Transfer Prescription<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#medpack">Explore the Med Pack</a>
+      </div>
+      <div class="mini-stats">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8-7 10-4-2-7-5.4-7-10V6z"/></svg>Licensed NY pharmacy #022483</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open 6 days a week</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>1242 Flatbush Ave</div>
+      </div>
+    </div>
+    <aside class="glass-card hours-card reveal">
+      <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Pharmacy Hours</h3>
+      <div class="hours-row"><span>Monday – Friday</span><b>10:00 AM – 7:00 PM</b></div>
+      <div class="hours-row"><span>Saturday</span><b>10:00 AM – 6:00 PM</b></div>
+      <div class="hours-row" style="border-bottom:none"><span>Sunday</span><b style="color:var(--red)">Closed</b></div>
+      <div class="addr-row">
+        <span>1242 Flatbush Ave,<br>Brooklyn, NY 11226</span>
+        <button class="copy-btn" data-copy="1242 Flatbush Ave, Brooklyn, NY 11226" aria-label="Copy address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
+      </div>
+      <div class="addr-row" style="padding-top:0;border:none;margin-top:.4rem">
+        <a href="tel:+17189412669">(718) 941-2669</a>
+        <a class="btn btn-ghost sm" href="#contact">Directions</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="stats-strip">
+  <div class="container stats-grid">
+    <div class="stat reveal"><div class="num-wrap"><span class="num" data-n="28">0</span></div><div class="lbl">Sealed doses per med pack</div></div>
+    <div class="stat reveal"><div class="num-wrap"><span class="num" data-n="15">0</span>–<span class="num" data-n="20">0</span> min</div><div class="lbl">Typical prescription fills</div></div>
+    <div class="stat reveal"><div class="num-wrap"><span class="num" data-n="100">0</span>%</div><div class="lbl">Free local delivery within 2 mi</div></div>
+    <div class="stat reveal"><div class="num-wrap"><span class="num" data-n="6">0</span></div><div class="lbl">Days open every week</div></div>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Comprehensive pharmacy services</h2>
+      <p class="lead">Caring for you and your family, one service at a time — from everyday refills to specialized packaging that keeps complex regimens simple.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5a5 5 0 0 1-7-7l7-7a5 5 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/></svg></div>
+        <h3>Prescription Filling</h3>
+        <p>Fast, accurate, friendly service with easy refills and transfers. Most prescriptions are ready in 15–20 minutes.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8-7 10-4-2-7-5.4-7-10V6z"/><path d="M12 9v6M9 12h6"/></svg></div>
+        <h3>Immunizations</h3>
+        <p>Flu shots, Tdap (Boostrix), TB tests, shingles, pneumonia &amp; more — walk-ins welcome during regular hours.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.7"/><circle cx="17" cy="18" r="1.7"/></svg></div>
+        <h3>Free Local Delivery</h3>
+        <p>Can't make it to us? Medications and wellness supplies come right to your door within a 2-mile radius.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.5" cy="10" r="1.6"/><circle cx="15.5" cy="10" r="1.6"/><circle cx="8.5" cy="15" r="1.6"/><circle cx="15.5" cy="15" r="1.6"/></svg></div>
+        <h3>Multi-Med Blister Packaging</h3>
+        <p>SureMed-style weekly cards organize morning-to-bedtime doses into one sealed, tamper-evident pack.</p>
+        <a class="svc-link" href="#medpack">See it in 3D<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2.5"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M12 11v6M9 14h6"/></svg></div>
+        <h3>DME &amp; Medical Supplies</h3>
+        <p>Medicare-enrolled supplier: glucose monitors, nebulizers, walkers, wheelchairs, ostomy &amp; surgical dressings.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3>Pharmacist Consultations</h3>
+        <p>Private guidance on medications, interactions and chronic-condition management — always free to ask.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="medpack" id="medpack">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Adherence Packaging</span>
+      <h2>Meet your weekly <span class="gtx">Med Pack</span></h2>
+      <p class="lead">The pharmacy-grade 7-day, 4-pass blister card we use to organize multi-medication regimens — 28 individually sealed doses from morning to bedtime, tamper-evident and disposable. Go ahead: pop a bubble.</p>
+    </div>
+    <div class="viewer reveal">
+      <div id="stage"></div>
+      <div class="hud-tl">
+        <div class="hud-lbl">Doses taken</div>
+        <div class="hud-num"><span id="mpCount">0</span><small> / 28</small></div>
+        <div class="mp-bar"><i id="mpBar"></i></div>
+      </div>
+      <div class="hud-tr">
+        <button class="hbtn" id="btnPopAll"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg>Pop all</button>
+        <button class="hbtn" id="btnReset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>Reset</button>
+        <button class="hbtn on" id="btnSpin" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M17 3l4 4-4 4" opacity="0"/><circle cx="19" cy="5" r="1.6" fill="currentColor" stroke="none"/></svg>Spin</button>
+        <button class="hbtn on" id="btnSound" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 6a9 9 0 0 1 0 12"/></svg>Sound</button>
+      </div>
+      <div class="hint-pill" id="mpHint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3.5V9L4.6 16.4A2 2 0 0 0 6.3 19.5h11.4a2 2 0 0 0 1.7-3.1L15 9V3.5"/><path d="M7.5 3.5h9"/></svg>Drag to orbit · Scroll to zoom · Click a bubble to pop it</div>
+      <div id="mpLoad"><div class="load-box"><div class="spinner"></div>Preparing your med pack…</div></div>
+      <div id="glFallback" hidden><div><h3>3D viewer unavailable</h3><p style="max-width:34ch;margin-top:.6rem">Your browser or connection blocked WebGL. The rest of the site works perfectly — or call us at (718) 941-2669 for your med pack.</p></div></div>
+    </div>
+    <div class="mp-feats reveal">
+      <div class="feat-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.5" cy="10" r="1.6"/><circle cx="15.5" cy="10" r="1.6"/><circle cx="8.5" cy="15" r="1.6"/><circle cx="15.5" cy="15" r="1.6"/></svg><span><b>28 individual blisters</b>Holds up to ~6 meds per dose</span></div>
+      <div class="feat-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Morning → Bedtime</b>Four labeled dose times daily</span></div>
+      <div class="feat-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8-7 10-4-2-7-5.4-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Tamper-evident foil</b>Torn seal shows dose was taken</span></div>
+      <div class="feat-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.5 12h-11z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span><b>Fresh card every week</b>Clean &amp; disposable, no dirty boxes</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="products">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Shop wellness</span>
+      <h2>Featured health products</h2>
+      <p class="lead">Find what you need from brands you trust — with a pharmacist available to help you choose.</p>
+    </div>
+    <div class="prod-filters reveal">
+      <button class="chipx on" data-f="all">All Products</button>
+      <button class="chipx" data-f="wellness">Wellness</button>
+      <button class="chipx" data-f="otc">OTC Medicine</button>
+      <button class="chipx" data-f="skincare">Skincare</button>
+      <button class="chipx" data-f="firstaid">First Aid</button>
+      <button class="chipx" data-f="fitness">Exercise &amp; Fitness</button>
+    </div>
+    <div class="prod-grid">
+      <a class="shop-live reveal" href="https://www.google.com/search?q=Exercise+%26+Fitness&amp;udm=28&amp;shoprs=CAESCToHCgX4uv_nARIVsgESCWO_aUQye_Z6EcGDCVsGAAAIEgZaBAiyrSAYHyoSRXhlcmNpc2UgJiBGaXRuZXNzMjsIAhISQWwtTWVkaW5hIFBoYXJtYWN5Igk6BwoF-Lr_5wEqFgoSQWwtTWVkaW5hIFBoYXJtYWN5GAFIATJJCB8SEkFsIE1lZGluYSBQaGFybWFjeSIVsgESCWO_aUQye_Z6EcGDCVsGAAAIKhgKEkFsIE1lZGluYSBQaGFybWFjeRABGAFIATImCAkiBloECLKtICoYChJFeGVyY2lzZSAmIEZpdG5lc3MQARgBSABYsq0g" target="_blank" rel="noopener">
+        <div><span class="ptag">Live catalog · Al-Medina on Google</span>
+        <h3>Exercise &amp; Fitness equipment</h3>
+        <p>Browse our full fitness range — auto-synced daily from our Google Merchant Center catalog.<span class="sync-note" id="liveStamp"></span></p></div>
+        <span class="btn btn-primary sm">View live prices<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M21 3l-9 9M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+      </a>
+      <article class="pcard reveal" data-c="wellness"><div class="pmedia pm1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="14" r="5"/><circle cx="16" cy="9" r="4"/><path d="M12.5 11.5 14 10.5"/></svg></div><div class="pbody"><span class="ptag">Wellness</span><h3>Daily Vitamins</h3><p>Essential multivitamins for adults and kids.</p></div></article>
+      <article class="pcard reveal" data-c="wellness"><div class="pmedia pm2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5a5 5 0 0 1-7-7l7-7a5 5 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/></svg></div><div class="pbody"><span class="ptag">Wellness</span><h3>Supplements</h3><p>Herbal and dietary support for all ages.</p></div></article>
+      <article class="pcard reveal" data-c="wellness"><div class="pmedia pm3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg></div><div class="pbody"><span class="ptag">Wellness</span><h3>Immunity Boosters</h3><p>Zinc, vitamin C, and herbal infusions.</p></div></article>
+      <article class="pcard reveal" data-c="otc"><div class="pmedia pm4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5c-2.5 1.5-2.5 5.5 0 7 2.5-1.5 2.5-5.5 0-7z" fill="currentColor" stroke="none" opacity=".5"/><path d="M8.5 12h2m3 0h2"/></svg></div><div class="pbody"><span class="ptag">OTC Medicine</span><h3>Pain Relief</h3><p>Aspirin, ibuprofen, and acetaminophen.</p></div></article>
+      <article class="pcard reveal" data-c="otc"><div class="pmedia pm5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 1 1 16 0c0 4-3 5.5-4 7H8c-1-1.5-4-3-4-7z"/><path d="M9.5 17.5h5"/></svg></div><div class="pbody"><span class="ptag">OTC Medicine</span><h3>Cough &amp; Cold</h3><p>Syrups, lozenges, and nighttime relief.</p></div></article>
+      <article class="pcard reveal" data-c="otc"><div class="pmedia pm6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 3v6a5 5 0 0 0 10 0V3"/><path d="M12 14v7M8.5 21h7"/></svg></div><div class="pbody"><span class="ptag">OTC Medicine</span><h3>Digestive Health</h3><p>Antacids, probiotics, and fiber support.</p></div></article>
+      <article class="pcard reveal" data-c="skincare"><div class="pmedia pm1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="10" height="12" rx="2"/><path d="M10 9V5a2 2 0 0 1 4 0v4M10 14h4"/></svg></div><div class="pbody"><span class="ptag">Skincare</span><h3>Moisturizers</h3><p>Hydrating lotions for sensitive skin types.</p></div></article>
+      <article class="pcard reveal" data-c="skincare"><div class="pmedia pm2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l-.7 4.5a4 4 0 0 1-4.6 0z"/><path d="M9.5 8.5 8 21h8l-1.5-12.5"/></svg></div><div class="pbody"><span class="ptag">Skincare</span><h3>Gentle Cleansers</h3><p>Facial washes and body bars for daily care.</p></div></article>
+      <article class="pcard reveal" data-c="skincare"><div class="pmedia pm3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/></svg></div><div class="pbody"><span class="ptag">Skincare</span><h3>Sun Protection</h3><p>Broad-spectrum SPF 30 and 50+ options.</p></div></article>
+      <article class="pcard reveal" data-c="firstaid"><div class="pmedia pm4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2.5"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M12 11v6M9 14h6"/></svg></div><div class="pbody"><span class="ptag">First Aid</span><h3>First Aid Kits</h3><p>Complete kits for home and travel safety.</p></div></article>
+      <article class="pcard reveal" data-c="firstaid"><div class="pmedia pm5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12h16" /><path d="M7 9.5h10a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2z"/><circle cx="9" cy="12" r=".8" fill="currentColor"/><circle cx="12" cy="12" r=".8" fill="currentColor"/><circle cx="15" cy="12" r=".8" fill="currentColor"/></svg></div><div class="pbody"><span class="ptag">First Aid</span><h3>Bandages &amp; Tapes</h3><p>Sterile dressings for minor cuts and scrapes.</p></div></article>
+      <article class="pcard reveal" data-c="firstaid"><div class="pmedia pm6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 10a3 3 0 0 1-2.8 4H7.8A3 3 0 0 1 5 17l4-10z"/><path d="M6.6 15h10.8"/></svg></div><div class="pbody"><span class="ptag">First Aid</span><h3>Antiseptic Solutions</h3><p>Cleaning sprays and antibiotic ointments.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 7v10M17 7v10M4 9v6M20 9v6M7 12h10"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Dumbbells &amp; Hand Weights</h3><p>Adjustable sets and pairs for home strength training.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-7 3-11 7-13 4 2 7 6 7 13"/><path d="M8 16c1-4 2.5-6 4-6s3 2 4 6"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Resistance Bands</h3><p>Loop and tube sets for strength, mobility and rehab.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="14" width="16" height="6" rx="3"/><path d="M7 17h10M8 10a3 3 0 1 1 6 0c0 2-3 2-3 4"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Yoga &amp; Exercise Mats</h3><p>Non-slip cushioned mats for yoga, pilates and floor work.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="8" height="8" rx="2.2"/><path d="M10 8V5h4v3M10 16v3h4v-3"/><path d="M12 10.6V12l1.2.9"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Fitness Trackers</h3><p>Smart watches and activity bands to keep you on pace.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.2" y="3" width="3.2" height="5.5" rx="1.4"/><rect x="16.6" y="3" width="3.2" height="5.5" rx="1.4"/><path d="M5.8 8.5c0 6 2.6 11.5 6.2 11.5s6.2-5.5 6.2-11.5"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Jump Ropes</h3><p>Speed ropes for quick cardio, anywhere.</p></div></article>
+      <article class="pcard reveal" data-c="fitness"><div class="pmedia pm3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h4M10.5 3v3L8 9.5V19a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V9.5L13.5 6V3"/><path d="M8 13h8"/></svg></div><div class="pbody"><span class="ptag">Exercise &amp; Fitness</span><h3>Hydration &amp; Shakers</h3><p>Sport bottles and shaker cups to power every workout.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="health-info">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Health resources</span>
+      <h2>Guidance for common conditions</h2>
+      <p class="lead">Expert advice and management solutions — and a pharmacist who is always happy to talk it through.</p>
+    </div>
+    <div class="health-grid">
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 4v10.5a3.5 3.5 0 1 1-2-3.2V4z"/><path d="M14 7h4"/></svg>Fever Management</h3><p>A fever is often your body fighting infection. Stay hydrated and rest.</p><ul><li>Acetaminophen (Tylenol)</li><li>Ibuprofen (Advil/Motrin)</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 1 1 16 0c0 4-3 5.5-4 7H8c-1-1.5-4-3-4-7z"/></svg>Cough &amp; Cold</h3><p>Dry or productive cough — we stock the right relief for either.</p><ul><li>Expectorants &amp; suppressants</li><li>Honey-based natural syrups</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M3 12h18"/></svg>Pain Relief</h3><p>From headaches to joint pain, find effective local or systemic relief.</p><ul><li>Topical creams (Biofreeze/Voltaren)</li><li>Targeted NSAIDs</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>Diabetes Care</h3><p>Managing blood sugar is essential. We stock all necessary supplies.</p><ul><li>Glucose monitor setup</li><li>Testing strips &amp; lancets</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg>Cholesterol Support</h3><p>Heart health is a priority. Learn to manage your levels effectively.</p><ul><li>Statin medication counseling</li><li>Omega-3 &amp; heart supplements</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>Blood Pressure</h3><p>Free in-store monitoring and home monitor calibration services.</p><ul><li>Free BP checks</li><li>DASH diet counseling</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20l6-6M14 4l6 6M8 4l-4 4 3 3 4-4zM20 16l-4 4-3-3 4-4z"/></svg>Allergy Relief</h3><p>Seasonal or year-round allergies — find the right balance with us.</p><ul><li>Antihistamines (Claritin/Zyrtec)</li><li>Nasal steroid sprays</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3v6a5 5 0 0 0 10 0V3M12 14v7M8.5 21h7"/></svg>Digestive Health</h3><p>Maintain gut health — from occasional heartburn to daily comfort.</p><ul><li>Antacids &amp; PPIs</li><li>Probiotics &amp; fiber supplements</li></ul></article>
+      <article class="hcard reveal"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13V5a2 2 0 1 1 4 0v6M12 11V4.5a2 2 0 1 1 4 0V11M16 11.5V7a2 2 0 1 1 4 0v7a7 7 0 0 1-7 7h-1a7 7 0 0 1-6-3.4L3.5 14a2 2 0 1 1 3.4-2L8 13.5"/></svg>Skin &amp; Wound Care</h3><p>Proper treatment prevents infection and speeds healing.</p><ul><li>Antibiotic ointments (Neosporin)</li><li>Sterile dressings &amp; antiseptics</li></ul></article>
+    </div>
+    <div class="cta-banner reveal">
+      <div><h3>Have questions about your health?</h3><p>Our pharmacists are here for a private consultation.</p></div>
+      <a class="btn btn-primary" href="tel:+17189412669">Talk to a Pharmacist</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reviews">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Patient stories</span>
+      <h2>What our patients say</h2>
+      <p class="lead">Real words from real neighbors — read what our community says about our dedicated service.</p>
+    </div>
+    <div class="rev-view reveal">
+      <div class="rev-track" id="revTrack">
+        <div class="rslide"><div class="rcard">
+          <div class="rstars">★★★★★</div>
+          <p class="rquote">"The staff is so kind and helpful. They always go the extra mile to make sure my prescriptions are ready on time. A real gem in the neighborhood!"</p>
+          <div class="rperson"><span class="avatar">JD</span><span><span class="rname">Jane D.</span><br><span class="rrole">Local Resident</span></span></div>
+        </div></div>
+        <div class="rslide"><div class="rcard">
+          <div class="rstars">★★★★★</div>
+          <p class="rquote">"Free delivery has been a lifesaver for my elderly parents. The pharmacists are knowledgeable and always take time to answer questions."</p>
+          <div class="rperson"><span class="avatar">MR</span><span><span class="rname">Michael R.</span><br><span class="rrole">Patient Since 2018</span></span></div>
+        </div></div>
+        <div class="rslide"><div class="rcard">
+          <div class="rstars">★★★★★</div>
+          <p class="rquote">"A truly professional and welcoming pharmacy. They treat you like family here. So glad I switched over from one of the big chain stores."</p>
+          <div class="rperson"><span class="avatar">SL</span><span><span class="rname">Sarah L.</span><br><span class="rrole">Verified Customer</span></span></div>
+        </div></div>
+      </div>
+      <div class="rev-dots" id="revDots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-sec sec alt">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Quick answers</h2>
+    </div>
+    <div class="faq-wrap reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you offer free delivery?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Yes! We offer free local delivery within a 2-mile radius for all prescriptions. For addresses further away, please contact us for availability.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does it take to fill a prescription?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Most prescriptions are filled within 15–20 minutes. Transfers may take slightly longer as we coordinate with your previous pharmacy.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you accept my insurance?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>We accept most major plans, including Medicare Part D, Medicaid, and private commercial insurance. Bring your card in or call us to verify.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I get a flu shot without an appointment?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Yes! We welcome walk-ins for flu shots, Boostrix (Tdap), TB tests, shingles, pneumonia and most routine vaccines during regular business hours.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="transfer sec" id="transfer">
+  <div class="container transfer-grid">
+    <div class="reveal">
+      <span class="eyebrow">Switching is easy</span>
+      <h2>Transfer your prescription</h2>
+      <p class="lead">Let us handle the paperwork. Fill out the details and our team will coordinate with your current pharmacy — most transfers are completed the same day.</p>
+      <p class="form-note" style="margin-top:1.4rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 11v5"/></svg>We'll contact you within 1 business day to confirm the transfer.</p>
+    </div>
+    <div class="glass-card reveal">
+      <form id="rxForm" class="rx-form">
+        <div class="fld"><label for="rName">Patient name</label><input id="rName" required placeholder="Full name"></div>
+        <div class="fld"><label for="rPhone">Phone number</label><input id="rPhone" type="tel" required placeholder="(718) ___-____"></div>
+        <div class="fld"><label for="rPharm">Current pharmacy</label><input id="rPharm" placeholder="Pharmacy name & location"></div>
+        <div class="fld"><label for="rMeds">Medication details / Rx #</label><textarea id="rMeds" rows="3" placeholder="List medications or prescription numbers"></textarea></div>
+        <button class="btn btn-primary" type="submit">Submit Transfer Request</button>
+      </form>
+      <div id="rxDone" hidden>
+        <div class="done-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5L19.5 7"/></svg></div>
+        <h3>Request sent!</h3>
+        <p style="color:var(--mut);margin-top:.4rem">Thank you. Our pharmacists will review your request and call you shortly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt contact" id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Visit us on Flatbush Ave</h2>
+      <p class="lead">We're here to help. Stop by, give us a call, or send an email.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="c-details reveal">
+        <div class="c-row"><span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Address</h4><p>1242 Flatbush Ave<br>Brooklyn, NY 11226</p></div></div>
+        <div class="c-row"><span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><div><h4>Phone / Fax</h4><a class="val" href="tel:+17189412669">(718) 941-2669</a><p style="color:var(--mut);font-size:.85rem">Fax: (718) 941-0935</p></div></div>
+        <div class="c-row"><span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><h4>Email</h4><a class="val" href="mailto:info@almedinapharmacy.com">info@almedinapharmacy.com</a></div></div>
+        <div class="c-row"><span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Hours</h4><p>Mon–Fri 10–7 · Sat 10–6 · Sun Closed</p></div></div>
+        <a class="btn btn-primary" style="justify-content:center" href="https://wa.me/17189412669" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>WhatsApp Us</a>
+      </div>
+      <div class="map-frame reveal">
+        <iframe title="Al-Medina Pharmacy map" src="https://www.google.com/maps?q=1242%20Flatbush%20Ave,%20Brooklyn,%20NY%2011226&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="#home"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span><span class="brand-name">Al-Medina Pharmacy</span><br><span class="brand-sub">Flatbush Ave · Brooklyn</span></span></a>
+      <p>An independent community pharmacy dedicated to personalized care for the Flatbush neighborhood — fast fills, honest advice and delivery to your door.</p>
+      <div class="foot-badges"><span class="badge">NY Lic #022483</span><span class="badge">NPI 1750460077</span><span class="badge">Medicare DME Supplier</span></div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#services">Services</a></li><li><a href="#medpack">Med Pack 3D</a></li><li><a href="#products">Products</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#transfer">Transfer Rx</a></li></ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul><li><a href="#services">Prescription Filling</a></li><li><a href="#services">Immunizations</a></li><li><a href="#services">Free Delivery</a></li><li><a href="#medpack">Blister Packaging</a></li><li><a href="#services">DME Supplies</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li><a href="tel:+17189412669">(718) 941-2669</a></li><li><a href="mailto:info@almedinapharmacy.com">info@almedinapharmacy.com</a></li><li><a href="#contact">1242 Flatbush Ave,<br>Brooklyn, NY 11226</a></li></ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© <span id="year">2026</span> Al-Medina Pharmacy, Inc. All rights reserved.</span>
+    <span>Serving the Brooklyn community with care and dedication.</span>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<button id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+<script>
+(function(){
+"use strict";
+var LIVE_PRODUCTS_URL="products.json";
+function $(s,c){return (c||document).querySelector(s)}
+function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+window.toastMsg=function(msg){
+  var t=$('#toast');if(!t)return;
+  t.textContent=msg;t.classList.add('show');
+  clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('show')},2600);
+};
+var hdr=$('#hdr'),toTop=$('#toTop');
+function onScroll(){
+  hdr.classList.toggle('scrolled',scrollY>24);
+  toTop.classList.toggle('show',scrollY>650);
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+toTop.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
+var mBtn=$('#menuBtn');
+if(mBtn)mBtn.addEventListener('click',function(){
+  var open=document.body.classList.toggle('nav-open');
+  mBtn.setAttribute('aria-expanded',open?'true':'false');
+});
+$$('.mlink').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('nav-open')})});
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+$$('.reveal').forEach(function(el){io.observe(el)});
+var cio=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(!e.isIntersecting)return;cio.unobserve(e.target);
+    var el=e.target,end=parseFloat(el.getAttribute('data-n'))||0,t0=null;
+    function step(ts){if(t0===null)t0=ts;var p=Math.min((ts-t0)/1300,1);p=1-Math.pow(1-p,3);el.textContent=Math.round(end*p);if(p<1)requestAnimationFrame(step)}
+    requestAnimationFrame(step);
+  })
+},{threshold:.4});
+$$('.num[data-n]').forEach(function(el){cio.observe(el)});
+var prodFilters=$('.prod-filters');
+if(prodFilters)prodFilters.addEventListener('click',function(e){
+  var ch=e.target.closest('.chipx');
+  if(!ch||!prodFilters.contains(ch))return;
+  $$('.chipx').forEach(function(c){c.classList.remove('on')});
+  ch.classList.add('on');
+  var f=ch.getAttribute('data-f');
+  $$('.pcard').forEach(function(card){
+    card.classList.toggle('hide',!(f==='all'||card.getAttribute('data-c')===f));
+  });
+});
+var track=$('#revTrack'),dotsWrap=$('#revDots');
+if(track){
+  var slides=$$('.rslide').length,idx=0,timer=null;
+  for(var i=0;i<slides;i++){
+    (function(n){
+      var b=document.createElement('button');
+      b.className='dotsv'+(n===0?' on':'');b.setAttribute('aria-label','Review '+(n+1));
+      b.addEventListener('click',function(){go(n);restart()});
+      dotsWrap.appendChild(b);
+    })(i);
+  }
+  function go(n){idx=(n+slides)%slides;track.style.transform='translateX(-'+(idx*100)+'%)';
+    $$('.dotsv',dotsWrap).forEach(function(d,k){d.classList.toggle('on',k===idx)});}
+  function restart(){clearInterval(timer);timer=setInterval(function(){go(idx+1)},6500)}
+  var revSec=$('#reviews');
+  revSec.addEventListener('mouseenter',function(){clearInterval(timer)});
+  revSec.addEventListener('mouseleave',restart);
+  restart();
+}
+$$('.faq-item').forEach(function(item){
+  var btn=$('.faq-q',item),pan=$('.faq-a',item);
+  if(!btn)return;
+  btn.addEventListener('click',function(){
+    var wasOpen=item.classList.contains('open');
+    $$('.faq-item.open').forEach(function(o){
+      o.classList.remove('open');
+      $('.faq-a',o).style.maxHeight='';
+      $('.faq-q',o).setAttribute('aria-expanded','false');
+    });
+    if(!wasOpen){
+      item.classList.add('open');
+      pan.style.maxHeight=pan.scrollHeight+'px';
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+var form=$('#rxForm');
+if(form)form.addEventListener('submit',function(e){
+  e.preventDefault();form.hidden=true;$('#rxDone').hidden=false;
+  window.toastMsg('Transfer request received — we will call you to confirm.');
+});
+$$('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var v=b.getAttribute('data-copy');
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(v).then(
+        function(){window.toastMsg('Address copied to clipboard')},
+        function(){window.toastMsg(v)});
+    }else window.toastMsg(v);
+  });
+});
+var yr=$('#year');if(yr)yr.textContent=new Date().getFullYear();
+if(LIVE_PRODUCTS_URL){
+  fetch(LIVE_PRODUCTS_URL,{cache:'no-store'}).then(function(r){
+    return r.ok?r.json():Promise.reject(new Error('http '+r.status));
+  }).then(function(d){
+    if(!d||!Array.isArray(d.items)||!d.items.length)return;
+    var grid=$('.prod-grid');
+    if(!grid)return;
+    var banner=$('.shop-live',grid);
+    var slug=function(t){return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')||'other'};
+    var cats=[];
+    d.items.forEach(function(p){
+      p._cat=((p.type||'Other').split('>').pop()||'Other').trim()||'Other';
+      p._f=slug(p._cat);
+      if(cats.indexOf(p._cat)<0)cats.push(p._cat);
+    });
+    var fw=$('.prod-filters');
+    cats.forEach(function(c){
+      if(fw&&!$('.chipx[data-f="'+slug(c)+'"]',fw)){
+        var b=document.createElement('button');
+        b.type='button';b.className='chipx';b.setAttribute('data-f',slug(c));b.textContent=c;
+        fw.appendChild(b);
+      }
+    });
+    var pmCls=['pm1','pm2','pm3','pm4','pm5','pm6'];
+    var shown=0;
+    d.items.forEach(function(p){
+      if(shown>=48)return;
+      shown++;
+      var oos=/^out/i.test(String(p.availability||''));
+      var el=document.createElement('article');
+      el.className='pcard reveal in';
+      el.setAttribute('data-c',p._f);
+      if(oos)el.classList.add('oos');
+      var media=document.createElement('div');media.className='pmedia '+pmCls[shown%6];
+      if(p.image){
+        var im=document.createElement('img');im.loading='lazy';im.alt=p.title;im.src=p.image;
+        im.onerror=function(){im.remove()};
+        media.appendChild(im);
+      }else{
+        media.textContent=p.title.charAt(0).toUpperCase();
+      }
+      var body=document.createElement('div');body.className='pbody';
+      var tag=document.createElement('span');tag.className='ptag';tag.textContent=p._cat;
+      var h3=document.createElement('h3');h3.textContent=p.title;
+      var row=document.createElement('div');row.className='prow';
+      var pr=document.createElement('span');pr.className='pprice';
+      pr.textContent=oos?'Out of stock':(p.salePrice?p.salePrice+' (was '+(p.price||'-')+')':(p.price||'Call for price'));
+      row.appendChild(pr);
+      if(p.link){
+        var a=document.createElement('a');a.className='plink';a.href=p.link;a.target='_blank';a.rel='noopener';
+        a.textContent=oos?'Details':'Buy';
+        row.appendChild(a);
+      }
+      body.appendChild(tag);body.appendChild(h3);body.appendChild(row);
+      el.appendChild(media);el.appendChild(body);
+      grid.insertBefore(el,banner?banner.nextSibling:null);
+    });
+    var st=$('#liveStamp');
+    if(st)st.textContent='Catalog synced '+new Date(d.updated).toLocaleDateString(undefined,{month:'short',day:'numeric'})+' \u00b7 '+d.count+' items live';
+  }).catch(function(){});
+}
+setTimeout(function(){
+  if(!window.__mpReady){
+    var l=$('#mpLoad');if(l)l.classList.add('off');
+    var f=$('#glFallback');if(f)f.hidden=false;
+  }
+},12000);
+})();
+</script>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+
+const stage=document.getElementById('stage');
+const loadEl=document.getElementById('mpLoad');
+const fbEl=document.getElementById('glFallback');
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const COLS=7,ROWS=4;
+const DAYS=['MON','TUE','WED','THU','FRI','SAT','SUN'];
+const TIMES=['MORNING','NOON','EVENING','BEDTIME'];
+const CELL_W=1.16,CELL_H=1.34,BAND_T=1.0,BAND_L=1.6;
+const CARD_W=10.42,CARD_H=6.88,TH=.22,R=.44;
+const START_X=-CARD_W/2+BAND_L+CELL_W/2;
+const START_Y=CARD_H/2-BAND_T-CELL_H/2;
+const DAY_Y=CARD_H/2-BAND_T/2;
+const TIME_X=-CARD_W/2+BAND_L/2;
+const ZF=TH/2+.004;
+const OPEN_ANGLE=1.85;
+
+let renderer=null;
+try{
+  renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:'high-performance'});
+}catch(e){renderer=null;}
+if(renderer){boot().catch(()=>fail());}else fail();
+
+function fail(){
+  if(loadEl)loadEl.classList.add('off');
+  if(fbEl)fbEl.hidden=false;
+}
+
+async function boot(){
+  try{if(document.fonts&&document.fonts.ready)await document.fonts.ready;}catch(e){}
+  try{await document.fonts.load('900 100px Sora');}catch(e){}
+  try{await document.fonts.load('700 46px Sora');}catch(e){}
+  try{await document.fonts.load('600 24px Inter');}catch(e){}
+
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(40,1,.1,100);
+  camera.position.set(0,5.6,12.4);
+
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+  renderer.toneMapping=THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure=1.05;
+  renderer.shadowMap.enabled=true;
+  renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+  stage.appendChild(renderer.domElement);
+
+  const pmrem=new THREE.PMREMGenerator(renderer);
+  scene.environment=pmrem.fromScene(new RoomEnvironment(),.04).texture;
+
+  scene.add(new THREE.HemisphereLight(0xe3ecff,0x0a1030,.8));
+  const key=new THREE.DirectionalLight(0xffffff,2.4);
+  key.position.set(5,9,7);
+  key.castShadow=true;
+  key.shadow.mapSize.set(2048,2048);
+  key.shadow.camera.left=-9;key.shadow.camera.right=9;
+  key.shadow.camera.top=9;key.shadow.camera.bottom=-9;
+  key.shadow.camera.near=1;key.shadow.camera.far=30;
+  key.shadow.bias=-.0003;key.shadow.radius=5;
+  scene.add(key);
+  const rim=new THREE.PointLight(0xff5a5f,55,60);
+  rim.position.set(-8,5,-7);scene.add(rim);
+  const fill=new THREE.DirectionalLight(0xbcd4ff,.55);
+  fill.position.set(-5,3,8);scene.add(fill);
+
+  const ground=new THREE.Mesh(new THREE.CircleGeometry(16,48),new THREE.ShadowMaterial({opacity:.3}));
+  ground.rotation.x=-Math.PI/2;ground.position.y=-3.15;ground.receiveShadow=true;
+  scene.add(ground);
+
+  function faceTexture(){
+    const S=160,W=Math.round(CARD_W*S),H=Math.round(CARD_H*S);
+    const cv=document.createElement('canvas');cv.width=W;cv.height=H;
+    const g=cv.getContext('2d');
+    const bg=g.createLinearGradient(0,0,0,H);
+    bg.addColorStop(0,'#ffffff');bg.addColorStop(1,'#edf1fb');
+    g.fillStyle=bg;g.fillRect(0,0,W,H);
+    const u=x=>(x+CARD_W/2)*S,v=y=>(CARD_H/2-y)*S;
+    const rr=(x,y,w,h,r)=>{g.beginPath();if(g.roundRect)g.roundRect(x,y,w,h,r);else g.rect(x,y,w,h)};
+    g.strokeStyle='#c9d3ea';g.lineWidth=3;
+    for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++){
+      const cx=u(START_X+c*CELL_W),cy=v(START_Y-r*CELL_H);
+      rr(cx-CELL_W*S/2+8,cy-CELL_H*S/2+8,CELL_W*S-16,CELL_H*S-16,26);g.stroke();
+      g.save();g.strokeStyle='#d5def0';g.lineWidth=2.5;g.setLineDash([10,12]);
+      g.beginPath();g.arc(cx,cy,R*S*.98,0,Math.PI*2);g.stroke();g.restore();
+      g.fillStyle='#9fadcc';g.font='600 22px Inter,Arial,sans-serif';
+      g.textAlign='left';g.textBaseline='top';
+      g.fillText(String(r*COLS+c+1).padStart(2,'0'),cx-CELL_W*S/2+20,cy-CELL_H*S/2+16);
+    }
+    try{g.letterSpacing='3px'}catch(e){}
+    DAYS.forEach((d,i)=>{
+      const x=u(START_X+i*CELL_W),y=v(DAY_Y);
+      g.textAlign='center';g.textBaseline='middle';
+      g.font='900 92px Sora,Arial,sans-serif';
+      g.shadowColor='rgba(255,255,255,.95)';g.shadowBlur=14;g.shadowOffsetY=-3;
+      g.fillStyle='#101c40';g.fillText(d,x,y);
+      g.shadowBlur=0;g.shadowOffsetY=0;
+      const grad=g.createLinearGradient(x-50,0,x+50,0);
+      grad.addColorStop(0,'#2563eb');grad.addColorStop(1,'#dc2626');
+      g.fillStyle=grad;rr(x-50,y+62,100,10,5);g.fill();
+    });
+    TIMES.forEach((tm,r)=>{
+      const x=u(TIME_X),y=v(START_Y-r*CELL_H);
+      g.save();g.translate(x,y);g.rotate(-Math.PI/2);
+      g.textAlign='center';g.textBaseline='middle';
+      g.font='700 46px Sora,Arial,sans-serif';g.fillStyle='#1e3a8a';
+      g.fillText(tm,0,0);g.restore();
+    });
+    try{g.letterSpacing='1px'}catch(e){}
+    g.fillStyle='#8090b4';g.font='500 26px Inter,Arial,sans-serif';
+    g.textAlign='left';g.textBaseline='middle';
+    g.fillText('AL-MEDINA PHARMACY · BROOKLYN, NY · (718) 941-2669',u(-CARD_W/2+.34),v(-CARD_H/2+.3));
+    g.textAlign='right';
+    g.fillText('7-DAY · 4-PASS MULTI-MED BLISTER CARD',u(CARD_W/2-.34),v(-CARD_H/2+.3));
+    const tex=new THREE.CanvasTexture(cv);
+    tex.colorSpace=THREE.SRGBColorSpace;
+    tex.anisotropy=renderer.capabilities.getMaxAnisotropy();
+    return tex;
+  }
+
+  function backTexture(){
+    const cv=document.createElement('canvas');cv.width=800;cv.height=529;
+    const g=cv.getContext('2d');
+    g.fillStyle='#eaeefa';g.fillRect(0,0,800,529);
+    g.strokeStyle='#d2daee';g.lineWidth=6;g.strokeRect(24,24,752,481);
+    g.fillStyle='#8b98bd';g.font='600 30px Inter,Arial,sans-serif';
+    g.textAlign='center';g.textBaseline='middle';
+    g.fillText('Tear foil · push out dose · take as directed',400,250);
+    g.font='500 22px Inter,Arial,sans-serif';
+    g.fillText('Pharmacy-grade multi-dose blister card',400,300);
+    const tex=new THREE.CanvasTexture(cv);
+    tex.colorSpace=THREE.SRGBColorSpace;
+    return tex;
+  }
+
+  function tornTex(){
+    const c=document.createElement('canvas');c.width=c.height=256;
+    const g=c.getContext('2d');
+    g.fillStyle='#000';g.fillRect(0,0,256,256);
+    g.translate(128,128);g.fillStyle='#fff';g.beginPath();
+    for(let i=0;i<=64;i++){
+      const a=i/64*Math.PI*2;
+      const rad=108+Math.sin(a*9)*7+Math.random()*6;
+      const px=Math.cos(a)*rad,py=Math.sin(a)*rad;
+      if(i)g.lineTo(px,py);else g.moveTo(px,py);
+    }
+    g.closePath();g.fill();
+    g.globalCompositeOperation='destination-out';
+    g.beginPath();g.arc(0,0,60,0,Math.PI*2);g.fill();
+    const t=new THREE.CanvasTexture(c);
+    t.colorSpace=THREE.SRGBColorSpace;
+    return t;
+  }
+
+  const sideMat=new THREE.MeshStandardMaterial({color:0xf1f5f3,roughness:.5});
+  const frontMat=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.38,map:faceTexture()});
+  const backMat=new THREE.MeshStandardMaterial({color:0xeef2f0,roughness:.65,map:backTexture()});
+  const card=new THREE.Mesh(
+    new RoundedBoxGeometry(CARD_W,CARD_H,TH,5,.12),
+    [sideMat,sideMat,sideMat,sideMat,frontMat,backMat]
+  );
+  card.castShadow=true;
+
+  const pack=new THREE.Group();
+  pack.rotation.x=-.62;
+  pack.add(card);
+  scene.add(pack);
+
+  const domeGeo=new THREE.SphereGeometry(R,40,22,0,Math.PI*2,0,Math.PI/2);
+  domeGeo.scale(1,.78,1);
+  const foilGeo=new THREE.CircleGeometry(R*1.02,48);
+  const ringGeo=new THREE.RingGeometry(R*.45,R*.99,48);
+  const torn=tornTex();
+  const pillGeo=new THREE.CapsuleGeometry(.06,.13,5,12);
+  const pillCols=[0xef4444,0xf59e0b,0xf1f5f9,0x14b8a6,0xa78bfa];
+  const weak=(navigator.hardwareConcurrency||8)<5||matchMedia('(max-width: 820px)').matches;
+
+  function makeDomeMat(){
+    return weak
+      ?new THREE.MeshPhysicalMaterial({color:0xdce6ff,metalness:0,roughness:.06,transparent:true,opacity:.34,clearcoat:1,clearcoatRoughness:.15,side:THREE.DoubleSide})
+      :new THREE.MeshPhysicalMaterial({color:0xffffff,metalness:0,roughness:.07,transmission:.92,thickness:.5,ior:1.44,clearcoat:1,clearcoatRoughness:.08,transparent:true,side:THREE.DoubleSide});
+  }
+
+  let seed=7;
+  const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
+
+  const cells=[],hitList=[];
+  for(let i=0;i<COLS*ROWS;i++){
+    const col=i%COLS,row=(i/COLS)|0;
+    const cx=START_X+col*CELL_W,cy=START_Y-row*CELL_H;
+
+    const foil=new THREE.Mesh(foilGeo,new THREE.MeshStandardMaterial({color:0xdde3e8,metalness:.85,roughness:.32}));
+    foil.position.set(cx,cy,ZF);
+    foil.userData.idx=i;
+    pack.add(foil);hitList.push(foil);
+
+    const ring=new THREE.Mesh(ringGeo,new THREE.MeshStandardMaterial({
+      color:0xb9c4cc,metalness:.75,roughness:.45,
+      transparent:true,opacity:0,alphaMap:torn,
+      side:THREE.DoubleSide,depthWrite:false
+    }));
+    ring.position.set(cx,cy,ZF+.004);
+    ring.scale.set(.55,.55,1);
+    ring.renderOrder=1;
+    pack.add(ring);
+
+    const pills=new THREE.Group();
+    const nPills=2+((rnd()*2)|0);
+    for(let k=0;k<nPills;k++){
+      const p=new THREE.Mesh(pillGeo,new THREE.MeshStandardMaterial({
+        color:pillCols[(rnd()*pillCols.length)|0],metalness:.05,roughness:.35
+      }));
+      const ang=rnd()*Math.PI*2,rad=rnd()*.2;
+      p.position.set(cx+Math.cos(ang)*rad,cy+Math.sin(ang)*rad,ZF+.035+k*.02);
+      p.rotation.set((rnd()-.5)*.5,0,Math.PI/2+rnd()*Math.PI);
+      pills.add(p);
+    }
+    pack.add(pills);
+
+    const hinge=new THREE.Group();
+    hinge.position.set(cx,cy+R*.95,ZF+.002);
+    const dome=new THREE.Mesh(domeGeo,makeDomeMat());
+    dome.position.set(0,-R*.95,0);
+    hinge.add(dome);
+    hinge.userData.idx=i;
+    pack.add(hinge);hitList.push(dome);
+
+    cells.push({
+      i,dome,foil,ring,hinge,
+      open:false,a:0,v:0,target:0,rs:0,hs:1
+    });
+  }
+
+  const controls=new OrbitControls(camera,renderer.domElement);
+  controls.target.set(0,.2,0);
+  controls.enableDamping=true;
+  controls.dampingFactor=.06;
+  controls.enablePan=false;
+  controls.minDistance=6.5;
+  controls.maxDistance=20;
+  controls.maxPolarAngle=1.45;
+  controls.autoRotate=!reduced;
+  controls.autoRotateSpeed=.9;
+  controls.update();
+
+  const raycaster=new THREE.Raycaster();
+  const ndc=new THREE.Vector2();
+  let hoverIdx=-1;
+
+  function pick(e){
+    const rect=renderer.domElement.getBoundingClientRect();
+    ndc.x=((e.clientX-rect.left)/rect.width)*2-1;
+    ndc.y=-((e.clientY-rect.top)/rect.height)*2+1;
+    raycaster.setFromCamera(ndc,camera);
+    const hits=raycaster.intersectObjects(hitList,false);
+    return hits.length?hits[0].object.userData.idx:-1;
+  }
+
+  let pd=null;
+  const dom=renderer.domElement;
+  dom.addEventListener('pointerdown',e=>{
+    pd={x:e.clientX,y:e.clientY,t:performance.now()};
+    if(controls.autoRotate&&!reduced)stopSpin(false);
+  });
+  dom.addEventListener('pointerup',e=>{
+    if(!pd)return;
+    const moved=Math.hypot(e.clientX-pd.x,e.clientY-pd.y);
+    const dt=performance.now()-pd.t;
+    pd=null;
+    if(moved<8&&dt<450){
+      const idx=pick(e);
+      if(idx>=0)setCell(cells[idx],!cells[idx].open,true);
+    }
+  });
+  dom.addEventListener('pointermove',e=>{
+    hoverIdx=pick(e);
+    stage.style.cursor=hoverIdx>=0?'pointer':'grab';
+  });
+  dom.addEventListener('pointerleave',()=>{hoverIdx=-1});
+
+  let actx=null,soundOn=true;
+  try{soundOn=localStorage.getItem('mpSound')!=='off'}catch(e){}
+  function blip(open){
+    if(!soundOn)return;
+    try{
+      actx=actx||new (window.AudioContext||window.webkitAudioContext)();
+      const t=actx.currentTime,o=actx.createOscillator(),g=actx.createGain();
+      o.type='triangle';
+      o.frequency.setValueAtTime(open?420:180,t);
+      o.frequency.exponentialRampToValueAtTime(open?140:520,t+.12);
+      g.gain.setValueAtTime(.0001,t);
+      g.gain.exponentialRampToValueAtTime(.25,t+.02);
+      g.gain.exponentialRampToValueAtTime(.0001,t+.16);
+      o.connect(g).connect(actx.destination);
+      o.start(t);o.stop(t+.18);
+    }catch(e){}
+  }
+
+  const bursts=[];
+  const tmpV=new THREE.Vector3();
+  function burst(cell){
+    if(reduced)return;
+    cell.hinge.getWorldPosition(tmpV);
+    const n=18,pos=new Float32Array(n*3),vel=[];
+    for(let k=0;k<n;k++){
+      pos[k*3]=tmpV.x;pos[k*3+1]=tmpV.y;pos[k*3+2]=tmpV.z;
+      vel.push(new THREE.Vector3((Math.random()-.5)*2.4,(Math.random()*.9+.4)*2.6,(Math.random()-.5)*2.4));
+    }
+    const geo=new THREE.BufferGeometry();
+    geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+    const mat=new THREE.PointsMaterial({color:0xbfdbfe,size:.09,transparent:true,opacity:.95,depthWrite:false});
+    const pts=new THREE.Points(geo,mat);
+    scene.add(pts);
+    bursts.push({pts,vel,life:0,pos});
+  }
+
+  const cntEl=document.getElementById('mpCount');
+  const barEl=document.getElementById('mpBar');
+  const hintEl=document.getElementById('mpHint');
+  let allToasted=false;
+
+  function updateHUD(){
+    const n=cells.reduce((a,c)=>a+(c.open?1:0),0);
+    if(cntEl)cntEl.textContent=n;
+    if(barEl)barEl.style.width=(n/28*100)+'%';
+    if(n===28&&!allToasted){
+      allToasted=true;
+      if(window.toastMsg)window.toastMsg('Full week complete — all 28 doses taken!');
+    }
+  }
+
+  function setCell(c,o,snd){
+    if(c.open===o)return;
+    c.open=o;
+    c.target=o?OPEN_ANGLE:0;
+    if(o){burst(c);if(hintEl)hintEl.classList.add('off')}
+    if(snd!==false)blip(o);
+    updateHUD();
+  }
+
+  let busy=false;
+  const btnPopAll=document.getElementById('btnPopAll');
+  const btnReset=document.getElementById('btnReset');
+  const btnSpin=document.getElementById('btnSpin');
+  const btnSound=document.getElementById('btnSound');
+
+  if(btnPopAll)btnPopAll.addEventListener('click',()=>{
+    if(busy)return;busy=true;
+    cells.forEach((c,i)=>setTimeout(()=>setCell(c,true,true),i*45));
+    setTimeout(()=>{busy=false},cells.length*45+200);
+    stopSpin(true);
+  });
+  if(btnReset)btnReset.addEventListener('click',()=>{
+    if(busy)return;busy=true;
+    cells.forEach((c,i)=>setTimeout(()=>setCell(c,false,false),i*16));
+    setTimeout(()=>{busy=false;allToasted=false},cells.length*16+200);
+    if(window.toastMsg)window.toastMsg('Fresh card loaded — 28 doses ready.');
+  });
+
+  function stopSpin(fromUser){
+    controls.autoRotate=false;
+    setSpinUI(false);
+  }
+  function setSpinUI(on){
+    if(btnSpin){
+      btnSpin.classList.toggle('on',on);
+      btnSpin.setAttribute('aria-pressed',on?'true':'false');
+    }
+  }
+  if(btnSpin)btnSpin.addEventListener('click',()=>{
+    controls.autoRotate=!controls.autoRotate;
+    setSpinUI(controls.autoRotate);
+  });
+  function setSoundUI(on){
+    if(btnSound){
+      btnSound.classList.toggle('on',on);
+      btnSound.setAttribute('aria-pressed',on?'true':'false');
+    }
+  }
+  setSoundUI(soundOn);
+  if(btnSound)btnSound.addEventListener('click',()=>{
+    soundOn=!soundOn;
+    try{localStorage.setItem('mpSound',soundOn?'on':'off')}catch(e){}
+    setSoundUI(soundOn);
+    if(window.toastMsg)window.toastMsg(soundOn?'Sound on':'Sound off');
+  });
+  setSpinUI(controls.autoRotate);
+
+  function resize(){
+    const w=stage.clientWidth,h=stage.clientHeight;
+    if(w<2||h<2)return;
+    camera.aspect=w/h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w,h,false);
+  }
+  new ResizeObserver(resize).observe(stage);
+  resize();
+
+  let running=true;
+  new IntersectionObserver(es=>{running=es[0].isIntersecting},{threshold:.02}).observe(stage);
+
+  const clock=new THREE.Clock();
+  let elapsed=0,shownLoader=false;
+  const baseFoil=new THREE.Color(0xdde3e8),darkFoil=new THREE.Color(0x7c8891);
+
+  renderer.setAnimationLoop(()=>{
+    const dt=Math.min(clock.getDelta(),.033);
+    if(!running)return;
+    elapsed+=dt;
+    cells.forEach(c=>{
+      c.v+=((c.target-c.a)*130-c.v*11)*dt;
+      c.a+=c.v*dt;
+      c.hinge.rotation.x=c.a;
+      const rt=c.open?1:0;
+      c.rs+=(rt-c.rs)*Math.min(1,dt*10);
+      c.ring.material.opacity=c.rs*.95;
+      const s=.55+.45*c.rs;
+      c.ring.scale.set(s,s,1);
+      const hs_t=(hoverIdx===c.i&&!c.open)?1.07:1;
+      c.hs+=(hs_t-c.hs)*Math.min(1,dt*10);
+      c.dome.scale.setScalar(c.hs);
+      c.foil.material.color.lerpColors(baseFoil,darkFoil,c.rs);
+    });
+    for(let bi=bursts.length-1;bi>=0;bi--){
+      const b=bursts[bi];
+      b.life+=dt;
+      const arr=b.pos;
+      for(let k=0;k<b.vel.length;k++){
+        arr[k*3]+=b.vel[k].x*dt;
+        arr[k*3+1]+=b.vel[k].y*dt;
+        arr[k*3+2]+=b.vel[k].z*dt;
+        b.vel[k].y-=5*dt;
+      }
+      b.pts.geometry.attributes.position.needsUpdate=true;
+      b.pts.material.opacity=Math.max(0,.95*(1-b.life/.7));
+      if(b.life>.7){
+        scene.remove(b.pts);
+        b.pts.geometry.dispose();
+        b.pts.material.dispose();
+        bursts.splice(bi,1);
+      }
+    }
+    if(!reduced)pack.position.y=Math.sin(elapsed*.8)*.05;
+    controls.update();
+    renderer.render(scene,camera);
+    if(!shownLoader){
+      shownLoader=true;
+      window.__mpReady=true;
+      if(loadEl){
+        loadEl.classList.add('off');
+        setTimeout(()=>{if(loadEl.parentNode)loadEl.style.display='none'},700);
+      }
+    }
+  });
+
+  window.addEventListener('resize',resize);
+}
+</script>
+</body>
+</html>

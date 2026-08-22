@@ -1,0 +1,36 @@
+name: Sync product catalog
+
+on:
+  schedule:
+    - cron: '37 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: products-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch Merchant Center catalog
+        env:
+          MERCHANT_ID: ${{ secrets.MERCHANT_ID }}
+          GOOGLE_SA_EMAIL: ${{ secrets.GOOGLE_SA_EMAIL }}
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          PRODUCTS_INCLUDE: ${{ vars.PRODUCTS_INCLUDE }}
+        run: node scripts/fetch-products.mjs
+      - name: Commit refreshed catalog
+        run: |
+          git config user.name "catalog-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add products.json
+          git diff --cached --quiet || git commit -m "chore: refresh product catalog from Merchant Center"
+          git push
