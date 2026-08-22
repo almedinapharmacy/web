@@ -948,11 +948,11 @@ async function boot(){
       const cx=u(START_X+c*CELL_W),cy=v(START_Y-r*CELL_H);
       rr(cx-CELL_W*S/2+6,cy-CELL_H*S/2+6,CELL_W*S-12,CELL_H*S-12,26);g.stroke();
     }
-    try{g.letterSpacing='2px'}catch(e){}
+    try{g.letterSpacing='1px'}catch(e){}
     DAYS.forEach((d,i)=>{
       const x=u(START_X+i*CELL_W),y=v(DAY_Y);
       g.textAlign='center';g.textBaseline='middle';
-      g.font='900 '+Math.round(S*.58)+'px Sora,Arial,sans-serif';
+      g.font='900 '+Math.round(S*.46)+'px Sora,Arial,sans-serif';
       g.fillStyle='#14171c';
       g.fillText(d,x,y);
     });
