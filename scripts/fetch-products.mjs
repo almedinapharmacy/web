@@ -62,6 +62,14 @@ async function getToken() {
   return (await res.json()).access_token;
 }
 
+function redact(s) {
+  let t = s || '';
+  if (EMAIL) t = t.split(EMAIL).join('[SA-EMAIL]');
+  t = t.replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, '[EMAIL]');
+  t = t.replace(/[A-Za-z0-9+/=]{60,}/g, '[BLOB]');
+  return t;
+}
+
 async function diagnoseToken(token) {
   try {
     const r = await fetch('https://oauth2.googleapis.com/tokeninfo?access_token=' + encodeURIComponent(token));
@@ -98,11 +106,10 @@ async function fetchAllProducts(token) {
         lastErr = ver + ' (' + res.status + ') at /products/' + ver + '/accounts/...: ' + body.slice(0, 200);
         if (/^\s*<(!DOCTYPE|html)/i.test(body)) { routeMiss = true; break; }
         if (res.status === 401) {
-          fail('Google rejected the service-account credential (401). ' +
-            'DIAGNOSTICS[' + await diagnoseToken(token) + '] ' +
-            'Fix: GOOGLE_SA_EMAIL must exactly equal "client_email" from the SAME downloaded JSON key as GOOGLE_SA_KEY, ' +
-            'and that service account must be added (invite accepted) under Merchant Center > Account settings > People. ' +
-            'API said: ' + body.slice(0, 250));
+          let msg = body;
+          try { msg = JSON.parse(body).error.message; } catch (e) {}
+          fail('Google rejected the credential (401). DIAGNOSTICS[' + await diagnoseToken(token) + '] ' +
+            'GOOGLE SAID: ' + redact(msg));
         }
         fail('Merchant API failed (' + res.status + ') via ' + ver + ': ' + body.slice(0, 300));
       }
