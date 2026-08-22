@@ -664,7 +664,7 @@ window.__mpFail=function(reason){
   if(!f)return;
   var msg;
   if(!mpWebglOk())msg="WebGL appears to be disabled. Enable hardware acceleration (chrome://settings/system) or try another browser.";
-  else if(window.__mpErr)msg="3D init error: "+window.__mpErr+" \u00b7 an extension or network filter blocking cdn.jsdelivr.net can cause this.";
+  else if(window.__mpErr)msg="3D init error: "+window.__mpErr+" \u00b7 if this repeats, check your Cloudflare Security settings (Bot Fight Mode) or network filter.";
   else msg=reason||"unknown startup issue.";
   var p=f.querySelector("p");
   if(p)p.textContent=msg;
@@ -837,18 +837,15 @@ setTimeout(function(){
 })();
 </script>
 
-<script type="importmap">
-{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}
-</script>
 <script type="module">(async function(){
 try{
 window.__mpStage="lib";
-const THREE=await import('three');
-const [{OrbitControls},{RoundedBoxGeometry},{RoomEnvironment}]=await Promise.all([
-  import('three/addons/controls/OrbitControls.js'),
-  import('three/addons/geometries/RoundedBoxGeometry.js'),
-  import('three/addons/environments/RoomEnvironment.js')
-]);
+let mp=null;
+for(let attempt=0;attempt<2;attempt++){
+  try{mp=await import('./vendor/mp.bundle.mjs');break;}
+  catch(err){if(attempt>0)throw err;await new Promise(function(r){setTimeout(r,1500)});}
+}
+const {THREE,OrbitControls,RoundedBoxGeometry,RoomEnvironment}=mp;
 window.__mpStage="scene";
 
 
