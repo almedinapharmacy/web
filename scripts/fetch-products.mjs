@@ -70,6 +70,15 @@ function redact(s) {
   return t;
 }
 
+class RegError extends Error {
+  constructor(gcpId) {
+    super('gcp-project-not-registered');
+    this.gcpId = gcpId;
+  }
+}
+
+const sleepMs = ms => new Promise(r => setTimeout(r, ms));
+
 async function diagnoseToken(token) {
   try {
     const r = await fetch('https://oauth2.googleapis.com/tokeninfo?access_token=' + encodeURIComponent(token));
@@ -108,8 +117,10 @@ async function fetchAllProducts(token) {
         if (res.status === 401) {
           let msg = body;
           try { msg = JSON.parse(body).error.message; } catch (e) {}
-          fail('Google rejected the credential (401). DIAGNOSTICS[' + await diagnoseToken(token) + '] ' +
-            'GOOGLE SAID: ' + redact(msg));
+          const reg = String(msg).match(/number\s+(\d+)\s+is not registered/i) ||
+            String(msg).match(/not registered[\s\S]*?number\s+(\d+)/i);
+          if (reg) throw new RegError(reg[1]);
+          fail('Google rejected credential (401). GOOGLE SAID: ' + redact(msg));
         }
         fail('Merchant API failed (' + res.status + ') via ' + ver + ': ' + body.slice(0, 300));
       }
@@ -140,8 +151,36 @@ const AVAILABILITY = {
   'BACKORDER': 'backorder'
 };
 
+async function ensureRegistered(token, gcpId) {
+  console.log('Registering GCP project ' + gcpId + ' with merchant account ' + MID + '...');
+  const res = await fetch('https://merchantapi.googleapis.com/accounts/v1/accounts/' + MID +
+    '/developerRegistration:registerGcp', {
+    method: 'POST',
+    headers: {authorization: 'Bearer ' + token, 'content-type': 'application/json'},
+    body: JSON.stringify({gcpId})
+  });
+  const body = await res.text();
+  if (res.ok || res.status === 409) {
+    console.log('Registration accepted (' + res.status + ').');
+    return true;
+  }
+  fail('Auto-registration failed (' + res.status + '): ' + redact(body.slice(0, 300)));
+}
+
 const token = await getToken();
-const raw = await fetchAllProducts(token);
+let raw = null;
+for (let attempt = 1; attempt <= 6; attempt++) {
+  try {
+    raw = await fetchAllProducts(token);
+    break;
+  } catch (err) {
+    if (!(err instanceof RegError)) throw err;
+    if (!raw) await ensureRegistered(token, err.gcpId);
+    console.log('Waiting 60s for registration to propagate (attempt ' + attempt + '/6)...');
+    await sleepMs(60000);
+  }
+}
+if (!raw) fail('GCP registration did not propagate after retries. Run the workflow again in ~5 minutes.');
 console.log('Fetched ' + raw.length + ' products from Merchant Center.');
 
 const match = p => {
