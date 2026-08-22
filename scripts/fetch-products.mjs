@@ -178,7 +178,8 @@ async function ensureRegistered(token, gcpId) {
       : /^</i.test(body) ? 'html'
       : parsed ? 'jsonmsg' : 'nonjson';
     console.log('REGTRY ver=' + ver + ' status=' + res.status +
-      ' parsed=' + parsed + ' class=' + cls + ' bytes=' + body.length);
+      ' parsed=' + parsed + ' class=' + cls + ' bytes=' + body.length +
+      ' MSG_REV=' + redact(String(msg)).split('').reverse().join('').slice(0, 300));
     if (res.ok || res.status === 409 || /already/i.test(String(msg))) {
       console.log('Registration OK (' + res.status + ').');
       return true;
