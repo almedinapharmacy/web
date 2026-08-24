@@ -1,11 +1,11 @@
 {
-  "updated": "2026-08-23T09:55:15.840Z",
+  "updated": "2026-08-24T10:19:43.009Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
     {
       "sku": "00740985213391",
-      "title": "21st Century - Acidophilus Probiotic Blend - 100 Capsules",
+      "title": "21st Century Acidophilus Capsules, 100 Count",
       "price": "$7.99",
       "salePrice": null,
       "availability": "in stock",
@@ -77,7 +77,7 @@
     },
     {
       "sku": "00041167097809",
-      "title": "ACT Restoring Anticavity Fluoride Mouthwash Mint Burst - 18 fl oz",
+      "title": "ACT Mouthwash, Anticavity Fluoride, Mint Burst - 18 fl oz",
       "price": "$5.63",
       "salePrice": null,
       "availability": "in stock",
@@ -185,7 +185,7 @@
     },
     {
       "sku": "00850026152623",
-      "title": "Ammens Deodorant Powder Body Original Talc Free (Item#51424) 11oz",
+      "title": "Ammens Original Body Powder Talc Free, 11 Ounce",
       "price": "$8.99",
       "salePrice": null,
       "availability": "in stock",
@@ -245,7 +245,7 @@
     },
     {
       "sku": "00041100589934",
-      "title": "Astepro Allergy Nasal Spray, Children's, 60",
+      "title": "Astepro Children's Allergy Antihistamine Nasal Spray 60 ct",
       "price": "$16.75",
       "salePrice": null,
       "availability": "in stock",
@@ -389,7 +389,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
+      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -544,18 +544,6 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00044600001043",
       "title": "Clorox original Bleach (1 gal) | CVS",
       "price": "$10.99",
@@ -571,6 +559,18 @@
       "sku": "00044600323367",
       "title": "Clorox Splash-Less Lavender Bleach",
       "price": "$4.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00044600031910",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -737,7 +737,7 @@
     },
     {
       "sku": "00850026660364",
-      "title": "Dimetapp Children's Cold & Cough Liquid Grape 4.0 fl oz",
+      "title": "Dimetapp Children's Cold & Cough Grape Flavor Liquid, 6+ Yrs, 4 fl oz",
       "price": "$5.72",
       "salePrice": null,
       "availability": "in stock",
@@ -761,7 +761,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz Greenbrae",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, 1,000 mg, 90 Tablets",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
+      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -977,7 +977,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
+      "title": "Febreze Hawaiian Aloha Air Freshener (8.8 oz) | FoodMaxx",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
+      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1109,7 +1109,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Oil-Infused Hand & Body Lotion Enriching Shea Butter (16.8 oz) | Lucky California",
+      "title": "Jergens Shea Butter Deep Conditioning Moisturizer, 16.8 FL. oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1793,7 +1793,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte AdvancedCare Blue Raspberry Electrolyte Solution, 33.8 fl oz",
+      "title": "Pedialyte Advanced Care Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -1817,7 +1817,7 @@
     },
     {
       "sku": "00301320002119",
-      "title": "Phazyme Anti Gas, Maximum Strength, 250 mg, Fast Gels 12 ea",
+      "title": "Phazyme Anti-Gas Softgels Maximum Strength - 12 Gels",
       "price": "$4.55",
       "salePrice": null,
       "availability": "in stock",
@@ -2008,9 +2008,9 @@
       "category": null
     },
     {
-      "sku": "00036602079489",
-      "title": "Ricola Lemon Mint - 24 Drops",
-      "price": "$2.65",
+      "sku": "00036602030602",
+      "title": "Ricola Honey Lemon Throat Care Cough Drops (34 ct) | FoodMaxx",
+      "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2020,9 +2020,9 @@
       "category": null
     },
     {
-      "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
-      "price": "$6.90",
+      "sku": "00036602079489",
+      "title": "Ricola Lemon Mint Throat Drops - 24 ct",
+      "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
