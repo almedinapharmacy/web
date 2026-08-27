@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T10:08:49.748Z",
+  "updated": "2026-08-27T19:56:47.573Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -556,18 +556,6 @@
       "category": null
     },
     {
-      "sku": "00044600323367",
-      "title": "Clorox Splash-Less Lavender Bleach",
-      "price": "$4.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00044600031910",
       "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
       "price": "$18.71",
@@ -883,6 +871,18 @@
       "sku": "00616784311319",
       "title": "Dynarex Sterile Conforming Bandage, 3 Inch X 4-1/10 Yard",
       "price": "$0.75",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00011509043207",
+      "title": "Easy Comb-in Color – Jet Black - Just For Men",
+      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
