@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T14:40:04.281Z",
+  "updated": "2026-08-30T14:30:38.876Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -197,7 +197,7 @@
     },
     {
       "sku": "00077312004156",
-      "title": "Ampro Pro Styl Protein Styling Gel- Regular 15 oz",
+      "title": "Ampro Pro Styl Protein Styling Gel Regular 15 oz",
       "price": "$3.89",
       "salePrice": null,
       "availability": "in stock",
@@ -234,7 +234,7 @@
     {
       "sku": "00041167058848",
       "title": "Aspercreme Lidocaine Pain Relief Cream - 4.3 oz",
-      "price": "$10.87",
+      "price": "$12.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -245,7 +245,7 @@
     },
     {
       "sku": "00041100589934",
-      "title": "Astepro Children's Allergy Antihistamine Nasal Spray 60 ct",
+      "title": "Astepro Allergy Nasal Spray, Children's, 60",
       "price": "$16.75",
       "salePrice": null,
       "availability": "in stock",
@@ -544,6 +544,18 @@
       "category": null
     },
     {
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00044600001043",
       "title": "Clorox original Bleach (1 gal) | CVS",
       "price": "$10.99",
@@ -556,20 +568,8 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
-      "price": "$18.71",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00036761811128",
-      "title": "Colace Stool Softener Clear Soft Gels, 28 ct",
+      "title": "Colace 50 mg Clear Soft Gels Stool Softener (28 ct) | Hannaford",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -652,6 +652,18 @@
       "category": null
     },
     {
+      "sku": "00323900039551",
+      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
+      "price": "$14.82",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00079400486868",
       "title": "Degree Advanced Antiperspirant Deodorant - Lavender & Waterlily, 2.6 oz",
       "price": "$5.99",
@@ -725,7 +737,7 @@
     },
     {
       "sku": "00850026660364",
-      "title": "Dimetapp Children's Cold & Cough Grape Flavor Liquid, 6+ Yrs, 4 fl oz",
+      "title": "Dimetapp Children's Cold & Cough Liquid Grape 4.0 fl oz",
       "price": "$5.72",
       "salePrice": null,
       "availability": "in stock",
@@ -880,18 +892,6 @@
       "category": null
     },
     {
-      "sku": "00011509043207",
-      "title": "Easy Comb-in Color – Jet Black - Just For Men",
-      "price": "$9.86",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
+      "title": "Gain Original Scent Laundry Detergent",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1109,7 +1109,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Shea Butter Deep Conditioning Moisturizer, 16.8 FL. oz",
+      "title": "Jergens Oil-Infused Hand & Body Lotion Enriching Shea Butter (16.8 oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1133,8 +1133,20 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana Powder Blush, Hot Raspberry - PB41",
+      "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00011509043207",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1241,7 +1253,7 @@
     },
     {
       "sku": "00031254742835",
-      "title": "Listerine Freshburst Antiseptic Mouthwash (1 L)",
+      "title": "Listerine Antiseptic Mouthwash Fresh Burst - 1 Liter - Vashon Thriftway - Delivered by Mercato",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1313,7 +1325,7 @@
     },
     {
       "sku": "00899874002278",
-      "title": "Maty's Organic Nighttime Cough Syrup - 6 fl oz",
+      "title": "Maty's - Organic Nighttime Cough Syrup - 6 Fl Oz.",
       "price": "$12.66",
       "salePrice": null,
       "availability": "in stock",
@@ -1793,7 +1805,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte Advanced Care Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
+      "title": "Pedialyte AdvancedCare Blue Raspberry Electrolyte Solution, 33.8 fl oz",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -1913,7 +1925,7 @@
     },
     {
       "sku": "00731509681574",
-      "title": "RED Pin Tail Comb - Black",
+      "title": "Red Pin Tail Comb - Black",
       "price": "$0.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1997,7 +2009,7 @@
     },
     {
       "sku": "03800233074376",
-      "title": "RICE BAR COCONUT CHOCOLATE 18G",
+      "title": "RiceUp Brown RICE BAR Coconut White Chocolate 18 g",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -2021,7 +2033,7 @@
     },
     {
       "sku": "00036602079489",
-      "title": "Ricola Lemon Mint Throat Drops - 24 ct",
+      "title": "Ricola Lemon Mint - 24 Drops",
       "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
@@ -2141,7 +2153,7 @@
     },
     {
       "sku": "05000159376655",
-      "title": "Skittles Kosher Fruit Candy 1.35 oz",
+      "title": "Skittles Fruit 1.35 oz",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -2261,7 +2273,7 @@
     },
     {
       "sku": "00794731020016",
-      "title": "Triple Paste Medicated Ointment for Diaper Rash 2 oz",
+      "title": "Triple Paste Medicated Ointment for Diaper Rash (2 oz)",
       "price": "$8.68",
       "salePrice": null,
       "availability": "in stock",
@@ -2332,18 +2344,6 @@
       "category": null
     },
     {
-      "sku": "00323900039551",
-      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
-      "price": "$14.82",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00323900039704",
       "title": "Vicks VapoCOOL Severe Medicated Drops Winterfrost",
       "price": "$3.35",
@@ -2381,7 +2381,7 @@
     },
     {
       "sku": "00019800707651",
-      "title": "Windex - Ammonia-D Glass Cleaner, Fresh, 32 oz Spray Bottle",
+      "title": "Windex Ammonia-D Glass Cleaner Fresh 32 oz Spray Bottle",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
