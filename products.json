@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T14:30:38.876Z",
+  "updated": "2026-08-31T17:12:43.284Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -137,7 +137,7 @@
     },
     {
       "sku": "00035000498748",
-      "title": "Ajax Ultra Triple Action Orange Liquid Dish Soap (90 fl oz) | FoodMaxx",
+      "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
       "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
@@ -389,7 +389,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
+      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -437,7 +437,7 @@
     },
     {
       "sku": "00053000004363",
-      "title": "Borden Slices Grilled Cheese Melts - 16 x 0.75 Ounce Slices - Ideal Food Basket- Queens - Delivered by Mercato",
+      "title": "Borden Slices Grilled Cheese Melts - 16 x 0.75 Ounce Slices - Met Fresh of Whitestone - Delivered by Mercato",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -544,9 +544,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -643,18 +643,6 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -761,7 +749,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz Greenbrae",
+      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +917,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -964,6 +952,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
       "price": "$3.99",
@@ -977,7 +977,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Hawaiian Aloha Air Freshener (8.8 oz) | FoodMaxx",
+      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just for Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1289,7 +1289,7 @@
     },
     {
       "sku": "00038485504072",
-      "title": "Lydia Pinkham Herbal Supplement 72 Tablets",
+      "title": "Lydia Pinkham Herbal 72 Tablets",
       "price": "$8.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1339,18 +1339,6 @@
       "sku": "00818286010190",
       "title": "MD USA Over the Calf Ribbed Cushion Unisex Medium White Compression Socks | Albertsons",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta Orange",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2261,7 +2249,7 @@
     },
     {
       "sku": "00077326835623",
-      "title": "Tom's of Maine Fluoride-Free Rapid Relief Sensitive Toothpaste, Fresh Mint, 4 oz.",
+      "title": "Tom's of Maine Fluoride-Free Rapid Relief Sensitive Toothpaste Fresh Mint (4 oz) | Lucky California",
       "price": "$7.17",
       "salePrice": null,
       "availability": "in stock",
@@ -2273,7 +2261,7 @@
     },
     {
       "sku": "00794731020016",
-      "title": "Triple Paste Medicated Ointment for Diaper Rash (2 oz)",
+      "title": "Triple Paste Medicated Ointment for Diaper Rash 2 oz",
       "price": "$8.68",
       "salePrice": null,
       "availability": "in stock",
@@ -2287,18 +2275,6 @@
       "sku": "00030045048828",
       "title": "Tylenol Extra Strength Rapid Release Gels - 100 Count",
       "price": "$18.21",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "08935330210886",
-      "title": "USDA Organic Soursop Guanabana Juice | VINUT",
-      "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2344,6 +2320,18 @@
       "category": null
     },
     {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00323900039704",
       "title": "Vicks VapoCOOL Severe Medicated Drops Winterfrost",
       "price": "$3.35",
@@ -2359,6 +2347,18 @@
       "sku": "00085126091231",
       "title": "Vicks VapoRub 10ml Pocket Pack – 48-Piece Countertop Display Jar",
       "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "08935330210886",
+      "title": "VINUT Discovery Box | Real Fruit Juice Variety Pack | Tropical Juice | No Sugar Added Mix",
+      "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
