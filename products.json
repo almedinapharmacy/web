@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T17:12:43.284Z",
+  "updated": "2026-09-01T14:16:02.430Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -269,7 +269,7 @@
     },
     {
       "sku": "06001087364690",
-      "title": "Axe Wild Spice Deodorant Body Spray 150ml",
+      "title": "Axe Deodorant Body Spray- Wild Spice 150 ml",
       "price": "$3.49",
       "salePrice": null,
       "availability": "in stock",
@@ -544,9 +544,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -749,7 +749,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz Greenbrae",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -880,6 +880,18 @@
       "category": null
     },
     {
+      "sku": "00011509043207",
+      "title": "Easy Comb-in Color – Jet Black - Just For Men",
+      "price": "$9.86",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -929,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
+      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Original Scent Laundry Detergent",
+      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1135,18 +1147,6 @@
       "sku": "00041065340410",
       "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011509043207",
-      "title": "Just for Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
-      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1757,7 +1757,7 @@
     },
     {
       "sku": "00632169111015",
-      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
+      "title": "ORS Olive Oil Replenishing Conditioner 1.75oz",
       "price": "$1.79",
       "salePrice": null,
       "availability": "in stock",
@@ -2237,7 +2237,7 @@
     },
     {
       "sku": "00697029200025",
-      "title": "TheraBreath Chamomile Mint Overnight Oral Rinse, 16 fl oz",
+      "title": "TheraBreath Overnight Mouthwash - Chamomile Mint - 16 fl oz",
       "price": "$12.06",
       "salePrice": null,
       "availability": "in stock",
@@ -2275,6 +2275,18 @@
       "sku": "00030045048828",
       "title": "Tylenol Extra Strength Rapid Release Gels - 100 Count",
       "price": "$18.21",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "08935330210886",
+      "title": "USDA Organic Soursop Guanabana Juice | VINUT",
+      "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2347,18 +2359,6 @@
       "sku": "00085126091231",
       "title": "Vicks VapoRub 10ml Pocket Pack – 48-Piece Countertop Display Jar",
       "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "08935330210886",
-      "title": "VINUT Discovery Box | Real Fruit Juice Variety Pack | Tropical Juice | No Sugar Added Mix",
-      "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
