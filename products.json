@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T13:49:47.094Z",
+  "updated": "2026-09-03T13:49:53.141Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -234,7 +234,7 @@
     {
       "sku": "00041167058848",
       "title": "Aspercreme Lidocaine Pain Relief Cream - 4.3 oz",
-      "price": "$12.66",
+      "price": "$11.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -390,7 +390,7 @@
     {
       "sku": "00070330143678",
       "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
-      "price": "$1.99",
+      "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
