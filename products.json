@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T13:00:07.475Z",
+  "updated": "2026-09-06T13:04:44.529Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -77,7 +77,7 @@
     },
     {
       "sku": "00041167097809",
-      "title": "ACT Mouthwash, Anticavity Fluoride, Mint Burst - 18 fl oz",
+      "title": "ACT Restoring Anticavity Fluoride Mouthwash Mint Burst - 18 fl oz",
       "price": "$5.63",
       "salePrice": null,
       "availability": "in stock",
@@ -137,20 +137,8 @@
     },
     {
       "sku": "00035000498748",
-      "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
+      "title": "Ajax Orange Scent Dish Liquid Value Refill (90 fl oz) | FoodMaxx",
       "price": "$10.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00016500576792",
-      "title": "Alka-seltzer Plus Maximum Strength Day Cold & Flu Liquid Gels (16 ct)",
-      "price": "$7.69",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -185,7 +173,7 @@
     },
     {
       "sku": "00850026152623",
-      "title": "Ammens Deodorant Powder Body Original Talc Free (Item#51424) 11oz",
+      "title": "Ammens Original Body Powder Talc Free, 11 Ounce",
       "price": "$8.99",
       "salePrice": null,
       "availability": "in stock",
@@ -245,7 +233,7 @@
     },
     {
       "sku": "00041100589934",
-      "title": "Astepro Allergy Nasal Spray, Children's, 60",
+      "title": "Astepro Children's Allergy Antihistamine Nasal Spray 60 ct",
       "price": "$16.75",
       "salePrice": null,
       "availability": "in stock",
@@ -460,6 +448,18 @@
       "category": null
     },
     {
+      "sku": "00305735509256",
+      "title": "Caltrate 600+D3 Calcium and Vitamin D Supplement Tablets, 200 ct",
+      "price": "$25.62",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00369230310113",
       "title": "Camber, Children's Ibuprofen Suspension Gum, 100 Mg, 4 oz",
       "price": "$7.99",
@@ -544,9 +544,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -593,7 +593,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
+      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -643,6 +643,18 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00323900039551",
+      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
+      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -869,7 +881,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Sterile Conforming Bandage, 3 Inch X 4-1/10 Yard",
+      "title": "Dynarex Conforming Stretch Gauze Bandages, Sterile",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -883,18 +895,6 @@
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00019100110120",
-      "title": "Enriching Shea Butter Lotion - 3oz - 6 pack",
-      "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -964,6 +964,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
       "price": "$3.99",
@@ -977,7 +989,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
+      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1108,6 +1120,18 @@
       "category": null
     },
     {
+      "sku": "00019100110120",
+      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
+      "price": "$9.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381370030485",
       "title": "Johnson's Cornstarch Baby Powder with Aloe & Vitamin E, 9 oz",
       "price": "$4.60",
@@ -1133,7 +1157,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just for Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1277,7 +1301,7 @@
     },
     {
       "sku": "00038485504072",
-      "title": "Lydia Pinkham Herbal 72 Tablets",
+      "title": "Lydia Pinkham Herbal Supplement 72 Tablets",
       "price": "$8.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1327,18 +1351,6 @@
       "sku": "00818286010190",
       "title": "MD USA Over the Calf Ribbed Cushion Unisex Medium White Compression Socks | Albertsons",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta - Orange",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1829,7 +1841,7 @@
     },
     {
       "sku": "00305211793049",
-      "title": "Pond's Dry Skin Cream The Caring Classic 10.1 oz",
+      "title": "Ponds Dry Skin Cream-10.1 fl oz.s-12/Case",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -1961,7 +1973,7 @@
     },
     {
       "sku": "00309978695417",
-      "title": "Revlon Colorsilk Medium Brown 41 Beautiful Hair Color",
+      "title": "Revlon Colorsilk Medium Brown - 41 Hair Color",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1996,9 +2008,9 @@
       "category": null
     },
     {
-      "sku": "00036602030602",
-      "title": "Ricola Honey Lemon Throat Care Cough Drops (34 ct) | FoodMaxx",
-      "price": "$6.90",
+      "sku": "00036602079489",
+      "title": "Ricola Lemon Mint Throat Drops - 24 ct",
+      "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2008,9 +2020,9 @@
       "category": null
     },
     {
-      "sku": "00036602079489",
-      "title": "Ricola Lemon Mint Throat Drops - 24 ct",
-      "price": "$2.65",
+      "sku": "00036602030602",
+      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
+      "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2129,7 +2141,7 @@
     },
     {
       "sku": "05000159376655",
-      "title": "Skittles Fruit 1.35 oz",
+      "title": "Skittles Kosher Fruit Candy 1.35 oz",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -2237,7 +2249,7 @@
     },
     {
       "sku": "00077326835623",
-      "title": "Tom's of Maine Fluoride-Free Rapid Relief Sensitive Toothpaste Fresh Mint (4 oz) | Lucky California",
+      "title": "Tom's of Maine Fluoride-Free Rapid Relief Sensitive Toothpaste, Fresh Mint, 4 oz.",
       "price": "$7.17",
       "salePrice": null,
       "availability": "in stock",
@@ -2311,18 +2323,6 @@
       "sku": "00000060018939",
       "title": "Vaseline Blueseal Rich Conditioning Jelly Cocoa Butter [1.7oz/ 50ml]",
       "price": "$2.49",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00323900039551",
-      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
-      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
