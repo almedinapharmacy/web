@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T15:11:13.346Z",
+  "updated": "2026-09-08T13:48:53.024Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -137,7 +137,7 @@
     },
     {
       "sku": "00035000498748",
-      "title": "Ajax Orange Scent Dish Liquid Value Refill (90 fl oz) | FoodMaxx",
+      "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
       "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
@@ -233,7 +233,7 @@
     },
     {
       "sku": "00041100589934",
-      "title": "Astepro Children's Allergy Antihistamine Nasal Spray 60 ct",
+      "title": "Astepro Allergy Nasal Spray, Children's, 60",
       "price": "$16.75",
       "salePrice": null,
       "availability": "in stock",
@@ -377,7 +377,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
+      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -544,9 +544,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -643,18 +643,6 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -761,7 +749,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -881,7 +869,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Conforming Stretch Gauze Bandages, Sterile",
+      "title": "Dynarex Sterile Conforming Bandage, 3 Inch x 4-1/10 Yard",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +917,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -964,20 +952,8 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00011313021705",
-      "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
+      "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1121,7 +1097,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
+      "title": "Jergens Deep Conditioning Moisturizer Shea Butter, 16.8 fl oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1133,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1337,7 +1313,7 @@
     },
     {
       "sku": "00899874002278",
-      "title": "Maty's - Organic Nighttime Cough Syrup - 6 Fl Oz.",
+      "title": "Maty's Organic Nighttime Cough Syrup - 6 fl oz",
       "price": "$12.66",
       "salePrice": null,
       "availability": "in stock",
@@ -1349,8 +1325,20 @@
     },
     {
       "sku": "00818286010190",
-      "title": "MD USA Over the Calf Ribbed Cushion Unisex Medium White Compression Socks | Albertsons",
+      "title": "MD Compression Over the Calf Ribbed Cushion Unisex Medium Socks, White | Albertsons",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta Orange",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1793,7 +1781,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte AdvancedCare Blue Raspberry Electrolyte Solution, 33.8 fl oz",
+      "title": "Pedialyte AdvancedCare with Immune Support Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -1841,7 +1829,7 @@
     },
     {
       "sku": "00305211793049",
-      "title": "Ponds Dry Skin Cream-10.1 fl oz.s-12/Case",
+      "title": "Pond's Dry Skin Cream The Caring Classic 10.1 oz",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -2323,6 +2311,18 @@
       "sku": "00000060018939",
       "title": "Vaseline Blueseal Rich Conditioning Jelly Cocoa Butter [1.7oz/ 50ml]",
       "price": "$2.49",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
