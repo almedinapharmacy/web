@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T13:48:53.024Z",
+  "updated": "2026-09-09T13:51:41.353Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -377,7 +377,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
+      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -880,6 +880,18 @@
       "category": null
     },
     {
+      "sku": "00011509043207",
+      "title": "Easy Comb-in Color – Jet Black - Just For Men",
+      "price": "$9.86",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -917,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
+      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -952,6 +964,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
@@ -965,7 +989,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
+      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1123,18 +1147,6 @@
       "sku": "00041065340410",
       "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
-      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1327,18 +1339,6 @@
       "sku": "00818286010190",
       "title": "MD Compression Over the Calf Ribbed Cushion Unisex Medium Socks, White | Albertsons",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta Orange",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1745,7 +1745,7 @@
     },
     {
       "sku": "00632169111015",
-      "title": "ORS Olive Oil Replenishing Conditioner 1.75oz",
+      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
       "price": "$1.79",
       "salePrice": null,
       "availability": "in stock",
@@ -1888,9 +1888,9 @@
       "category": null
     },
     {
-      "sku": "00731509778571",
-      "title": "Red By Kiss Power Wave Velvet Luxe Durag Blue",
-      "price": "$7.39",
+      "sku": "00731509681574",
+      "title": "Red by Kiss - Pin Tail Comb Black",
+      "price": "$0.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1900,9 +1900,9 @@
       "category": null
     },
     {
-      "sku": "00731509681574",
-      "title": "Red Pin Tail Comb - Black",
-      "price": "$0.99",
+      "sku": "00731509778571",
+      "title": "Red By Kiss Power Wave Velvet Luxe Durag Blue",
+      "price": "$7.39",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
