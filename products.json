@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T13:51:41.353Z",
+  "updated": "2026-09-10T13:46:14.033Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -222,7 +222,7 @@
     {
       "sku": "00041167058848",
       "title": "Aspercreme Lidocaine Pain Relief Cream - 4.3 oz",
-      "price": "$11.00",
+      "price": "$12.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
