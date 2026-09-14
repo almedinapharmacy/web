@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T13:52:32.548Z",
+  "updated": "2026-09-14T15:58:58.512Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -2237,7 +2237,7 @@
     },
     {
       "sku": "00697029200025",
-      "title": "TheraBreath Overnight Mouthwash - Chamomile Mint - 16 fl oz",
+      "title": "TheraBreath Chamomile Mint Overnight Oral Rinse, 16 fl oz",
       "price": "$12.06",
       "salePrice": null,
       "availability": "in stock",
