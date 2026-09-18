@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T14:25:44.789Z",
+  "updated": "2026-09-18T13:46:34.027Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -355,18 +355,6 @@
       "sku": "00310119056110",
       "title": "Bausch & Lomb Boston Simplus Multi Action Solution - 3.5 fl oz",
       "price": "$12.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00031284353636",
-      "title": "Bayer Aspirin Tablets 325 Mg (200 ct) | Dierbergs",
-      "price": "$13.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1759,6 +1747,18 @@
       "sku": "00063216911010",
       "title": "Organic Olive Oil Hair Fertilizer - 6 oz",
       "price": "$8.79",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00632169110438",
+      "title": "ORS Carrot Oil - 6 oz",
+      "price": "$8.29",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
