@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T14:22:33.091Z",
+  "updated": "2026-09-25T14:43:09.320Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -559,6 +559,18 @@
       "sku": "00044600031910",
       "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
       "price": "$18.71",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00044600323367",
+      "title": "Clorox No Splash Lavender Bleach 1.25 qt",
+      "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2335,18 +2347,6 @@
       "sku": "00323900039704",
       "title": "Vicks VapoCOOL Severe Medicated Drops Winterfrost",
       "price": "$3.35",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00085126091231",
-      "title": "Vicks VapoRub 10ml Pocket Pack – 48-Piece Countertop Display Jar",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
