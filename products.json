@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T14:43:09.320Z",
+  "updated": "2026-09-26T13:50:48.355Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -330,7 +330,7 @@
     {
       "sku": "00381371183487",
       "title": "Band-Aid Skin-Flex Adhesive Bandages, Assorted Sizes - 20 ct",
-      "price": "$5.00",
+      "price": "$5.45",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
