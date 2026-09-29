@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28T17:47:38.206Z",
+  "updated": "2026-09-29T16:05:36.920Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -137,7 +137,7 @@
     },
     {
       "sku": "00035000498748",
-      "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
+      "title": "Ajax Orange Scent Dish Liquid Value Refill (90 fl oz) | FoodMaxx",
       "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
@@ -269,7 +269,7 @@
     },
     {
       "sku": "06001087364690",
-      "title": "Axe Deodorant Body Spray- Wild Spice 150 ml",
+      "title": "Axe Wild Spice Deodorant Body Spray 150ml",
       "price": "$3.49",
       "salePrice": null,
       "availability": "in stock",
@@ -317,7 +317,7 @@
     },
     {
       "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
       "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
@@ -377,7 +377,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
+      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -425,7 +425,7 @@
     },
     {
       "sku": "00053000004363",
-      "title": "Borden Slices Grilled Cheese Melts - 16 x 0.75 Ounce Slices - Pioneer Supermarket of Sunset Park - Delivered by Mercato",
+      "title": "Borden Melts Grilled Cheese, 3/4 oz, 16 count",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -449,7 +449,7 @@
     },
     {
       "sku": "00305735509256",
-      "title": "Caltrate 600+D3 Calcium and Vitamin D Supplement Tablets, 200 ct",
+      "title": "Caltrate 600+D3 Calcium and Vitamin D Supplement Tablets - 200 Count",
       "price": "$25.62",
       "salePrice": null,
       "availability": "in stock",
@@ -545,7 +545,7 @@
     },
     {
       "sku": "00044600001043",
-      "title": "Clorox bleach, original - 1 gal",
+      "title": "Clorox original Bleach (1 gal) | CVS",
       "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
@@ -557,20 +557,8 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
       "price": "$18.71",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00044600323367",
-      "title": "Clorox No Splash Lavender Bleach 1.25 qt",
-      "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -605,7 +593,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
+      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -893,7 +881,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Sterile Conforming Bandage, 3 Inch X 4-1/10 Yard",
+      "title": "Dynarex Sterile Conforming Bandage, 3 Inch x 4-1/10 Yard",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -907,18 +895,6 @@
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00019100110120",
-      "title": "Enriching Shea Butter Lotion - 3oz - 6 pack",
-      "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -953,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -989,7 +965,7 @@
     },
     {
       "sku": "00011313021705",
-      "title": "Fantasia Shea Butter Sheen Spray 14 oz",
+      "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1001,7 +977,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
+      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1025,7 +1001,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Coffee, Ground, Medium, Half Caff 9.6 oz",
+      "title": "Folgers Half Caff Ground Medium Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1037,7 +1013,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
+      "title": "Gain Original Scent Laundry Detergent",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1073,7 +1049,7 @@
     },
     {
       "sku": "00072320700823",
-      "title": "Hello Panda Strawberry 2.2oz",
+      "title": "Hello Panda - Strawberry Cookies, 2.2 Oz.",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -1132,6 +1108,18 @@
       "category": null
     },
     {
+      "sku": "00019100110120",
+      "title": "Jergens Deep Conditioning Moisturizer Shea Butter, 16.8 fl oz",
+      "price": "$9.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381370030485",
       "title": "Johnson's Cornstarch Baby Powder with Aloe & Vitamin E, 9 oz",
       "price": "$4.60",
@@ -1145,7 +1133,7 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana-Powder Blush - Hot Raspberry",
+      "title": "Jordana Powder Blush, Hot Raspberry - PB41",
       "price": "$1.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1265,7 +1253,7 @@
     },
     {
       "sku": "00031254742835",
-      "title": "Listerine Antiseptic Mouthwash Fresh Burst - 1 Liter - Vashon Thriftway - Delivered by Mercato",
+      "title": "Listerine FreshBurst Antiseptic Mouthwash 1 Liter Bottle",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1361,7 +1349,7 @@
     },
     {
       "sku": "00049000047844",
-      "title": "Mexican Fanta Orange",
+      "title": "Mexican Fanta - Orange",
       "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1733,7 +1721,7 @@
     },
     {
       "sku": "00073796266103",
-      "title": "Omron 3 Series Wrist Blood Pressure Monitor",
+      "title": "Omron Blood Pressure Monitor 3 Series Wrist",
       "price": "$54.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1817,7 +1805,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte Blue Raspberry Electrolyte Solution 33.8 fl oz",
+      "title": "Pedialyte AdvancedCare with Immune Support Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -1973,7 +1961,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare Super Collagen 50MG 90 Capsules",
+      "title": "Rejuvicare, Super Collagen, 500 mg, 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2021,7 +2009,7 @@
     },
     {
       "sku": "03800233074376",
-      "title": "RiceUp Brown RICE BAR Coconut White Chocolate 18 g",
+      "title": "RiceUp Brown Rice Bar Coconut White Chocolate 18 g",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -2032,8 +2020,20 @@
       "category": null
     },
     {
+      "sku": "00036602079489",
+      "title": "Ricola Lemon Mint - 24 Drops",
+      "price": "$2.65",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00036602030602",
-      "title": "Ricola Honey Lemon Max Throat Care Drops",
+      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2044,9 +2044,9 @@
       "category": null
     },
     {
-      "sku": "00036602079489",
-      "title": "Ricola Lemon Mint Throat Drops - 24 ct",
-      "price": "$2.65",
+      "sku": "00316571822300",
+      "title": "Rising Pharma Allergy Relief Tablets, Compare to Claritin, 300 count",
+      "price": "$14.28",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2153,7 +2153,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Eye And Skin Care, Facial Wipes, 25/Pack",
+      "title": "Simple Kind to Skin Facial Wipes Gentle and Effective Makeup Remover Cleansing Free from color and dye artificial perfume and harsh chemicals 25",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2165,7 +2165,7 @@
     },
     {
       "sku": "05000159376655",
-      "title": "Skittles Fruit 1.35 oz",
+      "title": "Skittles Kosher Fruit Candy 1.35 oz",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -2296,18 +2296,6 @@
       "category": null
     },
     {
-      "sku": "08935330210886",
-      "title": "USDA Organic Soursop Guanabana Juice | VINUT",
-      "price": "$1.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00011509003676",
       "title": "Vagisil Anti-Itch Creme, Regular Strength 1 oz",
       "price": "$4.99",
@@ -2345,8 +2333,20 @@
     },
     {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Severe Medicated Drops Winterfrost",
+      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
       "price": "$3.35",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "08935330210886",
+      "title": "Vinut Original Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2369,7 +2369,7 @@
     },
     {
       "sku": "00019800707651",
-      "title": "Windex Ammonia-D Glass Cleaner Fresh 32 oz Spray Bottle",
+      "title": "Windex Ammonia-D Glass Cleaner, 32 oz Trigger Spray Bottle",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
