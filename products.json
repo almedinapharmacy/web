@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T16:05:36.920Z",
+  "updated": "2026-09-30T16:03:33.604Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -137,7 +137,7 @@
     },
     {
       "sku": "00035000498748",
-      "title": "Ajax Orange Scent Dish Liquid Value Refill (90 fl oz) | FoodMaxx",
+      "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
       "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
@@ -245,7 +245,7 @@
     },
     {
       "sku": "00041100589934",
-      "title": "Astepro Children's Allergy Antihistamine Nasal Spray 60 ct",
+      "title": "Astepro Allergy Nasal Spray, Children's, 60",
       "price": "$16.75",
       "salePrice": null,
       "availability": "in stock",
@@ -377,7 +377,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
+      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -544,9 +544,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -643,18 +643,6 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -761,7 +749,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +917,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, 1,000 mg, 90 Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -964,6 +952,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
       "price": "$3.99",
@@ -977,7 +977,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
+      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1339,18 +1339,6 @@
       "sku": "00818286010190",
       "title": "MD Compression Over the Calf Ribbed Cushion Unisex Medium Socks, White | Albertsons",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta - Orange",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1805,7 +1793,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte AdvancedCare with Immune Support Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
+      "title": "Pedialyte Blue Raspberry Electrolyte Solution 33.8 fl oz",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -2033,7 +2021,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
+      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2332,6 +2320,18 @@
       "category": null
     },
     {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00323900039704",
       "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
       "price": "$3.35",
@@ -2345,7 +2345,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Original Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
