@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T16:03:33.604Z",
+  "updated": "2026-10-01T16:40:22.443Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -317,7 +317,7 @@
     },
     {
       "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
       "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
@@ -377,7 +377,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
+      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -544,9 +544,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -749,7 +749,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
+      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -869,7 +869,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Sterile Conforming Bandage, 3 Inch x 4-1/10 Yard",
+      "title": "Dynarex Sterile Conforming Bandage, 3 Inch X 4-1/10 Yard",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -917,7 +917,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, 1,000 mg, 90 Tablets",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -1109,7 +1109,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Deep Conditioning Moisturizer Shea Butter, 16.8 fl oz",
+      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1793,7 +1793,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte Blue Raspberry Electrolyte Solution 33.8 fl oz",
+      "title": "Pedialyte AdvancedCare with Immune Support Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -2141,7 +2141,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Kind to Skin Facial Wipes Gentle and Effective Makeup Remover Cleansing Free from color and dye artificial perfume and harsh chemicals 25",
+      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2345,7 +2345,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "VINUT %100 Fruit Juice Soursop 490 ml",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
