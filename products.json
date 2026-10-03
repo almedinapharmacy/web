@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T15:57:34.824Z",
+  "updated": "2026-10-03T14:24:16.687Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -317,7 +317,7 @@
     },
     {
       "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
       "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
@@ -761,7 +761,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
+      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, 1,000 mg, 90 Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -955,6 +955,18 @@
       "sku": "00300670016241",
       "title": "Ex-Lax Maximum Strength Stimulant Laxative Pills, 24 Count",
       "price": "$6.68",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1013,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Original Scent Laundry Detergent",
+      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1348,18 +1360,6 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta - Orange",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00850018711753",
       "title": "Mike's Amazing 5% Acidity Distilled White Vinegar (32 fl oz) | GIANT",
       "price": "$1.99",
@@ -1409,7 +1409,7 @@
     },
     {
       "sku": "00030772107218",
-      "title": "Mr Clean Multi-Surface 2X Concentrated Cleaner; Unstopables Fresh; 23 fl oz",
+      "title": "Mr. Clean Unstopables Multi-Surface Cleaner - 23 fl oz",
       "price": "$5.75",
       "salePrice": null,
       "availability": "in stock",
@@ -1985,7 +1985,7 @@
     },
     {
       "sku": "00309978695417",
-      "title": "Revlon Colorsilk Medium Brown 41 Beautiful Hair Color",
+      "title": "Revlon Colorsilk Medium Brown - 41 Hair Color",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2345,7 +2345,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Pineapple Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
