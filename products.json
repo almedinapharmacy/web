@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T14:57:06.835Z",
+  "updated": "2026-10-05T18:47:37.267Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -208,6 +208,18 @@
       "category": null
     },
     {
+      "sku": "00072140019457",
+      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
+      "price": "$18.33",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00072140026615",
       "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
       "price": "$9.66",
@@ -292,9 +304,9 @@
       "category": null
     },
     {
-      "sku": "00381372025229",
-      "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
-      "price": "$4.91",
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
+      "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -304,9 +316,9 @@
       "category": null
     },
     {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
-      "price": "$4.84",
+      "sku": "00381372025229",
+      "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
+      "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -761,7 +773,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1025,7 +1037,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Original Scent Laundry Detergent",
+      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1121,7 +1133,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Deep Conditioning Moisturizer Shea Butter, 16.8 fl oz",
+      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1756,18 +1768,6 @@
       "category": null
     },
     {
-      "sku": "00632169110438",
-      "title": "ORS Carrot Oil - 6 oz",
-      "price": "$8.29",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00632169111015",
       "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
       "price": "$1.79",
@@ -2020,9 +2020,9 @@
       "category": null
     },
     {
-      "sku": "00036602079489",
-      "title": "Ricola Lemon Mint - 24 Drops",
-      "price": "$2.65",
+      "sku": "00036602030602",
+      "title": "Ricola Honey Lemon Max Throat Care Drops",
+      "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2032,9 +2032,9 @@
       "category": null
     },
     {
-      "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
-      "price": "$6.90",
+      "sku": "00036602079489",
+      "title": "Ricola Lemon Mint - 24 Drops",
+      "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2310,7 +2310,7 @@
     {
       "sku": "00011509060860",
       "title": "Vagisil Scentsitive Scents Coconut Hibiscus Daily Intimate Wash, 12 fl oz",
-      "price": "$7.34",
+      "price": "$5.90",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2345,7 +2345,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Original Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "Vinut Pineapple Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
