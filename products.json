@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T16:13:21.851Z",
+  "updated": "2026-10-07T16:51:57.318Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -77,7 +77,7 @@
     },
     {
       "sku": "00041167097809",
-      "title": "ACT Restoring Anticavity Fluoride Mouthwash Mint Burst - 18 fl oz",
+      "title": "ACT Mouthwash, Anticavity Fluoride, Mint Burst - 18 fl oz",
       "price": "$5.63",
       "salePrice": null,
       "availability": "in stock",
@@ -137,7 +137,7 @@
     },
     {
       "sku": "00035000498748",
-      "title": "Ajax Orange Scent Dish Liquid Value Refill (90 fl oz) | FoodMaxx",
+      "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
       "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
@@ -304,6 +304,18 @@
       "category": null
     },
     {
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
+      "price": "$4.84",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381372025229",
       "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
       "price": "$4.91",
@@ -316,20 +328,8 @@
       "category": null
     },
     {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
-      "price": "$4.84",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
       "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
@@ -389,7 +389,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
+      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -881,7 +881,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Sterile Conforming Bandage, 3 Inch x 4-1/10 Yard",
+      "title": "Dynarex Sterile Conforming Bandage, 3 Inch X 4-1/10 Yard",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
+      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -977,7 +977,7 @@
     },
     {
       "sku": "00011313021705",
-      "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
+      "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1121,7 +1121,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Moisturizer, Enriching, Shea Butter 16.8 fl oz",
+      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana Powder Blush, Hot Raspberry - PB41",
+      "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1852,18 +1852,6 @@
       "category": null
     },
     {
-      "sku": "00191554890688",
-      "title": "Pouch Bath & Body | Pouch For Her Blush Rose Eau de Parfum 3.4 fl oz 100ml | Color: Pink | Size: Os | Theemporyum13's Closet",
-      "price": "$15.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00305730558075",
       "title": "Preparation H Totables Hemorrhoid Wipes with Witch Hazel - 10 Count",
       "price": "$7.61",
@@ -1949,7 +1937,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare, Super Collagen, 500 mg, 90 Capsules",
+      "title": "Rejuvicare, Super Collagen, 500 Mg, 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2008,9 +1996,9 @@
       "category": null
     },
     {
-      "sku": "00036602079489",
-      "title": "Ricola Lemon Mint - 24 Drops",
-      "price": "$2.65",
+      "sku": "00036602030602",
+      "title": "Ricola Honey Lemon Max Throat Care Drops",
+      "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2020,9 +2008,9 @@
       "category": null
     },
     {
-      "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
-      "price": "$6.90",
+      "sku": "00036602079489",
+      "title": "Ricola Lemon Mint - 24 Drops",
+      "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2275,6 +2263,18 @@
       "sku": "00030045048828",
       "title": "Tylenol Extra Strength Rapid Release Gels - 100 Count",
       "price": "$18.21",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00191554890688",
+      "title": "United Scents POUCH BLUSH ROSE for Her Eau de Parfum, 3.4 Fl Oz, Notes: Bergamot, Red Currant, ROSE",
+      "price": "$15.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
