@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T16:51:57.318Z",
+  "updated": "2026-10-08T16:51:43.183Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -304,18 +304,6 @@
       "category": null
     },
     {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
-      "price": "$4.84",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00381372025229",
       "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
       "price": "$4.91",
@@ -331,6 +319,18 @@
       "sku": "00381371161232",
       "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
       "price": "$2.31",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
+      "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -389,7 +389,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
+      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -568,9 +568,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -738,7 +738,7 @@
     {
       "sku": "00850026660364",
       "title": "Dimetapp Children's Cold & Cough Liquid Grape 4.0 fl oz",
-      "price": "$5.72",
+      "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -761,7 +761,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -955,18 +955,6 @@
       "sku": "00300670016241",
       "title": "Ex-Lax Maximum Strength Stimulant Laxative Pills, 24 Count",
       "price": "$6.68",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1013,7 +1001,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Half Caff Ground Medium Coffee 9.6 oz",
+      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1351,6 +1339,18 @@
       "sku": "00818286010190",
       "title": "MD Compression Over the Calf Ribbed Cushion Unisex Medium Socks, White | Albertsons",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta Orange",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1793,7 +1793,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte Blue Raspberry Electrolyte Solution 33.8 fl oz",
+      "title": "Pedialyte AdvancedCare with Immune Support Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -1937,7 +1937,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare, Super Collagen, 500 Mg, 90 Capsules",
+      "title": "RejuviCare, Super Collagen, 500 Mg, 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1961,7 +1961,7 @@
     },
     {
       "sku": "00309978695417",
-      "title": "Revlon Colorsilk Medium Brown - 41 Hair Color",
+      "title": "Revlon Colorsilk Medium Brown 41 Beautiful Hair Color",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1996,9 +1996,9 @@
       "category": null
     },
     {
-      "sku": "00036602030602",
-      "title": "Ricola Honey Lemon Max Throat Care Drops",
-      "price": "$6.90",
+      "sku": "00036602079489",
+      "title": "Ricola Lemon Mint - 24 Drops",
+      "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2008,9 +2008,9 @@
       "category": null
     },
     {
-      "sku": "00036602079489",
-      "title": "Ricola Lemon Mint - 24 Drops",
-      "price": "$2.65",
+      "sku": "00036602030602",
+      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
+      "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2129,7 +2129,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Kind to Skin Facial Wipes Gentle and Effective Makeup Remover Cleansing Free from color and dye artificial perfume and harsh chemicals 25",
+      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2369,7 +2369,7 @@
     },
     {
       "sku": "00019800707651",
-      "title": "Windex Ammonia-D Glass Cleaner, 32 oz Trigger Spray Bottle",
+      "title": "Windex Ammonia-D Glass Cleaner Fresh 32 oz Spray Bottle",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
