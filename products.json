@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T16:51:43.183Z",
+  "updated": "2026-10-09T16:30:03.732Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -316,9 +316,9 @@
       "category": null
     },
     {
-      "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
-      "price": "$2.31",
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
+      "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -328,9 +328,9 @@
       "category": null
     },
     {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
-      "price": "$4.84",
+      "sku": "00381371161232",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -389,7 +389,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
+      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
+      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -977,7 +977,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
+      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
+      "title": "Gain Original Scent Laundry Detergent",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1529,7 +1529,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Original Antibiotic Ointment 0.5 oz",
+      "title": "Neosporin Antibiotic Ointment 0.50 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1961,7 +1961,7 @@
     },
     {
       "sku": "00309978695417",
-      "title": "Revlon Colorsilk Medium Brown 41 Beautiful Hair Color",
+      "title": "Revlon Colorsilk Medium Brown - 41 Hair Color",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +2009,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
+      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2345,7 +2345,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "VINUT %100 Fruit Juice Soursop 490 ml",
+      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
