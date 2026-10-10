@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T16:30:03.732Z",
+  "updated": "2026-10-10T15:33:03.899Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -100,6 +100,18 @@
       "category": null
     },
     {
+      "sku": "08906142982018",
+      "title": "African Imports ATL Sea Moss Toothpaste 6.5 oz",
+      "price": "$2.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00034285540005",
       "title": "Africas Best Originals Conditioning Relaxer System, Olive Oil",
       "price": "$6.99",
@@ -137,20 +149,8 @@
     },
     {
       "sku": "00035000498748",
-      "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
+      "title": "Ajax Orange Scent Dish Liquid Value Refill (90 fl oz) | FoodMaxx",
       "price": "$10.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00016500576792",
-      "title": "Alka-seltzer Plus Maximum Strength Day Cold & Flu Liquid Gels (16 ct)",
-      "price": "$7.69",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -197,20 +197,8 @@
     },
     {
       "sku": "00077312004156",
-      "title": "Ampro Pro Styl Protein Styling Gel Regular 15 oz",
+      "title": "Ampro Pro Styl Protein Styling Gel- Regular 15 oz",
       "price": "$3.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00072140019457",
-      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
-      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -223,6 +211,18 @@
       "sku": "00072140026615",
       "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
       "price": "$9.66",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00072140019457",
+      "title": "Aquaphor Healing Ointment 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -568,9 +568,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -773,7 +773,7 @@
     },
     {
       "sku": "00000096081754",
-      "title": "Dove Men +Care Clean Comfort Desodorizante Stick 50mL– Proteção & Frescura",
+      "title": "Dove Men Care Clean Comfort 48H Anti Perspirant Stick 40ml",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -785,7 +785,7 @@
     },
     {
       "sku": "00011111051249",
-      "title": "Dove Men+Care Clean Comfort Hydrating Body & Face Wash 18 fl oz",
+      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
       "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
@@ -892,6 +892,18 @@
       "category": null
     },
     {
+      "sku": "00011509043207",
+      "title": "Easy Comb-in Color – Jet Black - Just For Men",
+      "price": "$9.86",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -929,7 +941,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, 1,000 mg, 90 Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +953,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Original Scent Laundry Detergent",
+      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1109,7 +1121,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
+      "title": "Jergens Moisturizer, Enriching, Shea Butter 16.8 fl oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1133,20 +1145,8 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana-Powder Blush - Hot Raspberry",
+      "title": "Jordana Powder Blush, Hot Raspberry - PB41",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
-      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1265,7 +1265,7 @@
     },
     {
       "sku": "00312547428347",
-      "title": "Listerine Zero Alcohol-Free Mouthwash, Cool Mint - 1.5 L bottle",
+      "title": "Listerine Zero (1.5) Size 50.7z",
       "price": "$12.62",
       "salePrice": null,
       "availability": "in stock",
@@ -1529,7 +1529,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Antibiotic Ointment 0.50 oz",
+      "title": "Neosporin Original Antibiotic Ointment 0.5 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1913,7 +1913,7 @@
     },
     {
       "sku": "00300234491309",
-      "title": "Refresh Optive Advanced Lubricant Eye Drops",
+      "title": "Refresh Optive Lubricant Eye Drops, Advanced",
       "price": "$16.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1996,9 +1996,9 @@
       "category": null
     },
     {
-      "sku": "00036602079489",
-      "title": "Ricola Lemon Mint - 24 Drops",
-      "price": "$2.65",
+      "sku": "00036602030602",
+      "title": "Ricola Honey Lemon Max Throat Care Drops",
+      "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2008,9 +2008,9 @@
       "category": null
     },
     {
-      "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
-      "price": "$6.90",
+      "sku": "00036602079489",
+      "title": "Ricola Lemon Mint - 24 Drops",
+      "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2129,7 +2129,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
+      "title": "Simple Kind To Skin Cleansing Wipes, 7x6.5 in (8 oz, 25 ct)",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2345,7 +2345,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "VINUT %100 Fruit Juice Soursop 490 ml",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
