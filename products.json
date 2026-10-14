@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T17:06:13.385Z",
+  "updated": "2026-10-14T14:38:38.321Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -389,7 +389,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
+      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -568,9 +568,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -904,18 +904,6 @@
       "category": null
     },
     {
-      "sku": "00011509043207",
-      "title": "Easy Comb-in Color – Jet Black - Just For Men",
-      "price": "$9.86",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -953,7 +941,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, 1,000 mg, 90 Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -965,7 +953,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1049,7 +1037,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
+      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1133,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
+      "title": "Jergens Moisturizer, Enriching, Shea Butter 16.8 fl oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1171,6 +1159,18 @@
       "sku": "00041065340410",
       "title": "Jordana Powder Blush, Hot Raspberry - PB41",
       "price": "$1.89",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00011509043207",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1289,7 +1289,7 @@
     },
     {
       "sku": "00312547428347",
-      "title": "Listerine Zero (1.5) Size 50.7z",
+      "title": "Listerine Zero Alcohol-Free Mouthwash, Cool Mint - 1.5 L bottle",
       "price": "$12.62",
       "salePrice": null,
       "availability": "in stock",
@@ -1541,7 +1541,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Antibiotic Ointment 0.50 oz",
+      "title": "Neosporin Original Antibiotic Ointment 0.5 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1805,7 +1805,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte AdvancedCare with Immune Support Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
+      "title": "Pedialyte Blue Raspberry Electrolyte Solution 33.8 fl oz",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -2021,7 +2021,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2141,7 +2141,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
+      "title": "Simple Kind to Skin Facial Wipes Gentle and Effective Makeup Remover Cleansing Free from color and dye artificial perfume and harsh chemicals 25",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Medicated Drops, Winterfrost, Severe, Max Strength",
+      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2345,7 +2345,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "VINUT %100 Fruit Juice Soursop 490 ml",
+      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2369,7 +2369,7 @@
     },
     {
       "sku": "00019800707651",
-      "title": "Windex Ammonia-D Glass Cleaner Fresh 32 oz Spray Bottle",
+      "title": "Windex Ammonia-D Glass Cleaner, 32 oz Trigger Spray Bottle",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
