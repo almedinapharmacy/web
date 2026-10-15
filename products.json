@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T14:38:38.321Z",
+  "updated": "2026-10-15T14:21:52.220Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -208,9 +208,9 @@
       "category": null
     },
     {
-      "sku": "00072140026615",
-      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
-      "price": "$9.66",
+      "sku": "00072140019457",
+      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -220,9 +220,9 @@
       "category": null
     },
     {
-      "sku": "00072140019457",
-      "title": "Aquaphor Healing Ointment 7 oz",
-      "price": "$18.33",
+      "sku": "00072140026615",
+      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
+      "price": "$9.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -304,6 +304,18 @@
       "category": null
     },
     {
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
+      "price": "$4.84",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381372025229",
       "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
       "price": "$4.91",
@@ -319,18 +331,6 @@
       "sku": "00381371161232",
       "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
       "price": "$2.31",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
-      "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -581,7 +581,7 @@
     },
     {
       "sku": "00036761811128",
-      "title": "Colace 50 mg Clear Soft Gels Stool Softener (28 ct) | Hannaford",
+      "title": "Colace Stool Softener Clear Soft Gels 50 mg (28 ct)",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -976,18 +976,6 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
       "price": "$3.99",
@@ -1133,7 +1121,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Moisturizer, Enriching, Shea Butter 16.8 fl oz",
+      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1169,7 +1157,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1336,18 +1324,6 @@
       "category": null
     },
     {
-      "sku": "00309046794899",
-      "title": "Major Low Dose Aspirin 81 Mg, 90 Chewable Orange Tablets 309046794899VL",
-      "price": "$5.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00899874002278",
       "title": "Maty's Organic Nighttime Cough Syrup - 6 fl oz",
       "price": "$12.66",
@@ -1363,6 +1339,18 @@
       "sku": "00818286010190",
       "title": "MD Compression Over the Calf Ribbed Cushion Unisex Medium Socks, White | Albertsons",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta Orange",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1973,7 +1961,7 @@
     },
     {
       "sku": "00309978695417",
-      "title": "Revlon Colorsilk Medium Brown - 41 Hair Color",
+      "title": "Revlon Colorsilk Medium Brown 41 Beautiful Hair Color",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2021,7 +2009,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2069,7 +2057,7 @@
     },
     {
       "sku": "00041331037907",
-      "title": "Sazon Goya Low Sodium Seasoning with Coriander & Annatto 3.52 oz",
+      "title": "Sazon Goya Coriander & Annatto Low Sodium Seasoning(20 ct)",
       "price": "$3.29",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2321,7 @@
     },
     {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
+      "title": "Vicks VapoCOOL Medicated Drops, Winterfrost, Severe, Max Strength",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2359,6 +2347,18 @@
       "sku": "00819215020075",
       "title": "Waterloo Sparkling Water, Watermelon 12 fl oz",
       "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00822514282259",
+      "title": "Wellmade Mango Juice Drink 1 Ltr",
+      "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
