@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T14:21:52.220Z",
+  "updated": "2026-10-16T14:10:43.181Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -77,7 +77,7 @@
     },
     {
       "sku": "00041167097809",
-      "title": "ACT Mouthwash, Anticavity Fluoride, Mint Burst - 18 fl oz",
+      "title": "ACT Restoring Anticavity Fluoride Mouthwash Mint Burst - 18 fl oz",
       "price": "$5.63",
       "salePrice": null,
       "availability": "in stock",
@@ -185,7 +185,7 @@
     },
     {
       "sku": "00850026152623",
-      "title": "Ammens Original Body Powder Talc Free, 11 Ounce",
+      "title": "Ammens Body Powder - Original 11 oz",
       "price": "$8.99",
       "salePrice": null,
       "availability": "in stock",
@@ -364,18 +364,6 @@
       "category": null
     },
     {
-      "sku": "00310119056110",
-      "title": "Bausch & Lomb Boston Simplus Multi Action Solution - 3.5 fl oz",
-      "price": "$12.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00367618180129",
       "title": "Betadine First Aid Cream - 0.53 oz",
       "price": "$6.14",
@@ -389,7 +377,7 @@
     },
     {
       "sku": "00070330143678",
-      "title": "Bic Atlantis Medium Black Ball Pens (2 ct) | FoodMaxx",
+      "title": "Bic Atlantis Ballpoint Pen, Black - 2 Pack",
       "price": "$2.44",
       "salePrice": null,
       "availability": "in stock",
@@ -439,6 +427,18 @@
       "sku": "00053000004363",
       "title": "Borden Slices Grilled Cheese Melts 16 Ea",
       "price": "$4.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00310119056110",
+      "title": "Boston Simplus Multi-Action Solution, 3.5 fl oz",
+      "price": "$12.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -545,7 +545,7 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Nonfat Greek Yogurt - 5.3oz",
+      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
       "price": "$1.75",
       "salePrice": null,
       "availability": "in stock",
@@ -773,7 +773,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Anti-Perspirant Deodorant (2.6 oz)",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -904,6 +904,18 @@
       "category": null
     },
     {
+      "sku": "00011509043207",
+      "title": "Easy Comb-in Color – Jet Black - Just For Men",
+      "price": "$9.86",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -1025,7 +1037,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
+      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1121,7 +1133,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
+      "title": "Jergens Moisturizer, Enriching, Shea Butter 16.8 fl oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1147,18 +1159,6 @@
       "sku": "00041065340410",
       "title": "Jordana Powder Blush, Hot Raspberry - PB41",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
-      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1409,7 +1409,7 @@
     },
     {
       "sku": "00030772107218",
-      "title": "Mr. Clean Unstopables Multi-Surface Cleaner - 23 fl oz",
+      "title": "Mr Clean Multi-Surface 2X Concentrated Cleaner; Unstopables Fresh; 23 fl oz",
       "price": "$5.75",
       "salePrice": null,
       "availability": "in stock",
@@ -1529,7 +1529,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Original Antibiotic Ointment 0.5 oz",
+      "title": "Neosporin Antibiotic Ointment 0.50 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +2009,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2129,7 +2129,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Kind to Skin Facial Wipes Gentle and Effective Makeup Remover Cleansing Free from color and dye artificial perfume and harsh chemicals 25",
+      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2369,7 +2369,7 @@
     },
     {
       "sku": "00019800707651",
-      "title": "Windex Ammonia-D Glass Cleaner, 32 oz Trigger Spray Bottle",
+      "title": "Windex Ammonia-D Glass Cleaner Fresh 32 oz Spray Bottle",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
