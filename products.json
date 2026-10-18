@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T13:07:59.986Z",
+  "updated": "2026-10-18T13:30:25.253Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -197,7 +197,7 @@
     },
     {
       "sku": "00077312004156",
-      "title": "Ampro Pro Styl Protein Styling Gel Regular 15 oz",
+      "title": "Ampro Pro Styl Protein Styling Gel- Regular 15 oz",
       "price": "$3.89",
       "salePrice": null,
       "availability": "in stock",
@@ -556,6 +556,18 @@
       "category": null
     },
     {
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00044600001043",
       "title": "Clorox original Bleach (1 gal) | CVS",
       "price": "$10.99",
@@ -568,20 +580,8 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
-      "price": "$18.71",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00036761811128",
-      "title": "Colace Stool Softener Clear Soft Gels 50 mg (28 ct)",
+      "title": "Colace 50 mg Clear Soft Gels Stool Softener (28 ct) | Hannaford",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -655,6 +655,18 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00323900039551",
+      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
+      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -761,7 +773,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Fresh Anti-Perspirant Deodorant (2.6 oz)",
+      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -964,18 +976,6 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
       "price": "$3.99",
@@ -989,7 +989,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
+      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
+      "title": "Folgers Ground Coffee, Half Caff-Medium Roast (9.6 oz)",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1025,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
+      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1049,7 +1049,7 @@
     },
     {
       "sku": "00000078938847",
-      "title": "Halls Morango - 28 Grams - Supermercado Brazil - Delivered by Mercato",
+      "title": "Halls de Morango 28g",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1157,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1253,7 +1253,7 @@
     },
     {
       "sku": "00096295123234",
-      "title": "Leader Vitamin D 1000iu Softgels 250 ct",
+      "title": "Leader Vitamin D3 1000iu Softgels 250 ct",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1339,6 +1339,18 @@
       "sku": "00818286010190",
       "title": "MD Compression Over the Calf Ribbed Cushion Unisex Medium Socks, White | Albertsons",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta Orange",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2308,20 +2320,8 @@
       "category": null
     },
     {
-      "sku": "00323900039551",
-      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
-      "price": "$14.82",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Medicated Drops, Winterfrost, Severe, Max Strength",
+      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "Vinut 100% Fruit Juice Soursop 490 ml",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
