@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T13:30:25.253Z",
+  "updated": "2026-10-19T16:36:42.022Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -124,6 +124,18 @@
       "category": null
     },
     {
+      "sku": "00062338805795",
+      "title": "Air Wick Freshmatic Vanilla Passion Ultra Holiday Air Freshener Refill - 6.17 fl oz",
+      "price": "$4.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "05059001000965",
       "title": "Air Wick Warm Amber Rose Freshmatic Essential Oil - 250 Milliliters - Cherry Valley Marketplace ( 801 E Gun Hill) - Delivered by Mercato",
       "price": "$8.99",
@@ -185,7 +197,7 @@
     },
     {
       "sku": "00850026152623",
-      "title": "Ammens Body Powder - Original 11 oz",
+      "title": "Ammens Original Body Powder Talc Free, 11 Ounce",
       "price": "$8.99",
       "salePrice": null,
       "availability": "in stock",
@@ -664,30 +676,6 @@
       "category": null
     },
     {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00079400486868",
-      "title": "Degree Advanced Antiperspirant Deodorant - Lavender & Waterlily, 2.6 oz",
-      "price": "$5.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00079400347664",
       "title": "Degree Men Antiperspirant Deodorant Cool Rush 2.7 oz",
       "price": "$5.99",
@@ -773,7 +761,7 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Anti-Perspirant Deodorant (2.6 oz)",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -904,6 +892,18 @@
       "category": null
     },
     {
+      "sku": "00011509043207",
+      "title": "Easy Comb-in Color – Jet Black - Just For Men",
+      "price": "$9.86",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, 1,000 mg, 90 Tablets",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Ground Coffee, Half Caff-Medium Roast (9.6 oz)",
+      "title": "Folgers Half Caff Ground Medium Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1025,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
+      "title": "Gain Plus Aroma Boost Original Scent Liquid Laundry Detergent (46 fl oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1121,7 +1121,7 @@
     },
     {
       "sku": "00019100110120",
-      "title": "Jergens Moisturizer, Enriching, Shea Butter 16.8 fl oz",
+      "title": "Jergens Enriching Shea Butter Moisturizer (16.8 oz) | Lucky California",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1147,18 +1147,6 @@
       "sku": "00041065340410",
       "title": "Jordana Powder Blush, Hot Raspberry - PB41",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
-      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1444,18 +1432,6 @@
       "category": null
     },
     {
-      "sku": "00301490039045",
-      "title": "Multi-Symptom Pepto Bismol Liquid for Nausea, Heartburn, Indigestion, Upset Stomach, and Diarrhea Relief, Original Flavor 4 oz",
-      "price": "$5.29",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00031604027919",
       "title": "Nature Made CholestOff Complete - 120 Softgels",
       "price": "$36.74",
@@ -1529,7 +1505,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Original Antibiotic Ointment 0.5 oz",
+      "title": "Neosporin Antibiotic Ointment 0.50 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1793,7 +1769,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte AdvancedCare Blue Raspberry Electrolyte Solution, 33.8 fl oz",
+      "title": "Pedialyte AdvancedCare with Immune Support Blue Raspberry Electrolyte Solution (33.8 oz) | FoodMaxx",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -1807,6 +1783,18 @@
       "sku": "00716837888253",
       "title": "Pepcid Complete Acid Reducer + Antacid Chewable Tablets, Mint, 25 Count",
       "price": "$16.22",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00301490039045",
+      "title": "Pepto-Bismol Upset Stomach Reliever Liquid, Original (4 fl oz)",
+      "price": "$5.29",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1937,7 +1925,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare, Super Collagen, 500 mg, 90 Capsules",
+      "title": "Rejuvicare, Super Collagen, 500 Mg, 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +1997,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Cough Relief Drops (34 ct) | FoodMaxx",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2129,7 +2117,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Kind to Skin Facial Wipes Gentle and Effective Makeup Remover Cleansing Free from color and dye artificial perfume and harsh chemicals 25",
+      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2311,6 +2299,18 @@
       "sku": "00000060018939",
       "title": "Vaseline Blueseal Rich Conditioning Jelly Cocoa Butter [1.7oz/ 50ml]",
       "price": "$2.49",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
