@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T14:27:27.395Z",
+  "updated": "2026-10-21T14:36:59.323Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -29,7 +29,7 @@
     },
     {
       "sku": "00054400000054",
-      "title": "A.1. and Heinz 57 Steak Sauce Duo for Marinades, Grilling, Burgers and Meat Seasoning, Original Steak Sauce and Heinz 57 Sauce, 10 Ounce (Variety",
+      "title": "A.1 Steak Sauce - 10 oz bottle",
       "price": "$7.99",
       "salePrice": null,
       "availability": "in stock",
@@ -197,7 +197,7 @@
     },
     {
       "sku": "00850026152623",
-      "title": "Ammens Original Body Powder Talc Free, 11 Ounce",
+      "title": "Ammens Deodorant Powder Body Original Talc Free (Item#51424) 11oz",
       "price": "$8.99",
       "salePrice": null,
       "availability": "in stock",
@@ -247,6 +247,18 @@
       "sku": "00072140006389",
       "title": "Aquaphor Lip Repair 0.35 fl oz",
       "price": "$5.50",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00306969044049",
+      "title": "Arnicare, Arthritis, 60 Quick Dissolving Tablets, Boiron",
+      "price": "$9.50",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -316,6 +328,18 @@
       "category": null
     },
     {
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
+      "price": "$4.84",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381372025229",
       "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
       "price": "$4.91",
@@ -329,20 +353,8 @@
     },
     {
       "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
       "price": "$2.31",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
-      "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -436,18 +448,6 @@
       "category": null
     },
     {
-      "sku": "00306969044049",
-      "title": "Boiron Arnicare Arthritis Pain Relief, Tablets - 60 count",
-      "price": "$9.50",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00053000004363",
       "title": "Borden Slices Grilled Cheese Melts 16 Ea",
       "price": "$4.99",
@@ -473,7 +473,7 @@
     },
     {
       "sku": "00305735509256",
-      "title": "Caltrate 600+D3 Calcium and Vitamin D Supplement Tablets - 200 Count",
+      "title": "Caltrate 600+D3 Calcium and Vitamin D Supplement Tablets, 200 ct",
       "price": "$25.62",
       "salePrice": null,
       "availability": "in stock",
@@ -568,18 +568,6 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00044600001043",
       "title": "Clorox original Bleach (1 gal) | CVS",
       "price": "$10.99",
@@ -592,8 +580,20 @@
       "category": null
     },
     {
+      "sku": "00044600031910",
+      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
+      "price": "$18.71",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00036761811128",
-      "title": "Colace 50 mg Clear Soft Gels Stool Softener (28 ct) | Hannaford",
+      "title": "Colace Stool Softener 50 mg Clear Soft Gels 28 Count Bottle",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -749,7 +749,7 @@
     },
     {
       "sku": "00850026660364",
-      "title": "Dimetapp DM Elixir Cold & Cough Relief Syrup With Grape Taste for Childrens - 4 oz",
+      "title": "Dimetapp Children's Grape Flavor Cold & Cough",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -953,7 +953,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -967,6 +967,18 @@
       "sku": "00300670016241",
       "title": "Ex-Lax Maximum Strength Stimulant Laxative Pills, 24 Count",
       "price": "$6.68",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1025,7 +1037,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Liquid Laundry Detergent Original Scent 42 Oz.",
+      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1169,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1339,18 +1351,6 @@
       "sku": "00818286010190",
       "title": "Md Ribbed Cushion Over the Calf Compression White Socks Medium - 1 Pr",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta Orange",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2249,7 +2249,7 @@
     },
     {
       "sku": "00794731020016",
-      "title": "Triple Paste Medicated Ointment for Diaper Rash (2 oz)",
+      "title": "Triple Paste Medicated Ointment for Diaper Rash 2 oz",
       "price": "$8.68",
       "salePrice": null,
       "availability": "in stock",
