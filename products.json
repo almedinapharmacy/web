@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T14:36:59.323Z",
+  "updated": "2026-10-22T14:37:23.528Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -77,7 +77,7 @@
     },
     {
       "sku": "00041167097809",
-      "title": "ACT Restoring Anticavity Fluoride Mouthwash Mint Burst - 18 fl oz",
+      "title": "ACT Mouthwash, Anticavity Fluoride, Mint Burst - 18 fl oz",
       "price": "$5.63",
       "salePrice": null,
       "availability": "in stock",
@@ -256,18 +256,6 @@
       "category": null
     },
     {
-      "sku": "00306969044049",
-      "title": "Arnicare, Arthritis, 60 Quick Dissolving Tablets, Boiron",
-      "price": "$9.50",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00041167058848",
       "title": "Aspercreme Lidocaine Pain Relief Cream - 4.3 oz",
       "price": "$12.66",
@@ -353,7 +341,7 @@
     },
     {
       "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
       "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
@@ -437,8 +425,20 @@
     },
     {
       "sku": "00041388210216",
-      "title": "Blistex Lip Ointment, Medicated - 0.21 oz",
+      "title": "Blistex Lip Ointment, Medicated 0.21 oz",
       "price": "$2.55",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00306969044049",
+      "title": "Boiron Arnicare Arthritis Pain Relief, Tablets - 60 count",
+      "price": "$9.50",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -667,18 +667,6 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -976,18 +964,6 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
       "price": "$3.99",
@@ -1001,7 +977,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
+      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1169,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1360,6 +1336,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta Orange",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00850018711753",
       "title": "Mike's Amazing 5% Acidity Distilled White Vinegar (32 fl oz) | GIANT",
       "price": "$1.99",
@@ -1529,7 +1517,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Antibiotic Ointment 0.50 oz",
+      "title": "Neosporin Original Antibiotic Ointment 0.5 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1744,9 +1732,9 @@
       "category": null
     },
     {
-      "sku": "00063216911010",
-      "title": "Organic Olive Oil Hair Fertilizer - 6 oz",
-      "price": "$8.79",
+      "sku": "00632169111015",
+      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
+      "price": "$1.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1756,9 +1744,9 @@
       "category": null
     },
     {
-      "sku": "00632169111015",
-      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
-      "price": "$1.79",
+      "sku": "00063216911010",
+      "title": "ORS Organic Root Hair Fertilizer (6 oz)",
+      "price": "$8.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1997,7 +1985,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Honey Lemon Max Throat Care Drops",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +1997,7 @@
     },
     {
       "sku": "00036602079489",
-      "title": "Ricola Lemon Mint - 24 Drops",
+      "title": "Ricola Throat Drops, Lemon-Mint",
       "price": "$2.65",
       "salePrice": null,
       "availability": "in stock",
@@ -2311,6 +2299,18 @@
       "sku": "00000060018939",
       "title": "Vaseline Blueseal Rich Conditioning Jelly Cocoa Butter [1.7oz/ 50ml]",
       "price": "$2.49",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
