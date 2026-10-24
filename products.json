@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T14:22:06.629Z",
+  "updated": "2026-10-24T13:32:58.796Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -77,7 +77,7 @@
     },
     {
       "sku": "00041167097809",
-      "title": "ACT Mouthwash, Anticavity Fluoride, Mint Burst - 18 fl oz",
+      "title": "ACT Anticavity Fluoride Mint Burst Mouthwash, 18 fl oz",
       "price": "$5.63",
       "salePrice": null,
       "availability": "in stock",
@@ -246,7 +246,7 @@
     {
       "sku": "00072140006389",
       "title": "Aquaphor Lip Repair 0.35 fl oz",
-      "price": "$5.50",
+      "price": "$5.52",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -376,18 +376,6 @@
       "category": null
     },
     {
-      "sku": "00310119056110",
-      "title": "Bausch & Lomb Boston Simplus Multi Action Solution - 3.5 fl oz",
-      "price": "$12.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00367618180129",
       "title": "Betadine First Aid Cream - 0.53 oz",
       "price": "$6.14",
@@ -460,6 +448,18 @@
       "category": null
     },
     {
+      "sku": "00310119056110",
+      "title": "Boston Simplus Multi-Action Solution, 3.5 fl oz",
+      "price": "$12.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00012000161346",
       "title": "Brisk Iced Tea, Strawberry - Melon (12 fl oz)",
       "price": "$1.00",
@@ -473,7 +473,7 @@
     },
     {
       "sku": "00305735509256",
-      "title": "Caltrate 600+D3 Calcium and Vitamin D Supplement Tablets, 200 ct",
+      "title": "Caltrate Bone Health 600+d3 Calcium Tablets 200 ct",
       "price": "$25.62",
       "salePrice": null,
       "availability": "in stock",
@@ -557,7 +557,7 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Non Fat Greek Yogurt, Blueberry (5.3 oz)",
+      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
       "price": "$1.75",
       "salePrice": null,
       "availability": "in stock",
@@ -953,7 +953,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1157,7 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana Powder Blush - Hot Raspberry",
+      "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1277,7 +1277,7 @@
     },
     {
       "sku": "00031254742835",
-      "title": "Listerine Antiseptic Mouthwash Fresh Burst - 1 Liter - Vashon Thriftway - Delivered by Mercato",
+      "title": "Listerine Freshburst Antiseptic Mouthwash (1 L)",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1493,7 +1493,7 @@
     },
     {
       "sku": "00074312006845",
-      "title": "Nature's Bounty Stress Comfort Mood Booster Wild Berry 36 Gummies",
+      "title": "Nature's Bounty, Stress Comfort, Mood Booster, Wild Berry, 36 Gummies",
       "price": "$13.83",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +2009,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Honey Lemon Max Throat Care Drops",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
