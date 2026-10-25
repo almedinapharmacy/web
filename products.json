@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T13:32:58.796Z",
+  "updated": "2026-10-25T13:53:17.169Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -316,6 +316,18 @@
       "category": null
     },
     {
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
+      "price": "$4.84",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381372025229",
       "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
       "price": "$4.91",
@@ -329,32 +341,8 @@
     },
     {
       "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
       "price": "$2.31",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
-      "price": "$4.84",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00381371183487",
-      "title": "Band-Aid Skin-Flex Adhesive Bandages, Assorted Sizes - 20 ct",
-      "price": "$5.45",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -568,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -580,9 +568,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Toilet Wand Toilet Cleaning Kit, ToiletWand, Caddy and 6, Pack May Vary",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -667,18 +655,6 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -941,7 +917,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -953,7 +929,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
+      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -989,7 +965,7 @@
     },
     {
       "sku": "00011313021705",
-      "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
+      "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1169,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1588,9 +1564,9 @@
       "category": null
     },
     {
-      "sku": "00072140111953",
-      "title": "Nivea Lip Care Moisture 0.17oz",
-      "price": "$3.62",
+      "sku": "00007214002219",
+      "title": "Nivea Cherry Blossom & Jojoba Oil Infused Body Lotion (16.9 fl oz)",
+      "price": "$8.89",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1600,9 +1576,9 @@
       "category": null
     },
     {
-      "sku": "00007214002219",
-      "title": "Nivea Oil Infused Lotion Cherry Blossom & Jojoba Oil 16.9 oz Bottle",
-      "price": "$8.89",
+      "sku": "00072140111953",
+      "title": "Nivea Lip Care Moisture 0.17oz",
+      "price": "$3.62",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1949,7 +1925,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare, Super Collagen, 500 Mg, 90 Capsules",
+      "title": "Rejuvicare, Super Collagen, 500 mg, 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +1985,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Honey Lemon Max Throat Care Drops",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2141,7 +2117,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
+      "title": "Simple Kind To Skin Cleansing Wipes, 7x6.5 in (8 oz, 25 ct)",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2237,7 +2213,7 @@
     },
     {
       "sku": "00697029200025",
-      "title": "TheraBreath Chamomile Mint Overnight Oral Rinse, 16 fl oz",
+      "title": "TheraBreath Overnight Mouthwash - Chamomile Mint - 16 fl oz",
       "price": "$12.06",
       "salePrice": null,
       "availability": "in stock",
@@ -2320,8 +2296,20 @@
       "category": null
     },
     {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
+      "title": "Vicks VapoCOOL Severe Medicated Drop, Winterfrost, 18 Drops*",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2371,6 +2359,18 @@
       "sku": "00019800707651",
       "title": "Windex Ammonia-D Glass Cleaner Fresh 32 oz Spray Bottle",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00035046003265",
+      "title": "Windmill Magnesium Drink Mix 5.64 fl oz",
+      "price": "$12.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
