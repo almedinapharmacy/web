@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T13:53:17.169Z",
+  "updated": "2026-10-26T16:17:06.373Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -17,7 +17,7 @@
     },
     {
       "sku": "00740985280065",
-      "title": "21st Century Fenugreek 610 Mg - 100 Capsules",
+      "title": "21st Century Fenugreek 610 mg - 100 Capsules",
       "price": "$7.69",
       "salePrice": null,
       "availability": "in stock",
@@ -269,7 +269,7 @@
     },
     {
       "sku": "00041100589934",
-      "title": "Astepro Allergy Nasal Spray, Children's, 60",
+      "title": "Astepro Children's Allergy Antihistamine Nasal Spray 60 ct",
       "price": "$16.75",
       "salePrice": null,
       "availability": "in stock",
@@ -316,9 +316,9 @@
       "category": null
     },
     {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
-      "price": "$4.84",
+      "sku": "00381372025229",
+      "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
+      "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -328,9 +328,9 @@
       "category": null
     },
     {
-      "sku": "00381372025229",
-      "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
-      "price": "$4.91",
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
+      "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -556,9 +556,9 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
-      "price": "$18.71",
+      "sku": "00044600001043",
+      "title": "Clorox original Bleach (1 gal) | CVS",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -568,9 +568,9 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
+      "sku": "00044600031910",
+      "title": "Clorox ToiletWand System",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -655,6 +655,18 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00323900039551",
+      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
+      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -880,6 +892,18 @@
       "category": null
     },
     {
+      "sku": "00011509043207",
+      "title": "Easy Comb-in Color – Jet Black - Just For Men",
+      "price": "$9.86",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -917,7 +941,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -943,18 +967,6 @@
       "sku": "00300670016241",
       "title": "Ex-Lax Maximum Strength Stimulant Laxative Pills, 24 Count",
       "price": "$6.68",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1001,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Half Caff Ground Medium Coffee 9.6 oz",
+      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1121,7 +1133,7 @@
     },
     {
       "sku": "00381370030485",
-      "title": "Johnson's Cornstarch Baby Powder with Aloe & Vitamin E, 9 oz",
+      "title": "Johnson's Aloe & Vitamin E Baby Powder 9 oz",
       "price": "$4.60",
       "salePrice": null,
       "availability": "in stock",
@@ -1135,18 +1147,6 @@
       "sku": "00041065340410",
       "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
-      "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1217,7 +1217,7 @@
     },
     {
       "sku": "00096295138313",
-      "title": "Leader Stop Smoking Aid, 21 Mg, Patch, Step 1, Clear",
+      "title": "Leader Stop Smoking Aid, 21 mg, Patch, Step 1, Clear",
       "price": "$29.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1327,6 +1327,18 @@
       "sku": "00818286010190",
       "title": "Md Ribbed Cushion Over the Calf Compression White Socks Medium - 1 Pr",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta Orange",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1985,7 +1997,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Honey Lemon Max Throat Care Drops",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2117,7 +2129,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Kind To Skin Cleansing Wipes, 7x6.5 in (8 oz, 25 ct)",
+      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2296,20 +2308,8 @@
       "category": null
     },
     {
-      "sku": "00323900039551",
-      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
-      "price": "$14.82",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Severe Medicated Drop, Winterfrost, 18 Drops*",
+      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2321,7 +2321,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut 100% Fruit Juice Soursop 490 ml",
+      "title": "Vinut %100 fruit Juice Soursop 490 ml",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
