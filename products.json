@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T16:17:06.373Z",
+  "updated": "2026-10-27T15:30:48.676Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -545,8 +545,20 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
+      "title": "Chobani Non Fat Greek Yogurt, Blueberry (5.3 oz)",
       "price": "$1.75",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00044600031910",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -568,20 +580,8 @@
       "category": null
     },
     {
-      "sku": "00044600031910",
-      "title": "Clorox ToiletWand System",
-      "price": "$18.71",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00036761811128",
-      "title": "Colace Stool Softener 50 mg Clear Soft Gels 28 Count Bottle",
+      "title": "Colace Clear 50 mg Stool Softener (28 gels)",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -664,18 +664,6 @@
       "category": null
     },
     {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00079400347664",
       "title": "Degree Men Antiperspirant Deodorant Cool Rush 2.7 oz",
       "price": "$5.99",
@@ -713,7 +701,7 @@
     },
     {
       "sku": "00073390055035",
-      "title": "Dentyne Ice Peppermint, Sugar Free Gum",
+      "title": "Dentyne Ice Peppermint Sugar Free Gum (16 Pieces)",
       "price": "$2.00",
       "salePrice": null,
       "availability": "in stock",
@@ -892,18 +880,6 @@
       "category": null
     },
     {
-      "sku": "00011509043207",
-      "title": "Easy Comb-in Color – Jet Black - Just For Men",
-      "price": "$9.86",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00076314302970",
       "title": "Emergen-C Super Orange Vitamin C Supplement",
       "price": "$9.39",
@@ -941,7 +917,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -953,7 +929,7 @@
     },
     {
       "sku": "00636874223131",
-      "title": "Everyone Hand Sanitizer Spray, Lavender & Aloe, 2 fl oz, Pack of 6",
+      "title": "Everyone - Lavender & Aloe Hand Sanitizer Spray, 2 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -967,6 +943,18 @@
       "sku": "00300670016241",
       "title": "Ex-Lax Maximum Strength Stimulant Laxative Pills, 24 Count",
       "price": "$6.68",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1025,7 +1013,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
+      "title": "Gain Liquid Laundry Detergent Original Scent 42 Oz.",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1156,6 +1144,18 @@
       "category": null
     },
     {
+      "sku": "00011509043207",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "price": "$9.86",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00303160243202",
       "title": "Keri Whole Body Therapy Daily Moisture Original Lotion, 20 oz",
       "price": "$11.94",
@@ -1241,7 +1241,7 @@
     },
     {
       "sku": "00096295123234",
-      "title": "Leader Vitamin D 1000IU Softgels 250 ct",
+      "title": "Leader Vitamin D 1000iu Softgels 250 ct",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1327,18 +1327,6 @@
       "sku": "00818286010190",
       "title": "Md Ribbed Cushion Over the Calf Compression White Socks Medium - 1 Pr",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta Orange",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1997,7 +1985,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2129,7 +2117,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
+      "title": "Simple Kind To Skin Cleansing Wipes, 7x6.5 in (8 oz, 25 ct)",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -2308,8 +2296,20 @@
       "category": null
     },
     {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
+      "title": "Vicks VapoCOOL Severe Medicated Drop, Winterfrost, 18 Drops*",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2321,7 +2321,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut %100 fruit Juice Soursop 490 ml",
+      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
