@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T16:14:39.263Z",
+  "updated": "2026-10-30T16:10:52.064Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -316,8 +316,20 @@
       "category": null
     },
     {
+      "sku": "00038137004424",
+      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
+      "price": "$4.84",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381372025229",
-      "title": "Band-Aid Brand Clear Waterproof Adhesive Bandages, One Size, 20 Count",
+      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
       "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
@@ -329,20 +341,8 @@
     },
     {
       "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
       "price": "$2.31",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
-      "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -461,7 +461,7 @@
     },
     {
       "sku": "00305735509256",
-      "title": "Caltrate Bone Health 600+d3 Calcium Tablets 200 ct",
+      "title": "Caltrate 600+D3 Calcium and Vitamin D Supplement Tablets, 200 ct",
       "price": "$25.62",
       "salePrice": null,
       "availability": "in stock",
@@ -785,7 +785,7 @@
     },
     {
       "sku": "00011111051249",
-      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
+      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
       "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
@@ -929,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -1001,7 +1001,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Ground Coffee, Half Caff-Medium Roast (9.6 oz)",
+      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1133,7 +1133,7 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana-Powder Blush - Hot Raspberry",
+      "title": "Jordana Powder Blush - Hot Raspberry",
       "price": "$1.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1313,7 +1313,7 @@
     },
     {
       "sku": "00899874002278",
-      "title": "Maty's Organic Nighttime Cough Syrup - 6 fl oz",
+      "title": "Maty's - Organic Nighttime Cough Syrup - 6 Fl Oz.",
       "price": "$12.66",
       "salePrice": null,
       "availability": "in stock",
@@ -1373,7 +1373,7 @@
     },
     {
       "sku": "00074527300066",
-      "title": "Mistolin All Purpose Cleaner Lilac 28 fl oz",
+      "title": "Mistolin Lilac All Purpose Cleaner, 28 fl oz",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1577,7 +1577,7 @@
     },
     {
       "sku": "00007214002219",
-      "title": "NIVEA Cherry Blossom & Jojoba Oil Infused Body Lotion (16.9 fl oz)",
+      "title": "Nivea Cherry Blossom & Jojoba Oil Infused Body Lotion (16.9 fl oz)",
       "price": "$8.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1698,7 +1698,7 @@
     {
       "sku": "00858158005015",
       "title": "Olly Women's Multivitamin Gummies, Blissful Berry - 90 count",
-      "price": "$14.63",
+      "price": "$14.57",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1937,7 +1937,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare, Super Collagen, 500 mg, 90 Capsules",
+      "title": "Rejuvicare Super Collagen 50MG 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1997,7 +1997,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2225,7 +2225,7 @@
     },
     {
       "sku": "00697029200025",
-      "title": "TheraBreath Overnight Mouthwash - Chamomile Mint - 16 fl oz",
+      "title": "TheraBreath Chamomile Mint Overnight Oral Rinse, 16 fl oz",
       "price": "$12.06",
       "salePrice": null,
       "availability": "in stock",
