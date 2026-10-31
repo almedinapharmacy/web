@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T16:10:52.064Z",
+  "updated": "2026-10-31T15:28:56.755Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -316,6 +316,18 @@
       "category": null
     },
     {
+      "sku": "00381371161232",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "price": "$2.31",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00038137004424",
       "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
       "price": "$4.84",
@@ -331,18 +343,6 @@
       "sku": "00381372025229",
       "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
       "price": "$4.91",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
-      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -557,7 +557,7 @@
     },
     {
       "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
+      "title": "Clorox bleach, original - 1 gal",
       "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
@@ -569,7 +569,7 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox ToiletWand System",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
       "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
@@ -605,7 +605,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
+      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -655,18 +655,6 @@
       "sku": "00739835011218",
       "title": "Dalan Antibacterial Hand Wash Cool Protection 10.15fl oz",
       "price": "$1.89",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
-      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -785,7 +773,7 @@
     },
     {
       "sku": "00011111051249",
-      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
+      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
       "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
@@ -857,7 +845,7 @@
     },
     {
       "sku": "00811068019732",
-      "title": "Dr Teal's Sleep Foaming Bath with Melatonin & Essential Oils - 34 fl oz",
+      "title": "Dr Teal's Epsom Salt Soak 3 Piece Variety Pack Gift Set. New",
       "price": "$6.92",
       "salePrice": null,
       "availability": "in stock",
@@ -2299,6 +2287,18 @@
       "sku": "00000060018939",
       "title": "Vaseline Blueseal Rich Conditioning Jelly Cocoa Butter [1.7oz/ 50ml]",
       "price": "$2.49",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
