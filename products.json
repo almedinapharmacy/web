@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T17:17:09.498Z",
+  "updated": "2026-11-04T17:27:23.199Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -77,7 +77,7 @@
     },
     {
       "sku": "00041167097809",
-      "title": "ACT Anticavity Fluoride Mint Burst Mouthwash, 18 fl oz",
+      "title": "ACT Restoring Anticavity Fluoride Mouthwash Mint Burst - 18 fl oz",
       "price": "$5.63",
       "salePrice": null,
       "availability": "in stock",
@@ -328,9 +328,9 @@
       "category": null
     },
     {
-      "sku": "00381372025229",
-      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
-      "price": "$4.91",
+      "sku": "00381371161232",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -340,9 +340,9 @@
       "category": null
     },
     {
-      "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
-      "price": "$2.31",
+      "sku": "00381372025229",
+      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
+      "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -569,7 +569,7 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox ToiletWand System",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
       "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
@@ -664,6 +664,18 @@
       "category": null
     },
     {
+      "sku": "00323900039551",
+      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
+      "price": "$14.82",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00079400347664",
       "title": "Degree Men Antiperspirant Deodorant Cool Rush 2.7 oz",
       "price": "$5.99",
@@ -725,7 +737,7 @@
     },
     {
       "sku": "00850026660364",
-      "title": "Dimetapp DM Elixir Cold & Cough Relief Syrup With Grape Taste for Childrens - 4 oz",
+      "title": "Dimetapp Children's Grape Flavor Cold & Cough",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -845,7 +857,7 @@
     },
     {
       "sku": "00811068019732",
-      "title": "Dr Teal's Epsom Salt Soak 3 Piece Variety Pack Gift Set. New",
+      "title": "Dr Teal's Sleep Foaming Bath with Melatonin & Essential Oils - 34 fl oz",
       "price": "$6.92",
       "salePrice": null,
       "availability": "in stock",
@@ -917,7 +929,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
+      "title": "Gain Liquid Laundry Detergent Original Scent 42 Oz.",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1756,6 +1768,18 @@
       "category": null
     },
     {
+      "sku": "00191554603943",
+      "title": "Peachy Nectar",
+      "price": "$2.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "08901030005176",
       "title": "Pears Soap Green 125G",
       "price": "$2.49",
@@ -1889,7 +1913,7 @@
     },
     {
       "sku": "00300234491309",
-      "title": "Refresh Optive Lubricant Eye Drops, Advanced",
+      "title": "Refresh Optive Advanced Lubricant Eye Drops",
       "price": "$16.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1973,7 +1997,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
+      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2044,9 +2068,9 @@
       "category": null
     },
     {
-      "sku": "00037000203704",
-      "title": "Secret Classic Cocoa Butter Scent Invisible Solid Antiperspirant/Deodorant 2.6 oz. Stick",
-      "price": "$6.14",
+      "sku": "00037000667872",
+      "title": "Secret Eucalyptus Antiperspirant 2.6 oz",
+      "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2056,9 +2080,9 @@
       "category": null
     },
     {
-      "sku": "00037000667872",
-      "title": "Secret Eucalyptus Antiperspirant 2.6 oz",
-      "price": "$5.99",
+      "sku": "00037000203704",
+      "title": "Secret Fresh Is Berry Bright 2.6 oz",
+      "price": "$6.14",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2296,18 +2320,6 @@
       "category": null
     },
     {
-      "sku": "00323900039551",
-      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
-      "price": "$14.82",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00323900039704",
       "title": "Vicks VapoCOOL Severe Medicated Drop, Winterfrost, 18 Drops*",
       "price": "$3.35",
@@ -2321,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut %100 fruit Juice Soursop 490 ml",
+      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2371,18 +2383,6 @@
       "sku": "00035046003265",
       "title": "Windmill Magnesium Drink Mix 5.64 fl oz",
       "price": "$12.79",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00191554603943",
-      "title": "Wish Fruity Series Hand Sanitizer With Silicone Case | Glamour Us",
-      "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
