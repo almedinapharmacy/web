@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T17:27:23.199Z",
+  "updated": "2026-11-05T17:36:37.883Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -197,7 +197,7 @@
     },
     {
       "sku": "00850026152623",
-      "title": "Ammens Deodorant Powder Body Original Talc Free (Item#51424) 11oz",
+      "title": "Ammens Body Powder - Original 11 oz",
       "price": "$8.99",
       "salePrice": null,
       "availability": "in stock",
@@ -316,6 +316,18 @@
       "category": null
     },
     {
+      "sku": "00000078938847",
+      "title": "Bala Halls Vermelha Morango 28g",
+      "price": "$1.50",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00038137004424",
       "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
       "price": "$4.84",
@@ -328,9 +340,9 @@
       "category": null
     },
     {
-      "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
-      "price": "$2.31",
+      "sku": "00381372025229",
+      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
+      "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -340,9 +352,9 @@
       "category": null
     },
     {
-      "sku": "00381372025229",
-      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
-      "price": "$4.91",
+      "sku": "00381371161232",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -437,7 +449,7 @@
     },
     {
       "sku": "00053000004363",
-      "title": "Borden Slices Grilled Cheese Melts 16 Ea",
+      "title": "Borden Melts Grilled Cheese, 3/4 oz, 16 count",
       "price": "$4.99",
       "salePrice": null,
       "availability": "in stock",
@@ -665,7 +677,7 @@
     },
     {
       "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu Liquicaps - 24 ct. Vicks.",
+      "title": "DayQuil/NyQuil Severe Cold & Flu LiquiCaps - 24 ct. Vicks.",
       "price": "$14.82",
       "salePrice": null,
       "availability": "in stock",
@@ -713,7 +725,7 @@
     },
     {
       "sku": "00073390055035",
-      "title": "Dentyne Ice Peppermint Sugar Free Gum (16 Pieces)",
+      "title": "Dentyne Ice Peppermint Gum",
       "price": "$2.00",
       "salePrice": null,
       "availability": "in stock",
@@ -964,18 +976,6 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
@@ -1025,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Liquid Laundry Detergent Original Scent 42 Oz.",
+      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1048,20 +1048,8 @@
       "category": null
     },
     {
-      "sku": "00000078938847",
-      "title": "Halls de Morango 28g",
-      "price": "$1.50",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00072320700823",
-      "title": "Hello Panda Strawberry 2.2oz",
+      "title": "Hello Panda - Strawberry Cookies, 2.2 Oz.",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -1253,7 +1241,7 @@
     },
     {
       "sku": "00096295123234",
-      "title": "Leader Vitamin D 1000IU Softgels 250 ct",
+      "title": "Leader Vitamin D 1000iu Softgels 250 ct",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1348,6 +1336,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta Orange",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00850018711753",
       "title": "Mike's Amazing 5% Acidity Distilled White Vinegar (32 fl oz) | GIANT",
       "price": "$1.99",
@@ -1373,7 +1373,7 @@
     },
     {
       "sku": "00074527300066",
-      "title": "Mistolin Lilac All Purpose cleaner, 28 fl oz",
+      "title": "Mistolin All Purpose Cleaner Lilac 28 fl oz",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1553,7 +1553,7 @@
     },
     {
       "sku": "00070501011300",
-      "title": "Neutrogena Rainbath Refreshing Shower and Bath Gel, Original Formula, 32 Ounce",
+      "title": "Neutrogena Rainbath Refreshing Shower & Bath Gel Original - 32 oz.",
       "price": "$32.06",
       "salePrice": null,
       "availability": "in stock",
@@ -1865,7 +1865,7 @@
     },
     {
       "sku": "00037000344315",
-      "title": "Puffs Plus Lotion Facial Tissues with Scent of Vicks - 48 ct",
+      "title": "Puffs Plus Lotion with Scent of Vicks Facial Tissues 48 ct",
       "price": "$2.15",
       "salePrice": null,
       "availability": "in stock",
@@ -1997,7 +1997,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2393,7 +2393,7 @@
     },
     {
       "sku": "00012005005737",
-      "title": "Zote Laundry Soap White - 14.1 Ounce",
+      "title": "Zote Soap, White 14.1 oz",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
