@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T17:36:37.883Z",
+  "updated": "2026-11-06T16:54:49.174Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -162,7 +162,7 @@
     {
       "sku": "00035000498748",
       "title": "AJAX Ultra Triple Action Liquid Dish Soap, Orange Scent, 90 fl oz",
-      "price": "$10.99",
+      "price": "$12.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -197,7 +197,7 @@
     },
     {
       "sku": "00850026152623",
-      "title": "Ammens Body Powder - Original 11 oz",
+      "title": "Ammens Deodorant Powder Body Original Talc Free (Item#51424) 11oz",
       "price": "$8.99",
       "salePrice": null,
       "availability": "in stock",
@@ -269,7 +269,7 @@
     },
     {
       "sku": "00041100589934",
-      "title": "Astepro Children's Allergy Antihistamine Nasal Spray 60 ct",
+      "title": "Astepro Allergy Nasal Spray, Children's, 60",
       "price": "$16.75",
       "salePrice": null,
       "availability": "in stock",
@@ -340,6 +340,18 @@
       "category": null
     },
     {
+      "sku": "00381371161232",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "price": "$2.31",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00381372025229",
       "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
       "price": "$4.91",
@@ -352,33 +364,9 @@
       "category": null
     },
     {
-      "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
-      "price": "$2.31",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00051009007699",
       "title": "Barbasol Pacific Rush Thick & Rich Shaving Cream, 7 oz",
       "price": "$2.96",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00310119056110",
-      "title": "Bausch & Lomb Boston Simplus Multi-Action Solution - 3.5 fl oz",
-      "price": "$12.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -425,7 +413,7 @@
     },
     {
       "sku": "00041388210216",
-      "title": "Blistex Lip Ointment, Medicated 0.21 oz",
+      "title": "Blistex Lip Ointment, Medicated - 0.21 oz",
       "price": "$2.55",
       "salePrice": null,
       "availability": "in stock",
@@ -451,6 +439,18 @@
       "sku": "00053000004363",
       "title": "Borden Melts Grilled Cheese, 3/4 oz, 16 count",
       "price": "$4.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00310119056110",
+      "title": "Boston Simplus Multi-Action Solution, 3.5 fl oz",
+      "price": "$12.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -557,7 +557,7 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
+      "title": "Chobani Blueberry on the Bottom Nonfat Greek Yogurt - 5.3oz",
       "price": "$1.75",
       "salePrice": null,
       "availability": "in stock",
@@ -749,7 +749,7 @@
     },
     {
       "sku": "00850026660364",
-      "title": "Dimetapp Children's Grape Flavor Cold & Cough",
+      "title": "Dimetapp Children's Cold & Cough Grape Flavor Liquid, 6+ Yrs, 4 fl oz",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
+      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -1025,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
+      "title": "Gain Liquid Laundry Detergent Original Scent 42 Oz.",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1553,7 +1553,7 @@
     },
     {
       "sku": "00070501011300",
-      "title": "Neutrogena Rainbath Refreshing Shower & Bath Gel Original - 32 oz.",
+      "title": "Neutrogena Rainbath Refreshing Shower and Bath Gel, Original Formula, 32 Ounce",
       "price": "$32.06",
       "salePrice": null,
       "availability": "in stock",
@@ -1913,7 +1913,7 @@
     },
     {
       "sku": "00300234491309",
-      "title": "Refresh Optive Advanced Lubricant Eye Drops",
+      "title": "Refresh Optive Lubricant Eye Drops, Advanced",
       "price": "$16.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1997,7 +1997,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2129,7 +2129,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
+      "title": "Simple Kind To Skin Cleansing Wipes, 7x6.5 in (8 oz, 25 ct)",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
