@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-06T16:54:49.174Z",
+  "updated": "2026-11-07T15:52:53.165Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
     {
-      "sku": "00740985213391",
-      "title": "21st Century Acidophilus Probiotic Blend - 100 Capsules",
-      "price": "$7.99",
+      "sku": "00740985280065",
+      "title": "21st Century Fenugreek 610 mg - 100 Capsules",
+      "price": "$7.69",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -16,9 +16,9 @@
       "category": null
     },
     {
-      "sku": "00740985280065",
-      "title": "21st Century Fenugreek 610 mg - 100 Capsules",
-      "price": "$7.69",
+      "sku": "00740985213391",
+      "title": "21st Century High Potency Acidophilus Capsules 100 Count",
+      "price": "$7.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -329,20 +329,8 @@
     },
     {
       "sku": "00038137004424",
-      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
+      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
       "price": "$4.84",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
-      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -355,6 +343,18 @@
       "sku": "00381372025229",
       "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
       "price": "$4.91",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00381371161232",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -557,7 +557,7 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Nonfat Greek Yogurt - 5.3oz",
+      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
       "price": "$1.75",
       "salePrice": null,
       "availability": "in stock",
@@ -617,7 +617,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
+      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -857,7 +857,7 @@
     },
     {
       "sku": "07500435255967",
-      "title": "Downy Intense Pureza Fabric Softener - 730 Milliliters - City Fresh Market (Valentine) - Delivered by Mercato",
+      "title": "Downy Intense Pureza Fabric Softener - 730 Milliliters - Foodtown of Riverdale - Delivered by Mercato",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
@@ -941,7 +941,7 @@
     },
     {
       "sku": "00025077169818",
-      "title": "Ester-c Vitamin C, 1,000 mg, 90 Coated Tablets",
+      "title": "Ester-C Vitamin C, Immune Support Tablets, 1000 mg, 90 ct",
       "price": "$14.49",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Coffee, Ground, Medium, Half Caff 9.6 oz",
+      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1025,7 +1025,7 @@
     },
     {
       "sku": "00037000558613",
-      "title": "Gain Liquid Laundry Detergent Original Scent 42 Oz.",
+      "title": "Gain - Aroma Boost Original Scent Laundry Detergent Liquid - 46 oz",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1553,7 +1553,7 @@
     },
     {
       "sku": "00070501011300",
-      "title": "Neutrogena Rainbath Refreshing Shower and Bath Gel, Original Formula, 32 Ounce",
+      "title": "Neutrogena Rainbath Refreshing Shower & Bath Gel Original - 32 oz.",
       "price": "$32.06",
       "salePrice": null,
       "availability": "in stock",
@@ -1973,7 +1973,7 @@
     },
     {
       "sku": "00309974169103",
-      "title": "Revlon Lash Curler",
+      "title": "Revlon Eyelash Curler",
       "price": "$3.38",
       "salePrice": null,
       "availability": "in stock",
@@ -1997,7 +1997,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2068,9 +2068,9 @@
       "category": null
     },
     {
-      "sku": "00037000667872",
-      "title": "Secret Eucalyptus Antiperspirant 2.6 oz",
-      "price": "$5.99",
+      "sku": "00037000203704",
+      "title": "Secret Classic Cocoa Butter Scent Invisible Solid Antiperspirant/Deodorant 2.6 oz. Stick",
+      "price": "$6.14",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2080,9 +2080,9 @@
       "category": null
     },
     {
-      "sku": "00037000203704",
-      "title": "Secret Fresh Is Berry Bright 2.6 oz",
-      "price": "$6.14",
+      "sku": "00037000667872",
+      "title": "Secret Eucalyptus Antiperspirant 2.6 oz",
+      "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2129,7 +2129,7 @@
     },
     {
       "sku": "00087300700052",
-      "title": "Simple Kind To Skin Cleansing Wipes, 7x6.5 in (8 oz, 25 ct)",
+      "title": "Simple Cleansing Facial Wipes - 25 Wipes",
       "price": "$6.00",
       "salePrice": null,
       "availability": "in stock",
