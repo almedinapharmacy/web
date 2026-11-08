@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T15:52:53.165Z",
+  "updated": "2026-11-08T16:15:12.354Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -581,7 +581,7 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "title": "Clorox ToiletWand System",
       "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
@@ -593,7 +593,7 @@
     },
     {
       "sku": "00036761811128",
-      "title": "Colace Stool Softener 50 mg Clear Soft Gels 28 Count Bottle",
+      "title": "Colace Stool Softener Clear Soft Gels 50 mg (28 ct)",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -617,7 +617,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
+      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -676,18 +676,6 @@
       "category": null
     },
     {
-      "sku": "00323900039551",
-      "title": "DayQuil/NyQuil Severe Cold & Flu LiquiCaps - 24 ct. Vicks.",
-      "price": "$14.82",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00079400347664",
       "title": "Degree Men Antiperspirant Deodorant Cool Rush 2.7 oz",
       "price": "$5.99",
@@ -725,7 +713,7 @@
     },
     {
       "sku": "00073390055035",
-      "title": "Dentyne Ice Peppermint Gum",
+      "title": "Dentyne Ice Peppermint Sugar Free Gum (16 Pieces)",
       "price": "$2.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1001,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
+      "title": "Folgers Ground Coffee, Half Caff-Medium Roast (9.6 oz)",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1133,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1732,9 +1720,9 @@
       "category": null
     },
     {
-      "sku": "00063216911010",
-      "title": "Organic Olive Oil Hair Fertilizer - 6 oz",
-      "price": "$8.79",
+      "sku": "00632169111015",
+      "title": "ORS Olive Oil Replenishing Conditioner 1.75oz",
+      "price": "$1.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1744,9 +1732,9 @@
       "category": null
     },
     {
-      "sku": "00632169111015",
-      "title": "ORS Olive Oil Replenishing Conditioner 1.75oz",
-      "price": "$1.79",
+      "sku": "00063216911010",
+      "title": "ORS Organic Root Hair Fertilizer (6 oz)",
+      "price": "$8.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1997,7 +1985,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2320,6 +2308,18 @@
       "category": null
     },
     {
+      "sku": "00323900039551",
+      "title": "Vicks NyQuil DayQuil Combo Pack Severe Cold & Flu Caplets 24ct",
+      "price": "$14.82",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00323900039704",
       "title": "Vicks VapoCOOL Severe Medicated Drop, Winterfrost, 18 Drops*",
       "price": "$3.35",
@@ -2357,7 +2357,7 @@
     },
     {
       "sku": "00822514282259",
-      "title": "Wellmade Mango Juice Drink",
+      "title": "Wellmade Mango Juice Drink 1 Ltr",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
