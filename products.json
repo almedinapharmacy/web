@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T16:15:12.354Z",
+  "updated": "2026-11-09T19:59:11.434Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -89,7 +89,7 @@
     },
     {
       "sku": "00041167098066",
-      "title": "ACT Restoring Cool Mint Anticavity Fluoride Mouthwash, 33.8 fl oz",
+      "title": "ACT Restoring Anticavity Fluoride Mouthwash, Cool Mint, 33.8 fl. oz.",
       "price": "$7.49",
       "salePrice": null,
       "availability": "in stock",
@@ -220,9 +220,9 @@
       "category": null
     },
     {
-      "sku": "00072140019457",
-      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
-      "price": "$18.33",
+      "sku": "00072140026615",
+      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
+      "price": "$9.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -232,9 +232,9 @@
       "category": null
     },
     {
-      "sku": "00072140026615",
-      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
-      "price": "$9.66",
+      "sku": "00072140019457",
+      "title": "Aquaphor Healing Ointment 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -329,7 +329,7 @@
     },
     {
       "sku": "00038137004424",
-      "title": "Band-Aid Brand Water Block Waterproof Tough Adhesive Bandages for Minor Cuts and Scrapes, All One Size, 20 ct",
+      "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
       "price": "$4.84",
       "salePrice": null,
       "availability": "in stock",
@@ -367,6 +367,18 @@
       "sku": "00051009007699",
       "title": "Barbasol Pacific Rush Thick & Rich Shaving Cream, 7 oz",
       "price": "$2.96",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00310119056110",
+      "title": "Bausch & Lomb Boston Simplus Multi-Action Solution - 3.5 fl oz",
+      "price": "$12.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -437,20 +449,8 @@
     },
     {
       "sku": "00053000004363",
-      "title": "Borden Melts Grilled Cheese, 3/4 oz, 16 count",
+      "title": "Borden Melts Grilled Cheese, 3/4 oz, 16 Count",
       "price": "$4.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00310119056110",
-      "title": "Boston Simplus Multi-Action Solution, 3.5 fl oz",
-      "price": "$12.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -557,7 +557,7 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
+      "title": "Chobani Blueberry on the Bottom Nonfat Greek Yogurt - 5.3oz",
       "price": "$1.75",
       "salePrice": null,
       "availability": "in stock",
@@ -581,7 +581,7 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox ToiletWand System",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
       "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
@@ -593,7 +593,7 @@
     },
     {
       "sku": "00036761811128",
-      "title": "Colace Stool Softener Clear Soft Gels 50 mg (28 ct)",
+      "title": "Colace Stool Softener 50 mg Clear Soft Gels 28 Count Bottle",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -845,7 +845,7 @@
     },
     {
       "sku": "07500435255967",
-      "title": "Downy Intense Pureza Fabric Softener - 730 Milliliters - Foodtown of Riverdale - Delivered by Mercato",
+      "title": "Downy Intense Pureza Fabric Softener - 730 ml",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
@@ -964,6 +964,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
@@ -1001,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Ground Coffee, Half Caff-Medium Roast (9.6 oz)",
+      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1229,7 +1241,7 @@
     },
     {
       "sku": "00096295123234",
-      "title": "Leader Vitamin D 1000iu Softgels 250 ct",
+      "title": "Leader Vitamin D 1000IU Softgels 250 ct",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1277,7 +1289,7 @@
     },
     {
       "sku": "00038485504072",
-      "title": "Lydia Pinkham Herbal Supplement 72 Tablets",
+      "title": "Lydia Pinkham Herbal 72 Tablets",
       "price": "$8.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1301,7 +1313,7 @@
     },
     {
       "sku": "00899874002278",
-      "title": "Maty's - Organic Nighttime Cough Syrup - 6 Fl Oz.",
+      "title": "Maty's - Organic Nighttime Cough Syrup - 6 fl Oz.",
       "price": "$12.66",
       "salePrice": null,
       "availability": "in stock",
@@ -1315,18 +1327,6 @@
       "sku": "00818286010190",
       "title": "Md Ribbed Cushion Over the Calf Compression White Socks Medium - 1 Pr",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta Orange",
-      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1601,7 +1601,7 @@
     },
     {
       "sku": "00885131931245",
-      "title": "Nuk Grins & Giggles Toddler Toothbrush and Cleanser Set - Purple",
+      "title": "Nuk Grins & Giggles Toddler Toothbrush & Cleanser Set Tray",
       "price": "$6.60",
       "salePrice": null,
       "availability": "in stock",
@@ -1720,9 +1720,9 @@
       "category": null
     },
     {
-      "sku": "00632169111015",
-      "title": "ORS Olive Oil Replenishing Conditioner 1.75oz",
-      "price": "$1.79",
+      "sku": "00063216911010",
+      "title": "Organic Olive Oil Hair Fertilizer - 6 oz",
+      "price": "$8.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1732,9 +1732,9 @@
       "category": null
     },
     {
-      "sku": "00063216911010",
-      "title": "ORS Organic Root Hair Fertilizer (6 oz)",
-      "price": "$8.79",
+      "sku": "00632169111015",
+      "title": "ORS Olive Oil Replenishing Conditioner 1.75oz",
+      "price": "$1.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1925,7 +1925,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare Super Collagen 50MG 90 Capsules",
+      "title": "Rejuvicare, Super Collagen, 500 mg, 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1985,7 +1985,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Strawberry Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "Vinut %100 fruit Juice Soursop 490 ml",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2393,7 +2393,7 @@
     },
     {
       "sku": "00012005005737",
-      "title": "Zote Soap, White 14.1 oz",
+      "title": "Zote Laundry Soap White - 14.1 Ounce",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
