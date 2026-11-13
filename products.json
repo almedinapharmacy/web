@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T17:42:59.923Z",
+  "updated": "2026-11-13T17:20:53.347Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -220,9 +220,9 @@
       "category": null
     },
     {
-      "sku": "00072140019457",
-      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
-      "price": "$18.33",
+      "sku": "00072140026615",
+      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
+      "price": "$9.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -232,9 +232,9 @@
       "category": null
     },
     {
-      "sku": "00072140026615",
-      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
-      "price": "$9.66",
+      "sku": "00072140019457",
+      "title": "Aquaphor Healing Ointment 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -340,9 +340,9 @@
       "category": null
     },
     {
-      "sku": "00381371161232",
-      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
-      "price": "$2.31",
+      "sku": "00381372025229",
+      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
+      "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -352,9 +352,9 @@
       "category": null
     },
     {
-      "sku": "00381372025229",
-      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
-      "price": "$4.91",
+      "sku": "00381371161232",
+      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
+      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -533,7 +533,7 @@
     },
     {
       "sku": "00889411431005",
-      "title": "Charcocaps Anti Gas Dietary Supplement Formula 36 Capsules",
+      "title": "Charco Caps Anti-Gas Formula Dietary Supplement, Capsules - 36 count",
       "price": "$6.80",
       "salePrice": null,
       "availability": "in stock",
@@ -557,8 +557,20 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
+      "title": "Chobani Blueberry on the Bottom Nonfat Greek Yogurt - 5.3oz",
       "price": "$1.75",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00044600001043",
+      "title": "Clorox bleach, original - 1 gal",
+      "price": "$10.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -580,20 +592,8 @@
       "category": null
     },
     {
-      "sku": "00044600001043",
-      "title": "Clorox original Bleach (1 gal) | CVS",
-      "price": "$10.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00036761811128",
-      "title": "Colace Stool Softener 50 mg Clear Soft Gels 28 Count Bottle",
+      "title": "Colace Stool Softener Clear Soft Gels 50 mg (28 ct)",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -617,7 +617,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
+      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -725,7 +725,7 @@
     },
     {
       "sku": "00073390055035",
-      "title": "Dentyne Ice Peppermint Sugar Free Gum (16 Pieces)",
+      "title": "Dentyne Ice Peppermint, Sugar Free Gum",
       "price": "$2.00",
       "salePrice": null,
       "availability": "in stock",
@@ -773,8 +773,20 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
+      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
       "price": "$5.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00011111051249",
+      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
+      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -787,18 +799,6 @@
       "sku": "00000096081754",
       "title": "Dove Men+Care 50mL A/P Stick Clean",
       "price": "$3.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011111051249",
-      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
-      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -857,7 +857,7 @@
     },
     {
       "sku": "07500435255967",
-      "title": "Downy Intense Pureza Fabric Softener - 730 ml",
+      "title": "Downy Intense Pureza Fabric Softener - 730 Milliliters - Foodtown of Riverdale - Delivered by Mercato",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
@@ -893,7 +893,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Sterile Conforming Bandage, 3 Inch X 4-1/10 Yard",
+      "title": "Dynarex Conforming Stretch Gauze Bandages, Sterile",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -977,7 +977,7 @@
     },
     {
       "sku": "00011313021705",
-      "title": "Fantasia Shea Butter Sheen Spray 14 Oz.",
+      "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
+      "title": "Folgers Coffee, Ground, Medium, Half Caff 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1037,7 +1037,7 @@
     },
     {
       "sku": "00370030145133",
-      "title": "GoodSense Ibuprofen Tablets 200 Mg Case Pack 24",
+      "title": "GoodSense Ibuprofen Tablets 200 Mg 50 ct - Case OF 24",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1133,7 +1133,7 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana Powder Blush - Hot Raspberry",
+      "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1289,7 +1289,7 @@
     },
     {
       "sku": "00038485504072",
-      "title": "Lydia Pinkham Herbal 72 Tablets",
+      "title": "Lydia Pinkham Herbal Supplement 72 Tablets",
       "price": "$8.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1553,7 +1553,7 @@
     },
     {
       "sku": "00070501011300",
-      "title": "Neutrogena Rainbath Refreshing Shower & Bath Gel Original - 32 oz.",
+      "title": "Neutrogena Rainbath Refreshing Shower and Bath Gel, Original Formula, 32 Ounce",
       "price": "$32.06",
       "salePrice": null,
       "availability": "in stock",
@@ -1577,7 +1577,7 @@
     },
     {
       "sku": "00007214002219",
-      "title": "Nivea Cherry Blossom & Jojoba Oil Infused Body Lotion (16.9 fl oz)",
+      "title": "NIVEA Cherry Blossom & Jojoba Oil Infused Body Lotion (16.9 fl oz)",
       "price": "$8.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1721,7 +1721,7 @@
     },
     {
       "sku": "00022000004833",
-      "title": "Orbit Sugar Free Gum, Sweet Mint",
+      "title": "Orbit Sweet Mint Gum",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -1877,7 +1877,7 @@
     },
     {
       "sku": "00037000344315",
-      "title": "Puffs Plus Lotion with Scent of Vicks Facial Tissues 48 ct",
+      "title": "Puffs Plus Lotion Facial Tissues with Scent of Vicks - 48 ct",
       "price": "$2.15",
       "salePrice": null,
       "availability": "in stock",
@@ -1985,7 +1985,7 @@
     },
     {
       "sku": "00309974169103",
-      "title": "Revlon Eyelash Curler",
+      "title": "Revlon Lash Curler",
       "price": "$3.38",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +2009,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2069,7 +2069,7 @@
     },
     {
       "sku": "00041331037907",
-      "title": "Sazon Goya Seasoning, Low Sodium, Coriander & Annatto 20 ea",
+      "title": "Sazon Goya Coriander & Annatto Low Sodium Seasoning(20 ct)",
       "price": "$3.29",
       "salePrice": null,
       "availability": "in stock",
@@ -2321,7 +2321,7 @@
     },
     {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
+      "title": "Vicks VapoCOOL Winterfrost Severe Medicated Drops 18 Count",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut %100 fruit Juice Soursop 490 ml",
+      "title": "Vinut Pineapple Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
