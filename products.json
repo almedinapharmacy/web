@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T17:20:53.347Z",
+  "updated": "2026-11-14T16:01:52.739Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -533,7 +533,7 @@
     },
     {
       "sku": "00889411431005",
-      "title": "Charco Caps Anti-Gas Formula Dietary Supplement, Capsules - 36 count",
+      "title": "Charcocaps Anti Gas Dietary Supplement Formula 36 Capsules",
       "price": "$6.80",
       "salePrice": null,
       "availability": "in stock",
@@ -557,7 +557,7 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Nonfat Greek Yogurt - 5.3oz",
+      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
       "price": "$1.75",
       "salePrice": null,
       "availability": "in stock",
@@ -593,7 +593,7 @@
     },
     {
       "sku": "00036761811128",
-      "title": "Colace Stool Softener Clear Soft Gels 50 mg (28 ct)",
+      "title": "Colace Stool Softener 50 mg Clear Soft Gels 28 Count Bottle",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -617,7 +617,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
+      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -725,7 +725,7 @@
     },
     {
       "sku": "00073390055035",
-      "title": "Dentyne Ice Peppermint, Sugar Free Gum",
+      "title": "Dentyne Ice Peppermint Sugar Free Gum (16 Pieces)",
       "price": "$2.00",
       "salePrice": null,
       "availability": "in stock",
@@ -773,20 +773,8 @@
     },
     {
       "sku": "00079400507501",
-      "title": "Dove Fresh Invisible Solid 24-Hour Antiperspirant Deodorant 2.6oz 00794005075018",
+      "title": "Dove Antiperspirant Deodorant Fresh 2.6 oz",
       "price": "$5.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00011111051249",
-      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
-      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -799,6 +787,18 @@
       "sku": "00000096081754",
       "title": "Dove Men+Care 50mL A/P Stick Clean",
       "price": "$3.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00011111051249",
+      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
+      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -857,7 +857,7 @@
     },
     {
       "sku": "07500435255967",
-      "title": "Downy Intense Pureza Fabric Softener - 730 Milliliters - Foodtown of Riverdale - Delivered by Mercato",
+      "title": "Downy Intense Pureza Fabric Softener - 730 ml",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
@@ -893,7 +893,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Conforming Stretch Gauze Bandages, Sterile",
+      "title": "Dynarex Sterile Conforming Bandage, 3 Inch x 4-1/10 Yard",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -989,7 +989,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
+      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1049,7 +1049,7 @@
     },
     {
       "sku": "00072320700823",
-      "title": "Hello Panda - Strawberry Cookies, 2.2 Oz.",
+      "title": "Hello Panda Strawberry 2.2oz",
       "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
@@ -1217,7 +1217,7 @@
     },
     {
       "sku": "00096295138313",
-      "title": "Leader Stop Smoking Aid, 21 mg, Patch, Step 1, Clear",
+      "title": "Leader Stop Smoking Aid, 21 Mg, Patch, Step 1, Clear",
       "price": "$29.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1576,9 +1576,9 @@
       "category": null
     },
     {
-      "sku": "00007214002219",
-      "title": "NIVEA Cherry Blossom & Jojoba Oil Infused Body Lotion (16.9 fl oz)",
-      "price": "$8.89",
+      "sku": "00072140111953",
+      "title": "Nivea Lip Care Moisture 0.17oz",
+      "price": "$3.62",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1588,9 +1588,9 @@
       "category": null
     },
     {
-      "sku": "00072140111953",
-      "title": "Nivea Lip Care Moisture 0.17oz",
-      "price": "$3.62",
+      "sku": "00007214002219",
+      "title": "Nivea Oil Infused Lotion Cherry Blossom & Jojoba Oil 16.9 oz Bottle",
+      "price": "$8.89",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1732,9 +1732,9 @@
       "category": null
     },
     {
-      "sku": "00632169111015",
-      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
-      "price": "$1.79",
+      "sku": "00063216911010",
+      "title": "Organic Olive Oil Hair Fertilizer - 6 oz",
+      "price": "$8.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1744,9 +1744,9 @@
       "category": null
     },
     {
-      "sku": "00063216911010",
-      "title": "ORS Organic Root Hair Fertilizer (6 oz)",
-      "price": "$8.79",
+      "sku": "00632169111015",
+      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
+      "price": "$1.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2321,7 +2321,7 @@
     },
     {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Winterfrost Severe Medicated Drops 18 Count",
+      "title": "Vicks VapoCOOL Severe Medicated Drops, Winterfrost, 18 ea",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Pineapple Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "Vinut No Pulp Soursop Juice, 16.57 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
