@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T16:01:52.739Z",
+  "updated": "2026-11-15T16:32:04.547Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -220,9 +220,9 @@
       "category": null
     },
     {
-      "sku": "00072140026615",
-      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
-      "price": "$9.66",
+      "sku": "00072140019457",
+      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -232,9 +232,9 @@
       "category": null
     },
     {
-      "sku": "00072140019457",
-      "title": "Aquaphor Healing Ointment 7 oz",
-      "price": "$18.33",
+      "sku": "00072140026615",
+      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
+      "price": "$9.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -316,18 +316,6 @@
       "category": null
     },
     {
-      "sku": "00000078938847",
-      "title": "Bala Halls Vermelha Morango 28g",
-      "price": "$1.50",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00038137004424",
       "title": "Band-Aid Brand Adhesive Bandages Tough Strips Extra Large - 10 Count",
       "price": "$4.84",
@@ -340,9 +328,9 @@
       "category": null
     },
     {
-      "sku": "00381372025229",
-      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
-      "price": "$4.91",
+      "sku": "00381371161232",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -352,9 +340,9 @@
       "category": null
     },
     {
-      "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
-      "price": "$2.31",
+      "sku": "00381372025229",
+      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
+      "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -617,7 +605,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
+      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -989,7 +977,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Hawaiian Aloha Air Mist (8.8 oz) | FoodMaxx",
+      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1039,6 +1027,18 @@
       "sku": "00370030145133",
       "title": "GoodSense Ibuprofen Tablets 200 Mg 50 ct - Case OF 24",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00000078938847",
+      "title": "Halls de Morango 28g",
+      "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1145,7 +1145,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1553,7 +1553,7 @@
     },
     {
       "sku": "00070501011300",
-      "title": "Neutrogena Rainbath Refreshing Shower and Bath Gel, Original Formula, 32 Ounce",
+      "title": "Neutrogena Rainbath Refreshing Shower & Bath Gel Original - 32 oz.",
       "price": "$32.06",
       "salePrice": null,
       "availability": "in stock",
@@ -1732,9 +1732,9 @@
       "category": null
     },
     {
-      "sku": "00063216911010",
-      "title": "Organic Olive Oil Hair Fertilizer - 6 oz",
-      "price": "$8.79",
+      "sku": "00632169111015",
+      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
+      "price": "$1.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1744,9 +1744,9 @@
       "category": null
     },
     {
-      "sku": "00632169111015",
-      "title": "ORS Olive Oil Replenishing Conditioner, 1.75 oz",
-      "price": "$1.79",
+      "sku": "00063216911010",
+      "title": "ORS Organic Root Hair Fertilizer (6 oz)",
+      "price": "$8.79",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1793,7 +1793,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte Blue Raspberry Electrolyte Solution 33.8 fl oz",
+      "title": "Pedialyte AdvancedCare Blue Raspberry Electrolyte Solution, 33.8 fl oz",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -1841,7 +1841,7 @@
     },
     {
       "sku": "00305211793049",
-      "title": "Pond's Dry Skin Cream The Caring Classic 10.1 oz",
+      "title": "Ponds Dry Skin Cream Facial Moisturizer 10.1 Ounce Jar (Pack of 2)",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +2009,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2081,7 +2081,7 @@
     },
     {
       "sku": "00037000203704",
-      "title": "Secret Classic Cocoa Butter Scent Invisible Solid Antiperspirant/Deodorant 2.6 oz. Stick",
+      "title": "Secret 72hr Holiday Fresh Antiperspirant & Deodorant, Hyaluronic Acid, Invisible Solid, Berry Bright 2.6oz, Size: 2.6 oz",
       "price": "$6.14",
       "salePrice": null,
       "availability": "in stock",
@@ -2321,7 +2321,7 @@
     },
     {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Severe Medicated Drops, Winterfrost, 18 ea",
+      "title": "Vicks VapoCOOL Winterfrost Severe Medicated Drops 18 Count",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut No Pulp Soursop Juice, 16.57 fl oz",
+      "title": "Vinut Original Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
