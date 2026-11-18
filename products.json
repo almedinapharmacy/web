@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T18:43:42.174Z",
+  "updated": "2026-11-18T18:20:11.502Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -220,9 +220,9 @@
       "category": null
     },
     {
-      "sku": "00072140026615",
-      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
-      "price": "$9.66",
+      "sku": "00072140019457",
+      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -232,9 +232,9 @@
       "category": null
     },
     {
-      "sku": "00072140019457",
-      "title": "Aquaphor Healing Ointment 7 oz",
-      "price": "$18.33",
+      "sku": "00072140026615",
+      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
+      "price": "$9.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -772,9 +772,9 @@
       "category": null
     },
     {
-      "sku": "00000096081754",
-      "title": "Dove Men+Care 50mL A/P Stick Clean",
-      "price": "$3.99",
+      "sku": "00011111051249",
+      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
+      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -784,9 +784,9 @@
       "category": null
     },
     {
-      "sku": "00011111051249",
-      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
-      "price": "$7.82",
+      "sku": "00000096081754",
+      "title": "Dove Men+Care 50mL A/P Stick Clean",
+      "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1121,7 +1121,7 @@
     },
     {
       "sku": "00381370030485",
-      "title": "Johnson's Cornstarch Baby Powder with Aloe & Vitamin E, 9 oz",
+      "title": "Johnson's Aloe & Vitamin E Baby Powder 9 oz",
       "price": "$4.60",
       "salePrice": null,
       "availability": "in stock",
@@ -1133,7 +1133,7 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana Powder Blush - Hot Raspberry",
+      "title": "Jordana-Powder Blush - Hot Raspberry",
       "price": "$1.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1541,7 +1541,7 @@
     },
     {
       "sku": "00070501011300",
-      "title": "Neutrogena Rainbath Refreshing Shower and Bath Gel, Original Formula, 32 Ounce",
+      "title": "Neutrogena Rainbath Refreshing Shower & Bath Gel Original - 32 oz.",
       "price": "$32.06",
       "salePrice": null,
       "availability": "in stock",
@@ -1781,7 +1781,7 @@
     },
     {
       "sku": "00070074630601",
-      "title": "Pedialyte AdvancedCare Blue Raspberry Electrolyte Solution, 33.8 fl oz",
+      "title": "Pedialyte Blue Raspberry Electrolyte Solution 33.8 fl oz",
       "price": "$10.95",
       "salePrice": null,
       "availability": "in stock",
@@ -2009,7 +2009,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Honey Lemon Throat Care Cough Drops - 34 Count",
+      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut Mango Coconut Milk Drink with Nata de Coco | 12 Pack",
+      "title": "Vinut No Pulp Soursop Juice, 16.57 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
