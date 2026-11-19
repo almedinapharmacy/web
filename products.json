@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T18:20:11.502Z",
+  "updated": "2026-11-19T18:36:35.435Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -304,6 +304,18 @@
       "category": null
     },
     {
+      "sku": "08720181114465",
+      "title": "Axe Deodorant Spray Anarchy for Men - 150 ml",
+      "price": "$3.49",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00787651760094",
       "title": "Azo Cranberry Gummies - 40 Count",
       "price": "$10.47",
@@ -545,7 +557,7 @@
     },
     {
       "sku": "00894700010052",
-      "title": "Chobani Blueberry on the Bottom Non-Fat Greek Yogurt 5.3oz",
+      "title": "Chobani Blueberry on the Bottom Nonfat Greek Yogurt - 5.3oz",
       "price": "$1.75",
       "salePrice": null,
       "availability": "in stock",
@@ -569,7 +581,7 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox ToiletWand System",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
       "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
@@ -772,9 +784,9 @@
       "category": null
     },
     {
-      "sku": "00011111051249",
-      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
-      "price": "$7.82",
+      "sku": "00000096081754",
+      "title": "Dove Men+Care 50mL A/P Stick Clean",
+      "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -784,9 +796,9 @@
       "category": null
     },
     {
-      "sku": "00000096081754",
-      "title": "Dove Men+Care 50mL A/P Stick Clean",
-      "price": "$3.99",
+      "sku": "00011111051249",
+      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
+      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1001,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Coffee, Ground, Medium, Half Caff 9.6 oz",
+      "title": "Folgers Ground Coffee, Half Caff-Medium Roast (9.6 oz)",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1157,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1289,7 +1301,7 @@
     },
     {
       "sku": "00038485504072",
-      "title": "Lydia Pinkham Herbal Supplement 72 Tablets",
+      "title": "Lydia Pinkham Herbal 72 Tablets",
       "price": "$8.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1505,7 +1517,7 @@
     },
     {
       "sku": "00840093106117",
-      "title": "Nature's Truth, ABC Complete Multivitamin, 100 Coated Caplets",
+      "title": "Nature's Truth, ABC Complete, 100 Coated Caplets",
       "price": "$10.74",
       "salePrice": null,
       "availability": "in stock",
@@ -1517,7 +1529,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Original Antibiotic Ointment – 0.5 oz",
+      "title": "Neosporin Antibiotic Ointment 0.50 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1949,7 +1961,7 @@
     },
     {
       "sku": "00035046087456",
-      "title": "Rejuvicare Super Collagen Capsules for Beauty, Healthy Joints, Hair, Skin, & Nails, 90 Servings, Multi, (N8745)",
+      "title": "Rejuvicare Super Collagen 50MG 90 Capsules",
       "price": "$9.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2081,7 +2093,7 @@
     },
     {
       "sku": "00037000203704",
-      "title": "Secret 72hr Holiday Fresh Antiperspirant & Deodorant, Hyaluronic Acid, Invisible Solid, Berry Bright 2.6oz, Size: 2.6 oz",
+      "title": "Secret Classic Cocoa Butter Scent Invisible Solid Antiperspirant/Deodorant 2.6 oz. Stick",
       "price": "$6.14",
       "salePrice": null,
       "availability": "in stock",
@@ -2191,18 +2203,6 @@
       "sku": "00763189530583",
       "title": "Sport Aid Athletic Supporter, Medium",
       "price": "$7.79",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "08720181114465",
-      "title": "Spray Deodorant Axe Anarchy 150 ml",
-      "price": "$3.49",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut No Pulp Soursop Juice, 16.57 fl oz",
+      "title": "Vinut %100 fruit Juice Soursop 490 ml",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
