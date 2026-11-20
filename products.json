@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T18:36:35.435Z",
+  "updated": "2026-11-20T17:58:06.879Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -220,9 +220,9 @@
       "category": null
     },
     {
-      "sku": "00072140019457",
-      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
-      "price": "$18.33",
+      "sku": "00072140026615",
+      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
+      "price": "$9.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -232,9 +232,9 @@
       "category": null
     },
     {
-      "sku": "00072140026615",
-      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
-      "price": "$9.66",
+      "sku": "00072140019457",
+      "title": "Aquaphor Healing Ointment 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -340,9 +340,9 @@
       "category": null
     },
     {
-      "sku": "00381372025229",
-      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
-      "price": "$4.91",
+      "sku": "00381371161232",
+      "title": "Band-Aid Brand Small Gauze Pads, 2 Inches By 2 Inches, 10 Count",
+      "price": "$2.31",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -352,9 +352,9 @@
       "category": null
     },
     {
-      "sku": "00381371161232",
-      "title": "Band-Aid First Aid Small Gauze Pads, 2 in X 2 in, 10 Count (Pack of 6)",
-      "price": "$2.31",
+      "sku": "00381372025229",
+      "title": "Band-Aid Clear Waterproof Adhesive Bandages, One Size 20 ct",
+      "price": "$4.91",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -533,7 +533,7 @@
     },
     {
       "sku": "00889411431005",
-      "title": "Charco Caps Anti-Gas Formula Dietary Supplement, Capsules - 36 count",
+      "title": "Charcocaps Anti Gas Dietary Supplement Formula 36 Capsules",
       "price": "$6.80",
       "salePrice": null,
       "availability": "in stock",
@@ -617,7 +617,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
+      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -725,7 +725,7 @@
     },
     {
       "sku": "00073390055035",
-      "title": "Dentyne Ice Peppermint Sugar Free Gum (16 Pieces)",
+      "title": "Dentyne Ice Peppermint Gum",
       "price": "$2.00",
       "salePrice": null,
       "availability": "in stock",
@@ -784,9 +784,9 @@
       "category": null
     },
     {
-      "sku": "00000096081754",
-      "title": "Dove Men+Care 50mL A/P Stick Clean",
-      "price": "$3.99",
+      "sku": "00011111051249",
+      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
+      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -796,9 +796,9 @@
       "category": null
     },
     {
-      "sku": "00011111051249",
-      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
-      "price": "$7.82",
+      "sku": "00000096081754",
+      "title": "Dove Men+Care 50mL A/P Stick Clean",
+      "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -893,7 +893,7 @@
     },
     {
       "sku": "00616784311319",
-      "title": "Dynarex Conforming Stretch Gauze Bandages, Sterile",
+      "title": "Dynarex Sterile Conforming Bandage, 3 Inch X 4-1/10 Yard",
       "price": "$0.75",
       "salePrice": null,
       "availability": "in stock",
@@ -976,6 +976,18 @@
       "category": null
     },
     {
+      "sku": "00049000047844",
+      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
+      "price": "$1.00",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
@@ -1013,7 +1025,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Ground Coffee, Half Caff-Medium Roast (9.6 oz)",
+      "title": "Folgers Coffee, Ground, Medium, Half Caff 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1169,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Color Kit Easy Comb-In A-60 Jet Black | Save Mart",
+      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1348,18 +1360,6 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Mexican Fanta - Orange",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00850018711753",
       "title": "Mike's Amazing 5% Acidity Distilled White Vinegar (32 fl oz) | GIANT",
       "price": "$1.99",
@@ -1529,7 +1529,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Antibiotic Ointment 0.50 oz",
+      "title": "Neosporin Original Antibiotic Ointment – 0.5 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2021,7 +2021,7 @@
     },
     {
       "sku": "00036602030602",
-      "title": "Ricola Max Throat Care Honey Lemon-34 Count-6/Box-6/Case",
+      "title": "Ricola Max Throat Care Honey Lemon Cough Drops",
       "price": "$6.90",
       "salePrice": null,
       "availability": "in stock",
@@ -2213,7 +2213,7 @@
     },
     {
       "sku": "00069000147689",
-      "title": "Starbucks Vanilla Frappuccino 13.7oz Btl 00069000147689",
+      "title": "Starbucks Frappuccino Vanilla Coffee - 405 Milliliters - Mach Bazar - Delivered by Mercato",
       "price": "$3.75",
       "salePrice": null,
       "availability": "in stock",
@@ -2321,7 +2321,7 @@
     },
     {
       "sku": "00323900039704",
-      "title": "Vicks VapoCOOL Winterfrost Severe Medicated Drops 18 Count",
+      "title": "Vicks VapoCOOL Severe Medicated Drops 18 ct",
       "price": "$3.35",
       "salePrice": null,
       "availability": "in stock",
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut %100 fruit Juice Soursop 490 ml",
+      "title": "Vinut No Pulp Soursop Juice, 16.57 fl oz",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
