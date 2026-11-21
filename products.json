@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T17:58:06.879Z",
+  "updated": "2026-11-21T16:55:12.233Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -220,9 +220,9 @@
       "category": null
     },
     {
-      "sku": "00072140026615",
-      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
-      "price": "$9.66",
+      "sku": "00072140019457",
+      "title": "Aquaphor Advanced Therapy Healing Ointment - 7 oz",
+      "price": "$18.33",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -232,9 +232,9 @@
       "category": null
     },
     {
-      "sku": "00072140019457",
-      "title": "Aquaphor Healing Ointment 7 oz",
-      "price": "$18.33",
+      "sku": "00072140026615",
+      "title": "Aquaphor Baby Diaper Rash Paste - 3.5 oz",
+      "price": "$9.66",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -401,7 +401,7 @@
     },
     {
       "sku": "00891038001004",
-      "title": "Bio-Oil Skincare Oil, 2 fl oz",
+      "title": "Bio-Oil Skincare Oil - 60 ml (2 fl oz)",
       "price": "$13.99",
       "salePrice": null,
       "availability": "in stock",
@@ -581,7 +581,7 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
+      "title": "Clorox ToiletWand System",
       "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
@@ -617,7 +617,7 @@
     },
     {
       "sku": "00023400998913",
-      "title": "Combat Roach Killing Bait Stations, Small/Large Roaches - 6 ct",
+      "title": "Combat Roach Killing Bait, Easy to Use, No Mess or Bad Odor, Kills the Nest, Effective for Small and Large Roaches, 6 ct, Size: 0.21 oz",
       "price": "$4.49",
       "salePrice": null,
       "availability": "in stock",
@@ -784,9 +784,9 @@
       "category": null
     },
     {
-      "sku": "00011111051249",
-      "title": "Dove Men +Care Body and Face Wash - Clean Comfort - 530ml - 2 pk",
-      "price": "$7.82",
+      "sku": "00000096081754",
+      "title": "Dove Men+Care 50mL A/P Stick Clean",
+      "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -796,9 +796,9 @@
       "category": null
     },
     {
-      "sku": "00000096081754",
-      "title": "Dove Men+Care 50mL A/P Stick Clean",
-      "price": "$3.99",
+      "sku": "00011111051249",
+      "title": "Dove Men+Care Clean Comfort Body + Face Wash, 18 fl oz",
+      "price": "$7.82",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -976,18 +976,6 @@
       "category": null
     },
     {
-      "sku": "00049000047844",
-      "title": "Fanta Mexican Flavored Soda, Orange (12 fl oz)",
-      "price": "$1.00",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00011313021705",
       "title": "Fantasia Shea Butter Sheen Spray 14 oz",
       "price": "$3.99",
@@ -1025,7 +1013,7 @@
     },
     {
       "sku": "00025500304311",
-      "title": "Folgers Coffee, Ground, Medium, Half Caff 9.6 oz",
+      "title": "Folgers Half Caff Medium Roast Ground Coffee 9.6 oz",
       "price": "$5.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1145,7 +1133,7 @@
     },
     {
       "sku": "00381370030485",
-      "title": "Johnson's Aloe & Vitamin E Baby Powder 9 oz",
+      "title": "Johnson's Cornstarch Baby Powder with Aloe & Vitamin E, 9 oz",
       "price": "$4.60",
       "salePrice": null,
       "availability": "in stock",
@@ -1157,7 +1145,7 @@
     },
     {
       "sku": "00041065340410",
-      "title": "Jordana-Powder Blush - Hot Raspberry",
+      "title": "Jordana Powder Blush - Hot Raspberry",
       "price": "$1.89",
       "salePrice": null,
       "availability": "in stock",
@@ -1169,7 +1157,7 @@
     },
     {
       "sku": "00011509043207",
-      "title": "Just For Men Hair Easy Comb-In Color, A-60 Jet Black",
+      "title": "Just For Men Easy Comb-In Color, Jet Black A-60",
       "price": "$9.86",
       "salePrice": null,
       "availability": "in stock",
@@ -1289,7 +1277,7 @@
     },
     {
       "sku": "00312547428347",
-      "title": "Listerine Zero Alcohol-Free Mouthwash, Cool Mint - 1.5 L bottle",
+      "title": "Listerine Zero Alcohol Mild Mouthwash, Cool Mint (50.7 fl oz)",
       "price": "$12.62",
       "salePrice": null,
       "availability": "in stock",
@@ -1313,7 +1301,7 @@
     },
     {
       "sku": "00038485504072",
-      "title": "Lydia Pinkham Herbal 72 Tablets",
+      "title": "Lydia Pinkham Herbal Supplement 72 Tablets",
       "price": "$8.00",
       "salePrice": null,
       "availability": "in stock",
@@ -1351,6 +1339,18 @@
       "sku": "00818286010190",
       "title": "Md Ribbed Cushion Over the Calf Compression White Socks Medium - 1 Pr",
       "price": "$6.99",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00049000047844",
+      "title": "Mexican Fanta - Orange",
+      "price": "$1.00",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2333,7 +2333,7 @@
     },
     {
       "sku": "08935330210886",
-      "title": "Vinut No Pulp Soursop Juice, 16.57 fl oz",
+      "title": "Vinut Pineapple Coconut Milk Drink with Nata de Coco | 12 Pack",
       "price": "$1.99",
       "salePrice": null,
       "availability": "in stock",
@@ -2393,7 +2393,7 @@
     },
     {
       "sku": "00012005005737",
-      "title": "Zote Laundry Soap White - 14.1 Ounce",
+      "title": "Zote Soap, White 14.1 oz",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
