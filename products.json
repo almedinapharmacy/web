@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T20:18:42.715Z",
+  "updated": "2026-11-25T19:32:22.462Z",
   "count": 200,
   "source": "google-merchant-api-v1",
   "items": [
@@ -581,7 +581,7 @@
     },
     {
       "sku": "00044600031910",
-      "title": "Clorox ToiletWand System",
+      "title": "Clorox Disposable Toilet Wand Cleaning Kit Caddy/Refills",
       "price": "$18.71",
       "salePrice": null,
       "availability": "in stock",
@@ -857,7 +857,7 @@
     },
     {
       "sku": "07500435255967",
-      "title": "Downy Intense Pureza Fabric Softener - 730 Milliliters - Foodtown of Riverdale - Delivered by Mercato",
+      "title": "Downy Intense Pureza Fabric Softener - 730 Milliliters - Market Fresh of Middletown - Delivered by Mercato",
       "price": "$2.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1001,7 +1001,7 @@
     },
     {
       "sku": "00037000962601",
-      "title": "Febreze Air Refresher, Hawaiian Aloha - 8.8 oz can",
+      "title": "Febreze 100% Natural Propellant Air Freshener Spray, Hawaiian Aloha (8.8 oz)",
       "price": "$3.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1049,20 +1049,8 @@
     },
     {
       "sku": "00370030145133",
-      "title": "GoodSense Ibuprofen Tablets 200 mg Case Pack 24",
+      "title": "GoodSense Ibuprofen Tablets 200 Mg 50 ct Case Pack 24",
       "price": "$6.99",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
-      "sku": "00072320700823",
-      "title": "Hello Panda Strawberry",
-      "price": "$1.50",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -1348,6 +1336,18 @@
       "category": null
     },
     {
+      "sku": "00072320700823",
+      "title": "Meiji Hello Panda - Strawberry - 2.2 oz",
+      "price": "$1.50",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
       "sku": "00850018711753",
       "title": "Mike's Amazing 5% Acidity Distilled White Vinegar (32 fl oz) | GIANT",
       "price": "$1.99",
@@ -1517,7 +1517,7 @@
     },
     {
       "sku": "00300810730884",
-      "title": "Neosporin Antibiotic Ointment 0.50 oz",
+      "title": "Neosporin Original Antibiotic Ointment – 0.5 oz",
       "price": "$6.99",
       "salePrice": null,
       "availability": "in stock",
@@ -1684,18 +1684,6 @@
       "category": null
     },
     {
-      "sku": "00858158005015",
-      "title": "Olly Women's Multivitamin Gummies, Blissful Berry - 90 count",
-      "price": "$14.57",
-      "salePrice": null,
-      "availability": "in stock",
-      "link": null,
-      "image": null,
-      "brand": null,
-      "type": null,
-      "category": null
-    },
-    {
       "sku": "00073796266103",
       "title": "Omron Blood Pressure Monitor 3 Series Wrist",
       "price": "$54.99",
@@ -1829,7 +1817,7 @@
     },
     {
       "sku": "00305211793049",
-      "title": "Ponds Dry Skin Cream Facial Moisturizer 10.1 Ounce Jar (Pack of 2)",
+      "title": "Ponds Dry Skin Cream 10.1oz Jar (Paquete de 2), 286.2 g (Pack of 2)",
       "price": "$10.25",
       "salePrice": null,
       "availability": "in stock",
@@ -2106,7 +2094,7 @@
     {
       "sku": "00310158085607",
       "title": "Sensodyne Complete Protection Extra Fresh Toothpaste - 3.4 oz tube",
-      "price": "$10.94",
+      "price": "$8.25",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
@@ -2383,6 +2371,18 @@
       "sku": "00035046003265",
       "title": "Windmill Magnesium Drink Mix 5.64 fl oz",
       "price": "$12.79",
+      "salePrice": null,
+      "availability": "in stock",
+      "link": null,
+      "image": null,
+      "brand": null,
+      "type": null,
+      "category": null
+    },
+    {
+      "sku": "00858158005015",
+      "title": "Women'S Multivitamin Gummy, Vitamins A, D, C, E Chewable Vitamin, Berry Flavor",
+      "price": "$14.57",
       "salePrice": null,
       "availability": "in stock",
       "link": null,
